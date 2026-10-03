@@ -1,0 +1,22 @@
+nocca
+inseed 101
+noprll 10
+grdarc 2
+scalex 40
+scaley 10
+commod 10000
+addarc 1200
+minsrc 1
+maxsrc 1
+minsnk 1
+maxsnk 1
+minfct 10
+maxfct 100
+mincst 1
+maxcst 10
+minsup 15
+maxsup 75
+mincap 1721
+maxcap 3197
+outfil out
+end

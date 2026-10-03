@@ -1,0 +1,32 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Mulgen generados
+out
+Canad/Mulgen/out
+Canad/Mulgen/preview
+instancias/
+*.out
+
+# Resultados
+resultados/
+*.npz
+*.npy
+
+# Ejecutables
+Canad/Mulgen/mulgen
+Canad/Mulgen/mulgen.exe
+
+# Gurobi
+gurobi.lic
+gurobi.log
+*.sol
+*.lp
+*.mps
+*.ilp
+
+# macOS
+.DS_Store

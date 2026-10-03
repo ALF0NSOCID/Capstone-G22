@@ -1,0 +1,1 @@
+       parameter(MAXNODES=500, MAXARCS=2000, MAXCOMM=11000)
