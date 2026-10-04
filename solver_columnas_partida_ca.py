@@ -15,6 +15,8 @@ MAX_ITERACIONES = 1000
 LIMITE_TIEMPO = 900
 INTERVALO_PROGRESO = 1
 
+ETA = 100
+
 # Conjuntos y parámetros de la red.
 nodos = range(1, n + 1)
 ids_arcos = [arco["id"] for arco in arcos]
@@ -88,6 +90,51 @@ def caminos_minimos(pesos):
     return resultado
 
 
+def caminos_minimos_iniciales(pesos_base, eta=1.0):
+    """
+    Construye rutas iniciales congestion-aware.
+
+    Después de procesar cada origen, actualiza los pesos usando la carga
+    acumulada. El orden de los orígenes es determinista.
+    """
+    resultado = {}
+    carga = {arco: 0.0 for arco in ids_arcos}
+    pesos_actuales = dict(pesos_base)
+
+    # El orden explícito garantiza reproducibilidad.
+    for origen in sorted(productos_por_origen):
+        grupo = sorted(productos_por_origen[origen])
+
+        # Todos los productos de este origen comparten el mismo Dijkstra.
+        distancias, predecesor = dijkstra(origen, pesos_actuales)
+
+        for producto in grupo:
+            destino = datos_producto[producto]["destino"]
+            camino = reconstruir_camino(
+                origen,
+                destino,
+                predecesor,
+            )
+
+            resultado[producto] = distancias[destino], camino
+
+            # Para construir la carga inicial suponemos que toda la demanda
+            # del producto utiliza esta ruta.
+            demanda = datos_producto[producto]["demanda"]
+            for arco in camino:
+                carga[arco] += demanda
+
+        # Los siguientes orígenes observarán la congestión acumulada.
+        for arco in ids_arcos:
+            utilizacion = carga[arco] / capacidad[arco]
+            pesos_actuales[arco] = (
+                pesos_base[arco]
+                * (1.0 + eta * utilizacion)
+            )
+
+    return resultado
+
+
 # Problema maestro restringido.
 inicio = time.perf_counter()
 print("\nSolver: generación de columnas", flush=True)
@@ -149,9 +196,11 @@ def agregar_columna(producto, camino):
 
 # Una ruta inicial por producto hace factible el primer maestro restringido.
 pesos_iniciales = {arco: (1 / capacidad[arco]) for arco in ids_arcos}
+
+
 inicio_caminos = time.perf_counter()
 print("Calculando caminos iniciales...", flush=True)
-for producto, (_, camino) in caminos_minimos(pesos_iniciales).items():
+for producto, (_, camino) in caminos_minimos_iniciales(pesos_iniciales, eta=ETA).items():
     agregar_columna(producto, camino)
 modelo.update()
 tiempo_caminos = time.perf_counter() - inicio_caminos

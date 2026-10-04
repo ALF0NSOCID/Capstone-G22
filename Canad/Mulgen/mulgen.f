@@ -20,9 +20,9 @@ c   ****************************************************************
        logical omark(MAXNODES), dmark(MAXNODES)
        logical odmark(MAXNODES,MAXNODES)
        integer citer
-       integer csum
-       integer fsum
-       real q
+       integer*8 csum
+       integer*8 fsum
+       double precision q
        double precision aux1
 
 
@@ -571,7 +571,7 @@ C   Equalize supply and demand
          do 111 i=1,na
            csum=csum+u(i)
 111      continue
-         q=float(na*totsupply)/float(csum) 
+         q=dble(na)*dble(totsupply)/dble(csum)
 
          do 112 i=1,na
            u(i)=min(int((q/xtight)*u(i))+1,totsupply)

@@ -14,6 +14,7 @@ TOLERANCIA = 1e-7
 MAX_ITERACIONES = 1000
 LIMITE_TIEMPO = 900
 INTERVALO_PROGRESO = 1
+GAP_OBJETIVO = 0.01
 
 # Conjuntos y parámetros de la red.
 nodos = range(1, n + 1)
@@ -148,7 +149,10 @@ def agregar_columna(producto, camino):
 
 
 # Una ruta inicial por producto hace factible el primer maestro restringido.
-pesos_iniciales = {arco: (1 / capacidad[arco]) for arco in ids_arcos}
+pesos_iniciales = {
+    arco: (1 / capacidad[arco])
+    for arco in ids_arcos
+}
 inicio_caminos = time.perf_counter()
 print("Calculando caminos iniciales...", flush=True)
 for producto, (_, camino) in caminos_minimos(pesos_iniciales).items():
@@ -164,7 +168,11 @@ print(
 
 # Ciclo clásico: resolver el maestro, obtener duales y ejecutar el pricing.
 optimo_certificado = False
+gap_certificado = False
 iteracion = 0
+cota_superior = math.inf
+cota_inferior = 0.0
+gap_relativo = math.inf
 
 while iteracion < MAX_ITERACIONES:
     iteracion += 1
@@ -190,48 +198,97 @@ while iteracion < MAX_ITERACIONES:
         break
 
     valor_z = z.X
+    cota_superior = valor_z
 
     # En estas restricciones <=, los duales son no positivos. Su opuesto
     # entrega pesos no negativos, aptos para el camino mínimo de Dijkstra.
     precios_arcos = {
-        arco: max(0, -restriccion_capacidad[arco].Pi)
+        arco: max(0.0, -restriccion_capacidad[arco].Pi)
         for arco in ids_arcos
     }
 
+    # Para construir una solución dual factible del maestro completo se exige
+    # sum_a capacidad[a] * precio[a] <= 1. El factor también protege frente a
+    # pequeñas violaciones numéricas de esa normalización.
+    suma_normalizacion = math.fsum(
+        capacidad[arco] * precios_arcos[arco]
+        for arco in ids_arcos
+    )
+    factor_normalizacion = max(1.0, suma_normalizacion) * (1.0 + 1e-12)
+
     nuevas = 0
     menor_costo_reducido = 0.0
+    candidatas = []
 
     inicio_pricing = time.perf_counter()
-    for producto, (precio_ruta, camino) in caminos_minimos(precios_arcos).items():
+    resultado_pricing = caminos_minimos(precios_arcos)
+
+    # La distancia mínima de cada producto, dividida por el factor de
+    # normalización, define un dual factible para todas las rutas posibles.
+    cota_inferior_iteracion = math.fsum(
+        datos_producto[producto]["demanda"] * precio_ruta
+        for producto, (precio_ruta, _) in resultado_pricing.items()
+    ) / factor_normalizacion
+
+    # Cada cota dual obtenida sigue siendo válida en iteraciones posteriores.
+    # Se conserva la mejor para evitar que la degeneración del maestro haga
+    # retroceder artificialmente el certificado.
+    cota_inferior = max(cota_inferior, cota_inferior_iteracion)
+
+    if cota_inferior > 0.0:
+        gap_relativo = max(
+            0.0,
+            (cota_superior - cota_inferior) / cota_inferior,
+        )
+    else:
+        gap_relativo = math.inf
+
+    for producto, (precio_ruta, camino) in resultado_pricing.items():
         dual_demanda = restriccion_demanda[producto].Pi
         costo_reducido = precio_ruta - dual_demanda
         menor_costo_reducido = min(menor_costo_reducido, costo_reducido)
 
         if costo_reducido < -TOLERANCIA:
+            candidatas.append((producto, camino))
+
+    # Si no hay ninguna ruta de costo reducido negativo, se conserva la
+    # certificación exacta del solver original. Si las hay, se puede detener
+    # antes únicamente cuando la brecha dual certificada es a lo sumo 1%.
+    if not candidatas:
+        optimo_certificado = True
+    elif gap_relativo <= GAP_OBJETIVO:
+        gap_certificado = True
+    else:
+        for producto, camino in candidatas:
             nuevas += agregar_columna(producto, camino)
+        modelo.update()
+        if nuevas == 0:
+            optimo_certificado = True
 
     tiempo_pricing = time.perf_counter() - inicio_pricing
-    modelo.update()
     if mostrar_progreso or nuevas == 0:
+        texto_gap = (
+            f"{100 * gap_relativo:.4f}%"
+            if math.isfinite(gap_relativo)
+            else "infinito"
+        )
         print(
             f"Iteración {iteracion}: z={valor_z:.8f} | "
+            f"cota inferior={cota_inferior:.8f} | gap={texto_gap} | "
             f"columnas={len(variables)} | nuevas={nuevas} | "
             f"costo reducido={menor_costo_reducido:.3e} | "
             f"maestro={tiempo_maestro:.2f}s | pricing={tiempo_pricing:.2f}s",
             flush=True,
         )
 
-    # Sin costos reducidos negativos, el óptimo del maestro completo queda
-    # certificado por dualidad lineal.
-    if nuevas == 0:
-        optimo_certificado = True
+    if optimo_certificado or gap_certificado:
         break
 
 
 # Recuperación y presentación de la solución por arcos.
 tiempo_total = time.perf_counter() - inicio
 
-if optimo_certificado:
+if optimo_certificado or gap_certificado:
     flujo_arco = {arco: 0.0 for arco in ids_arcos}
     for (_, camino), variable in variables.items():
         if variable.X > 1e-10:
@@ -244,8 +301,15 @@ if optimo_certificado:
     ]
     resultados.sort(key=lambda resultado: resultado[0], reverse=True)
 
-    print("\nSolución óptima certificada")
+    if optimo_certificado:
+        print("\nSolución óptima certificada")
+    else:
+        print("\nSolución con error relativo certificado de a lo sumo 1%")
+
     print(f"Congestión máxima: {z.X:.8f} ({100 * z.X:.2f}%)")
+    print(f"Cota superior: {cota_superior:.8f}")
+    print(f"Cota inferior: {cota_inferior:.8f}")
+    print(f"Gap certificado: {100 * gap_relativo:.6f}%")
     print(f"Iteraciones: {iteracion} | Columnas: {len(variables)}")
     print(f"Tiempo total: {tiempo_total:.2f} segundos")
     print("\nDiez arcos más congestionados:")
@@ -257,6 +321,11 @@ if optimo_certificado:
             f"congestión={utilizacion:.4f}"
         )
 else:
-    print("\nNo se certificó el óptimo mediante generación de columnas.")
+    print("\nNo se alcanzó la certificación solicitada.")
+    if math.isfinite(cota_superior):
+        print(f"Cota superior: {cota_superior:.8f}")
+        print(f"Cota inferior: {cota_inferior:.8f}")
+        if math.isfinite(gap_relativo):
+            print(f"Gap certificado actual: {100 * gap_relativo:.6f}%")
     print(f"Iteraciones: {iteracion} | Columnas: {len(variables)}")
     print(f"Tiempo total: {tiempo_total:.2f} segundos")

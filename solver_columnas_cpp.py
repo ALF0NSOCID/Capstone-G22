@@ -1,15 +1,20 @@
-import heapq
-import math
 import time
-from collections import defaultdict
 
 import gurobipy as gp
 from gurobipy import GRB
 
+try:
+    from pricing_cpp import MotorCaminos
+except ImportError as error:
+    raise SystemExit(
+        "No se encontró el módulo pricing_cpp. Compílalo una vez con:\n"
+        "  python3 setup_pricing_cpp.py build_ext --inplace"
+    ) from error
+
 from lector import arcos, demandas, n
 
 
-# Parámetros del algoritmo.
+# Parámetros del algoritmo: iguales a solver_columnas.py.
 TOLERANCIA = 1e-7
 MAX_ITERACIONES = 1000
 LIMITE_TIEMPO = 900
@@ -22,75 +27,42 @@ capacidad = {arco["id"]: arco["capacidad"] for arco in arcos}
 datos_producto = {demanda["producto"]: demanda for demanda in demandas}
 productos = list(datos_producto)
 
-# Grafo dirigido y productos agrupados por origen.
-adyacencia = {nodo: [] for nodo in nodos}
-for arco in arcos:
-    adyacencia[arco["origen"]].append((arco["destino"], arco["id"]))
+# El motor C++ usa el índice de cada arco como identificador interno. El lector
+# actual ya garantiza IDs consecutivos; esta validación evita errores silenciosos.
+if ids_arcos != list(range(len(arcos))):
+    raise ValueError(
+        "solver_columnas_cpp requiere identificadores de arco consecutivos "
+        "desde cero."
+    )
 
-productos_por_origen = defaultdict(list)
-for producto, datos in datos_producto.items():
-    productos_por_origen[datos["origen"]].append(producto)
-
-
-def dijkstra(origen, pesos):
-    """Calcula caminos mínimos desde un origen con pesos no negativos."""
-    distancia = {origen: 0.0}
-    predecesor = {}
-    cola = [(0.0, origen)]
-
-    while cola:
-        distancia_actual, nodo = heapq.heappop(cola)
-        if distancia_actual > distancia.get(nodo, math.inf):
-            continue
-
-        for destino, arco in adyacencia[nodo]:
-            nueva_distancia = distancia_actual + pesos[arco]
-            if nueva_distancia < distancia.get(destino, math.inf) - 1e-15:
-                distancia[destino] = nueva_distancia
-                predecesor[destino] = (nodo, arco)
-                heapq.heappush(cola, (nueva_distancia, destino))
-
-    return distancia, predecesor
+motor_caminos = MotorCaminos(
+    n,
+    [arco["origen"] for arco in arcos],
+    [arco["destino"] for arco in arcos],
+    productos,
+    [datos_producto[producto]["origen"] for producto in productos],
+    [datos_producto[producto]["destino"] for producto in productos],
+)
 
 
-def reconstruir_camino(origen, destino, predecesor):
-    """Reconstruye una ruta como una tupla de identificadores de arcos."""
-    camino = []
-    nodo = destino
-
-    while nodo != origen:
-        if nodo not in predecesor:
-            return None
-        nodo, arco = predecesor[nodo]
-        camino.append(arco)
-
-    return tuple(reversed(camino))
+def vector_pesos(pesos):
+    """Convierte el diccionario del maestro al vector contiguo usado por C++."""
+    return [pesos[arco] for arco in ids_arcos]
 
 
 def caminos_minimos(pesos):
-    """Obtiene la ruta de menor precio para cada producto."""
-    resultado = {}
-
-    # Los productos con igual origen comparten una ejecución de Dijkstra.
-    for origen, grupo in productos_por_origen.items():
-        distancias, predecesor = dijkstra(origen, pesos)
-
-        for producto in grupo:
-            destino = datos_producto[producto]["destino"]
-            camino = reconstruir_camino(origen, destino, predecesor)
-            if camino is None:
-                raise ValueError(
-                    f"No existe camino para el producto {producto}: "
-                    f"{origen} -> {destino}"
-                )
-            resultado[producto] = distancias[destino], camino
-
-    return resultado
+    """Mantiene la interfaz del solver original usando el motor C++."""
+    return {
+        producto: (distancia, tuple(camino))
+        for producto, distancia, camino in motor_caminos.caminos_minimos(
+            vector_pesos(pesos)
+        )
+    }
 
 
 # Problema maestro restringido.
 inicio = time.perf_counter()
-print("\nSolver: generación de columnas", flush=True)
+print("\nSolver: generación de columnas (pricing C++)", flush=True)
 print(
     f"Productos: {len(productos)} | Arcos: {len(ids_arcos)}",
     flush=True,
@@ -131,10 +103,10 @@ def agregar_columna(producto, camino):
     if camino in caminos_conocidos[producto]:
         return False
 
-    columna = gp.Column()
-    columna.addTerms(1, restriccion_demanda[producto])
-    for arco in camino:
-        columna.addTerms(1, restriccion_capacidad[arco])
+    # Una sola llamada entrega todos los términos de capacidad a Gurobi.
+    restricciones = [restriccion_demanda[producto]]
+    restricciones.extend(restriccion_capacidad[arco] for arco in camino)
+    columna = gp.Column([1.0] * len(restricciones), restricciones)
 
     numero = len(caminos_conocidos[producto])
     variables[producto, camino] = modelo.addVar(
@@ -192,23 +164,26 @@ while iteracion < MAX_ITERACIONES:
     valor_z = z.X
 
     # En estas restricciones <=, los duales son no positivos. Su opuesto
-    # entrega pesos no negativos, aptos para el camino mínimo de Dijkstra.
-    precios_arcos = {
-        arco: max(0, -restriccion_capacidad[arco].Pi)
+    # entrega pesos no negativos, aptos para Dijkstra.
+    precios_arcos = [
+        max(0, -restriccion_capacidad[arco].Pi)
         for arco in ids_arcos
-    }
+    ]
+    duales_productos = [
+        restriccion_demanda[producto].Pi
+        for producto in productos
+    ]
 
     nuevas = 0
-    menor_costo_reducido = 0.0
-
     inicio_pricing = time.perf_counter()
-    for producto, (precio_ruta, camino) in caminos_minimos(precios_arcos).items():
-        dual_demanda = restriccion_demanda[producto].Pi
-        costo_reducido = precio_ruta - dual_demanda
-        menor_costo_reducido = min(menor_costo_reducido, costo_reducido)
+    menor_costo_reducido, candidatas = motor_caminos.pricing(
+        precios_arcos,
+        duales_productos,
+        TOLERANCIA,
+    )
 
-        if costo_reducido < -TOLERANCIA:
-            nuevas += agregar_columna(producto, camino)
+    for producto, _, camino_cpp in candidatas:
+        nuevas += agregar_columna(producto, tuple(camino_cpp))
 
     tiempo_pricing = time.perf_counter() - inicio_pricing
     modelo.update()
