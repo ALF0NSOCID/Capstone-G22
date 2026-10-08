@@ -17,7 +17,7 @@ INTERVALO_PROGRESO = 1
 
 # Peso de los duales actuales en el promedio estabilizado.
 # ALPHA = 1.0 reproduce el pricing del solver original.
-ALPHA = 0.5
+ALPHA = 0.4
 
 if not 0.0 < ALPHA <= 1.0:
     raise ValueError("ALPHA debe pertenecer al intervalo (0, 1].")

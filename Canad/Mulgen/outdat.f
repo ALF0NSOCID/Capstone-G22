@@ -104,13 +104,8 @@ C ---------------------------------------------------------------
        print *,'*************************************'
        print *,'Writing output to file ',outfile
 
-	if(nocca) then
-	   do 431 arc=1,na
-	      do 432 com=1,comm
-		cap(com,arc)=min(u(arc),totsup(com))
- 432	      continue
- 431	   continue
-	endif
+c       En modo nocca no se materializan capacidades commodity-arco.
+c       La salida estandar conserva solamente la capacidad global u(arc).
 
 	if(dow) then
 	   do 434 arc=1,na
@@ -192,21 +187,25 @@ c   Let's count the number of commodities per arc
 	 if(startn(i) .eq. noeud) then
 
          nbcomm=0
-         do 122 j=1,comm
-            if(cap(j,i) .ne. 0) nbcomm=nbcomm+1 
- 122     continue
+         if(.not.nocca) then
+           do 122 j=1,comm
+              if(cap(j,i) .ne. 0) nbcomm=nbcomm+1
+ 122       continue
+         endif
 
          write(13,1020) startn(i),endn(i),c(i),u(i),nbcomm
 c AJOUTE PAR BG
-         if(comm.eq.1)then
-           write(13,1010) 1,cost(1,i),u(i)
-         else
+         if(.not.nocca) then
+           if(comm.eq.1)then
+             write(13,1010) 1,cost(1,i),u(i)
+           else
 
-         do 41 j=1,comm
-           if (cap(j,i) .ne. 0)
-     &         write(13,1010) j,cost(j,i),cap(j,i)
- 41      continue
+             do 41 j=1,comm
+               if (cap(j,i) .ne. 0)
+     &           write(13,1010) j,cost(j,i),cap(j,i)
+ 41          continue
 
+           endif
          endif
 
 	 endif

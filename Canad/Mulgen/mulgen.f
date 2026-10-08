@@ -15,7 +15,7 @@ c   ****************************************************************
 
        real ran2
 
-       integer a,arc,gridarc
+       integer a,arc,gridarc,ncommarc,costtemp,captemp
        logical mark(MAXCOMM, MAXNODES)
        logical omark(MAXNODES), dmark(MAXNODES)
        logical odmark(MAXNODES,MAXNODES)
@@ -31,6 +31,16 @@ c   ****************************************************************
        gridarc=0
 
        totsupply=0
+
+       if((.not.nocca) .and. (comm .gt. 1)) then
+          print *,'compact build requires nocca for multicommodity data'
+          print *,'EXECUTION ABORTED'
+          stop
+       endif
+
+c      En modo nocca solo se conserva una fila auxiliar por arco. Las
+c      capacidades que usan los solvers son las capacidades globales u(arc).
+       ncommarc=1
 
 c      a preliminary call to the random generator
        k= int(ran2(inseed))
@@ -58,7 +68,7 @@ c  Create horizontal arcs
               endn(arc)=node+1
               c(arc)=maxfcost
               u(arc)=totsupply
-	      do 311 k=1,comm
+	      do 311 k=1,ncommarc
 		cost(k,arc)=maxcost
 		cap(k,arc)=totsup(k)
  311	      continue
@@ -69,7 +79,7 @@ c  Create horizontal arcs
               endn(arc)=node-1
               c(arc)=maxfcost
               u(arc)=totsupply
-	      do 312 k=1,comm
+	      do 312 k=1,ncommarc
 		cost(k,arc)=maxcost
 		cap(k,arc)=totsup(k)
  312	      continue
@@ -82,7 +92,7 @@ c  Create horizontal arcs
               endn(arc)=node+1
               c(arc)= maxfcost
               u(arc)= totsupply
-	      do 313 k=1,comm
+	      do 313 k=1,ncommarc
 		cost(k,arc)=maxcost
 		cap(k,arc)=totsup(k)
  313	      continue
@@ -95,7 +105,7 @@ c  Create horizontal arcs
               endn(arc)=node+(dim1-1)
               c(arc)=maxfcost
               u(arc)= totsupply
-	      do 314 k=1,comm
+	      do 314 k=1,ncommarc
 		cost(k,arc)=maxcost
 		cap(k,arc)=totsup(k)
  314	      continue
@@ -111,7 +121,7 @@ c  Create horizontal arcs
               endn(arc)=node-(dim1-1)
               c(arc)=maxfcost
               u(arc)=totsupply
-	      do 315 k=1,comm
+	      do 315 k=1,ncommarc
 		cost(k,arc)=maxcost
 		cap(k,arc)=totsup(k)
  315	      continue
@@ -124,7 +134,7 @@ c  Create horizontal arcs
               endn(arc)=node-1
               c(arc)=maxfcost
               u(arc)=totsupply
-	      do 316 k=1,comm
+	      do 316 k=1,ncommarc
 		cost(k,arc)=maxcost
 		cap(k,arc)=totsup(k)
  316	      continue
@@ -143,7 +153,7 @@ C   Create vertical arcs
              endn(arc)=node+dim1
              c(arc)=maxfcost
              u(arc)=totsupply
-	      do 317 k=1,comm
+	      do 317 k=1,ncommarc
 		cost(k,arc)=maxcost
 		cap(k,arc)=totsup(k)
  317	      continue
@@ -154,7 +164,7 @@ C   Create vertical arcs
              endn(arc)=node-dim1
              c(arc)=maxfcost
              u(arc)=totsupply
-	      do 318 k=1,comm
+	      do 318 k=1,ncommarc
 		cost(k,arc)=maxcost
 		cap(k,arc)=totsup(k)
  318	      continue
@@ -168,7 +178,7 @@ C   Create vertical arcs
              endn(arc)=node+dim1
              c(arc)=maxfcost
              u(arc)=totsupply
-	      do 319 k=1,comm
+	      do 319 k=1,ncommarc
 		cost(k,arc)=maxcost
 		cap(k,arc)=totsup(k)
  319	      continue
@@ -181,7 +191,7 @@ C   Create vertical arcs
              endn(arc)=node+dim1*(dim2-1)
              c(arc)=maxfcost
              u(arc)=totsupply
-	      do 321 k=1,comm
+	      do 321 k=1,ncommarc
 		cost(k,arc)=maxcost
 		cap(k,arc)=totsup(k)
  321	      continue
@@ -195,7 +205,7 @@ C   Create vertical arcs
              endn(arc)=i
              c(arc)=maxfcost 
              u(arc)=totsupply
-	      do 322 k=1,comm
+	      do 322 k=1,ncommarc
 		cost(k,arc)=maxcost
 		cap(k,arc)=totsup(k)
  322	      continue
@@ -209,7 +219,7 @@ C   Create vertical arcs
              endn(arc)=node-dim1
              c(arc)=maxfcost
              u(arc)=totsupply
-	      do 323 k=1,comm
+	      do 323 k=1,ncommarc
 		cost(k,arc)=maxcost
 		cap(k,arc)=totsup(k)
  323	      continue
@@ -248,8 +258,12 @@ c   -- end of noparallel parameter ---
              c(arc)=minfcost+ran2(inseed)*(maxfcost-minfcost)
              u(arc)=mincap+ran2(inseed)*(maxcap-mincap)
              do 33 kk=1,comm
-	        cost(kk,arc)=mincost+ran2(inseed)*(maxcost-mincost)
-		cap(kk,arc)=mincca+ran2(inseed)*(maxcca-mincca)
+	        costtemp=mincost+ran2(inseed)*(maxcost-mincost)
+		captemp=mincca+ran2(inseed)*(maxcca-mincca)
+		if(kk .eq. 1) then
+		  cost(1,arc)=costtemp
+		  cap(1,arc)=captemp
+		endif
  33	     continue
 
   8        continue
@@ -275,7 +289,7 @@ c   *********** Circle arc grid generation *****************
             endif
               c(arc)=maxfcost
               u(arc)=totsupply
-            do 423 k=1,comm
+            do 423 k=1,ncommarc
               cost(k,arc)=maxcost
               cap(k,arc)=totsup(k)
  423        continue
@@ -316,8 +330,12 @@ c   -- end of noparallel parameter ---
              c(arc)=minfcost+ran2(inseed)*(maxfcost-minfcost)
              u(arc)=mincap+ran2(inseed)*(maxcap-mincap)
              do 36 kk=1,comm
-	        cost(kk,arc)=mincost+ran2(inseed)*(maxcost-mincost)
-		cap(kk,arc)=mincca+ran2(inseed)*(maxcca-mincca)
+	        costtemp=mincost+ran2(inseed)*(maxcost-mincost)
+		captemp=mincca+ran2(inseed)*(maxcca-mincca)
+		if(kk .eq. 1) then
+		  cost(1,arc)=costtemp
+		  cap(1,arc)=captemp
+		endif
  36	     continue
 
  12    continue
@@ -345,7 +363,7 @@ c   -- end nulcap parameter ---
 
 c   -- if nulcom parameter ----
 c      on choisit une proportion des arcs non-grid qu'on met a zero
-	 if(nulcom) then
+	 if(nulcom .and. .not.nocca) then
 	   do 411 kk=1,int(nulcomprop*(na-gridarc)/100)
 	   kkk=int(ran2(inseed)*comm)+1
 	   arc=int(ran2(inseed)*(na-gridarc))+gridarc+1
@@ -356,7 +374,7 @@ c   -- end nulcom parameter ---
 
 c   -- if topcom parameter ----
 c      on choisit une proportion des arcs non-grid qu'on met a maxcap
-	 if(topcom) then
+	 if(topcom .and. .not.nocca) then
 	   do 422 kk=1,int(topcomprop*(na-gridarc)/100)
 	     kkk=int(ran2(inseed)*comm)+1
 	     arc=int(ran2(inseed)*(na-gridarc))+gridarc+1
@@ -589,10 +607,16 @@ c13      continue
            fsum=fsum+c(i)
 222      continue
          csum=0
-         do 223 k=1,comm
-         do 223 i=1,na
-            csum=csum+cost(k,i)
-223      continue
+         if(nocca) then
+           do 224 i=1,na
+             csum=csum+cost(1,i)*comm
+224        continue
+         else
+           do 223 k=1,comm
+           do 223 i=1,na
+              csum=csum+cost(k,i)
+223        continue
+         endif
          aux1=dble(totsupply)*(dble(csum)/dble(comm))
          q=dble(fsum)/aux1
 

@@ -155,11 +155,55 @@ def main():
     parser.add_argument("--capacidad-min", type=int, default=50)
     parser.add_argument("--capacidad-max", type=int, default=150)
     parser.add_argument(
+        "--demanda-gravedad",
+        action="store_true",
+        help=(
+            "Genera pares y demandas con un modelo gravitacional. "
+            "Al activarlo, demanda-min y demanda-max no se utilizan."
+        ),
+    )
+    parser.add_argument(
+        "--demanda-media",
+        type=float,
+        default=30.0,
+        help="Demanda media objetivo del modelo gravitacional.",
+    )
+    parser.add_argument(
+        "--sigma-masa",
+        type=float,
+        default=1.0,
+        help="Dispersion lognormal de las masas del modelo gravitacional.",
+    )
+    parser.add_argument(
+        "--capacidad-escalones",
+        action="store_true",
+        help=(
+            "Asigna capacidades por escalones segun la centralidad de los "
+            "enlaces. Al activarlo, capacidad-max no se utiliza."
+        ),
+    )
+    parser.add_argument(
+        "--factores-escalon",
+        type=float,
+        nargs="+",
+        default=(1.0, 2.5, 5.0, 10.0),
+        metavar="FACTOR",
+        help="Factores de capacidad para cada escalon.",
+    )
+    parser.add_argument(
+        "--cuantiles-escalon",
+        type=float,
+        nargs="+",
+        default=(0.40, 0.75, 0.93),
+        metavar="CUANTIL",
+        help="Cuantiles que separan los escalones de capacidad.",
+    )
+    parser.add_argument(
         "--porcentaje-hubs",
         type=float,
         default=0.0,
         help=(
-            "Proporcion de nodos que forman un backbone completo. "
+            "Proporcion de nodos que forman un backbone local conectado. "
             "Por ejemplo, 0.05 selecciona aproximadamente 5%% de hubs."
         ),
     )
@@ -196,6 +240,8 @@ def main():
         f"alpha={argumentos.alpha}, beta={argumentos.beta}, "
         f"hubs={100 * argumentos.porcentaje_hubs:g}%, "
         f"vecinos-hub={argumentos.vecinos_hub}, "
+        f"demanda={'gravedad' if argumentos.demanda_gravedad else 'uniforme'}, "
+        f"capacidad={'escalones' if argumentos.capacidad_escalones else 'uniforme'}, "
         f"semilla={argumentos.semilla})..."
     )
     grafo, arcos, commodities = generar_instancia(
@@ -208,6 +254,12 @@ def main():
         demanda_max=argumentos.demanda_max,
         capacidad_min=argumentos.capacidad_min,
         capacidad_max=argumentos.capacidad_max,
+        demanda_gravedad=argumentos.demanda_gravedad,
+        demanda_media=argumentos.demanda_media,
+        sigma_masa=argumentos.sigma_masa,
+        capacidad_escalones=argumentos.capacidad_escalones,
+        factores_escalon=tuple(argumentos.factores_escalon),
+        cuantiles_escalon=tuple(argumentos.cuantiles_escalon),
         semilla=argumentos.semilla,
         porcentaje_hubs=argumentos.porcentaje_hubs,
         multiplicador_capacidad_hubs=argumentos.multiplicador_hubs,
@@ -215,12 +267,19 @@ def main():
     )
     escribir_instancia(SALIDA_ACTIVA, grafo, arcos, commodities)
 
+    sufijo_realismo = ""
+    if argumentos.demanda_gravedad:
+        sufijo_realismo += "_dg"
+    if argumentos.capacidad_escalones:
+        sufijo_realismo += "_ce"
+
     nombre_instancia = argumentos.nombre or (
         f"waxman_n{argumentos.nodos}"
         f"_m{argumentos.arcos or len(arcos)}"
         f"_k{argumentos.productos}"
         f"_h{100 * argumentos.porcentaje_hubs:g}"
         f"_v{argumentos.vecinos_hub}"
+        f"{sufijo_realismo}"
         f"_s{argumentos.semilla}"
     )
 

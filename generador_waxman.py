@@ -1,3 +1,4 @@
+import math
 import random
 from pathlib import Path
 
@@ -18,8 +19,25 @@ def generar_instancia(
     porcentaje_hubs=0.0,
     multiplicador_capacidad_hubs=10.0,
     conexiones_por_hub=3,
+    demanda_gravedad=False,
+    demanda_media=30,
+    sigma_masa=1.0,
+    capacidad_escalones=False,
+    factores_escalon=(1.0, 2.5, 5.0, 10.0),
+    cuantiles_escalon=(0.40, 0.75, 0.93),
 ):
     """Genera una red Waxman conexa con arcos en ambos sentidos.
+
+    Opciones de realismo (por defecto desactivadas: el comportamiento original
+    no cambia y las semillas siguen reproduciendo las mismas instancias):
+
+    - ``demanda_gravedad``: los pares origen-destino se eligen con
+      probabilidad proporcional a masa(origen) * masa(destino) y la demanda
+      de cada par es proporcional a ese mismo producto (media ``demanda_media``).
+      Las masas son lognormales con parametro ``sigma_masa``.
+    - ``capacidad_escalones``: la capacidad de cada enlace se elige entre
+      escalones ``capacidad_min * factor`` segun su centralidad (betweenness
+      de arista): los enlaces mas centrales reciben escalones mayores.
 
     Si ``porcentaje_hubs`` es positivo, selecciona esa proporcion de nodos,
     conecta cada hub con sus vecinos geograficos mas cercanos y multiplica la
@@ -59,6 +77,15 @@ def generar_instancia(
         raise ValueError("multiplicador_capacidad_hubs debe ser positivo.")
     if conexiones_por_hub < 1:
         raise ValueError("conexiones_por_hub debe ser al menos 1.")
+
+    if demanda_media <= 0:
+        raise ValueError("demanda_media debe ser positiva.")
+    if sigma_masa < 0:
+        raise ValueError("sigma_masa no puede ser negativo.")
+    if len(cuantiles_escalon) != len(factores_escalon) - 1:
+        raise ValueError(
+            "Debe haber un cuantil menos que factores de escalon."
+        )
 
     rng = random.Random(semilla)
 
@@ -147,9 +174,17 @@ def generar_instancia(
 
     # Cada enlace no dirigido se transforma en dos arcos dirigidos. Ambos
     # sentidos reciben la misma capacidad para conservar la simetria Waxman.
+    escalon_enlace = {}
+    if capacidad_escalones:
+        escalon_enlace = _asignar_escalones(grafo, cuantiles_escalon)
+
     arcos = []
     for origen, destino in grafo.edges():
-        capacidad = rng.randint(capacidad_min, capacidad_max)
+        if capacidad_escalones:
+            nivel = escalon_enlace[frozenset((origen, destino))]
+            capacidad = max(1, round(capacidad_min * factores_escalon[nivel]))
+        else:
+            capacidad = rng.randint(capacidad_min, capacidad_max)
         es_backbone = (
             grafo.nodes[origen].get("es_hub", False)
             and grafo.nodes[destino].get("es_hub", False)
@@ -177,6 +212,15 @@ def generar_instancia(
     pares_usados = set()
     lista_nodos = list(grafo.nodes)
 
+    if demanda_gravedad:
+        commodities = _commodities_gravedad(
+            lista_nodos,
+            productos,
+            demanda_media,
+            sigma_masa,
+            rng,
+        )
+
     while len(commodities) < productos:
         origen, destino = rng.sample(lista_nodos, 2)
         if (origen, destino) in pares_usados:
@@ -191,6 +235,54 @@ def generar_instancia(
         })
 
     return grafo, arcos, commodities
+
+
+def _asignar_escalones(grafo, cuantiles):
+    """Nivel de escalon (0 = menor) de cada enlace segun su betweenness."""
+    centralidad = nx.edge_betweenness_centrality(grafo)
+    valores = sorted(centralidad.values())
+    cortes = [
+        valores[min(len(valores) - 1, int(q * len(valores)))]
+        for q in cuantiles
+    ]
+    niveles = {}
+    for (origen, destino), valor in centralidad.items():
+        niveles[frozenset((origen, destino))] = sum(
+            valor > corte for corte in cortes
+        )
+    return niveles
+
+
+def _commodities_gravedad(nodos, productos, demanda_media, sigma_masa, rng):
+    """Pares (s, t) distintos con probabilidad ~ w_s * w_t (modelo de gravedad).
+
+    Muestreo sin reemplazo con pesos (Efraimidis-Spirakis): a cada par se le
+    asigna la clave log(U) / peso y se conservan los ``productos`` mayores.
+    La demanda de cada par es proporcional a w_s * w_t, con media
+    ``demanda_media`` y minimo 1 (los solvers leen enteros).
+    """
+    masa = {nodo: rng.lognormvariate(0.0, sigma_masa) for nodo in nodos}
+    claves = []
+    for origen in nodos:
+        for destino in nodos:
+            if origen == destino:
+                continue
+            peso = masa[origen] * masa[destino]
+            claves.append((math.log(1.0 - rng.random()) / peso, origen, destino, peso))
+
+    claves.sort(reverse=True)
+    elegidos = claves[:productos]
+    peso_medio = sum(c[3] for c in elegidos) / len(elegidos)
+
+    return [
+        {
+            "producto": indice,
+            "origen": origen,
+            "destino": destino,
+            "demanda": max(1, round(demanda_media * peso / peso_medio)),
+        }
+        for indice, (_, origen, destino, peso) in enumerate(elegidos, start=1)
+    ]
 
 
 def generar_enlaces_hubs(grafo, hubs, conexiones_por_hub):

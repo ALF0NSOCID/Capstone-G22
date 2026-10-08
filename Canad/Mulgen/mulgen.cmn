@@ -1,8 +1,11 @@
        integer startn(MAXARCS), endn(MAXARCS)
        integer c(MAXARCS), u(MAXARCS)
        integer b(MAXCOMM, MAXNODES)
-       integer cost(MAXCOMM, MAXARCS)
-       integer cap(MAXCOMM, MAXARCS)
+c      Todos los parametros del proyecto usan nocca: los solvers solo
+c      consumen el costo fijo y la capacidad global de cada arco.
+c      Una sola fila evita reservar dos matrices MAXCOMM x MAXARCS.
+       integer cost(1, MAXARCS)
+       integer cap(1, MAXARCS)
        integer totsup(MAXCOMM)
        integer sinks(MAXCOMM), sources(MAXCOMM)
 
@@ -49,4 +52,3 @@ c       common /char2/ infile
      +  mpsflg, ccabin, capbin, rnet, single, cplex, nocca,
      +  fich4,mrnet, nosfil, grid, cgrid, LP1,ctight,xtight,fixvar,
      +  xfixvar,inseed
-

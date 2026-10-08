@@ -1,5 +1,7 @@
 import argparse
+import math
 import webbrowser
+from collections import defaultdict
 from pathlib import Path
 
 import matplotlib
@@ -12,6 +14,7 @@ from generador_waxman import generar_instancia
 # sin una ventana grafica disponible.
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 
 
 RAIZ = Path(__file__).resolve().parent
@@ -29,11 +32,14 @@ def visualizar_red(
     porcentaje_hubs=0.0,
     multiplicador_hubs=10.0,
     vecinos_hub=3,
+    demanda_gravedad=False,
+    capacidad_escalones=False,
     dpi=220,
     mostrar=False,
     etiquetas=False,
+    top_demanda=5,
 ):
-    """Dibuja la topologia completa usando las posiciones de Waxman."""
+    """Dibuja topologia, demanda nodal, capacidades, hubs y backbone."""
     posiciones = nx.get_node_attributes(grafo, "pos")
     if len(posiciones) != grafo.number_of_nodes():
         raise ValueError("El grafo no contiene posiciones para todos los nodos.")
@@ -61,10 +67,36 @@ def visualizar_red(
         if frozenset((origen, destino)) not in claves_backbone
     ]
 
-    # Un tamano moderado permite distinguir nodos de alto grado sin ocultar
-    # la estructura cuando se visualizan cientos de nodos.
-    tamanos = [12 + 5 * grados[nodo] for nodo in grafo.nodes]
-    ancho_arista = max(0.25, min(0.8, 250 / max(1, grafo.number_of_edges())))
+    demanda_nodo = defaultdict(float)
+    for commodity in commodities:
+        demanda = commodity["demanda"]
+        demanda_nodo[commodity["origen"]] += demanda
+        demanda_nodo[commodity["destino"]] += demanda
+
+    demanda_nodal_maxima = max(demanda_nodo.values(), default=1.0)
+    tamanos_por_nodo = {
+        nodo: 14 + 180 * math.sqrt(
+            demanda_nodo[nodo] / demanda_nodal_maxima
+        )
+        for nodo in grafo.nodes
+    }
+    tamanos = [tamanos_por_nodo[nodo] for nodo in grafo.nodes]
+
+    capacidades = [
+        grafo.edges[origen, destino].get("capacidad", 1)
+        for origen, destino in grafo.edges
+    ]
+    capacidad_minima = min(capacidades, default=1)
+    capacidad_maxima = max(capacidades, default=1)
+
+    def ancho_por_capacidad(origen, destino):
+        capacidad = grafo.edges[origen, destino].get("capacidad", 1)
+        if capacidad_maxima == capacidad_minima:
+            return 0.6
+        minimo = math.log1p(capacidad_minima)
+        maximo = math.log1p(capacidad_maxima)
+        proporcion = (math.log1p(capacidad) - minimo) / (maximo - minimo)
+        return 0.25 + 2.25 * proporcion
 
     figura, eje = plt.subplots(figsize=(12, 10))
     nx.draw_networkx_edges(
@@ -72,7 +104,7 @@ def visualizar_red(
         posiciones,
         ax=eje,
         edgelist=enlaces_normales,
-        width=ancho_arista,
+        width=[ancho_por_capacidad(*enlace) for enlace in enlaces_normales],
         alpha=0.30,
         edge_color="#52789c",
     )
@@ -82,8 +114,11 @@ def visualizar_red(
             posiciones,
             ax=eje,
             edgelist=enlaces_backbone,
-            width=max(0.9, 2.5 * ancho_arista),
-            alpha=0.65,
+            width=[
+                max(1.1, ancho_por_capacidad(*enlace))
+                for enlace in enlaces_backbone
+            ],
+            alpha=0.75,
             edge_color="#e76f51",
         )
     nodos_dibujados = nx.draw_networkx_nodes(
@@ -104,14 +139,15 @@ def visualizar_red(
             posiciones,
             ax=eje,
             nodelist=hubs,
-            node_size=[80 + 6 * grados[nodo] for nodo in hubs],
+            node_size=[
+                max(90, 1.6 * tamanos_por_nodo[nodo])
+                for nodo in hubs
+            ],
             node_color="#d62828",
             node_shape="*",
             linewidths=0.8,
             edgecolors="white",
-            label="Hubs",
         )
-        eje.legend(loc="upper right", frameon=True)
 
     if etiquetas:
         nx.draw_networkx_labels(
@@ -121,6 +157,32 @@ def visualizar_red(
             font_size=6,
             font_color="#202020",
         )
+    elif top_demanda > 0:
+        nodos_destacados = sorted(
+            grafo.nodes,
+            key=lambda nodo: demanda_nodo[nodo],
+            reverse=True,
+        )[:top_demanda]
+        desplazamientos_y = (-18, 18, 30, -30, 0)
+        for indice, nodo in enumerate(nodos_destacados):
+            x, y = posiciones[nodo]
+            hacia_izquierda = x > 0.72
+            eje.annotate(
+                f"{nodo}\nD={demanda_nodo[nodo]:g}",
+                xy=(x, y),
+                xytext=(-7 if hacia_izquierda else 7,
+                        desplazamientos_y[indice % len(desplazamientos_y)]),
+                textcoords="offset points",
+                ha="right" if hacia_izquierda else "left",
+                va="center",
+                fontsize=6,
+                color="#202020",
+                arrowprops={
+                    "arrowstyle": "-",
+                    "color": "#666666",
+                    "linewidth": 0.35,
+                },
+            )
 
     grado_medio = (
         sum(valores_grado) / len(valores_grado)
@@ -138,7 +200,10 @@ def visualizar_red(
         f"grado medio={grado_medio:.2f} | clustering={clustering:.3f}\n"
         f"hubs={len(hubs)} ({100 * porcentaje_hubs:g}%) | "
         f"vecinos por hub={vecinos_hub} | "
-        f"capacidad backbone=x{multiplicador_hubs:g}",
+        f"capacidad backbone=x{multiplicador_hubs:g}\n"
+        f"demanda={'gravedad' if demanda_gravedad else 'uniforme'} | "
+        f"capacidad={'escalones' if capacidad_escalones else 'uniforme'} | "
+        "tamano nodo=demanda OD | ancho enlace=capacidad",
         fontsize=13,
         pad=14,
     )
@@ -149,6 +214,26 @@ def visualizar_red(
 
     barra = figura.colorbar(nodos_dibujados, ax=eje, shrink=0.75, pad=0.02)
     barra.set_label("Grado del nodo")
+
+    leyenda = [
+        Line2D(
+            [0], [0], marker="*", linestyle="none", markersize=12,
+            markerfacecolor="#d62828", markeredgecolor="white", label="Hub",
+        ),
+        Line2D(
+            [0], [0], color="#e76f51", linewidth=2.2,
+            label="Enlace de backbone",
+        ),
+        Line2D(
+            [0], [0], color="#52789c", linewidth=0.5,
+            label=f"Capacidad baja ({capacidad_minima:g})",
+        ),
+        Line2D(
+            [0], [0], color="#52789c", linewidth=2.5,
+            label=f"Capacidad alta ({capacidad_maxima:g})",
+        ),
+    ]
+    eje.legend(handles=leyenda, loc="upper right", frameon=True, fontsize=8)
 
     salida = Path(salida)
     salida.parent.mkdir(parents=True, exist_ok=True)
@@ -191,6 +276,32 @@ def main():
     parser.add_argument("--capacidad-min", type=int, default=50)
     parser.add_argument("--capacidad-max", type=int, default=150)
     parser.add_argument(
+        "--demanda-gravedad",
+        action="store_true",
+        help="Genera pares y demandas mediante el modelo gravitacional.",
+    )
+    parser.add_argument("--demanda-media", type=float, default=30.0)
+    parser.add_argument("--sigma-masa", type=float, default=1.0)
+    parser.add_argument(
+        "--capacidad-escalones",
+        action="store_true",
+        help="Asigna capacidades escalonadas segun centralidad.",
+    )
+    parser.add_argument(
+        "--factores-escalon",
+        type=float,
+        nargs="+",
+        default=(1.0, 2.5, 5.0, 10.0),
+        metavar="FACTOR",
+    )
+    parser.add_argument(
+        "--cuantiles-escalon",
+        type=float,
+        nargs="+",
+        default=(0.40, 0.75, 0.93),
+        metavar="CUANTIL",
+    )
+    parser.add_argument(
         "--porcentaje-hubs",
         type=float,
         default=0.0,
@@ -225,6 +336,12 @@ def main():
         action="store_true",
         help="Muestra el numero de cada nodo; puede saturar redes grandes.",
     )
+    parser.add_argument(
+        "--top-demanda",
+        type=int,
+        default=5,
+        help="Etiqueta esta cantidad de nodos con mayor demanda OD.",
+    )
     argumentos = parser.parse_args()
 
     print(
@@ -234,6 +351,8 @@ def main():
         f"beta={argumentos.beta}, "
         f"hubs={100 * argumentos.porcentaje_hubs:g}%, "
         f"vecinos-hub={argumentos.vecinos_hub}, "
+        f"demanda={'gravedad' if argumentos.demanda_gravedad else 'uniforme'}, "
+        f"capacidad={'escalones' if argumentos.capacidad_escalones else 'uniforme'}, "
         f"semilla={argumentos.semilla})..."
     )
     grafo, arcos, commodities = generar_instancia(
@@ -246,6 +365,12 @@ def main():
         demanda_max=argumentos.demanda_max,
         capacidad_min=argumentos.capacidad_min,
         capacidad_max=argumentos.capacidad_max,
+        demanda_gravedad=argumentos.demanda_gravedad,
+        demanda_media=argumentos.demanda_media,
+        sigma_masa=argumentos.sigma_masa,
+        capacidad_escalones=argumentos.capacidad_escalones,
+        factores_escalon=tuple(argumentos.factores_escalon),
+        cuantiles_escalon=tuple(argumentos.cuantiles_escalon),
         semilla=argumentos.semilla,
         porcentaje_hubs=argumentos.porcentaje_hubs,
         multiplicador_capacidad_hubs=argumentos.multiplicador_hubs,
@@ -261,6 +386,8 @@ def main():
             f"_b{argumentos.beta:g}"
             f"_h{100 * argumentos.porcentaje_hubs:g}"
             f"_v{argumentos.vecinos_hub}"
+            f"{'_dg' if argumentos.demanda_gravedad else ''}"
+            f"{'_ce' if argumentos.capacidad_escalones else ''}"
             f"_s{argumentos.semilla}.png"
         )
     )
@@ -275,9 +402,12 @@ def main():
         porcentaje_hubs=argumentos.porcentaje_hubs,
         multiplicador_hubs=argumentos.multiplicador_hubs,
         vecinos_hub=argumentos.vecinos_hub,
+        demanda_gravedad=argumentos.demanda_gravedad,
+        capacidad_escalones=argumentos.capacidad_escalones,
         dpi=argumentos.dpi,
         mostrar=argumentos.mostrar,
         etiquetas=argumentos.etiquetas,
+        top_demanda=argumentos.top_demanda,
     )
 
 

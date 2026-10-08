@@ -138,7 +138,7 @@ def generar_instancia(nombre_parametro):
             str(ruta_parametro_mulgen),
         ],
         cwd=CARPETA_MULGEN,
-        check=True,
+        check=False,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
         text=True,
@@ -146,6 +146,12 @@ def generar_instancia(nombre_parametro):
 
     if proceso.stdout:
         print(proceso.stdout, end="")
+
+    if proceso.returncode != 0:
+        raise RuntimeError(
+            "Mulgen termino durante la generacion con codigo "
+            f"{proceso.returncode}."
+        )
 
     if "EXECUTION ABORTED" in proceso.stdout:
         raise RuntimeError(
