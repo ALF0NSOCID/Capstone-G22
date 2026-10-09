@@ -1,0 +1,95 @@
+Filtro de conectividad: 354 productos sin camino eliminados.
+Filtro de conectividad: 10650 -> 10296 productos.
+Filtro de conectividad: productos eliminados (muestra): [107, 200, 216, 233, 421, 425, 426, 436, 493, 516, 558, 631, 651, 663, 685, 731, 743, 834, 853, 920] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10650
+
+Solver: generación de columnas
+Productos: 10296 | Arcos: 1600
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 10296 columnas en 0.26s.
+Iteración 1: resolviendo maestro con 10296 columnas...
+Iteración 1: z=1.25035902 | columnas=10467 | nuevas=171 | costo reducido=-1.596e-04 | maestro=0.01s | pricing=0.22s
+Iteración 2: resolviendo maestro con 10467 columnas...
+Iteración 2: z=1.02137243 | columnas=10724 | nuevas=257 | costo reducido=-8.832e-05 | maestro=0.02s | pricing=0.21s
+Iteración 3: resolviendo maestro con 10724 columnas...
+Iteración 3: z=0.88303810 | columnas=10888 | nuevas=164 | costo reducido=-1.213e-04 | maestro=0.03s | pricing=0.20s
+Iteración 4: resolviendo maestro con 10888 columnas...
+Iteración 4: z=0.85760941 | columnas=11089 | nuevas=201 | costo reducido=-9.331e-05 | maestro=0.02s | pricing=0.20s
+Iteración 5: resolviendo maestro con 11089 columnas...
+Iteración 5: z=0.84565778 | columnas=11202 | nuevas=113 | costo reducido=-1.433e-04 | maestro=0.03s | pricing=0.20s
+Iteración 6: resolviendo maestro con 11202 columnas...
+Iteración 6: z=0.79371955 | columnas=11441 | nuevas=239 | costo reducido=-7.735e-05 | maestro=0.02s | pricing=0.20s
+Iteración 7: resolviendo maestro con 11441 columnas...
+Iteración 7: z=0.75899928 | columnas=11533 | nuevas=92 | costo reducido=-1.800e-04 | maestro=0.02s | pricing=0.21s
+Iteración 8: resolviendo maestro con 11533 columnas...
+Iteración 8: z=0.74878286 | columnas=11638 | nuevas=105 | costo reducido=-1.623e-04 | maestro=0.03s | pricing=0.24s
+Iteración 9: resolviendo maestro con 11638 columnas...
+Iteración 9: z=0.69174977 | columnas=11779 | nuevas=141 | costo reducido=-1.007e-04 | maestro=0.07s | pricing=0.20s
+Iteración 10: resolviendo maestro con 11779 columnas...
+Iteración 10: z=0.67444521 | columnas=11908 | nuevas=129 | costo reducido=-1.144e-04 | maestro=0.05s | pricing=0.20s
+Iteración 11: resolviendo maestro con 11908 columnas...
+Iteración 11: z=0.66761373 | columnas=13644 | nuevas=1736 | costo reducido=-2.112e-05 | maestro=0.04s | pricing=0.23s
+Iteración 12: resolviendo maestro con 13644 columnas...
+Iteración 12: z=0.63714760 | columnas=13730 | nuevas=86 | costo reducido=-1.658e-04 | maestro=0.07s | pricing=0.20s
+Iteración 13: resolviendo maestro con 13730 columnas...
+Iteración 13: z=0.59992697 | columnas=13843 | nuevas=113 | costo reducido=-1.217e-04 | maestro=0.18s | pricing=0.20s
+Iteración 14: resolviendo maestro con 13843 columnas...
+Iteración 14: z=0.56993671 | columnas=13962 | nuevas=119 | costo reducido=-1.055e-04 | maestro=0.25s | pricing=0.20s
+Iteración 15: resolviendo maestro con 13962 columnas...
+Iteración 15: z=0.56713462 | columnas=17515 | nuevas=3553 | costo reducido=-1.617e-05 | maestro=0.08s | pricing=0.25s
+Iteración 16: resolviendo maestro con 17515 columnas...
+Iteración 16: z=0.50907036 | columnas=22874 | nuevas=5359 | costo reducido=-1.066e-05 | maestro=1.45s | pricing=0.28s
+Iteración 17: resolviendo maestro con 22874 columnas...
+Iteración 17: z=0.46188821 | columnas=22885 | nuevas=11 | costo reducido=-2.675e-04 | maestro=1.92s | pricing=0.20s
+Iteración 18: resolviendo maestro con 22885 columnas...
+Iteración 18: z=0.46071931 | columnas=22898 | nuevas=13 | costo reducido=-2.009e-04 | maestro=1.56s | pricing=0.20s
+Iteración 19: resolviendo maestro con 22898 columnas...
+Iteración 19: z=0.44763926 | columnas=29933 | nuevas=7035 | costo reducido=-4.741e-06 | maestro=4.95s | pricing=0.32s
+Iteración 20: resolviendo maestro con 29933 columnas...
+Iteración 20: z=0.42463452 | columnas=29960 | nuevas=27 | costo reducido=-1.680e-04 | maestro=7.11s | pricing=0.20s
+Iteración 21: resolviendo maestro con 29960 columnas...
+Iteración 21: z=0.41472454 | columnas=37841 | nuevas=7881 | costo reducido=-3.871e-06 | maestro=12.79s | pricing=0.33s
+Iteración 22: resolviendo maestro con 37841 columnas...
+Iteración 22: z=0.40903450 | columnas=37841 | nuevas=0 | costo reducido=0.000e+00 | maestro=6.19s | pricing=0.20s
+
+Solución óptima certificada
+Congestión máxima: 0.40903450 (40.90%)
+Iteraciones: 22 | Columnas: 37841
+Tiempo total: 42.11 segundos
+
+Diez arcos más congestionados:
+Arco 169: 45 -> 247 | flujo=4749.71 | capacidad=11612 | congestión=0.4090
+Arco 102: 26 -> 164 | flujo=3801.98 | capacidad=9295 | congestión=0.4090
+Arco 118: 31 -> 183 | flujo=4276.05 | capacidad=10454 | congestión=0.4090
+Arco 121: 32 -> 268 | flujo=4997.58 | capacidad=12218 | congestión=0.4090
+Arco 414: 109 -> 223 | flujo=2100.39 | capacidad=5135 | congestión=0.4090
+Arco 471: 125 -> 252 | flujo=2455.84 | capacidad=6004 | congestión=0.4090
+Arco 480: 127 -> 283 | flujo=1227.92 | capacidad=3002 | congestión=0.4090
+Arco 502: 131 -> 92 | flujo=4448.25 | capacidad=10875 | congestión=0.4090
+Arco 537: 138 -> 24 | flujo=1184.97 | capacidad=2897 | congestión=0.4090
+Arco 613: 159 -> 248 | flujo=2768.35 | capacidad=6768 | congestión=0.4090
+
+==========================================================
+RESUMEN DE EJECUCION — KPI
+==========================================================
+Instancia: t36 (400 nodos, 1600 arcos, 10650 productos)
+Solver: solver_columnas.py
+Estado: completado
+Tiempo de pared del proceso: 42.40 s
+Tiempo de CPU acumulado: 43.12 s
+Uso medio aproximado de CPU: 101.7%
+Memoria residente maxima observada: 142.86 MB
+Tiempo interno del algoritmo: 42.11 s
+Objetivo/congestion: 0.4090345
+Iteraciones: 22
+Columnas finales: 37841
+Resultado guardado en: /Users/alfonsocid/Desktop/Repo Capstone/resultados/t36_solver_columnas.txt
+==========================================================

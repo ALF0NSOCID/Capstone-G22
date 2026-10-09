@@ -1,0 +1,55 @@
+Filtro de conectividad: 317 productos sin camino eliminados.
+Filtro de conectividad: 10650 -> 10333 productos.
+Filtro de conectividad: productos eliminados (muestra): [1, 28, 34, 84, 157, 158, 163, 168, 178, 180, 197, 236, 284, 308, 320, 370, 407, 432, 468, 510] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10650
+
+Solver: generación de columnas
+Productos: 10333 | Arcos: 1600
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 10333 columnas en 0.34s.
+Iteración 1: resolviendo maestro con 10333 columnas...
+Iteración 1: z=0.74056857 | columnas=10424 | nuevas=91 | costo reducido=-1.788e-04 | maestro=0.01s | pricing=0.22s
+Iteración 2: resolviendo maestro con 10424 columnas...
+Iteración 2: z=0.71597245 | columnas=10424 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.01s | pricing=0.21s
+
+Solución óptima certificada
+Congestión máxima: 0.71597245 (71.60%)
+Iteraciones: 2 | Columnas: 10424
+Tiempo total: 0.84 segundos
+
+Diez arcos más congestionados:
+Arco 340: 81 -> 177 | flujo=2183.00 | capacidad=3049 | congestión=0.7160
+Arco 1335: 335 -> 257 | flujo=2364.00 | capacidad=3393 | congestión=0.6967
+Arco 877: 218 -> 133 | flujo=8172.00 | capacidad=12432 | congestión=0.6573
+Arco 643: 160 -> 63 | flujo=3241.00 | capacidad=5646 | congestión=0.5740
+Arco 1505: 377 -> 204 | flujo=3075.00 | capacidad=5381 | congestión=0.5715
+Arco 198: 47 -> 232 | flujo=4130.00 | capacidad=7475 | congestión=0.5525
+Arco 91: 19 -> 374 | flujo=6520.00 | capacidad=11902 | congestión=0.5478
+Arco 1507: 377 -> 85 | flujo=1521.00 | capacidad=2784 | congestión=0.5463
+Arco 1223: 309 -> 134 | flujo=3787.00 | capacidad=6945 | congestión=0.5453
+Arco 594: 146 -> 388 | flujo=4762.00 | capacidad=8853 | congestión=0.5379
+
+==========================================================
+RESUMEN DE EJECUCION — KPI
+==========================================================
+Instancia: t18 (400 nodos, 1600 arcos, 10650 productos)
+Solver: solver_columnas_partida_ca.py
+Estado: completado
+Tiempo de pared del proceso: 1.08 s
+Tiempo de CPU acumulado: 1.10 s
+Uso medio aproximado de CPU: 101.6%
+Memoria residente maxima observada: 86.78 MB
+Tiempo interno del algoritmo: 0.84 s
+Objetivo/congestion: 0.71597245
+Iteraciones: 2
+Columnas finales: 10424
+Resultado guardado en: /Users/alfonsocid/Desktop/Repo Capstone/resultados/t18_solver_columnas_partida_ca.txt
+==========================================================

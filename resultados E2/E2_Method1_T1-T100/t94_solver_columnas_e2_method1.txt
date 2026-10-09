@@ -1,0 +1,72 @@
+Filtro de conectividad: 355 productos sin camino eliminados.
+Filtro de conectividad: 10650 -> 10295 productos.
+Filtro de conectividad: productos eliminados (muestra): [3, 21, 42, 104, 121, 126, 134, 139, 164, 199, 222, 251, 262, 271, 328, 341, 433, 468, 501, 515] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10650
+
+Solver E2: partida congestion-aware + pricing C++ + gap certificado
+Productos: 10295 | Arcos: 1600
+ETA: 25 | Gap objetivo: 1%
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 10295 columnas en 0.09s.
+Iteración 1: resolviendo maestro con 10295 columnas...
+Iteración 1: z=0.68165312 | cota inferior=0.23793879 | gap=186.4826% | columnas=10351 | nuevas=56 | costo reducido=-1.729e-04 | maestro=0.01s | pricing=0.03s
+Iteración 2: resolviendo maestro con 10351 columnas...
+Iteración 2: z=0.63517736 | cota inferior=0.23793879 | gap=166.9499% | columnas=10430 | nuevas=79 | costo reducido=-1.838e-04 | maestro=0.01s | pricing=0.04s
+Iteración 3: resolviendo maestro con 10430 columnas...
+Iteración 3: z=0.60047455 | cota inferior=0.23793879 | gap=152.3651% | columnas=10602 | nuevas=172 | costo reducido=-8.182e-05 | maestro=0.01s | pricing=0.03s
+Iteración 4: resolviendo maestro con 10602 columnas...
+Iteración 4: z=0.55613111 | cota inferior=0.23793879 | gap=133.7286% | columnas=10739 | nuevas=137 | costo reducido=-8.931e-05 | maestro=0.02s | pricing=0.03s
+Iteración 5: resolviendo maestro con 10739 columnas...
+Iteración 5: z=0.53113215 | cota inferior=0.23793879 | gap=123.2222% | columnas=10879 | nuevas=140 | costo reducido=-8.380e-05 | maestro=0.02s | pricing=0.03s
+Iteración 6: resolviendo maestro con 10879 columnas...
+Iteración 6: z=0.51027825 | cota inferior=0.23793879 | gap=114.4578% | columnas=10981 | nuevas=102 | costo reducido=-1.136e-04 | maestro=0.02s | pricing=0.04s
+Iteración 7: resolviendo maestro con 10981 columnas...
+Iteración 7: z=0.50286500 | cota inferior=0.50286500 | gap=0.0000% | columnas=10981 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.02s | pricing=0.03s
+
+Solución óptima certificada
+Congestión máxima: 0.50286500 (50.29%)
+Cota superior: 0.50286500
+Cota inferior: 0.50286500
+Gap certificado: 0.000000%
+Iteraciones: 7 | Columnas: 10981
+Tiempo total: 0.51 segundos
+
+Diez arcos más congestionados:
+Arco 40: 9 -> 67 | flujo=3079.55 | capacidad=6124 | congestión=0.5029
+Arco 124: 29 -> 193 | flujo=2194.00 | capacidad=4363 | congestión=0.5029
+Arco 125: 30 -> 76 | flujo=2445.43 | capacidad=4863 | congestión=0.5029
+Arco 141: 34 -> 43 | flujo=1890.27 | capacidad=3759 | congestión=0.5029
+Arco 646: 164 -> 124 | flujo=1705.22 | capacidad=3391 | congestión=0.5029
+Arco 1480: 366 -> 345 | flujo=2868.34 | capacidad=5704 | congestión=0.5029
+Arco 1500: 372 -> 283 | flujo=2908.07 | capacidad=5783 | congestión=0.5029
+Arco 277: 69 -> 161 | flujo=1612.93 | capacidad=3233 | congestión=0.4989
+Arco 970: 241 -> 63 | flujo=1598.00 | capacidad=3207 | congestión=0.4983
+Arco 1580: 394 -> 217 | flujo=2394.00 | capacidad=4810 | congestión=0.4977
+
+==========================================================
+RESUMEN DE EJECUCION — KPI
+==========================================================
+Instancia: t94 (400 nodos, 1600 arcos, 10650 productos)
+Solver: solver_columnas_e2.py
+Estado: completado
+Tiempo de pared del proceso: 0.76 s
+Tiempo de CPU acumulado: 0.79 s
+Uso medio aproximado de CPU: 103.4%
+Memoria residente maxima observada: 122.75 MB
+Tiempo interno del algoritmo: 0.51 s
+Objetivo/congestion: 0.502865
+Cota superior: 0.502865
+Cota inferior: 0.502865
+Gap certificado: 0.0%
+Iteraciones: 7
+Columnas finales: 10981
+Resultado guardado en: /Users/alfonsocid/Desktop/Repo Capstone/resultados/t94_solver_columnas_e2.txt
+==========================================================

@@ -1,0 +1,81 @@
+bloque,carpeta,instancia,semilla,nodos,arcos,productos,grado,productos_por_nodo,variables_potenciales_mk,fuente,entrada,escala_capacidad,demanda_total,descripcion
+e1,E1_MK_constante,conc_e1_d04_s01,1,400,1600,20000,4.0,50.0,32000000,mulgen,conc_e1_d04_s01.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d08_s01,1,400,3200,10000,8.0,25.0,32000000,mulgen,conc_e1_d08_s01.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d16_s01,1,400,6400,5000,16.0,12.5,32000000,mulgen,conc_e1_d16_s01.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d04_s02,2,400,1600,20000,4.0,50.0,32000000,mulgen,conc_e1_d04_s02.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d08_s02,2,400,3200,10000,8.0,25.0,32000000,mulgen,conc_e1_d08_s02.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d16_s02,2,400,6400,5000,16.0,12.5,32000000,mulgen,conc_e1_d16_s02.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d04_s03,3,400,1600,20000,4.0,50.0,32000000,mulgen,conc_e1_d04_s03.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d08_s03,3,400,3200,10000,8.0,25.0,32000000,mulgen,conc_e1_d08_s03.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d16_s03,3,400,6400,5000,16.0,12.5,32000000,mulgen,conc_e1_d16_s03.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d04_s04,4,400,1600,20000,4.0,50.0,32000000,mulgen,conc_e1_d04_s04.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d08_s04,4,400,3200,10000,8.0,25.0,32000000,mulgen,conc_e1_d08_s04.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d16_s04,4,400,6400,5000,16.0,12.5,32000000,mulgen,conc_e1_d16_s04.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d04_s05,5,400,1600,20000,4.0,50.0,32000000,mulgen,conc_e1_d04_s05.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d08_s05,5,400,3200,10000,8.0,25.0,32000000,mulgen,conc_e1_d08_s05.par,,,MK=32 millones; varia la composicion entre M y K.
+e1,E1_MK_constante,conc_e1_d16_s05,5,400,6400,5000,16.0,12.5,32000000,mulgen,conc_e1_d16_s05.par,,,MK=32 millones; varia la composicion entre M y K.
+e2,E2_Transicion_grado,conc_e2_d08_s01,1,400,3200,4000,8.0,10.0,12800000,mulgen,conc_e2_d08_s01.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d10_s01,1,400,4000,4000,10.0,10.0,16000000,mulgen,conc_e2_d10_s01.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d12_s01,1,400,4800,4000,12.0,10.0,19200000,mulgen,conc_e2_d12_s01.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d14_s01,1,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e2_d14_s01.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d16_s01,1,400,6400,4000,16.0,10.0,25600000,mulgen,conc_e2_d16_s01.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d08_s02,2,400,3200,4000,8.0,10.0,12800000,mulgen,conc_e2_d08_s02.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d10_s02,2,400,4000,4000,10.0,10.0,16000000,mulgen,conc_e2_d10_s02.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d12_s02,2,400,4800,4000,12.0,10.0,19200000,mulgen,conc_e2_d12_s02.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d14_s02,2,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e2_d14_s02.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d16_s02,2,400,6400,4000,16.0,10.0,25600000,mulgen,conc_e2_d16_s02.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d08_s03,3,400,3200,4000,8.0,10.0,12800000,mulgen,conc_e2_d08_s03.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d10_s03,3,400,4000,4000,10.0,10.0,16000000,mulgen,conc_e2_d10_s03.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d12_s03,3,400,4800,4000,12.0,10.0,19200000,mulgen,conc_e2_d12_s03.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d14_s03,3,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e2_d14_s03.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d16_s03,3,400,6400,4000,16.0,10.0,25600000,mulgen,conc_e2_d16_s03.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d08_s04,4,400,3200,4000,8.0,10.0,12800000,mulgen,conc_e2_d08_s04.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d10_s04,4,400,4000,4000,10.0,10.0,16000000,mulgen,conc_e2_d10_s04.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d12_s04,4,400,4800,4000,12.0,10.0,19200000,mulgen,conc_e2_d12_s04.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d14_s04,4,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e2_d14_s04.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d16_s04,4,400,6400,4000,16.0,10.0,25600000,mulgen,conc_e2_d16_s04.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d08_s05,5,400,3200,4000,8.0,10.0,12800000,mulgen,conc_e2_d08_s05.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d10_s05,5,400,4000,4000,10.0,10.0,16000000,mulgen,conc_e2_d10_s05.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d12_s05,5,400,4800,4000,12.0,10.0,19200000,mulgen,conc_e2_d12_s05.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d14_s05,5,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e2_d14_s05.par,,,Barrido del grado para buscar un cambio de regimen.
+e2,E2_Transicion_grado,conc_e2_d16_s05,5,400,6400,4000,16.0,10.0,25600000,mulgen,conc_e2_d16_s05.par,,,Barrido del grado para buscar un cambio de regimen.
+e3,E3_Efecto_K,conc_e3_k01000_s01,1,400,3200,1000,8.0,2.5,3200000,instancia,E3_Efecto_K/conc_e3_k01000_s01.dat,0.0628937266398,44777,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k02000_s01,1,400,3200,2000,8.0,5.0,6400000,instancia,E3_Efecto_K/conc_e3_k02000_s01.dat,0.124255035838,88463,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k04000_s01,1,400,3200,4000,8.0,10.0,12800000,instancia,E3_Efecto_K/conc_e3_k04000_s01.dat,0.24842579574,176866,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k08000_s01,1,400,3200,8000,8.0,20.0,25600000,instancia,E3_Efecto_K/conc_e3_k08000_s01.dat,0.499806867646,355836,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k16000_s01,1,400,3200,16000,8.0,40.0,51200000,instancia,E3_Efecto_K/conc_e3_k16000_s01.dat,1,711947,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k01000_s02,2,400,3200,1000,8.0,2.5,3200000,instancia,E3_Efecto_K/conc_e3_k01000_s02.dat,0.0638134715609,45353,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k02000_s02,2,400,3200,2000,8.0,5.0,6400000,instancia,E3_Efecto_K/conc_e3_k02000_s02.dat,0.126633573093,90000,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k04000_s02,2,400,3200,4000,8.0,10.0,12800000,instancia,E3_Efecto_K/conc_e3_k04000_s02.dat,0.251713774356,178896,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k08000_s02,2,400,3200,8000,8.0,20.0,25600000,instancia,E3_Efecto_K/conc_e3_k08000_s02.dat,0.500306734655,355574,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k16000_s02,2,400,3200,16000,8.0,40.0,51200000,instancia,E3_Efecto_K/conc_e3_k16000_s02.dat,1,710712,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k01000_s03,3,400,3200,1000,8.0,2.5,3200000,instancia,E3_Efecto_K/conc_e3_k01000_s03.dat,0.0626287459096,44632,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k02000_s03,3,400,3200,2000,8.0,5.0,6400000,instancia,E3_Efecto_K/conc_e3_k02000_s03.dat,0.125571814258,89488,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k04000_s03,3,400,3200,4000,8.0,10.0,12800000,instancia,E3_Efecto_K/conc_e3_k04000_s03.dat,0.250042096755,178191,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k08000_s03,3,400,3200,8000,8.0,20.0,25600000,instancia,E3_Efecto_K/conc_e3_k08000_s03.dat,0.50117730592,357161,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k16000_s03,3,400,3200,16000,8.0,40.0,51200000,instancia,E3_Efecto_K/conc_e3_k16000_s03.dat,1,712644,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k01000_s04,4,400,3200,1000,8.0,2.5,3200000,instancia,E3_Efecto_K/conc_e3_k01000_s04.dat,0.0621740530402,44218,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k02000_s04,4,400,3200,2000,8.0,5.0,6400000,instancia,E3_Efecto_K/conc_e3_k02000_s04.dat,0.124767117972,88734,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k04000_s04,4,400,3200,4000,8.0,10.0,12800000,instancia,E3_Efecto_K/conc_e3_k04000_s04.dat,0.248388280603,176653,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k08000_s04,4,400,3200,8000,8.0,20.0,25600000,instancia,E3_Efecto_K/conc_e3_k08000_s04.dat,0.497883146301,354093,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k16000_s04,4,400,3200,16000,8.0,40.0,51200000,instancia,E3_Efecto_K/conc_e3_k16000_s04.dat,1,711197,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k01000_s05,5,400,3200,1000,8.0,2.5,3200000,instancia,E3_Efecto_K/conc_e3_k01000_s05.dat,0.0629918272365,44827,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k02000_s05,5,400,3200,2000,8.0,5.0,6400000,instancia,E3_Efecto_K/conc_e3_k02000_s05.dat,0.125715257324,89463,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k04000_s05,5,400,3200,4000,8.0,10.0,12800000,instancia,E3_Efecto_K/conc_e3_k04000_s05.dat,0.249191998111,177333,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k08000_s05,5,400,3200,8000,8.0,20.0,25600000,instancia,E3_Efecto_K/conc_e3_k08000_s05.dat,0.501493749578,356879,"Red fija, commodities prefijo y capacidad normalizada."
+e3,E3_Efecto_K,conc_e3_k16000_s05,5,400,3200,16000,8.0,40.0,51200000,instancia,E3_Efecto_K/conc_e3_k16000_s05.dat,1,711632,"Red fija, commodities prefijo y capacidad normalizada."
+e4,E4_Semillas_criticas,conc_e4_d14_s06,6,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s06.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s07,7,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s07.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s08,8,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s08.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s09,9,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s09.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s10,10,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s10.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s11,11,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s11.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s12,12,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s12.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s13,13,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s13.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s14,14,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s14.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s15,15,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s15.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s16,16,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s16.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s17,17,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s17.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s18,18,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s18.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s19,19,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s19.par,,,Extension de semillas cerca del posible grado critico d=14.
+e4,E4_Semillas_criticas,conc_e4_d14_s20,20,400,5600,4000,14.0,10.0,22400000,mulgen,conc_e4_d14_s20.par,,,Extension de semillas cerca del posible grado critico d=14.

@@ -1,0 +1,89 @@
+Filtro de conectividad: 406 productos sin camino eliminados.
+Filtro de conectividad: 10650 -> 10244 productos.
+Filtro de conectividad: productos eliminados (muestra): [28, 29, 59, 89, 103, 166, 181, 225, 239, 248, 250, 295, 341, 384, 435, 441, 452, 576, 601, 609] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10650
+
+Solver: generación de columnas
+Productos: 10244 | Arcos: 1600
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 10244 columnas en 0.26s.
+Iteración 1: resolviendo maestro con 10244 columnas...
+Iteración 1: z=1.42522457 | columnas=10512 | nuevas=268 | costo reducido=-1.214e-04 | maestro=0.01s | pricing=0.21s
+Iteración 2: resolviendo maestro con 10512 columnas...
+Iteración 2: z=0.82902117 | columnas=10614 | nuevas=102 | costo reducido=-1.809e-04 | maestro=0.02s | pricing=0.21s
+Iteración 3: resolviendo maestro con 10614 columnas...
+Iteración 3: z=0.82134571 | columnas=10943 | nuevas=329 | costo reducido=-5.800e-05 | maestro=0.01s | pricing=0.21s
+Iteración 4: resolviendo maestro con 10943 columnas...
+Iteración 4: z=0.80724470 | columnas=11174 | nuevas=231 | costo reducido=-7.707e-05 | maestro=0.02s | pricing=0.20s
+Iteración 5: resolviendo maestro con 11174 columnas...
+Iteración 5: z=0.78580079 | columnas=11284 | nuevas=110 | costo reducido=-1.514e-04 | maestro=0.02s | pricing=0.21s
+Iteración 6: resolviendo maestro con 11284 columnas...
+Iteración 6: z=0.71535400 | columnas=11414 | nuevas=130 | costo reducido=-1.206e-04 | maestro=0.03s | pricing=0.20s
+Iteración 7: resolviendo maestro con 11414 columnas...
+Iteración 7: z=0.71087628 | columnas=11546 | nuevas=132 | costo reducido=-1.187e-04 | maestro=0.02s | pricing=0.20s
+Iteración 8: resolviendo maestro con 11546 columnas...
+Iteración 8: z=0.67418892 | columnas=12411 | nuevas=865 | costo reducido=-4.380e-05 | maestro=0.02s | pricing=0.22s
+Iteración 9: resolviendo maestro con 12411 columnas...
+Iteración 9: z=0.65198618 | columnas=12503 | nuevas=92 | costo reducido=-1.727e-04 | maestro=0.06s | pricing=0.20s
+Iteración 10: resolviendo maestro con 12503 columnas...
+Iteración 10: z=0.65012759 | columnas=12582 | nuevas=79 | costo reducido=-1.418e-04 | maestro=0.10s | pricing=0.20s
+Iteración 11: resolviendo maestro con 12582 columnas...
+Iteración 11: z=0.61838693 | columnas=12688 | nuevas=106 | costo reducido=-1.297e-04 | maestro=0.07s | pricing=0.20s
+Iteración 12: resolviendo maestro con 12688 columnas...
+Iteración 12: z=0.61627355 | columnas=12778 | nuevas=90 | costo reducido=-1.583e-04 | maestro=0.04s | pricing=0.21s
+Iteración 13: resolviendo maestro con 12778 columnas...
+Iteración 13: z=0.59806942 | columnas=12912 | nuevas=134 | costo reducido=-1.027e-04 | maestro=0.10s | pricing=0.20s
+Iteración 14: resolviendo maestro con 12912 columnas...
+Iteración 14: z=0.58862903 | columnas=15769 | nuevas=2857 | costo reducido=-1.317e-05 | maestro=0.14s | pricing=0.24s
+Iteración 15: resolviendo maestro con 15769 columnas...
+Iteración 15: z=0.56772761 | columnas=15780 | nuevas=11 | costo reducido=-2.467e-04 | maestro=0.42s | pricing=0.21s
+Iteración 16: resolviendo maestro con 15780 columnas...
+Iteración 16: z=0.52430323 | columnas=15972 | nuevas=192 | costo reducido=-6.099e-05 | maestro=0.32s | pricing=0.20s
+Iteración 17: resolviendo maestro con 15972 columnas...
+Iteración 17: z=0.51531003 | columnas=20860 | nuevas=4888 | costo reducido=-1.089e-05 | maestro=0.43s | pricing=0.27s
+Iteración 18: resolviendo maestro con 20860 columnas...
+Iteración 18: z=0.51469279 | columnas=20861 | nuevas=1 | costo reducido=-2.968e-04 | maestro=0.27s | pricing=0.20s
+Iteración 19: resolviendo maestro con 20861 columnas...
+Iteración 19: z=0.50163253 | columnas=20861 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.10s | pricing=0.20s
+
+Solución óptima certificada
+Congestión máxima: 0.50163253 (50.16%)
+Iteraciones: 19 | Columnas: 20861
+Tiempo total: 6.52 segundos
+
+Diez arcos más congestionados:
+Arco 2: 1 -> 374 | flujo=2600.96 | capacidad=5185 | congestión=0.5016
+Arco 57: 17 -> 149 | flujo=3287.70 | capacidad=6554 | congestión=0.5016
+Arco 75: 22 -> 155 | flujo=4224.75 | capacidad=8422 | congestión=0.5016
+Arco 77: 23 -> 214 | flujo=3630.82 | capacidad=7238 | congestión=0.5016
+Arco 82: 25 -> 41 | flujo=1426.14 | capacidad=2843 | congestión=0.5016
+Arco 94: 28 -> 221 | flujo=4356.68 | capacidad=8685 | congestión=0.5016
+Arco 113: 33 -> 46 | flujo=6205.19 | capacidad=12370 | congestión=0.5016
+Arco 145: 38 -> 63 | flujo=1993.99 | capacidad=3975 | congestión=0.5016
+Arco 151: 40 -> 27 | flujo=4013.56 | capacidad=8001 | congestión=0.5016
+Arco 218: 59 -> 192 | flujo=1980.45 | capacidad=3948 | congestión=0.5016
+
+==========================================================
+RESUMEN DE EJECUCION — KPI
+==========================================================
+Instancia: t22 (400 nodos, 1600 arcos, 10650 productos)
+Solver: solver_columnas.py
+Estado: completado
+Tiempo de pared del proceso: 6.80 s
+Tiempo de CPU acumulado: 6.92 s
+Uso medio aproximado de CPU: 101.8%
+Memoria residente maxima observada: 113.34 MB
+Tiempo interno del algoritmo: 6.52 s
+Objetivo/congestion: 0.50163253
+Iteraciones: 19
+Columnas finales: 20861
+Resultado guardado en: /Users/alfonsocid/Desktop/Repo Capstone/resultados/t22_solver_columnas.txt
+==========================================================

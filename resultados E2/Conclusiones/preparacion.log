@@ -1,0 +1,46 @@
+Mulgen ya está compilado.
+
+Preparando red anidada E3, semilla 1...
+Generando instancia con conc_e3_base_s01.par...
+ no commodity capacity
+ *************************************
+ Writing output to file out                                     
+ End of writing.
+Instancia generada: 400 nodos, 3200 arcos y 16000 productos.
+
+Preparando red anidada E3, semilla 2...
+Generando instancia con conc_e3_base_s02.par...
+ no commodity capacity
+ *************************************
+ Writing output to file out                                     
+ End of writing.
+Instancia generada: 400 nodos, 3200 arcos y 16000 productos.
+
+Preparando red anidada E3, semilla 3...
+Generando instancia con conc_e3_base_s03.par...
+ no commodity capacity
+ *************************************
+ Writing output to file out                                     
+ End of writing.
+Instancia generada: 400 nodos, 3200 arcos y 16000 productos.
+
+Preparando red anidada E3, semilla 4...
+Generando instancia con conc_e3_base_s04.par...
+ no commodity capacity
+ *************************************
+ Writing output to file out                                     
+ End of writing.
+Instancia generada: 400 nodos, 3200 arcos y 16000 productos.
+
+Preparando red anidada E3, semilla 5...
+Generando instancia con conc_e3_base_s05.par...
+ no commodity capacity
+ *************************************
+ Writing output to file out                                     
+ End of writing.
+Instancia generada: 400 nodos, 3200 arcos y 16000 productos.
+
+Preparacion terminada.
+Manifiesto: /Users/alfonsocid/Desktop/Repo Capstone/resultados E2/Conclusiones/manifiesto.csv
+Corridas nucleares: 65
+Extension opcional E4: 15

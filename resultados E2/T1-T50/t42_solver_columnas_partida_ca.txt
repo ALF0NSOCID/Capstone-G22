@@ -1,0 +1,61 @@
+Filtro de conectividad: 311 productos sin camino eliminados.
+Filtro de conectividad: 10650 -> 10339 productos.
+Filtro de conectividad: productos eliminados (muestra): [18, 67, 155, 296, 429, 448, 451, 460, 483, 495, 513, 523, 627, 702, 747, 768, 777, 806, 835, 838] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10650
+
+Solver: generación de columnas
+Productos: 10339 | Arcos: 1600
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 10339 columnas en 0.34s.
+Iteración 1: resolviendo maestro con 10339 columnas...
+Iteración 1: z=0.66147800 | columnas=10535 | nuevas=196 | costo reducido=-7.706e-05 | maestro=0.01s | pricing=0.22s
+Iteración 2: resolviendo maestro con 10535 columnas...
+Iteración 2: z=0.66051023 | columnas=10652 | nuevas=117 | costo reducido=-1.329e-04 | maestro=0.02s | pricing=0.21s
+Iteración 3: resolviendo maestro con 10652 columnas...
+Iteración 3: z=0.62921604 | columnas=10782 | nuevas=130 | costo reducido=-1.139e-04 | maestro=0.01s | pricing=0.20s
+Iteración 4: resolviendo maestro con 10782 columnas...
+Iteración 4: z=0.55404808 | columnas=10868 | nuevas=86 | costo reducido=-1.475e-04 | maestro=0.02s | pricing=0.20s
+Iteración 5: resolviendo maestro con 10868 columnas...
+Iteración 5: z=0.55350687 | columnas=10868 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.01s | pricing=0.21s
+
+Solución óptima certificada
+Congestión máxima: 0.55350687 (55.35%)
+Iteraciones: 5 | Columnas: 10868
+Tiempo total: 1.50 segundos
+
+Diez arcos más congestionados:
+Arco 61: 13 -> 146 | flujo=1531.00 | capacidad=2766 | congestión=0.5535
+Arco 1095: 270 -> 57 | flujo=4602.00 | capacidad=8350 | congestión=0.5511
+Arco 104: 23 -> 69 | flujo=5785.00 | capacidad=10504 | congestión=0.5507
+Arco 834: 207 -> 40 | flujo=3714.00 | capacidad=6781 | congestión=0.5477
+Arco 639: 154 -> 113 | flujo=1756.00 | capacidad=3245 | congestión=0.5411
+Arco 344: 81 -> 150 | flujo=4245.00 | capacidad=7925 | congestión=0.5356
+Arco 447: 107 -> 7 | flujo=2149.00 | capacidad=4042 | congestión=0.5317
+Arco 60: 12 -> 23 | flujo=4255.00 | capacidad=8084 | congestión=0.5263
+Arco 1149: 283 -> 250 | flujo=3438.00 | capacidad=6542 | congestión=0.5255
+Arco 1481: 374 -> 389 | flujo=1949.00 | capacidad=3723 | congestión=0.5235
+
+==========================================================
+RESUMEN DE EJECUCION — KPI
+==========================================================
+Instancia: t42 (400 nodos, 1600 arcos, 10650 productos)
+Solver: solver_columnas_partida_ca.py
+Estado: completado
+Tiempo de pared del proceso: 1.76 s
+Tiempo de CPU acumulado: 1.78 s
+Uso medio aproximado de CPU: 101.1%
+Memoria residente maxima observada: 100.02 MB
+Tiempo interno del algoritmo: 1.5 s
+Objetivo/congestion: 0.55350687
+Iteraciones: 5
+Columnas finales: 10868
+Resultado guardado en: /Users/alfonsocid/Desktop/Repo Capstone/resultados/t42_solver_columnas_partida_ca.txt
+==========================================================

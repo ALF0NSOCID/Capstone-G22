@@ -1,13 +1,13 @@
 nocca
-inseed 20678
-ctight 60.0
+inseed 2068
+ctight 800.0
 fixvar 0.01
 noprll 10
 grdarc 0
-scalex 40
-scaley 10
-commod 10650
-addarc 1600
+scalex 10
+scaley 50
+commod 60000
+addarc 7000
 minsrc 1
 maxsrc 1
 minsnk 1
@@ -18,7 +18,7 @@ mincst 1
 maxcst 10
 minsup 15
 maxsup 75
-mincap 100
-maxcap 500
+mincap 1
+maxcap 4000
 outfil out
 end

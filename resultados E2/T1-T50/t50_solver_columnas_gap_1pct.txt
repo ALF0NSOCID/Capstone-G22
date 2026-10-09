@@ -1,0 +1,73 @@
+Filtro de conectividad: 444 productos sin camino eliminados.
+Filtro de conectividad: 10650 -> 10206 productos.
+Filtro de conectividad: productos eliminados (muestra): [9, 23, 41, 98, 133, 142, 160, 185, 187, 197, 220, 222, 248, 260, 289, 322, 323, 359, 362, 380] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10650
+
+Solver: generación de columnas
+Productos: 10206 | Arcos: 1600
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 10206 columnas en 0.25s.
+Iteración 1: resolviendo maestro con 10206 columnas...
+Iteración 1: z=0.88847461 | cota inferior=0.00000000 | gap=infinito | columnas=10398 | nuevas=192 | costo reducido=-1.097e-04 | maestro=0.01s | pricing=0.21s
+Iteración 2: resolviendo maestro con 10398 columnas...
+Iteración 2: z=0.87231183 | cota inferior=0.00000000 | gap=infinito | columnas=10498 | nuevas=100 | costo reducido=-1.920e-04 | maestro=0.02s | pricing=0.21s
+Iteración 3: resolviendo maestro con 10498 columnas...
+Iteración 3: z=0.85123437 | cota inferior=0.73645399 | gap=15.5855% | columnas=10507 | nuevas=9 | costo reducido=-3.206e-04 | maestro=0.01s | pricing=0.19s
+Iteración 4: resolviendo maestro con 10507 columnas...
+Iteración 4: z=0.80435299 | cota inferior=0.73645399 | gap=9.2197% | columnas=10727 | nuevas=220 | costo reducido=-7.915e-05 | maestro=0.01s | pricing=0.20s
+Iteración 5: resolviendo maestro con 10727 columnas...
+Iteración 5: z=0.78565032 | cota inferior=0.73645399 | gap=6.6802% | columnas=10878 | nuevas=151 | costo reducido=-1.119e-04 | maestro=0.02s | pricing=0.20s
+Iteración 6: resolviendo maestro con 10878 columnas...
+Iteración 6: z=0.76945407 | cota inferior=0.73645399 | gap=4.4809% | columnas=11051 | nuevas=173 | costo reducido=-9.364e-05 | maestro=0.01s | pricing=0.20s
+Iteración 7: resolviendo maestro con 11051 columnas...
+Iteración 7: z=0.76228444 | cota inferior=0.73645399 | gap=3.5074% | columnas=11137 | nuevas=86 | costo reducido=-1.854e-04 | maestro=0.02s | pricing=0.20s
+Iteración 8: resolviendo maestro con 11137 columnas...
+Iteración 8: z=0.73783186 | cota inferior=0.73645399 | gap=0.1871% | columnas=11137 | nuevas=0 | costo reducido=-1.106e-04 | maestro=0.01s | pricing=0.20s
+
+Solución con error relativo certificado de a lo sumo 1%
+Congestión máxima: 0.73783186 (73.78%)
+Cota superior: 0.73783186
+Cota inferior: 0.73645399
+Gap certificado: 0.187095%
+Iteraciones: 8 | Columnas: 11137
+Tiempo total: 2.04 segundos
+
+Diez arcos más congestionados:
+Arco 54: 14 -> 117 | flujo=6806.50 | capacidad=9225 | congestión=0.7378
+Arco 958: 244 -> 233 | flujo=6591.79 | capacidad=8934 | congestión=0.7378
+Arco 1277: 322 -> 16 | flujo=6670.00 | capacidad=9040 | congestión=0.7378
+Arco 1409: 354 -> 279 | flujo=2301.30 | capacidad=3119 | congestión=0.7378
+Arco 33: 8 -> 282 | flujo=6528.00 | capacidad=9119 | congestión=0.7159
+Arco 441: 120 -> 228 | flujo=3838.00 | capacidad=5393 | congestión=0.7117
+Arco 88: 21 -> 113 | flujo=3008.00 | capacidad=4282 | congestión=0.7025
+Arco 258: 74 -> 2 | flujo=4485.00 | capacidad=6423 | congestión=0.6983
+Arco 1514: 377 -> 291 | flujo=7427.00 | capacidad=10758 | congestión=0.6904
+Arco 255: 73 -> 54 | flujo=6075.00 | capacidad=8961 | congestión=0.6779
+
+==========================================================
+RESUMEN DE EJECUCION — KPI
+==========================================================
+Instancia: t50 (400 nodos, 1600 arcos, 10650 productos)
+Solver: solver_columnas_gap_1pct.py
+Estado: completado
+Tiempo de pared del proceso: 2.29 s
+Tiempo de CPU acumulado: 2.32 s
+Uso medio aproximado de CPU: 101.5%
+Memoria residente maxima observada: 107.38 MB
+Tiempo interno del algoritmo: 2.04 s
+Objetivo/congestion: 0.73783186
+Cota superior: 0.73783186
+Cota inferior: 0.73645399
+Gap certificado: 0.187095%
+Iteraciones: 8
+Columnas finales: 11137
+Resultado guardado en: /Users/alfonsocid/Desktop/Repo Capstone/resultados/t50_solver_columnas_gap_1pct.txt
+==========================================================

@@ -18,11 +18,11 @@ from lector import arcos, demandas, n
 # Parámetros del algoritmo.
 TOLERANCIA = 1e-7
 MAX_ITERACIONES = 1000
-LIMITE_TIEMPO = 900
+LIMITE_TIEMPO = 120
 INTERVALO_PROGRESO = 1
 
 # Parámetros de las mejoras de la Entrega 2.
-ETA = 100
+ETA = 25
 GAP_OBJETIVO = 0.01  # 0.01 certifica 1%; 0.0 exige el óptimo exacto.
 
 # Conjuntos y parámetros de la red.
@@ -93,7 +93,7 @@ print(f"ETA: {ETA:g} | Gap objetivo: {100 * GAP_OBJETIVO:g}%", flush=True)
 print("Construyendo el problema maestro restringido...", flush=True)
 
 modelo = gp.Model("generacion_columnas_e2")
-modelo.Params.Method = 1  # Dual simplex facilita la reoptimización.
+modelo.Params.Method = 0  # Dual simplex facilita la reoptimización.
 modelo.Params.OutputFlag = 0
 
 # z mide la máxima utilización relativa de los arcos.

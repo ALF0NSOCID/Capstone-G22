@@ -1,0 +1,62 @@
+Filtro de conectividad: 507 productos sin camino eliminados.
+Filtro de conectividad: 10650 -> 10143 productos.
+Filtro de conectividad: productos eliminados (muestra): [4, 6, 44, 46, 47, 54, 100, 103, 109, 137, 277, 294, 309, 344, 358, 359, 416, 449, 466, 479] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10650
+
+Solver E2: partida congestion-aware + pricing C++ + gap certificado
+Productos: 10143 | Arcos: 1600
+ETA: 25 | Gap objetivo: 1%
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 10143 columnas en 0.09s.
+Iteración 1: resolviendo maestro con 10143 columnas...
+Iteración 1: z=0.89181768 | cota inferior=0.88138386 | gap=1.1838% | columnas=10145 | nuevas=2 | costo reducido=-2.746e-04 | maestro=0.01s | pricing=0.03s
+Iteración 2: resolviendo maestro con 10145 columnas...
+Iteración 2: z=0.88138386 | cota inferior=0.88138386 | gap=0.0000% | columnas=10145 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.01s | pricing=0.04s
+
+Solución óptima certificada
+Congestión máxima: 0.88138386 (88.14%)
+Cota superior: 0.88138386
+Cota inferior: 0.88138386
+Gap certificado: 0.000000%
+Iteraciones: 2 | Columnas: 10145
+Tiempo total: 0.24 segundos
+
+Diez arcos más congestionados:
+Arco 255: 63 -> 37 | flujo=3210.00 | capacidad=3642 | congestión=0.8814
+Arco 990: 242 -> 350 | flujo=8724.00 | capacidad=11967 | congestión=0.7290
+Arco 640: 160 -> 241 | flujo=2348.00 | capacidad=3356 | congestión=0.6996
+Arco 1060: 260 -> 297 | flujo=2069.00 | capacidad=3226 | congestión=0.6414
+Arco 994: 244 -> 206 | flujo=3603.00 | capacidad=6036 | congestión=0.5969
+Arco 1110: 276 -> 205 | flujo=1554.00 | capacidad=2654 | congestión=0.5855
+Arco 1539: 386 -> 28 | flujo=3729.00 | capacidad=6634 | congestión=0.5621
+Arco 762: 187 -> 68 | flujo=3749.00 | capacidad=6686 | congestión=0.5607
+Arco 1505: 376 -> 299 | flujo=5926.00 | capacidad=10614 | congestión=0.5583
+Arco 957: 232 -> 292 | flujo=3920.00 | capacidad=7258 | congestión=0.5401
+
+==========================================================
+RESUMEN DE EJECUCION — KPI
+==========================================================
+Instancia: t100 (400 nodos, 1600 arcos, 10650 productos)
+Solver: solver_columnas_e2.py
+Estado: completado
+Tiempo de pared del proceso: 0.50 s
+Tiempo de CPU acumulado: 0.51 s
+Uso medio aproximado de CPU: 101.9%
+Memoria residente maxima observada: 94.80 MB
+Tiempo interno del algoritmo: 0.24 s
+Objetivo/congestion: 0.88138386
+Cota superior: 0.88138386
+Cota inferior: 0.88138386
+Gap certificado: 0.0%
+Iteraciones: 2
+Columnas finales: 10145
+Resultado guardado en: /Users/alfonsocid/Desktop/Repo Capstone/resultados/t100_solver_columnas_e2.txt
+==========================================================

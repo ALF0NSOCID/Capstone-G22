@@ -1,0 +1,55 @@
+Filtro de conectividad: 182 productos sin camino eliminados.
+Filtro de conectividad: 10650 -> 10468 productos.
+Filtro de conectividad: productos eliminados (muestra): [12, 78, 119, 212, 216, 307, 330, 756, 757, 777, 811, 833, 900, 906, 907, 909, 1047, 1166, 1188, 1192] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10650
+
+Solver: generación de columnas
+Productos: 10468 | Arcos: 1600
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 10468 columnas en 5.03s.
+Iteración 1: resolviendo maestro con 10468 columnas...
+Iteración 1: z=1.05710910 | columnas=10471 | nuevas=3 | costo reducido=-1.969e-04 | maestro=0.01s | pricing=0.92s
+Iteración 2: resolviendo maestro con 10471 columnas...
+Iteración 2: z=1.03170540 | columnas=10471 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.01s | pricing=0.70s
+
+Solución óptima certificada
+Congestión máxima: 1.03170540 (103.17%)
+Iteraciones: 2 | Columnas: 10471
+Tiempo total: 10.76 segundos
+
+Diez arcos más congestionados:
+Arco 224: 54 -> 65 | flujo=5239.00 | capacidad=5078 | congestión=1.0317
+Arco 344: 83 -> 236 | flujo=10382.00 | capacidad=10339 | congestión=1.0042
+Arco 1211: 298 -> 222 | flujo=7917.00 | capacidad=8340 | congestión=0.9493
+Arco 308: 71 -> 314 | flujo=6287.00 | capacidad=7182 | congestión=0.8754
+Arco 527: 128 -> 29 | flujo=9668.00 | capacidad=11260 | congestión=0.8586
+Arco 880: 220 -> 369 | flujo=2381.00 | capacidad=2894 | congestión=0.8227
+Arco 670: 167 -> 126 | flujo=4128.00 | capacidad=5130 | congestión=0.8047
+Arco 874: 216 -> 43 | flujo=5687.00 | capacidad=7103 | congestión=0.8006
+Arco 1441: 354 -> 83 | flujo=2391.00 | capacidad=2999 | congestión=0.7973
+Arco 893: 223 -> 326 | flujo=7834.00 | capacidad=10023 | congestión=0.7816
+
+==========================================================
+RESUMEN DE EJECUCION — KPI
+==========================================================
+Instancia: t7 (400 nodos, 1600 arcos, 10650 productos)
+Solver: solver_columnas_pricing_gurobi.py
+Estado: completado
+Tiempo de pared del proceso: 11.35 s
+Tiempo de CPU acumulado: 10.95 s
+Uso medio aproximado de CPU: 96.5%
+Memoria residente maxima observada: 792.16 MB
+Tiempo interno del algoritmo: 10.76 s
+Objetivo/congestion: 1.0317054
+Iteraciones: 2
+Columnas finales: 10471
+Resultado guardado en: /Users/alfonsocid/Desktop/Repo Capstone/resultados/t7_solver_columnas_pricing_gurobi.txt
+==========================================================

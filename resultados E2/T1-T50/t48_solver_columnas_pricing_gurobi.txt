@@ -1,0 +1,95 @@
+Filtro de conectividad: 562 productos sin camino eliminados.
+Filtro de conectividad: 10650 -> 10088 productos.
+Filtro de conectividad: productos eliminados (muestra): [46, 104, 110, 118, 122, 132, 149, 213, 216, 258, 264, 289, 311, 337, 353, 373, 401, 413, 425, 426] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10650
+
+Solver: generación de columnas
+Productos: 10088 | Arcos: 1600
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 10088 columnas en 4.39s.
+Iteración 1: resolviendo maestro con 10088 columnas...
+Iteración 1: z=0.90295113 | columnas=10261 | nuevas=173 | costo reducido=-1.166e-04 | maestro=0.01s | pricing=0.68s
+Iteración 2: resolviendo maestro con 10261 columnas...
+Iteración 2: z=0.83648063 | columnas=10327 | nuevas=66 | costo reducido=-1.399e-04 | maestro=0.01s | pricing=0.63s
+Iteración 3: resolviendo maestro con 10327 columnas...
+Iteración 3: z=0.82322126 | columnas=10522 | nuevas=195 | costo reducido=-9.525e-05 | maestro=0.02s | pricing=0.67s
+Iteración 4: resolviendo maestro con 10522 columnas...
+Iteración 4: z=0.79761721 | columnas=10556 | nuevas=34 | costo reducido=-1.547e-04 | maestro=0.01s | pricing=0.62s
+Iteración 5: resolviendo maestro con 10556 columnas...
+Iteración 5: z=0.78400831 | columnas=10584 | nuevas=28 | costo reducido=-2.596e-04 | maestro=0.02s | pricing=0.60s
+Iteración 6: resolviendo maestro con 10584 columnas...
+Iteración 6: z=0.76858513 | columnas=10777 | nuevas=193 | costo reducido=-9.223e-05 | maestro=0.02s | pricing=0.62s
+Iteración 7: resolviendo maestro con 10777 columnas...
+Iteración 7: z=0.76143791 | columnas=10913 | nuevas=136 | costo reducido=-1.307e-04 | maestro=0.02s | pricing=0.61s
+Iteración 8: resolviendo maestro con 10913 columnas...
+Iteración 8: z=0.75387080 | columnas=11041 | nuevas=128 | costo reducido=-1.068e-04 | maestro=0.01s | pricing=0.63s
+Iteración 9: resolviendo maestro con 11041 columnas...
+Iteración 9: z=0.74316940 | columnas=11188 | nuevas=147 | costo reducido=-1.138e-04 | maestro=0.02s | pricing=0.64s
+Iteración 10: resolviendo maestro con 11188 columnas...
+Iteración 10: z=0.71814625 | columnas=11281 | nuevas=93 | costo reducido=-1.223e-04 | maestro=0.02s | pricing=0.64s
+Iteración 11: resolviendo maestro con 11281 columnas...
+Iteración 11: z=0.71793985 | columnas=11415 | nuevas=134 | costo reducido=-1.152e-04 | maestro=0.02s | pricing=0.61s
+Iteración 12: resolviendo maestro con 11415 columnas...
+Iteración 12: z=0.66502677 | columnas=11513 | nuevas=98 | costo reducido=-1.447e-04 | maestro=0.02s | pricing=0.62s
+Iteración 13: resolviendo maestro con 11513 columnas...
+Iteración 13: z=0.65885596 | columnas=11526 | nuevas=13 | costo reducido=-3.446e-04 | maestro=0.02s | pricing=0.60s
+Iteración 14: resolviendo maestro con 11526 columnas...
+Iteración 14: z=0.63404549 | columnas=11604 | nuevas=78 | costo reducido=-1.723e-04 | maestro=0.02s | pricing=0.61s
+Iteración 15: resolviendo maestro con 11604 columnas...
+Iteración 15: z=0.63129200 | columnas=11718 | nuevas=114 | costo reducido=-1.268e-04 | maestro=0.02s | pricing=0.61s
+Iteración 16: resolviendo maestro con 11718 columnas...
+Iteración 16: z=0.61865569 | columnas=11827 | nuevas=109 | costo reducido=-1.247e-04 | maestro=0.02s | pricing=0.62s
+Iteración 17: resolviendo maestro con 11827 columnas...
+Iteración 17: z=0.61055421 | columnas=11947 | nuevas=120 | costo reducido=-1.152e-04 | maestro=0.02s | pricing=0.62s
+Iteración 18: resolviendo maestro con 11947 columnas...
+Iteración 18: z=0.60172179 | columnas=12012 | nuevas=65 | costo reducido=-1.510e-04 | maestro=0.02s | pricing=0.62s
+Iteración 19: resolviendo maestro con 12012 columnas...
+Iteración 19: z=0.58084064 | columnas=12118 | nuevas=106 | costo reducido=-1.289e-04 | maestro=0.02s | pricing=0.61s
+Iteración 20: resolviendo maestro con 12118 columnas...
+Iteración 20: z=0.57934724 | columnas=12236 | nuevas=118 | costo reducido=-7.753e-05 | maestro=0.02s | pricing=0.63s
+Iteración 21: resolviendo maestro con 12236 columnas...
+Iteración 21: z=0.57351308 | columnas=12321 | nuevas=85 | costo reducido=-1.586e-04 | maestro=0.02s | pricing=0.61s
+Iteración 22: resolviendo maestro con 12321 columnas...
+Iteración 22: z=0.56630048 | columnas=12321 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.02s | pricing=0.58s
+
+Solución óptima certificada
+Congestión máxima: 0.56630048 (56.63%)
+Iteraciones: 22 | Columnas: 12321
+Tiempo total: 22.63 segundos
+
+Diez arcos más congestionados:
+Arco 720: 181 -> 98 | flujo=2151.38 | capacidad=3799 | congestión=0.5663
+Arco 759: 195 -> 112 | flujo=3182.04 | capacidad=5619 | congestión=0.5663
+Arco 1126: 284 -> 76 | flujo=2883.04 | capacidad=5091 | congestión=0.5663
+Arco 1141: 288 -> 295 | flujo=2181.39 | capacidad=3852 | congestión=0.5663
+Arco 1594: 398 -> 350 | flujo=2375.63 | capacidad=4195 | congestión=0.5663
+Arco 72: 19 -> 204 | flujo=2226.13 | capacidad=3931 | congestión=0.5663
+Arco 195: 46 -> 206 | flujo=4332.20 | capacidad=7650 | congestión=0.5663
+Arco 240: 60 -> 277 | flujo=1643.40 | capacidad=2902 | congestión=0.5663
+Arco 1016: 260 -> 103 | flujo=3660.00 | capacidad=6463 | congestión=0.5663
+Arco 1230: 307 -> 125 | flujo=4093.22 | capacidad=7228 | congestión=0.5663
+
+==========================================================
+RESUMEN DE EJECUCION — KPI
+==========================================================
+Instancia: t48 (400 nodos, 1600 arcos, 10650 productos)
+Solver: solver_columnas_pricing_gurobi.py
+Estado: completado
+Tiempo de pared del proceso: 23.24 s
+Tiempo de CPU acumulado: 23.60 s
+Uso medio aproximado de CPU: 101.5%
+Memoria residente maxima observada: 915.11 MB
+Tiempo interno del algoritmo: 22.63 s
+Objetivo/congestion: 0.56630048
+Iteraciones: 22
+Columnas finales: 12321
+Resultado guardado en: /Users/alfonsocid/Desktop/Repo Capstone/resultados/t48_solver_columnas_pricing_gurobi.txt
+==========================================================

@@ -15,7 +15,7 @@ MAX_ITERACIONES = 1000
 LIMITE_TIEMPO = 900
 INTERVALO_PROGRESO = 1
 
-ETA = 100
+ETA = 25
 
 # Conjuntos y parámetros de la red.
 nodos = range(1, n + 1)

@@ -5,9 +5,9 @@ fixvar 0.01
 noprll 10
 grdarc 0
 scalex 10
-scaley 8
+scaley 16
 commod 1025
-addarc 320
+addarc 820
 minsrc 1
 maxsrc 1
 minsnk 1
