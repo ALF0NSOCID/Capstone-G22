@@ -1,5 +1,5 @@
 nocca
-inseed 10
+inseed 1012345
 ctight 60.0
 fixvar 0.01
 noprll 10

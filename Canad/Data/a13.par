@@ -1,13 +1,13 @@
 nocca
-inseed 1012345
+inseed 1043812345
 ctight 60.0
 fixvar 0.01
 noprll 10
 grdarc 0
-scalex 30
-scaley 10
-commod 7900
-addarc 1200
+scalex 80
+scaley 40
+commod 85200
+addarc 12800
 minsrc 1
 maxsrc 1
 minsnk 1

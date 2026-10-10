@@ -16,7 +16,7 @@ c   ****************************************************************
        real ran2
 
        integer a,arc,gridarc,ncommarc,costtemp,captemp
-       logical mark(MAXCOMM, MAXNODES)
+       logical mark(1, MAXNODES)
        logical omark(MAXNODES), dmark(MAXNODES)
        logical odmark(MAXNODES,MAXNODES)
        integer citer
@@ -401,6 +401,30 @@ C   Generate the sinks and sources for each commodity
        endif
  167   continue
 
+c      Compact commodity generation used by the project.  All current
+c      nocca instances have one source and one sink per commodity.  Keep
+c      the same random calls as the original dense b/mark implementation
+c      so an existing parameter file still generates the same endpoints.
+       if(nocca) then
+         if((minsources .ne. 1) .or. (maxsources .ne. 1) .or.
+     +      (minsinks .ne. 1) .or. (maxsinks .ne. 1)) then
+           print *,'nocca compact mode requires one source and one sink'
+           print *,'EXECUTION ABORTED'
+           stop
+         endif
+
+         do 168 kk=1,comm
+ 234       origins(kk)=1+int(ran2(inseed)*n)
+c          The dense implementation drew once while splitting the supply.
+           temp=1+int(ran2(inseed)*totsup(kk))
+ 235       destinations(kk)=1+int(ran2(inseed)*n)
+           if(destinations(kk) .eq. origins(kk)) goto 235
+c          The dense implementation also drew once for the sink demand.
+           temp=1+int(ran2(inseed)*totsup(kk))
+ 168     continue
+         goto 301
+       endif
+
 c ----------- parametre single ----------------------------------
 	if(single) then
 
@@ -583,6 +607,8 @@ C   Equalize supply and demand
  300   continue
        endif
        endif
+
+ 301   continue
 
        if(ctight)then
          csum=0

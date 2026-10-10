@@ -1,6 +1,6 @@
        integer startn(MAXARCS), endn(MAXARCS)
        integer c(MAXARCS), u(MAXARCS)
-       integer b(MAXCOMM, MAXNODES)
+       integer b(1, MAXNODES)
 c      Todos los parametros del proyecto usan nocca: los solvers solo
 c      consumen el costo fijo y la capacidad global de cada arco.
 c      Una sola fila evita reservar dos matrices MAXCOMM x MAXARCS.
@@ -8,6 +8,10 @@ c      Una sola fila evita reservar dos matrices MAXCOMM x MAXARCS.
        integer cap(1, MAXARCS)
        integer totsup(MAXCOMM)
        integer sinks(MAXCOMM), sources(MAXCOMM)
+c      En modo nocca cada commodity del proyecto tiene exactamente un
+c      origen y un destino. Guardarlos de forma dispersa evita reservar
+c      b(MAXCOMM,MAXNODES), que supera 1 GB en las instancias grandes.
+       integer origins(MAXCOMM), destinations(MAXCOMM)
 
        integer uparam,udataf
 
@@ -35,7 +39,8 @@ c   ******************* COMMON VARIABLES ************************
      +  maxcost, mincap, maxcap,minfcost,maxfcost,
      +  dow, maxsup, minsup, mincca, maxcca
 
-        common /tables/ totsup, totsupply, sinks, sources
+        common /tables/ totsup, totsupply, sinks, sources,
+     +                  origins, destinations
 	
 	common /char1/ var
 

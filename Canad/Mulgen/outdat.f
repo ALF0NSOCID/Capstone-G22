@@ -212,13 +212,22 @@ c AJOUTE PAR BG
  40    continue
  670   continue
 
-C   Write supply of nodes
+C   Write supply of nodes.  In compact nocca mode the project has one
+C   origin and one destination per commodity, stored sparsely.
 
-       do 51 compt=1,comm
-       do 50 i=1,n
-       if(b(compt,i) .ne. 0) write(13,1010) compt,i,b(compt,i)
- 50    continue
- 51    continue
+       if(nocca) then
+         do 51 compt=1,comm
+           write(13,1010) compt,origins(compt),totsup(compt)
+           write(13,1010) compt,destinations(compt),-totsup(compt)
+ 51      continue
+       else
+         do 53 compt=1,comm
+         do 52 i=1,n
+           if(b(compt,i) .ne. 0)
+     &       write(13,1010) compt,i,b(compt,i)
+ 52      continue
+ 53      continue
+       endif
 
 
        endfile(13)
