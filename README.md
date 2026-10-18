@@ -43,17 +43,21 @@ python3 ejecutar.py a10 solver_columnas_partida_ca
 # Pricing y caminos mínimos implementados en C++.
 python3 ejecutar.py a10 solver_columnas_cpp
 
+# Solver final E2: partida congestion-aware, pricing C++ y gap certificado al 1%.
+python3 ejecutar.py a10 solver_columnas_e2
+
 # Generación de columnas con estabilización dual.
 python3 ejecutar.py a10 solver_columnas_estabilizado
 ```
 
-Antes de usar el solver C++, compilar su módulo una vez:
+Antes de usar el solver C++ o E2, compilar su módulo una vez:
 
 ```bash
 python3 -m pip install pybind11
 python3 setup_pricing_cpp.py build_ext --inplace
 ```
-Instancias principales pueden ser encontradas en Canad/Data. Se ecnuentra como a10.par y contienen los parámetros para reproducir cada instancia.
+Las instancias principales se encuentran en `Canad/Data`, por ejemplo
+`a10.par`, y contienen los parámetros necesarios para reproducirlas.
 
 ## Redes Waxman
 
