@@ -1,0 +1,42 @@
+[
+ {
+  "caso": "escenario base",
+  "z_ref": 0.4898,
+  "arco_critico": "San Bernardo → Calera de Tango (800 Gbps)"
+ },
+ {
+  "caso": "escenario uniforme_+25",
+  "z_ref": 0.6123,
+  "arco_critico": "San Bernardo → Calera de Tango (800 Gbps)"
+ },
+ {
+  "caso": "escenario uniforme_+50",
+  "z_ref": 0.7347,
+  "arco_critico": "San Bernardo → Calera de Tango (800 Gbps)"
+ },
+ {
+  "caso": "escenario uniforme_+100",
+  "z_ref": 0.9796,
+  "arco_critico": "San Bernardo → Calera de Tango (800 Gbps)"
+ },
+ {
+  "caso": "escenario hotspot_antofagasta_+200",
+  "z_ref": 0.4898,
+  "arco_critico": "San Bernardo → Calera de Tango (800 Gbps)"
+ },
+ {
+  "caso": "escenario hotspot_aysen_+200",
+  "z_ref": 1.4383,
+  "arco_critico": "Caleta Tortel → Los Ñadis (100 Gbps)"
+ },
+ {
+  "caso": "base + los 20 candidatos",
+  "z_ref": 0.3958,
+  "arco_critico": "Chaitén → Villa Santa Lucía (100 Gbps)"
+ },
+ {
+  "caso": "fallas evaluadas (95)",
+  "z_ref": "0.2525 – 0.4898",
+  "arco_critico": "ver fallas.csv"
+ }
+]

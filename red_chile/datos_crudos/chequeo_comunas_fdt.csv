@@ -1,0 +1,185 @@
+macrozona,region_fdt,comuna,cut,estado,nodo,region_ine
+Arica y Parinacota,Arica y Parinacota,Arica,15101,presente (cabecera),Arica,Arica y Parinacota
+Arica y Parinacota,Arica y Parinacota,Camarones,15102,presente (cabecera),Codpa,Arica y Parinacota
+Arica y Parinacota,Arica y Parinacota,Putre,15201,presente (cabecera),Putre,Arica y Parinacota
+Arica y Parinacota,Arica y Parinacota,General Lagos,15202,presente (cabecera),Visviri,Arica y Parinacota
+Norte,Antofagasta,Mejillones,02102,presente (cabecera),Mejillones,Antofagasta
+Norte,Antofagasta,Sierra Gorda,02103,presente (cabecera),Sierra Gorda,Antofagasta
+Norte,Antofagasta,Taltal,02104,presente (cabecera),Taltal,Antofagasta
+Norte,Antofagasta,Calama,02201,presente (cabecera),Calama,Antofagasta
+Norte,Antofagasta,Ollagüe,02202,presente (cabecera),Ollagüe,Antofagasta
+Norte,Antofagasta,San Pedro de Atacama,02203,presente (cabecera),San Pedro de Atacama,Antofagasta
+Norte,Antofagasta,Tocopilla,02301,presente (cabecera),Tocopilla,Antofagasta
+Norte,Antofagasta,María Elena,02302,presente (cabecera),María Elena,Antofagasta
+Norte,Atacama,Caldera,03102,presente (cabecera),Caldera,Atacama
+Norte,Atacama,Tierra Amarilla,03103,presente (cabecera),Tierra Amarilla,Atacama
+Norte,Atacama,Chañaral,03201,presente (cabecera),Chañaral,Atacama
+Norte,Atacama,Diego de Almagro,03202,presente (cabecera),Diego de Almagro,Atacama
+Norte,Atacama,Vallenar,03301,presente (cabecera),Vallenar,Atacama
+Norte,Atacama,Alto del Carmen,03302,presente (cabecera),Alto del Carmen,Atacama
+Norte,Atacama,Freirina,03303,presente (cabecera),Freirina,Atacama
+Norte,Atacama,Huasco,03304,presente (cabecera),Huasco,Atacama
+Centro Norte,Coquimbo,Andacollo,04103,presente (cabecera),Andacollo,Coquimbo
+Centro Norte,Coquimbo,La Higuera,04104,presente (cabecera),La Higuera,Coquimbo
+Centro Norte,Coquimbo,Paiguano,04105,presente (cabecera),Paiguano,Coquimbo
+Centro Norte,Coquimbo,Vicuña,04106,presente (cabecera),Vicuña,Coquimbo
+Centro Norte,Coquimbo,Illapel,04201,presente (cabecera),Illapel,Coquimbo
+Centro Norte,Coquimbo,Canela,04202,presente (cabecera),Canela,Coquimbo
+Centro Norte,Coquimbo,Salamanca,04204,presente (cabecera),Salamanca,Coquimbo
+Centro Norte,Coquimbo,Ovalle,04301,presente (cabecera),Ovalle,Coquimbo
+Centro Norte,Coquimbo,Combarbalá,04302,presente (cabecera),Combarbalá,Coquimbo
+Centro Norte,Coquimbo,Monte Patria,04303,presente (cabecera),Monte Patria,Coquimbo
+Centro Norte,Coquimbo,Punitaqui,04304,presente (cabecera),Punitaqui,Coquimbo
+Centro Norte,Coquimbo,Río Hurtado,04305,presente (cabecera),Samo Alto,Coquimbo
+Centro Norte,Valparaíso,Puchuncaví,05105,presente (cabecera),Puchuncaví,Valparaíso
+Centro Norte,Valparaíso,Quintero,05107,presente (cabecera),Quintero,Valparaíso
+Centro Norte,Valparaíso,Calle Larga,05302,presente (cabecera),Calle Larga,Valparaíso
+Centro Norte,Valparaíso,Rinconada,05303,presente (cabecera),Rinconada,Valparaíso
+Centro Norte,Valparaíso,San Esteban,05304,presente (cabecera),San Esteban,Valparaíso
+Centro Norte,Valparaíso,La Ligua,05401,presente (cabecera),La Ligua,Valparaíso
+Centro Norte,Valparaíso,Cabildo,05402,presente (cabecera),Cabildo,Valparaíso
+Centro Norte,Valparaíso,Papudo,05403,presente (cabecera),Papudo,Valparaíso
+Centro Norte,Valparaíso,Petorca,05404,presente (cabecera),Petorca,Valparaíso
+Centro Norte,Valparaíso,Zapallar,05405,presente (cabecera),Zapallar,Valparaíso
+Centro Norte,Valparaíso,Hijuelas,05503,presente (cabecera),Hijuelas,Valparaíso
+Centro Norte,Valparaíso,Algarrobo,05602,presente (cabecera),Algarrobo,Valparaíso
+Centro Norte,Valparaíso,Cartagena,05603,presente (cabecera),Cartagena,Valparaíso
+Centro Norte,Valparaíso,El Quisco,05604,presente (cabecera),Guallelemu,Valparaíso
+Centro Norte,Valparaíso,El Tabo,05605,FALTA,,
+Centro Norte,Valparaíso,Catemu,05702,presente (cabecera),Catemu,Valparaíso
+Centro Norte,Valparaíso,Putaendo,05705,presente (cabecera),Putaendo,Valparaíso
+Centro Norte,Valparaíso,Santa María,05706,presente (cabecera),Santa María,Valparaíso
+Centro Norte,Valparaíso,Olmué,05803,presente (cabecera),Olmué,Valparaíso
+Centro Norte,Metropolitana,Pirque,13202,presente (cabecera),Pirque,Metropolitana
+Centro Norte,Metropolitana,San José de Maipo,13203,presente (cabecera),San José de Maipo,Metropolitana
+Centro Norte,Metropolitana,Calera de Tango,13403,presente (cabecera),Calera de Tango,Metropolitana
+Centro Norte,Metropolitana,Alhué,13502,presente (cabecera),Alhué,Metropolitana
+Centro Norte,Metropolitana,Curacaví,13503,presente (cabecera),Curacaví,Metropolitana
+Centro Norte,Metropolitana,María Pinto,13504,presente (cabecera),María Pinto,Metropolitana
+Centro Norte,Metropolitana,San Pedro,13505,presente (cabecera),San Pedro,Metropolitana
+Centro Norte,Metropolitana,El Monte,13602,presente (cabecera),El Monte,Metropolitana
+Centro Norte,Metropolitana,Isla de Maipo,13603,presente (cabecera),Isla de Maipo,Metropolitana
+Centro Norte,Metropolitana,Padre Hurtado,13604,presente (cabecera),Padre Hurtado,Metropolitana
+Centro,O'Higgins,Codegua,06102,presente (cabecera),Codegua,O'Higgins
+Centro,O'Higgins,Coinco,06103,presente (cabecera),Coinco,O'Higgins
+Centro,O'Higgins,Coltauco,06104,presente (cabecera),Coltauco,O'Higgins
+Centro,O'Higgins,Doñihue,06105,presente (cabecera),Doñihue,O'Higgins
+Centro,O'Higgins,Las Cabras,06107,presente (cabecera),Las Cabras,O'Higgins
+Centro,O'Higgins,Malloa,06109,presente (cabecera),Malloa,O'Higgins
+Centro,O'Higgins,Olivar,06111,presente (cabecera),Olivar Alto,O'Higgins
+Centro,O'Higgins,Peumo,06112,presente (cabecera),Peumo,O'Higgins
+Centro,O'Higgins,Pichidegua,06113,presente (cabecera),Pichidegua,O'Higgins
+Centro,O'Higgins,Quinta de Tilcoco,06114,presente (cabecera),Quinta de Tilcoco,O'Higgins
+Centro,O'Higgins,San Vicente,06117,presente (cabecera),San Vicente,O'Higgins
+Centro,O'Higgins,Pichilemu,06201,presente (cabecera),Pichilemu,O'Higgins
+Centro,O'Higgins,La Estrella,06202,presente (cabecera),La Estrella,O'Higgins
+Centro,O'Higgins,Litueche,06203,presente (cabecera),Litueche,O'Higgins
+Centro,O'Higgins,Marchihue,06204,presente (cabecera),Marchihue,O'Higgins
+Centro,O'Higgins,Navidad,06205,presente (cabecera),Navidad,O'Higgins
+Centro,O'Higgins,Paredones,06206,presente (cabecera),Paredones,O'Higgins
+Centro,O'Higgins,Chépica,06302,presente (cabecera),Chépica,O'Higgins
+Centro,O'Higgins,Lolol,06304,presente (cabecera),Lolol,O'Higgins
+Centro,O'Higgins,Nancagua,06305,presente (cabecera),Nancagua,O'Higgins
+Centro,O'Higgins,Palmilla,06306,presente (cabecera),Palmilla,O'Higgins
+Centro,O'Higgins,Peralillo,06307,presente (cabecera),Peralillo,O'Higgins
+Centro,O'Higgins,Placilla,06308,presente (cabecera),Placilla,O'Higgins
+Centro,O'Higgins,Pumanque,06309,presente (cabecera),Pumanque,O'Higgins
+Centro,O'Higgins,Santa Cruz,06310,presente (cabecera),Santa Cruz,O'Higgins
+Centro,Maule,Constitución,07102,presente (cabecera),Constitución,Maule
+Centro,Maule,Curepto,07103,presente (cabecera),Curepto,Maule
+Centro,Maule,Empedrado,07104,presente (cabecera),Empedrado,Maule
+Centro,Maule,Pelarco,07106,presente (cabecera),Pelarco,Maule
+Centro,Maule,Pencahue,07107,presente (cabecera),Pencahue,Maule
+Centro,Maule,Río Claro,07108,presente (cabecera),Río Claro,Maule
+Centro,Maule,San Clemente,07109,presente (cabecera),San Clemente,Maule
+Centro,Maule,Cauquenes,07201,presente (cabecera),Cauquenes,Maule
+Centro,Maule,Chanco,07202,presente (cabecera),Chanco,Maule
+Centro,Maule,Pelluhue,07203,presente (cabecera),Pelluhue,Maule
+Centro,Maule,Licantén,07303,presente (cabecera),Licantén,Maule
+Centro,Maule,Molina,07304,presente (cabecera),Molina,Maule
+Centro,Maule,Rauco,07305,presente (cabecera),Rauco,Maule
+Centro,Maule,Romeral,07306,presente (cabecera),Romeral,Maule
+Centro,Maule,Sagrada Familia,07307,presente (cabecera),Sagrada Familia,Maule
+Centro,Maule,Vichuquén,07309,presente (cabecera),Vichuquén,Maule
+Centro,Maule,Colbún,07402,presente (cabecera),Colbún,Maule
+Centro,Maule,San Javier,07406,presente (cabecera),San Javier,Maule
+Centro,Maule,Villa Alegre,07407,presente (cabecera),Villa Alegre,Maule
+Centro,Maule,Yerbas Buenas,07408,presente (cabecera),Yerbas Buenas,Maule
+Centro Sur,Ñuble,El Carmen,16104,presente (cabecera),El Carmen,Ñuble
+Centro Sur,Ñuble,Pemuco,16105,presente (cabecera),Pemuco,Ñuble
+Centro Sur,Ñuble,Pinto,16106,presente (cabecera),Pinto,Ñuble
+Centro Sur,Ñuble,Quillón,16107,presente (cabecera),Quillón,Ñuble
+Centro Sur,Ñuble,San Ignacio,16108,presente (cabecera),San Ignacio,Ñuble
+Centro Sur,Ñuble,Yungay,16109,presente (cabecera),Yungay,Ñuble
+Centro Sur,Ñuble,Quirihue,16201,presente (cabecera),Quirihue,Ñuble
+Centro Sur,Ñuble,Cobquecura,16202,presente (cabecera),Cobquecura,Ñuble
+Centro Sur,Ñuble,Coelemu,16203,presente (cabecera),Coelemu,Ñuble
+Centro Sur,Ñuble,Ninhue,16204,presente (cabecera),Ninhue,Ñuble
+Centro Sur,Ñuble,Portezuelo,16205,presente (cabecera),Portezuelo,Ñuble
+Centro Sur,Ñuble,Ránquil,16206,presente (cabecera),Ránquil,Ñuble
+Centro Sur,Ñuble,Treguaco,16207,presente (cabecera),Treguaco,Ñuble
+Centro Sur,Ñuble,Coihueco,16302,presente (cabecera),Coihueco,Ñuble
+Centro Sur,Ñuble,San Fabián,16304,presente (cabecera),San Fabián,Ñuble
+Centro Sur,Ñuble,San Nicolás,16305,presente (cabecera),San Nicolás,Ñuble
+Centro Sur,Biobío,Florida,08104,presente (cabecera),Florida,Biobío
+Centro Sur,Biobío,Lota,08106,presente (cabecera),Lota,Biobío
+Centro Sur,Biobío,Santa Juana,08109,presente (cabecera),Santa Juana,Biobío
+Centro Sur,Biobío,Lebu,08201,presente (cabecera),Lebu,Biobío
+Centro Sur,Biobío,Arauco,08202,presente (cabecera),Arauco,Biobío
+Centro Sur,Biobío,Cañete,08203,presente (cabecera),Cañete,Biobío
+Centro Sur,Biobío,Contulmo,08204,presente (cabecera),Contulmo,Biobío
+Centro Sur,Biobío,Curanilahue,08205,presente (cabecera),Curanilahue,Biobío
+Centro Sur,Biobío,Los Álamos,08206,presente (cabecera),Los Álamos,Biobío
+Centro Sur,Biobío,Tirúa,08207,presente (cabecera),Tirúa,Biobío
+Centro Sur,Biobío,Antuco,08302,presente (cabecera),Antuco,Biobío
+Centro Sur,Biobío,Nacimiento,08306,presente (cabecera),Nacimiento,Biobío
+Centro Sur,Biobío,Negrete,08307,presente (cabecera),Negrete,Biobío
+Centro Sur,Biobío,Quilaco,08308,presente (cabecera),Quilaco,Biobío
+Centro Sur,Biobío,Quilleco,08309,presente (cabecera),Quilleco,Biobío
+Centro Sur,Biobío,San Rosendo,08310,presente (cabecera),San Rosendo,Biobío
+Centro Sur,Biobío,Santa Bárbara,08311,presente (cabecera),Santa Bárbara,Biobío
+Centro Sur,Biobío,Tucapel,08312,presente (cabecera),Tucapel,Biobío
+Centro Sur,Biobío,Yumbel,08313,presente (cabecera),Yumbel,Biobío
+Centro Sur,Biobío,Alto Biobío,08314,presente (cabecera),Alto Biobío,Biobío
+Sur,Araucanía,Temuco,09101,presente (cabecera),Temuco,Araucanía
+Sur,Araucanía,Carahue,09102,presente (cabecera),Carahue,Araucanía
+Sur,Araucanía,Cunco,09103,presente (cabecera),Cunco,Araucanía
+Sur,Araucanía,Curarrehue,09104,presente (cabecera),Curarrehue,Araucanía
+Sur,Araucanía,Galvarino,09106,presente (cabecera),Galvarino,Araucanía
+Sur,Araucanía,Lautaro,09108,presente (cabecera),Lautaro,Araucanía
+Sur,Araucanía,Melipeuco,09110,presente (cabecera),Melipeuco,Araucanía
+Sur,Araucanía,Nueva Imperial,09111,presente (cabecera),Nueva Imperial,Araucanía
+Sur,Araucanía,Perquenco,09113,presente (cabecera),Perquenco,Araucanía
+Sur,Araucanía,Pucón,09115,presente (cabecera),Pucón,Araucanía
+Sur,Araucanía,Saavedra,09116,presente (cabecera),Saavedra,Araucanía
+Sur,Araucanía,Teodoro Schmidt,09117,presente (cabecera),Teodoro Schmidt,Araucanía
+Sur,Araucanía,Toltén,09118,presente (cabecera),Toltén,Araucanía
+Sur,Araucanía,Vilcún,09119,presente (cabecera),Vilcún,Araucanía
+Sur,Araucanía,Villarrica,09120,presente (cabecera),Villarrica,Araucanía
+Sur,Araucanía,Cholchol,09121,presente (cabecera),Cholchol,Araucanía
+Sur,Araucanía,Angol,09201,presente (cabecera),Angol,Araucanía
+Sur,Araucanía,Curacautín,09203,presente (cabecera),Curacautín,Araucanía
+Sur,Araucanía,Lonquimay,09205,presente (cabecera),Lonquimay,Araucanía
+Sur,Araucanía,Los Sauces,09206,presente (cabecera),Los Sauces,Araucanía
+Sur,Araucanía,Lumaco,09207,presente (cabecera),Lumaco,Araucanía
+Sur,Araucanía,Purén,09208,presente (cabecera),Purén,Araucanía
+Sur,Araucanía,Renaico,09209,presente (cabecera),Renaico,Araucanía
+Sur,Araucanía,Traiguén,09210,presente (cabecera),Traiguén,Araucanía
+Sur,Los Ríos,Valdivia,14101,presente (cabecera),Valdivia,Los Ríos
+Sur,Los Ríos,Corral,14102,presente (cabecera),Corral,Los Ríos
+Sur,Los Ríos,Mariquina,14106,presente (cabecera),San José de la Mariquina,Los Ríos
+Sur,Los Ríos,Panguipulli,14108,presente (cabecera),Panguipulli,Los Ríos
+Sur,Los Ríos,Futrono,14202,presente (cabecera),Futrono,Los Ríos
+Sur,Los Ríos,Lago Ranco,14203,presente (cabecera),Lago Ranco,Los Ríos
+Sur,Los Ríos,Río Bueno,14204,presente (cabecera),Río Bueno,Los Ríos
+Sur,Los Lagos,San Pablo,10307,presente (cabecera),San Pablo,Los Lagos
+Sur,Los Lagos,Calbuco,10102,presente (cabecera),Calbuco,Los Lagos
+Sur,Los Lagos,Fresia,10104,presente (cabecera),Fresia,Los Lagos
+Sur,Los Lagos,Los Muermos,10106,presente (cabecera),Los Muermos,Los Lagos
+Sur,Los Lagos,Maullín,10108,presente (cabecera),Maullín,Los Lagos
+Sur,Los Lagos,Curaco de Vélez,10204,presente (cabecera),Curaco de Vélez,Los Lagos
+Sur,Los Lagos,Puqueldón,10206,presente (cabecera),Puqueldón,Los Lagos
+Sur,Los Lagos,Quinchao,10210,presente (cabecera),Quinchao,Los Lagos
+Sur,Los Lagos,Puerto Octay,10302,presente (cabecera),Puerto Octay,Los Lagos
+Sur,Los Lagos,Río Negro,10305,presente (cabecera),Río Negro,Los Lagos
+Sur,Los Lagos,San Juan de la Costa,10306,presente (cabecera),San Juan de la Costa,Los Lagos

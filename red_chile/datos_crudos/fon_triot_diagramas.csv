@@ -1,0 +1,233 @@
+region,triot,origen,destino,km,tipo_poiit_destino,fuente,pagina
+Arica y Parinacota,AYP15-09,Arica,Poconchile,34.86,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),3
+Arica y Parinacota,AYP15-08,Poconchile,Socoroma,86.45,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),3
+Arica y Parinacota,AYP15-07,Socoroma,Putre,27.50,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),3
+Arica y Parinacota,AYP15-05,Putre,Parinacota,39.58,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),3
+Arica y Parinacota,AYP15-06,Parinacota,Visviri,85.92,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),3
+Arica y Parinacota,AYP15-11,Parinacota,Guallatiri,61.74,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),3
+Arica y Parinacota,AYP15-04,Parinacota,Chapiquiña,77.44,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),3
+Arica y Parinacota,AYP15-03,Chapiquiña,Codpa,108.25,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),3
+Arica y Parinacota,AYP15-02,Codpa,Camarones,83.80,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),3
+Arica y Parinacota,AYP15-01,Camarones,Cuya,47.02,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),3
+Arica y Parinacota,AYP15-10,Cuya,Caleta Camarones,10.28,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),3
+Antofagasta,NTE02-05,Antofagasta,Baquedano,118.48,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-04,Baquedano,Sierra Gorda,75.28,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-03,Sierra Gorda,Calama,69.90,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-10,Calama,Estación Ascotán,119.48,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-01,Estación Ascotán,Ollagüe,77.36,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-13,Calama,Caspana,86.12,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-02,Calama,San Pedro de Atacama,100.37,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-15,San Pedro de Atacama,Toconao,38.13,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-08,Antofagasta,Mejillones,64.12,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-12,Mejillones,Carolina de Michilla,52.33,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-07,Carolina de Michilla,Tocopilla,78.35,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-06,Tocopilla,María Elena,69.41,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-14,Antofagasta,Caleta Coloso,17.92,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-11,Antofagasta,Paranal,117.23,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-09,Paranal,Taltal,119.38,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Antofagasta,NTE02-16,Taltal,Paposo,49.72,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),5
+Atacama,NTE03-05,Copiapó,Caldera,76.44,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Atacama,NTE03-06,Caldera,Chañaral,92.78,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Atacama,NTE03-07,Chañaral,Diego de Almagro,62.76,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Atacama,NTE03-08,Copiapó,Tierra Amarilla,14.87,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Atacama,NTE03-10,Tierra Amarilla,Nantoco,8.42,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Atacama,NTE03-11,Nantoco,Los Loros,40.28,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Atacama,NTE03-09,Caldera,Bahía Salada,106.26,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Atacama,NTE03-13,Bahía Salada,Quebrada Seca,31.28,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Atacama,NTE03-04,Bahía Salada,Huasco,100.76,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Atacama,NTE03-03,Huasco,Freirina,17.05,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Atacama,NTE03-02,Freirina,Vallenar,35.17,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Atacama,NTE03-01,Vallenar,Alto del Carmen,41.89,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Atacama,NTE03-12,Alto del Carmen,La Marquesa,15.17,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),6
+Coquimbo,CTN04-14,La Serena,La Higuera,58.86,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-13,La Serena,Vicuña,64.27,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-12,Vicuña,Paiguano,26.19,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-17,Paiguano,Guanta,34.59,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-11,Vicuña,Río Hurtado,46.45,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-10,Río Hurtado,Samo Alto,37.73,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-09,Samo Alto,Andacollo,36.44,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-08,Samo Alto,Ovalle,39.04,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-07,Ovalle,Monte Patria,32.55,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-06,Monte Patria,Combarbalá,70.91,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-05,Ovalle,Punitaqui,35.67,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-04,Punitaqui,Canela Alta,95.45,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-02,Canela Alta,Canela,8.17,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-01,Canela,Salamanca,95.58,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-03,Canela Alta,Illapel,59.40,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-15,Illapel,Caimanes,48.12,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Coquimbo,CTN04-16,Caimanes,Los Vilos,47.30,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),8
+Valparaíso,CTN05-12,Valparaíso,Puchuncaví,62.58,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-11,Puchuncaví,Quintero,20.77,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-10,Puchuncaví,Zapallar,24.00,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-09,Zapallar,Papudo,11.35,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-08,Papudo,La Ligua,23.61,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-20,La Ligua,Catapilco,16.57,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-07,La Ligua,Cabildo,20.70,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-06,Cabildo,Petorca,32.55,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-05,Cabildo,Putaendo,67.71,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-04,Putaendo,Santa María,22.30,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-03,Santa María,San Esteban,11.78,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-02,San Esteban,Calle Larga,7.42,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-01,Calle Larga,Rinconada,7.86,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-19,Valparaíso,Olmué,56.59,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-18,Olmué,Hijuelas,42.77,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-17,Hijuelas,Catemu,24.89,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-16,Valparaíso,Algarrobo,78.28,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-15,Algarrobo,Guallelemu,2.92,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-14,Guallelemu,Totoral,7.10,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-13,Totoral,Cartagena,16.91,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Valparaíso,CTN05-21,Cartagena,Santo Domingo,15.58,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),9
+Metropolitana,CTN13-08,San Bernardo,Calera de Tango,9.74,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-10,San Bernardo,Pirque,15.50,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-09,Pirque,San José de Maipo,30.34,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-05,Calera de Tango,Padre Hurtado,11.69,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-04,Padre Hurtado,María Pinto,42.91,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-03,María Pinto,Curacaví,23.91,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-11,Curacaví,Lampa,66.30,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-12,Lampa,Tiltil,26.89,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-13,Lampa,Batuco,11.59,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-14,María Pinto,Melipilla,26.18,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-02,Melipilla,San Pedro,56.89,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-01,San Pedro,Alhué,58.04,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-07,Calera de Tango,Isla de Maipo,25.63,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),10
+Metropolitana,CTN13-06,Isla de Maipo,El Monte,19.84,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),10
+O'Higgins,CTO06-25,Rancagua,Codegua,18.06,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-24,Rancagua,Olivar Alto,14.03,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-23,Olivar Alto,Coinco,17.05,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-22,Coinco,Doñihue,6.14,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-21,Doñihue,Coltauco,13.54,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-20,Coltauco,Peumo,21.88,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-19,Coinco,Quinta de Tilcoco,13.26,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-18,Quinta de Tilcoco,Malloa,14.75,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-17,Malloa,San Vicente,17.62,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-16,San Vicente,Pichidegua,27.22,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-15,Pichidegua,Las Cabras,22.34,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-14,Pichidegua,Marchihue,40.13,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-03,Pichidegua,La Estrella,47.49,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-02,La Estrella,Litueche,22.61,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-01,Litueche,Navidad,33.72,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-13,Pichidegua,Palmilla,36.85,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-12,Palmilla,Santa Cruz,9.26,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-11,Santa Cruz,Chépica,16.16,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-10,Chépica,Nancagua,12.76,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-09,Nancagua,Placilla,8.40,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-27,Chépica,Chimbarongo,29.81,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-08,Santa Cruz,Lolol,33.46,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-07,Lolol,Pumanque,28.60,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-06,Pumanque,Peralillo,26.53,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-26,Peralillo,Población,6.00,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-05,Lolol,Paredones,28.44,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+O'Higgins,CTO06-04,Paredones,Pichilemu,45.05,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),12
+Maule,CTO07-22,Talca,Pencahue,16.53,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-21,Pencahue,Curepto,58.57,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-20,Curepto,Licantén,20.97,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-19,Licantén,Hualañé,18.50,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-18,Licantén,Vichuquén,15.63,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-17,Talca,San Clemente,23.07,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-16,San Clemente,Pelarco,41.59,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-15,Pelarco,Río Claro,27.37,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-14,Río Claro,Molina,25.91,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-13,Molina,Sagrada Familia,21.34,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-12,Molina,Romeral,29.67,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-11,Romeral,Rauco,25.12,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-23,Rauco,Teno,18.94,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-24,Molina,El Yacal,24.10,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-10,Talca,San Javier,22.55,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-09,San Javier,Villa Alegre,13.89,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-08,Villa Alegre,Yerbas Buenas,22.05,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-07,Yerbas Buenas,Colbún,24.11,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-06,San Javier,Cauquenes,76.34,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-05,Cauquenes,Pelluhue,36.36,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-04,Pelluhue,Curanipe,8.49,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-03,Curanipe,Chanco,18.64,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-02,Chanco,Constitución,61.87,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Maule,CTO07-01,Constitución,Empedrado,42.23,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),13
+Ñuble,CTS16-17,Chillán,San Nicolás,24.16,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-18,San Nicolás,Ñiquén,59.80,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-15,San Nicolás,Portezuelo,23.79,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-14,San Nicolás,Ninhue,21.62,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-13,Ninhue,Quirihue,25.98,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-12,Quirihue,Cobquecura,33.95,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-16,San Nicolás,San Fabián,72.96,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-11,Chillán,Pinto,26.35,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-10,Pinto,Coihueco,16.69,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-09,Pinto,San Ignacio,25.40,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-08,San Ignacio,El Carmen,20.51,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-07,El Carmen,Pemuco,19.32,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-06,Pemuco,Yungay,20.92,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-05,Pemuco,Quillón,58.74,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-04,Quillón,Ránquil,24.50,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-03,Ránquil,Coelemu,28.50,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-02,Coelemu,Hernán Brañas,5.06,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Ñuble,CTS16-01,Hernán Brañas,Treguaco,6.15,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),15
+Biobío,CTS08-22,Concepción,Lota,38.57,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-21,Lota,Santa Juana,45.40,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-20,Santa Juana,Nacimiento,52.00,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-19,Nacimiento,Negrete,18.23,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-18,Negrete,San Rosendo,51.68,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-17,San Rosendo,Yumbel,28.77,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-16,Yumbel,Florida,46.09,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-15,Negrete,Santa Bárbara,79.85,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-14,Santa Bárbara,Quilaco,3.66,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-24,Quilaco,Mulchén,24.82,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-13,Santa Bárbara,Alto Biobío,47.51,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-12,Santa Bárbara,Quilleco,28.38,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-11,Quilleco,Tucapel,25.01,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-10,Quilleco,Antuco,38.11,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-23,Antuco,El Abanico,13.15,adicional,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-09,Lota,Arauco,34.22,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-08,Arauco,Lebu,63.44,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-07,Lebu,Los Álamos,25.00,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-06,Los Álamos,Tres Pinos,5.27,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-05,Tres Pinos,Curanilahue,23.50,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-04,Los Álamos,Cañete,29.08,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-03,Cañete,Contulmo,34.93,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-02,Cañete,Quidico,54.67,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Biobío,CTS08-01,Quidico,Tirúa,13.46,exigible,Informe_resumen_adjudicacion_fon.pdf (2019),16
+Araucanía,REF,Temuco,Cholchol,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Cholchol,Galvarino,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Galvarino,Traiguén,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Traiguén,Lumaco,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Lumaco,Purén,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Purén,Los Sauces,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Los Sauces,Angol,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Angol,Renaico,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Temuco,Lautaro,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Lautaro,Perquenco,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Lautaro,Curacautín,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Curacautín,Lonquimay,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Lonquimay,Liucura,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Liucura,Icalma,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Icalma,Melipeuco,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Melipeuco,Cunco,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Cunco,Vilcún,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Cunco,Reigolil,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Reigolil,Curarrehue,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Curarrehue,Pucón,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Temuco,Labranza,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Labranza,Nueva Imperial,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Nueva Imperial,Carahue,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Carahue,Saavedra,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Nueva Imperial,Teodoro Schmidt,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Teodoro Schmidt,Toltén,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Araucanía,REF,Teodoro Schmidt,Villarrica,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),5
+Los Ríos,REF,Valdivia,Río Bueno,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),6
+Los Ríos,REF,Río Bueno,Lago Ranco,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),6
+Los Ríos,REF,Lago Ranco,Futrono,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),6
+Los Ríos,REF,Futrono,Panguipulli,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),6
+Los Ríos,REF,Panguipulli,San José de la Mariquina,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),6
+Los Ríos,REF,Valdivia,Niebla,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),6
+Los Ríos,REF-flex,Niebla,Corral,,exigible (subacuático; conexión flexible),Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),6
+Los Lagos,REF,Puerto Montt,Puerto Octay,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7
+Los Lagos,REF,Puerto Montt,Calbuco,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7
+Los Lagos,REF,Calbuco,Pargua,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7
+Los Lagos,REF,Pargua,Maullín,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7
+Los Lagos,REF,Maullín,Los Muermos,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7
+Los Lagos,REF,Los Muermos,Fresia,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7
+Los Lagos,REF,Fresia,Río Negro,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7
+Los Lagos,REF,Río Negro,San Juan de la Costa,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7
+Los Lagos,REF,San Juan de la Costa,San Pablo,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7
+Los Lagos,REF-flex,Pargua,Curaco de Vélez,,exigible (conexión flexible),Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7
+Los Lagos,REF,Curaco de Vélez,Quinchao,,exigible,Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7
+Los Lagos,REF-flex,Quinchao,Puqueldón,,exigible (conexión flexible),Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7
+Los Lagos,REF-flex,Puqueldón,Chaitén,,exigible (conexión flexible),Proyecto_FON_Macrozona_Sur_Topologias.pdf (2020),7

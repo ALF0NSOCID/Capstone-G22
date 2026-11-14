@@ -1,0 +1,97 @@
+Arica;-18.47853;-70.32114;n3444930202;city;Arica;15101;cut;1
+Poconchile;-18.45191;-70.06675;n214232827;hamlet;Poconchile;15101;reg;1
+Socoroma;-18.26362;-69.60232;n1589666674;hamlet;Socoroma;15201;reg;1
+Putre;-18.19638;-69.55922;n410598012;town;Putre;15201;cut;1
+Parinacota;-18.20199;-69.26817;n214198937;hamlet;Parinacota;15201;reg;1
+Visviri;-17.59477;-69.48155;n214232873;village;Visviri;15202;cut;1
+Chapiquiña;-18.39578;-69.53654;n214200999;hamlet;Chapiquiña;15201;reg;1
+Codpa;-18.83347;-69.74421;n214180481;hamlet;Codpa;15102;cut;1
+Camarones;-19.01080;-69.85969;n214227201;hamlet;Camarones;15102;reg;1
+Cuya;-19.14016;-70.15921;n2675148671;hamlet;Cuya;15102;reg;1
+Caleta Camarones;-19.19221;-70.26224;n2358014924;hamlet;Caleta Camarones;15102;reg;1
+Iquique;-20.21407;-70.15246;n214203803;city;Iquique;01101;cut;1
+Pozo Almonte;-20.25971;-69.78614;n214179612;town;Pozo Almonte;01401;cut;1
+Antofagasta;-23.64637;-70.39800;n214220794;city;Antofagasta;02101;cut;1
+Baquedano;-23.33381;-69.84347;n214199283;village;Baquedano;02103;reg;1
+Sierra Gorda;-22.89168;-69.32001;n214232685;village;Sierra Gorda;02103;cut;1
+Calama;-22.46239;-68.92722;n214213958;city;Calama;02201;cut;1
+Estación Ascotán;-21.72428;-68.27544;n2990946498;hamlet;Ascotán;02202;reg;1
+Ollagüe;-21.22422;-68.25345;n214184845;village;Ollagüe;02202;cut;1
+Caspana;-22.33465;-68.21288;n214218116;hamlet;Caspana;02201;reg;1
+San Pedro de Atacama;-22.91083;-68.20014;n214212256;town;San Pedro de Atacama;02203;cut;1
+Toconao;-23.19052;-68.00704;n5909299333;village;Toconao;02203;reg;1
+Mejillones;-23.10023;-70.44831;n214195492;town;Mejillones;02102;cut;1
+Carolina de Michilla;-22.72507;-70.27923;n214226591;hamlet;Michilla;02102;reg;1
+Tocopilla;-22.08872;-70.19607;n214207175;city;Tocopilla;02301;cut;1
+María Elena;-22.34515;-69.66180;n214228144;town;María Elena;02302;cut;1
+Caleta Coloso;-23.76084;-70.46092;n3011237107;hamlet;Coloso;02101;reg;1
+Paranal;-24.64035;-70.38682;n11786378925;hamlet;Paranal;02104;reg;1
+Taltal;-25.40783;-70.48584;n214231207;town;Taltal;02104;cut;1
+Paposo;-25.00944;-70.46534;n214211993;village;Paposo;02104;reg;1
+Copiapó;-27.36647;-70.33228;n214229792;city;Copiapó;03101;cut;1
+Caldera;-27.06755;-70.82220;n214208595;town;Caldera;03102;cut;1
+Chañaral;-26.34793;-70.62236;n214189440;town;Chañaral;03201;cut;1
+Diego de Almagro;-26.39108;-70.04593;n214179767;town;Diego de Almagro;03202;cut;1
+Tierra Amarilla;-27.46805;-70.26493;n214220598;town;Tierra Amarilla;03103;cut;1
+Nantoco;-27.53961;-70.27061;n5919390788;village;Nantoco;03103;reg;1
+Los Loros;-27.83119;-70.10793;n214184964;village;Los Loros;03103;reg;2
+Bahía Salada;-27.64296;-70.91552;n5909202278;hamlet;Bahía Salada;03102;reg;1
+Huasco;-28.46512;-71.22079;n1373671679;town;Huasco;03304;cut;1
+Freirina;-28.50865;-71.07857;n214181456;town;Freirina;03303;cut;1
+Vallenar;-28.57504;-70.76164;n214224795;city;Vallenar;03301;cut;1
+Alto del Carmen;-28.75967;-70.48611;n214230634;village;Alto del Carmen;03302;cut;1
+La Serena;-29.90271;-71.25196;n50020503;city;La Serena;04101;cut;1
+La Higuera;-29.51159;-71.20150;n214184029;village;La Higuera;04104;cut;5
+Vicuña;-30.03405;-70.71267;n2626164691;town;Vicuña;04106;cut;1
+Paiguano;-30.02904;-70.51644;n214212548;village;Paihuano;04105;cut;1
+Guanta;-29.84625;-70.39140;n214209592;hamlet;Guanta;04106;reg;2
+Río Hurtado;-30.27850;-70.67670;n214179572;hamlet;Hurtado;04305;reg;1
+Samo Alto;-30.40908;-70.93831;n214230592;hamlet;Samo Alto;04305;cut;1
+Andacollo;-30.23220;-71.08476;n2974470154;town;Andacollo;04103;cut;1
+Ovalle;-30.60308;-71.20299;n214226485;city;Ovalle;04301;cut;1
+Monte Patria;-30.69448;-70.95796;n214195127;town;Monte Patria;04303;cut;1
+Combarbalá;-31.17815;-71.00244;n214191534;town;Combarbalá;04302;cut;1
+Punitaqui;-30.83375;-71.25736;n214209487;town;Punitaqui;04304;cut;1
+Canela Alta;-31.39067;-71.38897;n214186966;village;Canela Alta;04202;reg;1
+Canela;-31.39842;-71.45757;n214182502;village;Canela Baja;04202;cut;1
+Salamanca;-31.78047;-70.96499;n959911120;town;Salamanca;04204;cut;1
+Illapel;-31.63269;-71.16830;n703306899;city;Illapel;04201;cut;1
+Caimanes;-31.93245;-71.13461;n214199107;village;Caimanes;04203;reg;1
+Los Vilos;-31.91217;-71.51387;n214231617;town;Los Vilos;04203;cut;1
+Valparaíso;-33.04585;-71.61967;n3298545361;city;Valparaíso;05101;cut;1
+Puchuncaví;-32.72599;-71.41501;n214191867;town;Puchuncaví;05105;cut;1
+Quintero;-32.78402;-71.52834;n214194244;town;Quintero;05107;cut;1
+Zapallar;-32.55283;-71.45882;n214181198;town;Zapallar;05405;cut;1
+Papudo;-32.50759;-71.44594;n214196602;town;Papudo;05403;cut;1
+La Ligua;-32.44964;-71.23167;n214194150;city;La Ligua;05401;cut;1
+Catapilco;-32.56667;-71.27784;n214184429;village;Catapilco;05405;reg;1
+Cabildo;-32.42659;-71.06633;n3115367654;town;Cabildo;05402;cut;1
+Petorca;-32.25170;-70.93091;n214214656;town;Petorca;05404;cut;1
+Putaendo;-32.62608;-70.71676;n214213482;town;Putaendo;05705;cut;1
+Santa María;-32.74787;-70.65674;n214205461;town;Santa María;05706;cut;3
+San Esteban;-32.79905;-70.57958;n214202843;town;San Esteban;05304;cut;1
+Calle Larga;-32.85527;-70.62604;n214200660;town;Calle Larga;05302;cut;3
+Rinconada;-32.83938;-70.68718;n214221102;town;Rinconada;05303;cut;1
+Olmué;-32.99562;-71.18621;n3510684994;town;Olmué;05803;cut;1
+Hijuelas;-32.80006;-71.14522;n214221451;town;Hijuelas;05503;cut;1
+Catemu;-32.77842;-70.96334;n214207389;town;Catemu;05702;cut;1
+Algarrobo;-33.36917;-71.66805;n1369449846;town;Algarrobo;05602;cut;2
+Guallelemu;-33.42331;-71.64374;n214200784;hamlet;Huallilemu;05604;reg;1
+Totoral;-33.41936;-71.62489;n9517248988;hamlet;El Totoral;05604;reg;1
+Cartagena;-33.54685;-71.60317;n243631340;town;Cartagena;05603;cut;1
+La Calera;-32.78898;-71.20355;n214192695;town;La Calera;05502;cut;1
+Santiago;-33.43770;-70.65107;n50016356;city;Santiago;13101;cut;1
+San Bernardo;-33.59229;-70.70458;n157458639;suburb;San Bernardo;13401;cut;2
+Calera de Tango;-33.63094;-70.75932;n3398652505;town;Calera de Tango;13403;cut;1
+Pirque;-33.63488;-70.57300;n214184762;suburb;Pirque;13202;cut;1
+San José de Maipo;-33.64040;-70.35278;n214180495;town;San José de Maipo;13203;cut;1
+Padre Hurtado;-33.56731;-70.80205;n214195262;suburb;Padre Hurtado;13604;cut;3
+María Pinto;-33.51598;-71.12003;n214223372;town;María Pinto;13504;cut;1
+Curacaví;-33.40223;-71.12937;n214215722;town;Curacaví;13503;cut;1
+Lampa;-33.28642;-70.87298;n214192380;town;Lampa;13302;cut;1
+Tiltil;-33.08528;-70.92939;n214203529;town;Tiltil;13303;cut;1
+Batuco;-33.23005;-70.80853;n214189966;town;Batuco;13302;reg;1
+Melipilla;-33.68551;-71.21458;n214203676;city;Melipilla;13501;cut;2
+San Pedro;-33.89435;-71.45631;n214186693;village;San Pedro;13505;cut;3
+Isla de Maipo;-33.75374;-70.90393;n214180385;town;Isla de Maipo;13603;cut;1
+El Monte;-33.67832;-70.97825;n214203542;town;El Monte;13602;cut;2

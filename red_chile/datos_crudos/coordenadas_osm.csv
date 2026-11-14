@@ -1,0 +1,286 @@
+nodo,lat,lon,osm_id,osm_place,osm_name,cut_ine,metodo,n_candidatos,fuente_coord,clasificacion_coord
+Arica,-18.47853,-70.32114,n3444930202,city,Arica,15101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Poconchile,-18.45191,-70.06675,n214232827,hamlet,Poconchile,15101,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Socoroma,-18.26362,-69.60232,n1589666674,hamlet,Socoroma,15201,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Putre,-18.19638,-69.55922,n410598012,town,Putre,15201,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Parinacota,-18.20199,-69.26817,n214198937,hamlet,Parinacota,15201,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Visviri,-17.59477,-69.48155,n214232873,village,Visviri,15202,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Chapiquiña,-18.39578,-69.53654,n214200999,hamlet,Chapiquiña,15201,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Codpa,-18.83347,-69.74421,n214180481,hamlet,Codpa,15102,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Camarones,-19.0108,-69.85969,n214227201,hamlet,Camarones,15102,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cuya,-19.14016,-70.15921,n2675148671,hamlet,Cuya,15102,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Caleta Camarones,-19.19221,-70.26224,n2358014924,hamlet,Caleta Camarones,15102,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Iquique,-20.21407,-70.15246,n214203803,city,Iquique,01101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pozo Almonte,-20.25971,-69.78614,n214179612,town,Pozo Almonte,01401,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Antofagasta,-23.64637,-70.398,n214220794,city,Antofagasta,02101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Baquedano,-23.33381,-69.84347,n214199283,village,Baquedano,02103,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Sierra Gorda,-22.89168,-69.32001,n214232685,village,Sierra Gorda,02103,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Calama,-22.46239,-68.92722,n214213958,city,Calama,02201,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Estación Ascotán,-21.72428,-68.27544,n2990946498,hamlet,Ascotán,02202,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Ollagüe,-21.22422,-68.25345,n214184845,village,Ollagüe,02202,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Caspana,-22.33465,-68.21288,n214218116,hamlet,Caspana,02201,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Pedro de Atacama,-22.91083,-68.20014,n214212256,town,San Pedro de Atacama,02203,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Toconao,-23.19052,-68.00704,n5909299333,village,Toconao,02203,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Mejillones,-23.10023,-70.44831,n214195492,town,Mejillones,02102,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Carolina de Michilla,-22.72507,-70.27923,n214226591,hamlet,Michilla,02102,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Tocopilla,-22.08872,-70.19607,n214207175,city,Tocopilla,02301,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+María Elena,-22.34515,-69.6618,n214228144,town,María Elena,02302,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Caleta Coloso,-23.76084,-70.46092,n3011237107,hamlet,Coloso,02101,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Paranal,-24.64035,-70.38682,n11786378925,hamlet,Paranal,02104,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Taltal,-25.40783,-70.48584,n214231207,town,Taltal,02104,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Paposo,-25.00944,-70.46534,n214211993,village,Paposo,02104,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Copiapó,-27.36647,-70.33228,n214229792,city,Copiapó,03101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Caldera,-27.06755,-70.8222,n214208595,town,Caldera,03102,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Chañaral,-26.34793,-70.62236,n214189440,town,Chañaral,03201,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Diego de Almagro,-26.39108,-70.04593,n214179767,town,Diego de Almagro,03202,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Tierra Amarilla,-27.46805,-70.26493,n214220598,town,Tierra Amarilla,03103,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Nantoco,-27.53961,-70.27061,n5919390788,village,Nantoco,03103,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Los Loros,-27.83119,-70.10793,n214184964,village,Los Loros,03103,reg,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Bahía Salada,-27.64296,-70.91552,n5909202278,hamlet,Bahía Salada,03102,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Huasco,-28.46512,-71.22079,n1373671679,town,Huasco,03304,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Freirina,-28.50865,-71.07857,n214181456,town,Freirina,03303,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Vallenar,-28.57504,-70.76164,n214224795,city,Vallenar,03301,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Alto del Carmen,-28.75967,-70.48611,n214230634,village,Alto del Carmen,03302,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+La Serena,-29.90271,-71.25196,n50020503,city,La Serena,04101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+La Higuera,-29.51159,-71.2015,n214184029,village,La Higuera,04104,cut,5,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Vicuña,-30.03405,-70.71267,n2626164691,town,Vicuña,04106,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Paiguano,-30.02904,-70.51644,n214212548,village,Paihuano,04105,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Guanta,-29.84625,-70.3914,n214209592,hamlet,Guanta,04106,reg,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Río Hurtado,-30.2785,-70.6767,n214179572,hamlet,Hurtado,04305,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Samo Alto,-30.40908,-70.93831,n214230592,hamlet,Samo Alto,04305,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Andacollo,-30.2322,-71.08476,n2974470154,town,Andacollo,04103,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Ovalle,-30.60308,-71.20299,n214226485,city,Ovalle,04301,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Monte Patria,-30.69448,-70.95796,n214195127,town,Monte Patria,04303,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Combarbalá,-31.17815,-71.00244,n214191534,town,Combarbalá,04302,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Punitaqui,-30.83375,-71.25736,n214209487,town,Punitaqui,04304,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Canela Alta,-31.39067,-71.38897,n214186966,village,Canela Alta,04202,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Canela,-31.39842,-71.45757,n214182502,village,Canela Baja,04202,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Salamanca,-31.78047,-70.96499,n959911120,town,Salamanca,04204,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Illapel,-31.63269,-71.1683,n703306899,city,Illapel,04201,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Caimanes,-31.93245,-71.13461,n214199107,village,Caimanes,04203,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Los Vilos,-31.91217,-71.51387,n214231617,town,Los Vilos,04203,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Valparaíso,-33.04585,-71.61967,n3298545361,city,Valparaíso,05101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Puchuncaví,-32.72599,-71.41501,n214191867,town,Puchuncaví,05105,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Quintero,-32.78402,-71.52834,n214194244,town,Quintero,05107,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Zapallar,-32.55283,-71.45882,n214181198,town,Zapallar,05405,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Papudo,-32.50759,-71.44594,n214196602,town,Papudo,05403,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+La Ligua,-32.44964,-71.23167,n214194150,city,La Ligua,05401,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Catapilco,-32.56667,-71.27784,n214184429,village,Catapilco,05405,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cabildo,-32.42659,-71.06633,n3115367654,town,Cabildo,05402,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Petorca,-32.2517,-70.93091,n214214656,town,Petorca,05404,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Putaendo,-32.62608,-70.71676,n214213482,town,Putaendo,05705,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Santa María,-32.74787,-70.65674,n214205461,town,Santa María,05706,cut,3,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Esteban,-32.79905,-70.57958,n214202843,town,San Esteban,05304,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Calle Larga,-32.85527,-70.62604,n214200660,town,Calle Larga,05302,cut,3,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Rinconada,-32.83938,-70.68718,n214221102,town,Rinconada,05303,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Olmué,-32.99562,-71.18621,n3510684994,town,Olmué,05803,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Hijuelas,-32.80006,-71.14522,n214221451,town,Hijuelas,05503,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Catemu,-32.77842,-70.96334,n214207389,town,Catemu,05702,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Algarrobo,-33.36917,-71.66805,n1369449846,town,Algarrobo,05602,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Guallelemu,-33.42331,-71.64374,n214200784,hamlet,Huallilemu,05604,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Totoral,-33.41936,-71.62489,n9517248988,hamlet,El Totoral,05604,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cartagena,-33.54685,-71.60317,n243631340,town,Cartagena,05603,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+La Calera,-32.78898,-71.20355,n214192695,town,La Calera,05502,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Santiago,-33.4377,-70.65107,n50016356,city,Santiago,13101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Bernardo,-33.59229,-70.70458,n157458639,suburb,San Bernardo,13401,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Calera de Tango,-33.63094,-70.75932,n3398652505,town,Calera de Tango,13403,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pirque,-33.63488,-70.573,n214184762,suburb,Pirque,13202,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San José de Maipo,-33.6404,-70.35278,n214180495,town,San José de Maipo,13203,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Padre Hurtado,-33.56731,-70.80205,n214195262,suburb,Padre Hurtado,13604,cut,3,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+María Pinto,-33.51598,-71.12003,n214223372,town,María Pinto,13504,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Curacaví,-33.40223,-71.12937,n214215722,town,Curacaví,13503,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Lampa,-33.28642,-70.87298,n214192380,town,Lampa,13302,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Tiltil,-33.08528,-70.92939,n214203529,town,Tiltil,13303,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Batuco,-33.23005,-70.80853,n214189966,town,Batuco,13302,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Melipilla,-33.68551,-71.21458,n214203676,city,Melipilla,13501,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Pedro,-33.89435,-71.45631,n214186693,village,San Pedro,13505,cut,3,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Isla de Maipo,-33.75374,-70.90393,n214180385,town,Isla de Maipo,13603,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+El Monte,-33.67832,-70.97825,n214203542,town,El Monte,13602,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Rancagua,-34.17024,-70.74072,n214204892,city,Rancagua,06101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Codegua,-34.0377,-70.65654,n214195345,town,Codegua,06102,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Olivar Alto,-34.20944,-70.81723,n214218318,village,Olivar Alto,06111,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Coinco,-34.26994,-70.95158,n214191881,town,Coinco,06103,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Doñihue,-34.22607,-70.96489,n214189144,town,Doñihue,06105,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Coltauco,-34.28628,-71.08257,n214194409,town,Coltauco,06104,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Peumo,-34.39592,-71.16943,n214183679,town,Peumo,06112,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Quinta de Tilcoco,-34.35458,-70.96388,n1378541069,town,Quinta de Tilcoco,06114,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Malloa,-34.44214,-70.94407,n214219757,town,Malloa,06109,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Vicente,-34.43927,-71.07679,n214182120,town,San Vicente de Tagua Tagua,06117,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pichidegua,-34.35841,-71.28271,n214225384,town,Pichidegua,06113,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Las Cabras,-34.29173,-71.30984,n214191315,town,Las Cabras,06107,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Marchihue,-34.40009,-71.61828,n214232522,town,Marchigüe,06204,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+La Estrella,-34.20529,-71.6546,n2312971504,village,La Estrella,06202,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Litueche,-34.11542,-71.72969,n666626409,town,Litueche,06203,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Navidad,-33.9536,-71.83058,n214188433,village,Navidad,06205,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Palmilla,-34.59605,-71.36248,n214194967,village,Palmilla,06306,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Santa Cruz,-34.64032,-71.36613,n214225186,town,Santa Cruz,06310,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Chépica,-34.72859,-71.27386,n214212771,town,Chépica,06302,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Nancagua,-34.65274,-71.19538,n1387673757,town,Nancagua,06305,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Placilla,-34.63859,-71.11737,n214210021,village,Placilla,06308,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Chimbarongo,-34.70895,-71.04036,n214189481,town,Chimbarongo,06303,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Lolol,-34.72784,-71.64408,n214206034,town,Lolol,06304,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pumanque,-34.60481,-71.65468,n214232613,village,Pumanque,06309,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Peralillo,-34.47803,-71.47932,n214206052,town,Peralillo,06307,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Población,-34.45039,-71.54806,n214184975,village,Población,06307,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Paredones,-34.64764,-71.90085,n214205523,town,Paredones,06206,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pichilemu,-34.38517,-72.00466,n214225768,town,Pichilemu,06201,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Fernando,-34.58379,-70.98912,n214204398,city,San Fernando,06301,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Talca,-35.42653,-71.66603,n50028181,city,Talca,07101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pencahue,-35.39617,-71.79937,n1303123360,town,Pencahue,07107,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Curepto,-35.09372,-72.01808,n214199010,town,Curepto,07103,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Licantén,-34.98569,-71.98459,n214196664,town,Licantén,07303,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Hualañé,-34.97749,-71.80121,n214195828,town,Hualañé,07302,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Vichuquén,-34.88402,-71.99237,n3242142468,village,Vichuquén,07309,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Clemente,-35.53755,-71.48588,n214190079,town,San Clemente,07109,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pelarco,-35.38366,-71.44698,n214183724,town,Pelarco,07106,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Río Claro,-35.28163,-71.25867,n214217764,town,Cumpeo,07108,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Molina,-35.11397,-71.27998,n214210874,town,Molina,07304,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Sagrada Familia,-34.99904,-71.38171,n214211345,town,Sagrada Familia,07307,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Romeral,-34.95997,-71.12531,n1755678817,town,Romeral,07306,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Rauco,-34.92461,-71.31669,n214226251,town,Rauco,07305,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Teno,-34.8668,-71.16122,n558650927,town,Teno,07308,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+El Yacal,-35.19392,-71.11577,n2524389229,hamlet,El Yacal,07304,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Javier,-35.59239,-71.73531,n1825695778,town,San Javier,07406,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Villa Alegre,-35.6752,-71.74467,n214231299,town,Villa Alegre,07407,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Yerbas Buenas,-35.74641,-71.58208,n214187462,town,Yerbas Buenas,07408,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Colbún,-35.69601,-71.40609,n214218708,town,Colbún,07402,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cauquenes,-35.96713,-72.31543,n214206410,city,Cauquenes,07201,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pelluhue,-35.81502,-72.57696,n214197902,town,Pelluhue,07203,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Curanipe,-35.84525,-72.63636,n214227750,village,Curanipe,07203,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Chanco,-35.73418,-72.53316,n214204336,town,Chanco,07202,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Constitución,-35.33183,-72.4119,n656582484,city,Constitución,07102,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Empedrado,-35.59078,-72.27762,n214198214,town,Empedrado,07104,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Curicó,-34.98537,-71.23937,n214180445,city,Curicó,07301,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Linares,-35.84529,-71.59772,n214211178,city,Linares,07401,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Chillán,-36.60666,-72.10332,n214189449,city,Chillán,16101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Nicolás,-36.50343,-72.21238,n4448610082,town,San Nicolás,16305,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Ñiquén,-36.28275,-71.81483,n214201553,village,San Gregorio,16303,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Portezuelo,-36.52744,-72.42853,n214189069,village,Portezuelo,16205,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Ninhue,-36.39359,-72.39764,n214216196,village,Ninhue,16204,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Quirihue,-36.28271,-72.54081,n214193860,town,Quirihue,16201,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cobquecura,-36.13176,-72.79154,n214225707,village,Cobquecura,16202,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Fabián,-36.5566,-71.5499,n214197378,village,San Fabián de Alico,16304,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pinto,-36.70361,-71.89228,n214191106,town,Pinto,16106,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Coihueco,-36.6288,-71.83191,n214232505,town,Coihueco,16302,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Ignacio,-36.79982,-72.03035,n214187391,town,San Ignacio,16108,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+El Carmen,-36.89785,-72.02461,n214182734,town,El Carmen,16104,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pemuco,-36.97674,-72.09886,n4966739439,town,Pemuco,16105,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Yungay,-37.11937,-72.01885,n3637267452,town,Yungay,16109,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Quillón,-36.74438,-72.47644,n214208288,town,Quillón,16107,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Ránquil,-36.60506,-72.53437,n311074708,village,Ñipas,16206,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Coelemu,-36.4876,-72.70233,n214188529,town,Coelemu,16203,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Hernán Brañas,-36.46925,-72.68885,n5142167151,village,Hernán Brañas,16207,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Treguaco,-36.4307,-72.66582,n214182188,village,Trehuaco,16207,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Concepción,-36.82707,-73.05021,n330756068,city,Concepción,08101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Lota,-37.09445,-73.1564,n214194166,town,Lota,08106,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Santa Juana,-37.17378,-72.94259,n214222226,town,Santa Juana,08109,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Nacimiento,-37.50183,-72.67311,n214204531,town,Nacimiento,08306,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Negrete,-37.58567,-72.52926,n214225785,town,Negrete,08307,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Rosendo,-37.26308,-72.72403,n214212240,village,San Rosendo,08310,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Yumbel,-37.09787,-72.56228,n214229849,town,Yumbel,08313,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Florida,-36.8253,-72.66145,n214185774,town,Florida,08104,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Santa Bárbara,-37.66808,-72.02141,n214186609,town,Santa Bárbara,08311,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Quilaco,-37.68413,-72.00549,n214229876,village,Quilaco,08308,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Mulchén,-37.72009,-72.24413,n214221007,town,Mulchén,08305,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Alto Biobío,-37.88203,-71.63738,n1081486046,village,Ralco,08314,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Quilleco,-37.47097,-71.98031,n214216508,town,Quilleco,08309,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Tucapel,-37.24019,-71.94187,n214194089,town,Huépil,08312,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Antuco,-37.32996,-71.67916,n3930494216,town,Antuco,08302,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Arauco,-37.24625,-73.31764,n2809403613,town,Arauco,08202,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Lebu,-37.61023,-73.65605,n214233604,city,Lebu,08201,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Los Álamos,-37.62713,-73.46184,n214223277,town,Los Álamos,08206,cut,3,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Curanilahue,-37.4758,-73.34571,n214183590,town,Curanilahue,08205,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cañete,-37.80041,-73.39908,n214199769,town,Cañete,08203,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Contulmo,-38.01602,-73.2286,n214185218,village,Contulmo,08204,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Quidico,-38.25024,-73.48586,n1073686544,village,Quidico,08207,reg,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Tirúa,-38.34387,-73.49348,n214227580,town,Tirúa,08207,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Los Ángeles,-37.47075,-72.35169,n214202817,city,Los Ángeles,08301,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Temuco,-38.73589,-72.59054,n1515015048,city,Temuco,09101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cholchol,-38.60256,-72.84766,n214222163,town,Cholchol,09121,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Galvarino,-38.41112,-72.78125,n214203482,town,Galvarino,09106,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Traiguén,-38.25082,-72.66688,n214213065,town,Traiguén,09210,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Lumaco,-38.16532,-72.9064,n214181038,village,Lumaco,09207,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Purén,-38.03328,-73.07259,n214189718,town,Purén,09208,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Los Sauces,-37.98296,-72.82918,n214203062,town,Los Sauces,09206,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Angol,-37.79879,-72.70861,n214195857,city,Angol,09201,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Renaico,-37.67171,-72.58326,n214205131,town,Renaico,09209,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Lautaro,-38.53431,-72.43505,n214200024,town,Lautaro,09108,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Perquenco,-38.42125,-72.37783,n214204489,town,Perquenco,09113,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Curacautín,-38.4373,-71.88834,n544365254,town,Curacautín,09203,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Lonquimay,-38.45407,-71.37063,n214206682,town,Lonquimay,09205,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Liucura,-38.64498,-71.08931,n214199602,hamlet,Liucura,09205,reg,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Melipeuco,-38.85324,-71.69501,n214228921,town,Melipeuco,09110,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cunco,-38.93297,-72.03209,n214189234,town,Cunco,09103,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Vilcún,-38.6704,-72.22408,n214186821,town,Vilcún,09119,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Reigolil,-39.11769,-71.47459,n214203386,hamlet,Reigolil,09104,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Curarrehue,-39.35898,-71.58736,n214223296,town,Curarrehue,09104,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pucón,-39.27312,-71.97776,n214208312,town,Pucón,09115,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Labranza,-38.76654,-72.75342,n214204160,town,Labranza,09101,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Nueva Imperial,-38.74531,-72.952,n214234250,town,Nueva Imperial,09111,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Carahue,-38.71158,-73.16517,n214185007,town,Carahue,09102,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Saavedra,-38.79232,-73.39687,n214204327,town,Puerto Saavedra,09116,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Teodoro Schmidt,-38.99675,-73.08918,n3656880219,town,Teodoro Schmidt,09117,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Toltén,-39.17821,-73.16388,n1904961368,town,Nueva Toltén,09118,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Villarrica,-39.27809,-72.22744,n214215644,town,Villarrica,09120,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Valdivia,-39.81413,-73.24599,n3956170554,city,Valdivia,14101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Río Bueno,-40.33367,-72.95676,n214185722,town,Río Bueno,14204,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Lago Ranco,-40.32167,-72.48135,n214233889,town,Lago Ranco,14203,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Futrono,-40.1312,-72.38266,n214233081,town,Futrono,14202,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Panguipulli,-39.64199,-72.33338,n214191417,town,Panguipulli,14108,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San José de la Mariquina,-39.53945,-72.96108,n214211016,town,San José de La Mariquina,14106,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Niebla,-39.87049,-73.40048,n214202280,town,Niebla,14101,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Corral,-39.88774,-73.43145,n214208670,town,Corral,14102,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Puerto Montt,-41.4718,-72.93959,n84466877,city,Puerto Montt,10101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Puerto Octay,-40.97276,-72.88422,n214202372,town,Puerto Octay,10302,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Calbuco,-41.77121,-73.12754,n214191088,town,Calbuco,10102,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pargua,-41.7915,-73.46034,n214228712,village,Pargua,10102,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Maullín,-41.61601,-73.59507,n214186803,town,Maullín,10108,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Los Muermos,-41.39606,-73.46172,n214200376,town,Los Muermos,10106,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Fresia,-41.15314,-73.42231,n214222816,town,Fresia,10104,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Río Negro,-40.79617,-73.21639,n214229890,town,Río Negro,10305,cut,3,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Juan de la Costa,-40.60473,-73.47053,n2404089191,village,Puaucho,10306,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+San Pablo,-40.41276,-73.01158,n214199499,town,San Pablo,10307,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Curaco de Vélez,-42.43966,-73.60284,n214227218,village,Curaco de Vélez,10204,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Quinchao,-42.471,-73.48808,n214190657,town,Achao,10210,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Puqueldón,-42.59926,-73.67627,n1512250676,village,Puqueldón,10206,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Chaitén,-42.91653,-72.70842,n214215709,town,Chaitén,10401,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Osorno,-40.5737,-73.13581,n214200129,city,Osorno,10301,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Alerce,-41.39418,-72.91456,n513541253,town,Alerce,10101,reg,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Ensenada,-41.20819,-72.53867,n63573909,hamlet,Ensenada,10109,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Ralún,-41.38657,-72.32636,n5900503581,hamlet,Ralún,10109,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cochamó,-41.49256,-72.30793,n214207927,village,Cochamó,10103,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Puelo Alto,-41.65997,-72.27946,n5436645969,hamlet,Puelo Alto,10103,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Contao,-41.80246,-72.7187,n1656983401,village,Contao,10403,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pichicolo,-42.0048,-72.594,n214214043,hamlet,Pichicolo,10403,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Hornopirén,-41.96605,-72.47068,n1617291223,town,Hornopirén,10403,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Villa Santa Lucía,-43.41308,-72.36625,n214231969,hamlet,Villa Santa Lucía,10401,reg,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Futaleufú,-43.18577,-71.8667,n214209818,town,Futaleufú,10402,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Palena,-43.61783,-71.80396,n214191852,village,Palena,10404,cut,2,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Caleta Tortel,-47.80368,-73.53746,n214202783,village,Caleta Tortel,11303,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Los Ñadis,-47.63351,-72.83701,n1742427239,isolated_dwelling,Los Ñadis,11301,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cochrane,-47.25417,-72.57321,n214203286,town,Cochrane,11301,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Puerto Bertrand,-47.01513,-72.82749,n214230514,hamlet,Puerto Bertrand,11401,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Puerto Guadal,-46.84457,-72.70429,n214223124,village,Puerto Guadal,11401,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Mallín Grande,-46.72725,-72.46482,n1555340958,hamlet,Mallín Grande,11401,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Chile Chico,-46.53966,-71.72458,n214193252,town,Chile Chico,11401,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Puerto Río Tranquilo,-46.62393,-72.67629,n485835330,village,Puerto Río Tranquilo,11402,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Bahía Murta,-46.45857,-72.67264,n214232911,hamlet,Bahía Murta,11402,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cerro Castillo,-46.12262,-72.15437,n2960252919,village,Villa Cerro Castillo,11402,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+El Blanco,-45.80847,-71.91976,n1568457449,hamlet,El Blanco,11101,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Coyhaique,-45.57118,-72.06849,n214210491,city,Coyhaique,11101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Villa O'Higgins,-48.46848,-72.55925,n1092536478,village,Villa O'Higgins,11302,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Puerto Ingeniero Ibáñez,-46.2919,-71.93749,n214195598,village,Puerto Ingeniero Ibáñez,11402,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Punta Arenas,-53.16257,-70.90782,n181356942,city,Punta Arenas,12101,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Porvenir,-53.29567,-70.36874,n214223403,town,Porvenir,12301,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Onaisín,-53.38701,-69.28091,n1659886948,isolated_dwelling,Onaisin,12301,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cerro Sombrero,-52.77646,-69.29091,n1092607007,village,Cerro Sombrero,12302,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Cameron,-53.63972,-69.64633,n1092612577,hamlet,Cameron,12303,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Pampa Guanaco,-54.05481,-68.79201,n5047307291,hamlet,Pampa Guanaco,12303,reg,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Puerto Natales,-51.7262,-72.506,n3736621516,city,Puerto Natales,12401,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Puerto Williams,-54.93577,-67.60625,n214223618,town,Puerto Williams,12201,cut,1,"OpenStreetMap (Overpass API, consulta por nombre dentro del área ISO3166-2 de la región)",DATO
+Guallatiri,-18.49818,-69.15391,n214208865,hamlet,Guallatire,15201,reg,1,OpenStreetMap (Nominatim; reintento manual),DATO
+Alhué,-34.03206,-71.09912,n1389354411,town,Villa Alhué,13502,cut,1,OpenStreetMap (Nominatim; reintento manual),DATO
+Santo Domingo,-33.64059,-71.6261,n214196737,town,Rocas de Santo Domingo,05606,cut,1,OpenStreetMap (Nominatim; reintento manual),DATO
+Icalma,-38.80778,-71.28105,w221924589,"natural=beach (sin nodo place, orilla de la laguna Icalma)",Icalma,09205,reg,1,OpenStreetMap (Nominatim; reintento manual),ESTIMADO
+El Manzano,-42.00996,-72.64025,n214205911,hamlet,Caleta Manzano,10403,reg,1,OpenStreetMap (Nominatim; reintento manual),ESTIMADO
+Tres Pinos,-37.62731,-73.41118,n214191985,suburb,Tres Pinos,08206,reg,1,OpenStreetMap (Nominatim; reintento manual),DATO

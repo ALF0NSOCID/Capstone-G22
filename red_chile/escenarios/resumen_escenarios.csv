@@ -1,0 +1,7 @@
+escenario,productos,demanda_total_gbps
+base,10000,6930.97
+uniforme_+25,10000,8663.71
+uniforme_+50,10000,10396.45
+uniforme_+100,10000,13861.94
+hotspot_antofagasta_+200,10000,7846.6
+hotspot_aysen_+200,10000,7028.27

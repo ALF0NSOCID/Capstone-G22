@@ -1,0 +1,195 @@
+<title>Mapa Red Fibra Chile</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..750&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: el país partido en tres franjas a la misma escala (como los mapas escolares de Chile), controles de capa arriba, ficha del elemento abajo */
+:root {
+  --bg: #f4f6f4;
+  --land: #e2e8e3;
+  --land-line: #b8c4bb;
+  --fg: #1e2924;
+  --muted: #5d6a63;
+  --panel: #ffffff;
+  --rule: #d5ddd7;
+  --troncal: #22302b;
+  --fon: #0f7b6c;
+  --foa-sub: #3b4fb8;
+  --foa-ter: #7a3fb0;
+  --cand: #c9780a;
+  --bridge: #d23b2f;
+  --font-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121816; --land: #1f2925; --land-line: #3a4a42; --fg: #e3ebe6; --muted: #98a79f; --panel: #19211e; --rule: #2e3a34;
+    --troncal: #e8efe9; --fon: #37c2ad; --foa-sub: #8a9bff; --foa-ter: #c493f0; --cand: #f2a93b; --bridge: #ff6b5e; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121816; --land: #1f2925; --land-line: #3a4a42; --fg: #e3ebe6; --muted: #98a79f; --panel: #19211e; --rule: #2e3a34;
+  --troncal: #e8efe9; --fon: #37c2ad; --foa-sub: #8a9bff; --foa-ter: #c493f0; --cand: #f2a93b; --bridge: #ff6b5e; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 14px; line-height: 1.45;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 28px;
+}
+.wrap { max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px; }
+header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px; }
+h1 { font-family: var(--font-display); font-stretch: 72%; font-weight: 720; font-size: clamp(26px, 4.4vw, 40px); line-height: 1; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+.sub { margin: 6px 0 0; color: var(--muted); max-width: 62ch; }
+.stats { display: flex; flex-wrap: wrap; gap: 4px 18px; font-family: var(--font-data); font-size: 12px; font-variant-numeric: tabular-nums; }
+.stats div { display: flex; flex-direction: column; }
+.stats b { font-weight: 500; font-size: 15px; }
+.stats span { color: var(--muted); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; border-block: 1px solid var(--rule); padding-block: 10px; }
+.chip { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border: 1px solid var(--rule); border-radius: 999px; background: var(--panel); cursor: pointer; font-size: 13px; user-select: none; }
+.chip input { position: absolute; opacity: 0; pointer-events: none; }
+.chip:has(input:focus-visible) { outline: 2px solid var(--fg); outline-offset: 2px; }
+.chip:has(input:not(:checked)) { opacity: 0.45; }
+.sw { width: 22px; height: 0; border-top: 3px solid currentColor; }
+.sw.dash { border-top-style: dashed; }
+.sw.dot { border-top-style: dotted; }
+.count { font-family: var(--font-data); font-size: 11px; color: var(--muted); }
+.maps { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; }
+.pane { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.pane h2 { margin: 0; font-family: var(--font-display); font-stretch: 85%; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); }
+.pane svg { width: 100%; height: auto; display: block; background: var(--panel); border: 1px solid var(--rule); border-radius: 4px; }
+@media (max-width: 760px) { .pane { flex: 1 1 100% !important; } }
+.land { fill: var(--land); stroke: var(--land-line); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
+.e { fill: none; vector-effect: non-scaling-stroke; stroke-linecap: round; }
+.e.TRONCAL { stroke: var(--troncal); stroke-width: 2.6; }
+.e.FON { stroke: var(--fon); stroke-width: 1.3; }
+.e.FOA_SUB { stroke: var(--foa-sub); stroke-width: 1.8; stroke-dasharray: 6 4; }
+.e.FOA_TER { stroke: var(--foa-ter); stroke-width: 1.4; }
+.e.CANDIDATO { stroke: var(--cand); stroke-width: 1.6; stroke-dasharray: 1.5 3.5; }
+.e.bridge.hl { stroke: var(--bridge); }
+.e.sel { stroke-width: 4.5; }
+.hit { fill: none; stroke: transparent; stroke-width: 10; vector-effect: non-scaling-stroke; cursor: pointer; }
+.n { stroke: var(--panel); stroke-width: 0.8; vector-effect: non-scaling-stroke; cursor: pointer; }
+.n.CAPITAL_PIX, .n.NODO_TRONCAL { fill: var(--troncal); }
+.n.POIIT { fill: var(--fon); }
+.n.FOA { fill: var(--foa-ter); }
+.n.zero { fill: var(--panel); stroke: var(--muted); }
+.n.sel { stroke: var(--bridge); stroke-width: 2.5; }
+.lbl { font-family: var(--font-display); font-stretch: 80%; font-size: 10px; fill: var(--fg); paint-order: stroke; stroke: var(--panel); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
+.off { display: none; }
+.card { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px 18px; min-height: 64px; }
+.card .t { grid-column: 1 / -1; font-family: var(--font-display); font-stretch: 80%; font-weight: 650; font-size: 18px; }
+.card .k { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.card .v { font-family: var(--font-data); font-size: 13px; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.hint { color: var(--muted); grid-column: 1 / -1; }
+.note { color: var(--muted); font-size: 12.5px; max-width: 80ch; margin: 0; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Red de fibra inspirada en Chile</h1>
+      <p class="sub">Mapa de control de la instancia del Capstone ICS2122. Troncal supuesta, ramales FON según los diagramas de Subtel y Fibra Óptica Austral. No es la red real.</p>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="controls" role="group" aria-label="Capas visibles">
+    <label class="chip" style="color:var(--troncal)"><input type="checkbox" id="c-TRONCAL" checked><span class="sw"></span><span style="color:var(--fg)">Troncal</span><span class="count" id="n-TRONCAL"></span></label>
+    <label class="chip" style="color:var(--fon)"><input type="checkbox" id="c-FON" checked><span class="sw"></span><span style="color:var(--fg)">FON</span><span class="count" id="n-FON"></span></label>
+    <label class="chip" style="color:var(--foa-sub)"><input type="checkbox" id="c-FOA_SUB" checked><span class="sw dash"></span><span style="color:var(--fg)">FOA submarina</span><span class="count" id="n-FOA_SUB"></span></label>
+    <label class="chip" style="color:var(--foa-ter)"><input type="checkbox" id="c-FOA_TER" checked><span class="sw"></span><span style="color:var(--fg)">FOA terrestre</span><span class="count" id="n-FOA_TER"></span></label>
+    <label class="chip" style="color:var(--cand)"><input type="checkbox" id="c-CANDIDATO" checked><span class="sw dot"></span><span style="color:var(--fg)">Candidatos</span><span class="count" id="n-CANDIDATO"></span></label>
+    <label class="chip" style="color:var(--bridge)"><input type="checkbox" id="c-bridge"><span class="sw"></span><span style="color:var(--fg)">Marcar puentes</span><span class="count" id="n-bridge"></span></label>
+  </div>
+
+  <div class="maps" id="maps"></div>
+
+  <div class="card" id="card" aria-live="polite"><div class="hint">Toca un nodo o un tramo para ver sus datos. Los nodos huecos son nodos de paso sin población asignada.</div></div>
+
+  <p class="note">Coordenadas: OpenStreetMap. Límites regionales: INE (simplificados). Tamaño del nodo según la población comunal del Censo 2024. Los tramos troncales y FOA terrestres son supuestos; los km FON 2019 vienen de los diagramas de Subtel.</p>
+</div>
+
+<script>
+const D = /*__DATA__*/null;
+const NS = 'http://www.w3.org/2000/svg';
+const S = 60;
+const nodes = new Map(D.nodes.map(n => [n[0], {id:n[0], name:n[1], tipo:n[2], lat:n[3], lon:n[4], pop:n[5], region:n[6], comuna:n[7], capas:n[8]}]));
+const edges = D.edges.map(e => ({id:e[0], o:e[1], d:e[2], capa:e[3], km:e[4], cap:e[5], bridge:e[6], clas:e[7], sub:e[8], lost:e[9]}));
+const fmt = new Intl.NumberFormat('es-CL');
+const st = D.stats;
+document.getElementById('stats').innerHTML = [
+  ['|V|', st.V], ['|E| base', st.E], ['|A|', st.A], ['grado medio', st.grado.toFixed(2)], ['puentes', st.puentes], ['productos', fmt.format(st.productos)], ['demanda Gbps', fmt.format(Math.round(st.demanda))]
+].map(([k, v]) => `<div><b>${v}</b><span>${k}</span></div>`).join('');
+const counts = {};
+edges.forEach(e => { counts[e.capa] = (counts[e.capa] || 0) + 1; if (e.bridge) counts.bridge = (counts.bridge || 0) + 1; });
+Object.entries(counts).forEach(([k, v]) => { const el = document.getElementById('n-' + k); if (el) el.textContent = v; });
+
+const panes = [];
+const maps = document.getElementById('maps');
+D.panels.forEach(([title, la1, la2, lo1, lo2]) => {
+  const c = Math.cos((la1 + la2) / 2 * Math.PI / 180);
+  const W = (lo2 - lo1) * c * S, H = (la1 - la2) * S;
+  const px = lon => (lon - lo1) * c * S, py = lat => (la1 - lat) * S;
+  const div = document.createElement('div'); div.className = 'pane'; div.style.flex = `${W.toFixed(0)} 1 0`;
+  div.innerHTML = `<h2>${title}</h2>`;
+  const svg = document.createElementNS(NS, 'svg'); svg.setAttribute('viewBox', `0 0 ${W.toFixed(1)} ${H.toFixed(1)}`); svg.setAttribute('role', 'img'); svg.setAttribute('aria-label', 'Mapa ' + title);
+  const gL = document.createElementNS(NS, 'g'), gE = document.createElementNS(NS, 'g'), gH = document.createElementNS(NS, 'g'), gN = document.createElementNS(NS, 'g'), gT = document.createElementNS(NS, 'g');
+  Object.values(D.regs).forEach(rings => rings.forEach(r => { const p = document.createElementNS(NS, 'path'); p.setAttribute('d', 'M' + r.map(([x, y]) => px(x).toFixed(1) + ',' + py(y).toFixed(1)).join('L') + 'Z'); p.setAttribute('class', 'land'); gL.appendChild(p); }));
+  const order = ['FON', 'FOA_TER', 'CANDIDATO', 'FOA_SUB', 'TRONCAL'];
+  [...edges].sort((a, b) => order.indexOf(a.capa) - order.indexOf(b.capa)).forEach(e => {
+    const a = nodes.get(e.o), b = nodes.get(e.d);
+    const l = document.createElementNS(NS, 'line');
+    l.setAttribute('x1', px(a.lon)); l.setAttribute('y1', py(a.lat)); l.setAttribute('x2', px(b.lon)); l.setAttribute('y2', py(b.lat));
+    l.setAttribute('class', `e ${e.capa}${e.bridge ? ' bridge' : ''}`); l.dataset.e = e.id; l.dataset.capa = e.capa; gE.appendChild(l);
+    const h = l.cloneNode(); h.setAttribute('class', 'hit'); h.dataset.capa = e.capa; h.addEventListener('click', () => showEdge(e)); gH.appendChild(h);
+  });
+  [...nodes.values()].sort((a, b) => b.pop - a.pop).forEach(n => {
+    const big = n.tipo === 'CAPITAL_PIX' || n.tipo === 'NODO_TRONCAL';
+    const r = 2.2 + Math.sqrt(n.pop) / 110;
+    const el = document.createElementNS(NS, big ? 'rect' : 'circle');
+    if (big) { const s = r * 1.8; el.setAttribute('x', px(n.lon) - s / 2); el.setAttribute('y', py(n.lat) - s / 2); el.setAttribute('width', s); el.setAttribute('height', s); }
+    else { el.setAttribute('cx', px(n.lon)); el.setAttribute('cy', py(n.lat)); el.setAttribute('r', r); }
+    el.setAttribute('class', `n ${n.tipo}${n.pop ? '' : ' zero'}`); el.dataset.n = n.id; el.setAttribute('tabindex', '0');
+    el.addEventListener('click', () => showNode(n)); el.addEventListener('keydown', ev => { if (ev.key === 'Enter') showNode(n); });
+    gN.appendChild(el);
+    if (big || ['Coyhaique', 'Punta Arenas', 'Puerto Williams', 'Caleta Tortel', 'Calama', 'Chaitén', 'Puerto Natales'].includes(n.name)) {
+      const t = document.createElementNS(NS, 'text'); t.setAttribute('x', px(n.lon) + 6); t.setAttribute('y', py(n.lat) + 3.5); t.setAttribute('class', 'lbl'); t.textContent = n.name; gT.appendChild(t);
+    }
+  });
+  [gL, gE, gH, gN, gT].forEach(g => svg.appendChild(g));
+  div.appendChild(svg); maps.appendChild(div); panes.push(svg);
+});
+
+function apply() {
+  ['TRONCAL', 'FON', 'FOA_SUB', 'FOA_TER', 'CANDIDATO'].forEach(k => {
+    const on = document.getElementById('c-' + k).checked;
+    document.querySelectorAll(`[data-capa="${k}"]`).forEach(el => el.classList.toggle('off', !on));
+  });
+  const hl = document.getElementById('c-bridge').checked;
+  document.querySelectorAll('.e.bridge').forEach(el => el.classList.toggle('hl', hl));
+}
+document.querySelectorAll('.controls input').forEach(i => i.addEventListener('change', apply));
+
+const card = document.getElementById('card');
+function clearSel() { document.querySelectorAll('.sel').forEach(el => el.classList.remove('sel')); }
+function kv(k, v) { return `<div><div class="k">${k}</div><div class="v">${v}</div></div>`; }
+const capaName = {TRONCAL: 'Troncal', FON: 'FON', FOA_SUB: 'FOA submarina', FOA_TER: 'FOA terrestre', CANDIDATO: 'Candidato'};
+function showNode(n) {
+  clearSel(); document.querySelectorAll(`[data-n="${n.id}"]`).forEach(el => el.classList.add('sel'));
+  const deg = edges.filter(e => e.capa !== 'CANDIDATO' && (e.o === n.id || e.d === n.id)).length;
+  card.innerHTML = `<div class="t">${n.name} <span class="count">nodo ${n.id}</span></div>` +
+    kv('Tipo', n.tipo) + kv('Capas', n.capas) + kv('Comuna', n.comuna) + kv('Región', n.region) +
+    kv('Población asignada (Censo 2024)', n.pop ? fmt.format(n.pop) : '0 (nodo de paso)') + kv('Grado en red base', deg) + kv('Lat, lon', `${n.lat.toFixed(4)}, ${n.lon.toFixed(4)}`);
+}
+function showEdge(e) {
+  clearSel(); document.querySelectorAll(`.e[data-e="${e.id}"]`).forEach(el => el.classList.add('sel'));
+  const a = nodes.get(e.o), b = nodes.get(e.d);
+  card.innerHTML = `<div class="t">${a.name} – ${b.name} <span class="count">enlace ${e.id}</span></div>` +
+    kv('Capa', capaName[e.capa]) + kv('Detalle', e.sub) + kv('Km', fmt.format(e.km)) + kv('Capacidad por sentido', fmt.format(e.cap) + ' Gbps') +
+    kv('Clasificación', e.clas) + kv('Puente', e.capa === 'CANDIDATO' ? 'no aplica' : (e.bridge ? 'sí' : 'no')) +
+    kv('Demanda desconectada si falla', e.bridge ? fmt.format(e.lost) + ' Gbps' : '0');
+}
+apply();
+</script>

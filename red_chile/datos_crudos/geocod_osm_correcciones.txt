@@ -1,0 +1,6 @@
+Guallatiri;-18.49818;-69.15391;n214208865;hamlet;Guallatire;15201;reg;1
+Alhué;-34.03206;-71.09912;n1389354411;town;Villa Alhué;13502;cut;1
+Santo Domingo;-33.64059;-71.62610;n214196737;town;Rocas de Santo Domingo;05606;cut;1
+Icalma;-38.80778;-71.28105;w221924589;natural=beach (sin nodo place, orilla de la laguna Icalma);Icalma;09205;reg;1
+El Manzano;-42.00996;-72.64025;n214205911;hamlet;Caleta Manzano;10403;reg;1
+Tres Pinos;-37.62731;-73.41118;n214191985;suburb;Tres Pinos;08206;reg;1

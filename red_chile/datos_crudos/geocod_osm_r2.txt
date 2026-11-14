@@ -1,0 +1,100 @@
+Rancagua;-34.17024;-70.74072;n214204892;city;Rancagua;06101;cut;1
+Codegua;-34.03770;-70.65654;n214195345;town;Codegua;06102;cut;2
+Olivar Alto;-34.20944;-70.81723;n214218318;village;Olivar Alto;06111;cut;1
+Coinco;-34.26994;-70.95158;n214191881;town;Coinco;06103;cut;1
+Doñihue;-34.22607;-70.96489;n214189144;town;Doñihue;06105;cut;1
+Coltauco;-34.28628;-71.08257;n214194409;town;Coltauco;06104;cut;1
+Peumo;-34.39592;-71.16943;n214183679;town;Peumo;06112;cut;1
+Quinta de Tilcoco;-34.35458;-70.96388;n1378541069;town;Quinta de Tilcoco;06114;cut;1
+Malloa;-34.44214;-70.94407;n214219757;town;Malloa;06109;cut;1
+San Vicente;-34.43927;-71.07679;n214182120;town;San Vicente de Tagua Tagua;06117;cut;2
+Pichidegua;-34.35841;-71.28271;n214225384;town;Pichidegua;06113;cut;1
+Las Cabras;-34.29173;-71.30984;n214191315;town;Las Cabras;06107;cut;2
+Marchihue;-34.40009;-71.61828;n214232522;town;Marchigüe;06204;cut;1
+La Estrella;-34.20529;-71.65460;n2312971504;village;La Estrella;06202;cut;1
+Litueche;-34.11542;-71.72969;n666626409;town;Litueche;06203;cut;1
+Navidad;-33.95360;-71.83058;n214188433;village;Navidad;06205;cut;1
+Palmilla;-34.59605;-71.36248;n214194967;village;Palmilla;06306;cut;1
+Santa Cruz;-34.64032;-71.36613;n214225186;town;Santa Cruz;06310;cut;1
+Chépica;-34.72859;-71.27386;n214212771;town;Chépica;06302;cut;1
+Nancagua;-34.65274;-71.19538;n1387673757;town;Nancagua;06305;cut;1
+Placilla;-34.63859;-71.11737;n214210021;village;Placilla;06308;cut;1
+Chimbarongo;-34.70895;-71.04036;n214189481;town;Chimbarongo;06303;cut;1
+Lolol;-34.72784;-71.64408;n214206034;town;Lolol;06304;cut;1
+Pumanque;-34.60481;-71.65468;n214232613;village;Pumanque;06309;cut;1
+Peralillo;-34.47803;-71.47932;n214206052;town;Peralillo;06307;cut;1
+Población;-34.45039;-71.54806;n214184975;village;Población;06307;reg;1
+Paredones;-34.64764;-71.90085;n214205523;town;Paredones;06206;cut;1
+Pichilemu;-34.38517;-72.00466;n214225768;town;Pichilemu;06201;cut;1
+San Fernando;-34.58379;-70.98912;n214204398;city;San Fernando;06301;cut;1
+Talca;-35.42653;-71.66603;n50028181;city;Talca;07101;cut;1
+Pencahue;-35.39617;-71.79937;n1303123360;town;Pencahue;07107;cut;2
+Curepto;-35.09372;-72.01808;n214199010;town;Curepto;07103;cut;1
+Licantén;-34.98569;-71.98459;n214196664;town;Licantén;07303;cut;1
+Hualañé;-34.97749;-71.80121;n214195828;town;Hualañé;07302;cut;1
+Vichuquén;-34.88402;-71.99237;n3242142468;village;Vichuquén;07309;cut;1
+San Clemente;-35.53755;-71.48588;n214190079;town;San Clemente;07109;cut;2
+Pelarco;-35.38366;-71.44698;n214183724;town;Pelarco;07106;cut;1
+Río Claro;-35.28163;-71.25867;n214217764;town;Cumpeo;07108;cut;1
+Molina;-35.11397;-71.27998;n214210874;town;Molina;07304;cut;1
+Sagrada Familia;-34.99904;-71.38171;n214211345;town;Sagrada Familia;07307;cut;1
+Romeral;-34.95997;-71.12531;n1755678817;town;Romeral;07306;cut;2
+Rauco;-34.92461;-71.31669;n214226251;town;Rauco;07305;cut;2
+Teno;-34.86680;-71.16122;n558650927;town;Teno;07308;cut;1
+El Yacal;-35.19392;-71.11577;n2524389229;hamlet;El Yacal;07304;reg;1
+San Javier;-35.59239;-71.73531;n1825695778;town;San Javier;07406;cut;2
+Villa Alegre;-35.67520;-71.74467;n214231299;town;Villa Alegre;07407;cut;2
+Yerbas Buenas;-35.74641;-71.58208;n214187462;town;Yerbas Buenas;07408;cut;1
+Colbún;-35.69601;-71.40609;n214218708;town;Colbún;07402;cut;1
+Cauquenes;-35.96713;-72.31543;n214206410;city;Cauquenes;07201;cut;1
+Pelluhue;-35.81502;-72.57696;n214197902;town;Pelluhue;07203;cut;1
+Curanipe;-35.84525;-72.63636;n214227750;village;Curanipe;07203;reg;1
+Chanco;-35.73418;-72.53316;n214204336;town;Chanco;07202;cut;1
+Constitución;-35.33183;-72.41190;n656582484;city;Constitución;07102;cut;1
+Empedrado;-35.59078;-72.27762;n214198214;town;Empedrado;07104;cut;1
+Curicó;-34.98537;-71.23937;n214180445;city;Curicó;07301;cut;1
+Linares;-35.84529;-71.59772;n214211178;city;Linares;07401;cut;1
+Chillán;-36.60666;-72.10332;n214189449;city;Chillán;16101;cut;1
+San Nicolás;-36.50343;-72.21238;n4448610082;town;San Nicolás;16305;cut;1
+Ñiquén;-36.28275;-71.81483;n214201553;village;San Gregorio;16303;cut;2
+Portezuelo;-36.52744;-72.42853;n214189069;village;Portezuelo;16205;cut;1
+Ninhue;-36.39359;-72.39764;n214216196;village;Ninhue;16204;cut;1
+Quirihue;-36.28271;-72.54081;n214193860;town;Quirihue;16201;cut;1
+Cobquecura;-36.13176;-72.79154;n214225707;village;Cobquecura;16202;cut;1
+San Fabián;-36.55660;-71.54990;n214197378;village;San Fabián de Alico;16304;cut;1
+Pinto;-36.70361;-71.89228;n214191106;town;Pinto;16106;cut;1
+Coihueco;-36.62880;-71.83191;n214232505;town;Coihueco;16302;cut;1
+San Ignacio;-36.79982;-72.03035;n214187391;town;San Ignacio;16108;cut;2
+El Carmen;-36.89785;-72.02461;n214182734;town;El Carmen;16104;cut;2
+Pemuco;-36.97674;-72.09886;n4966739439;town;Pemuco;16105;cut;1
+Yungay;-37.11937;-72.01885;n3637267452;town;Yungay;16109;cut;1
+Quillón;-36.74438;-72.47644;n214208288;town;Quillón;16107;cut;1
+Ránquil;-36.60506;-72.53437;n311074708;village;Ñipas;16206;cut;1
+Coelemu;-36.48760;-72.70233;n214188529;town;Coelemu;16203;cut;1
+Hernán Brañas;-36.46925;-72.68885;n5142167151;village;Hernán Brañas;16207;reg;1
+Treguaco;-36.43070;-72.66582;n214182188;village;Trehuaco;16207;cut;1
+Concepción;-36.82707;-73.05021;n330756068;city;Concepción;08101;cut;1
+Lota;-37.09445;-73.15640;n214194166;town;Lota;08106;cut;1
+Santa Juana;-37.17378;-72.94259;n214222226;town;Santa Juana;08109;cut;2
+Nacimiento;-37.50183;-72.67311;n214204531;town;Nacimiento;08306;cut;1
+Negrete;-37.58567;-72.52926;n214225785;town;Negrete;08307;cut;1
+San Rosendo;-37.26308;-72.72403;n214212240;village;San Rosendo;08310;cut;1
+Yumbel;-37.09787;-72.56228;n214229849;town;Yumbel;08313;cut;1
+Florida;-36.82530;-72.66145;n214185774;town;Florida;08104;cut;1
+Santa Bárbara;-37.66808;-72.02141;n214186609;town;Santa Bárbara;08311;cut;1
+Quilaco;-37.68413;-72.00549;n214229876;village;Quilaco;08308;cut;2
+Mulchén;-37.72009;-72.24413;n214221007;town;Mulchén;08305;cut;1
+Alto Biobío;-37.88203;-71.63738;n1081486046;village;Ralco;08314;cut;1
+Quilleco;-37.47097;-71.98031;n214216508;town;Quilleco;08309;cut;1
+Tucapel;-37.24019;-71.94187;n214194089;town;Huépil;08312;cut;1
+Antuco;-37.32996;-71.67916;n3930494216;town;Antuco;08302;cut;1
+Arauco;-37.24625;-73.31764;n2809403613;town;Arauco;08202;cut;1
+Lebu;-37.61023;-73.65605;n214233604;city;Lebu;08201;cut;1
+Los Álamos;-37.62713;-73.46184;n214223277;town;Los Álamos;08206;cut;3
+Tres Pinos;-37.44685;-73.26204;n5915389755;hamlet;Tres Pinos;08205;reg;2
+Curanilahue;-37.47580;-73.34571;n214183590;town;Curanilahue;08205;cut;2
+Cañete;-37.80041;-73.39908;n214199769;town;Cañete;08203;cut;1
+Contulmo;-38.01602;-73.22860;n214185218;village;Contulmo;08204;cut;1
+Quidico;-38.25024;-73.48586;n1073686544;village;Quidico;08207;reg;2
+Tirúa;-38.34387;-73.49348;n214227580;town;Tirúa;08207;cut;1
+Los Ángeles;-37.47075;-72.35169;n214202817;city;Los Ángeles;08301;cut;1

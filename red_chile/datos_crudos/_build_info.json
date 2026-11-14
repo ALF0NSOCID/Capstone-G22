@@ -1,0 +1,779 @@
+{
+ "params": {
+  "trafico_fijo_2025_milesTB": 36356.4,
+  "trafico_movil_2025_milesTB": 7179.0,
+  "poblacion_nacional_2024": 18480432,
+  "factor_hora_punta": 1.6,
+  "fraccion_salida_internacional": 0.75,
+  "fraccion_bajada": 0.85,
+  "gamma": 0.0,
+  "max_productos": 10000,
+  "cap_troncal": 8000,
+  "cap_fon": 800,
+  "cap_foa_submarino": 400,
+  "cap_foa_terrestre": 100,
+  "cap_candidato": 800,
+  "km_foa_submarino_total": 2800,
+  "umbral_km_revision": 300
+ },
+ "calib": {
+  "n": 176,
+  "mediana": 1.3192199296643667,
+  "q1": 1.1896779292695556,
+  "q3": 1.4918153240016208,
+  "media": 1.401173203418537
+ },
+ "f_sub": 1.7264200142146853,
+ "demand": {
+  "trafico_anual_PB": 43535.4,
+  "promedio_gbps": 11036.428625751008,
+  "punta_gbps": 17658.285801201615,
+  "tau_mbps_hab": 0.9555126092940692,
+  "poblacion_en_red": 8850246,
+  "nodos_con_poblacion": 229,
+  "k": 1.3746794893318162e-11,
+  "pares_total": 52212,
+  "pares_conservados": 10000,
+  "demanda_total_gbps": 7084.957111061831,
+  "demanda_conservada_gbps": 6930.969156911558,
+  "fraccion_conservada": 0.9782655065180493,
+  "pares_salida": 456
+ },
+ "n_arcs": 570,
+ "sospechosos": [
+  {
+   "region": "Arica y Parinacota",
+   "triot": "AYP15-07",
+   "origen": "Socoroma",
+   "destino": "Putre",
+   "km": 27.5,
+   "geo_km": 8.753414950677852,
+   "ratio": 3.141631026856603
+  },
+  {
+   "region": "Arica y Parinacota",
+   "triot": "AYP15-02",
+   "origen": "Codpa",
+   "destino": "Camarones",
+   "km": 83.8,
+   "geo_km": 23.159343139344664,
+   "ratio": 3.618410051433405
+  },
+  {
+   "region": "Arica y Parinacota",
+   "triot": "AYP15-10",
+   "origen": "Cuya",
+   "destino": "Caleta Camarones",
+   "km": 10.28,
+   "geo_km": 12.271929669585024,
+   "ratio": 0.8376840706216024
+  },
+  {
+   "region": "Valparaíso",
+   "triot": "CTN05-15",
+   "origen": "Algarrobo",
+   "destino": "Guallelemu",
+   "km": 2.92,
+   "geo_km": 6.429218718789395,
+   "ratio": 0.45417649137776234
+  },
+  {
+   "region": "O'Higgins",
+   "triot": "CTO06-26",
+   "origen": "Peralillo",
+   "destino": "Población",
+   "km": 6.0,
+   "geo_km": 7.011461240792211,
+   "ratio": 0.8557417339901137
+  }
+ ],
+ "cab_por_comuna": {
+  "15202": [
+   "Visviri"
+  ],
+  "15201": [
+   "Putre"
+  ],
+  "15101": [
+   "Arica"
+  ],
+  "15102": [
+   "Codpa"
+  ],
+  "01101": [
+   "Iquique"
+  ],
+  "01401": [
+   "Pozo Almonte"
+  ],
+  "02202": [
+   "Ollagüe"
+  ],
+  "02301": [
+   "Tocopilla"
+  ],
+  "02302": [
+   "María Elena"
+  ],
+  "02201": [
+   "Calama"
+  ],
+  "02103": [
+   "Sierra Gorda"
+  ],
+  "02203": [
+   "San Pedro de Atacama"
+  ],
+  "02102": [
+   "Mejillones"
+  ],
+  "02101": [
+   "Antofagasta"
+  ],
+  "02104": [
+   "Taltal"
+  ],
+  "03201": [
+   "Chañaral"
+  ],
+  "03202": [
+   "Diego de Almagro"
+  ],
+  "03102": [
+   "Caldera"
+  ],
+  "03101": [
+   "Copiapó"
+  ],
+  "03103": [
+   "Tierra Amarilla"
+  ],
+  "03304": [
+   "Huasco"
+  ],
+  "03303": [
+   "Freirina"
+  ],
+  "03301": [
+   "Vallenar"
+  ],
+  "03302": [
+   "Alto del Carmen"
+  ],
+  "04104": [
+   "La Higuera"
+  ],
+  "04101": [
+   "La Serena"
+  ],
+  "04105": [
+   "Paiguano"
+  ],
+  "04106": [
+   "Vicuña"
+  ],
+  "04103": [
+   "Andacollo"
+  ],
+  "04305": [
+   "Samo Alto"
+  ],
+  "04301": [
+   "Ovalle"
+  ],
+  "04303": [
+   "Monte Patria"
+  ],
+  "04304": [
+   "Punitaqui"
+  ],
+  "04302": [
+   "Combarbalá"
+  ],
+  "04202": [
+   "Canela"
+  ],
+  "04201": [
+   "Illapel"
+  ],
+  "04204": [
+   "Salamanca"
+  ],
+  "04203": [
+   "Los Vilos"
+  ],
+  "05404": [
+   "Petorca"
+  ],
+  "05402": [
+   "Cabildo"
+  ],
+  "05401": [
+   "La Ligua"
+  ],
+  "05403": [
+   "Papudo"
+  ],
+  "05405": [
+   "Zapallar"
+  ],
+  "05705": [
+   "Putaendo"
+  ],
+  "05105": [
+   "Puchuncaví"
+  ],
+  "05706": [
+   "Santa María"
+  ],
+  "05702": [
+   "Catemu"
+  ],
+  "05107": [
+   "Quintero"
+  ],
+  "05502": [
+   "La Calera"
+  ],
+  "05304": [
+   "San Esteban"
+  ],
+  "05503": [
+   "Hijuelas"
+  ],
+  "05303": [
+   "Rinconada"
+  ],
+  "05302": [
+   "Calle Larga"
+  ],
+  "05803": [
+   "Olmué"
+  ],
+  "05101": [
+   "Valparaíso"
+  ],
+  "13303": [
+   "Tiltil"
+  ],
+  "13302": [
+   "Lampa"
+  ],
+  "05602": [
+   "Algarrobo"
+  ],
+  "13503": [
+   "Curacaví"
+  ],
+  "05604": [
+   "Guallelemu"
+  ],
+  "13101": [
+   "Santiago"
+  ],
+  "13504": [
+   "María Pinto"
+  ],
+  "05603": [
+   "Cartagena"
+  ],
+  "13604": [
+   "Padre Hurtado"
+  ],
+  "13401": [
+   "San Bernardo"
+  ],
+  "13403": [
+   "Calera de Tango"
+  ],
+  "13202": [
+   "Pirque"
+  ],
+  "13203": [
+   "San José de Maipo"
+  ],
+  "05606": [
+   "Santo Domingo"
+  ],
+  "13602": [
+   "El Monte"
+  ],
+  "13501": [
+   "Melipilla"
+  ],
+  "13603": [
+   "Isla de Maipo"
+  ],
+  "13505": [
+   "San Pedro"
+  ],
+  "06205": [
+   "Navidad"
+  ],
+  "13502": [
+   "Alhué"
+  ],
+  "06102": [
+   "Codegua"
+  ],
+  "06203": [
+   "Litueche"
+  ],
+  "06101": [
+   "Rancagua"
+  ],
+  "06202": [
+   "La Estrella"
+  ],
+  "06111": [
+   "Olivar Alto"
+  ],
+  "06105": [
+   "Doñihue"
+  ],
+  "06103": [
+   "Coinco"
+  ],
+  "06104": [
+   "Coltauco"
+  ],
+  "06107": [
+   "Las Cabras"
+  ],
+  "06114": [
+   "Quinta de Tilcoco"
+  ],
+  "06113": [
+   "Pichidegua"
+  ],
+  "06201": [
+   "Pichilemu"
+  ],
+  "06112": [
+   "Peumo"
+  ],
+  "06204": [
+   "Marchihue"
+  ],
+  "06117": [
+   "San Vicente"
+  ],
+  "06109": [
+   "Malloa"
+  ],
+  "06307": [
+   "Peralillo"
+  ],
+  "06301": [
+   "San Fernando"
+  ],
+  "06306": [
+   "Palmilla"
+  ],
+  "06309": [
+   "Pumanque"
+  ],
+  "06308": [
+   "Placilla"
+  ],
+  "06310": [
+   "Santa Cruz"
+  ],
+  "06206": [
+   "Paredones"
+  ],
+  "06305": [
+   "Nancagua"
+  ],
+  "06303": [
+   "Chimbarongo"
+  ],
+  "06304": [
+   "Lolol"
+  ],
+  "06302": [
+   "Chépica"
+  ],
+  "07308": [
+   "Teno"
+  ],
+  "07309": [
+   "Vichuquén"
+  ],
+  "07305": [
+   "Rauco"
+  ],
+  "07306": [
+   "Romeral"
+  ],
+  "07302": [
+   "Hualañé"
+  ],
+  "07301": [
+   "Curicó"
+  ],
+  "07303": [
+   "Licantén"
+  ],
+  "07307": [
+   "Sagrada Familia"
+  ],
+  "07103": [
+   "Curepto"
+  ],
+  "07304": [
+   "Molina"
+  ],
+  "07108": [
+   "Río Claro"
+  ],
+  "07102": [
+   "Constitución"
+  ],
+  "07106": [
+   "Pelarco"
+  ],
+  "07107": [
+   "Pencahue"
+  ],
+  "07101": [
+   "Talca"
+  ],
+  "07109": [
+   "San Clemente"
+  ],
+  "07104": [
+   "Empedrado"
+  ],
+  "07406": [
+   "San Javier"
+  ],
+  "07407": [
+   "Villa Alegre"
+  ],
+  "07402": [
+   "Colbún"
+  ],
+  "07202": [
+   "Chanco"
+  ],
+  "07408": [
+   "Yerbas Buenas"
+  ],
+  "07203": [
+   "Pelluhue"
+  ],
+  "07401": [
+   "Linares"
+  ],
+  "07201": [
+   "Cauquenes"
+  ],
+  "16202": [
+   "Cobquecura"
+  ],
+  "16201": [
+   "Quirihue"
+  ],
+  "16303": [
+   "Ñiquén"
+  ],
+  "16204": [
+   "Ninhue"
+  ],
+  "16207": [
+   "Treguaco"
+  ],
+  "16203": [
+   "Coelemu"
+  ],
+  "16305": [
+   "San Nicolás"
+  ],
+  "16205": [
+   "Portezuelo"
+  ],
+  "16304": [
+   "San Fabián"
+  ],
+  "16206": [
+   "Ránquil"
+  ],
+  "16101": [
+   "Chillán"
+  ],
+  "16302": [
+   "Coihueco"
+  ],
+  "16106": [
+   "Pinto"
+  ],
+  "16107": [
+   "Quillón"
+  ],
+  "16108": [
+   "San Ignacio"
+  ],
+  "08104": [
+   "Florida"
+  ],
+  "08101": [
+   "Concepción"
+  ],
+  "16104": [
+   "El Carmen"
+  ],
+  "16105": [
+   "Pemuco"
+  ],
+  "08106": [
+   "Lota"
+  ],
+  "08313": [
+   "Yumbel"
+  ],
+  "16109": [
+   "Yungay"
+  ],
+  "08109": [
+   "Santa Juana"
+  ],
+  "08312": [
+   "Tucapel"
+  ],
+  "08202": [
+   "Arauco"
+  ],
+  "08310": [
+   "San Rosendo"
+  ],
+  "08302": [
+   "Antuco"
+  ],
+  "08301": [
+   "Los Ángeles"
+  ],
+  "08309": [
+   "Quilleco"
+  ],
+  "08205": [
+   "Curanilahue"
+  ],
+  "08306": [
+   "Nacimiento"
+  ],
+  "08307": [
+   "Negrete"
+  ],
+  "08201": [
+   "Lebu"
+  ],
+  "08206": [
+   "Los Álamos"
+  ],
+  "08311": [
+   "Santa Bárbara"
+  ],
+  "09209": [
+   "Renaico"
+  ],
+  "08308": [
+   "Quilaco"
+  ],
+  "08305": [
+   "Mulchén"
+  ],
+  "09201": [
+   "Angol"
+  ],
+  "08203": [
+   "Cañete"
+  ],
+  "08314": [
+   "Alto Biobío"
+  ],
+  "09206": [
+   "Los Sauces"
+  ],
+  "08204": [
+   "Contulmo"
+  ],
+  "09208": [
+   "Purén"
+  ],
+  "09207": [
+   "Lumaco"
+  ],
+  "09210": [
+   "Traiguén"
+  ],
+  "08207": [
+   "Tirúa"
+  ],
+  "09106": [
+   "Galvarino"
+  ],
+  "09113": [
+   "Perquenco"
+  ],
+  "09203": [
+   "Curacautín"
+  ],
+  "09205": [
+   "Lonquimay"
+  ],
+  "09108": [
+   "Lautaro"
+  ],
+  "09121": [
+   "Cholchol"
+  ],
+  "09119": [
+   "Vilcún"
+  ],
+  "09102": [
+   "Carahue"
+  ],
+  "09101": [
+   "Temuco"
+  ],
+  "09111": [
+   "Nueva Imperial"
+  ],
+  "09116": [
+   "Saavedra"
+  ],
+  "09110": [
+   "Melipeuco"
+  ],
+  "09103": [
+   "Cunco"
+  ],
+  "09117": [
+   "Teodoro Schmidt"
+  ],
+  "09118": [
+   "Toltén"
+  ],
+  "09115": [
+   "Pucón"
+  ],
+  "09120": [
+   "Villarrica"
+  ],
+  "09104": [
+   "Curarrehue"
+  ],
+  "14106": [
+   "San José de la Mariquina"
+  ],
+  "14108": [
+   "Panguipulli"
+  ],
+  "14101": [
+   "Valdivia"
+  ],
+  "14102": [
+   "Corral"
+  ],
+  "14202": [
+   "Futrono"
+  ],
+  "14203": [
+   "Lago Ranco"
+  ],
+  "14204": [
+   "Río Bueno"
+  ],
+  "10307": [
+   "San Pablo"
+  ],
+  "10301": [
+   "Osorno"
+  ],
+  "10306": [
+   "San Juan de la Costa"
+  ],
+  "10305": [
+   "Río Negro"
+  ],
+  "10302": [
+   "Puerto Octay"
+  ],
+  "10104": [
+   "Fresia"
+  ],
+  "10106": [
+   "Los Muermos"
+  ],
+  "10101": [
+   "Puerto Montt"
+  ],
+  "10103": [
+   "Cochamó"
+  ],
+  "10108": [
+   "Maullín"
+  ],
+  "10102": [
+   "Calbuco"
+  ],
+  "10403": [
+   "Hornopirén"
+  ],
+  "10204": [
+   "Curaco de Vélez"
+  ],
+  "10210": [
+   "Quinchao"
+  ],
+  "10206": [
+   "Puqueldón"
+  ],
+  "10401": [
+   "Chaitén"
+  ],
+  "10402": [
+   "Futaleufú"
+  ],
+  "10404": [
+   "Palena"
+  ],
+  "11101": [
+   "Coyhaique"
+  ],
+  "11402": [
+   "Puerto Ingeniero Ibáñez"
+  ],
+  "11401": [
+   "Chile Chico"
+  ],
+  "11301": [
+   "Cochrane"
+  ],
+  "11303": [
+   "Caleta Tortel"
+  ],
+  "11302": [
+   "Villa O'Higgins"
+  ],
+  "12401": [
+   "Puerto Natales"
+  ],
+  "12302": [
+   "Cerro Sombrero"
+  ],
+  "12101": [
+   "Punta Arenas"
+  ],
+  "12301": [
+   "Porvenir"
+  ],
+  "12303": [
+   "Cameron"
+  ],
+  "12201": [
+   "Puerto Williams"
+  ]
+ }
+}

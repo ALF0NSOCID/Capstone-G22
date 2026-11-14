@@ -181,6 +181,7 @@ python3 visualizar_waxman.py \
   --sigma-masa 0.15 \
   --capacidad-escalones \
   --capacidad-min 800 \
+  --capacidad-max 800 \
   --factores-escalon 1 1.5 2.5 4 \
   --cuantiles-escalon 0.40 0.75 0.93 \
   --semilla 42 \

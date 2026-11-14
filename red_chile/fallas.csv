@@ -1,0 +1,96 @@
+id_enlace,capa,subtipo,origen,destino,es_puente,demanda_desconectada_gbps,demanda_desconectada_pct,z_ref_demanda_restante
+230,TRONCAL,troncal entre capitales/ciudades,Arica,Pozo Almonte,1,231.8764,3.346,0.4875
+231,TRONCAL,troncal entre capitales/ciudades,Pozo Almonte,Iquique,1,189.7734,2.738,0.4879
+232,TRONCAL,troncal entre capitales/ciudades,Pozo Almonte,Antofagasta,1,433.208,6.25,0.4855
+233,TRONCAL,troncal entre capitales/ciudades,Antofagasta,Copiapó,1,1008.6118,14.552,0.4798
+234,TRONCAL,troncal entre capitales/ciudades,Copiapó,La Serena,1,1265.2777,18.255,0.4774
+235,TRONCAL,troncal entre capitales/ciudades,La Serena,La Calera,1,1743.1207,25.15,0.4727
+236,TRONCAL,troncal entre capitales/ciudades,La Calera,Santiago,1,1784.3642,25.745,0.4723
+237,TRONCAL,troncal entre capitales/ciudades,Santiago,Valparaíso,1,570.7039,8.234,0.4849
+238,TRONCAL,troncal entre capitales/ciudades,Santiago,San Bernardo,1,4560.0301,65.792,0.2525
+239,TRONCAL,troncal entre capitales/ciudades,San Bernardo,Rancagua,1,3943.8775,56.902,0.4517
+240,TRONCAL,troncal entre capitales/ciudades,Rancagua,San Fernando,1,3440.9726,49.646,0.4567
+241,TRONCAL,troncal entre capitales/ciudades,San Fernando,Curicó,1,3385.2134,48.842,0.4574
+242,TRONCAL,troncal entre capitales/ciudades,Curicó,Talca,1,3266.5005,47.129,0.4589
+243,TRONCAL,troncal entre capitales/ciudades,Talca,Linares,1,2738.9614,39.518,0.4642
+244,TRONCAL,troncal entre capitales/ciudades,Linares,Chillán,1,2663.1192,38.423,0.4651
+245,TRONCAL,troncal entre capitales/ciudades,Chillán,Concepción,1,547.1385,7.894,0.4853
+246,TRONCAL,troncal entre capitales/ciudades,Chillán,Los Ángeles,1,1857.2197,26.796,0.4725
+247,TRONCAL,troncal entre capitales/ciudades,Los Ángeles,Temuco,1,1671.0567,24.11,0.4746
+248,TRONCAL,troncal entre capitales/ciudades,Temuco,Valdivia,1,1018.3903,14.693,0.4805
+249,TRONCAL,troncal entre capitales/ciudades,Valdivia,Osorno,1,761.3537,10.985,0.4829
+250,TRONCAL,troncal entre capitales/ciudades,Osorno,Puerto Montt,1,608.8913,8.785,0.4845
+251,FOA,submarino,Puerto Montt,Caleta Tortel,1,215.3088,3.106,0.4879
+252,FOA,submarino,Caleta Tortel,Punta Arenas,1,153.6509,2.217,0.4884
+253,FOA,submarino,Punta Arenas,Puerto Williams,1,1.2752,0.018,0.4898
+254,FOA,terrestre (exigible),Puerto Montt,Alerce,0,0.0,0.0,0.4898
+255,FOA,terrestre (exigible),Alerce,Ensenada,0,0.0,0.0,0.4898
+256,FOA,terrestre (exigible),Ensenada,Ralún,0,0.0,0.0,0.4898
+257,FOA,terrestre (exigible),Ralún,Cochamó,0,0.0,0.0,0.4898
+258,FOA,terrestre (exigible),Cochamó,Puelo Alto,0,0.0,0.0,0.4898
+259,FOA,terrestre (exigible),Puelo Alto,Contao,0,0.0,0.0,0.4898
+260,FOA,terrestre (exigible),Contao,El Manzano,0,0.0,0.0,0.4898
+261,FOA,terrestre (exigible),El Manzano,Pichicolo,0,0.0,0.0,0.4898
+262,FOA,terrestre (exigible),Pichicolo,Hornopirén,0,0.0,0.0,0.4898
+263,FOA,terrestre (adicional),Hornopirén,Chaitén,0,0.0,0.0,0.4898
+264,FOA,terrestre (adicional),Chaitén,Villa Santa Lucía,1,3.6518,0.053,0.4898
+265,FOA,terrestre (adicional),Villa Santa Lucía,Futaleufú,1,2.265,0.033,0.4898
+266,FOA,terrestre (adicional),Villa Santa Lucía,Palena,1,1.3867,0.02,0.4898
+267,FOA,terrestre (exigible),Caleta Tortel,Los Ñadis,1,61.3161,0.885,0.4893
+268,FOA,terrestre (exigible),Los Ñadis,Cochrane,1,61.3161,0.885,0.4893
+269,FOA,terrestre (exigible),Cochrane,Puerto Bertrand,1,58.7581,0.848,0.4893
+270,FOA,terrestre (exigible),Puerto Bertrand,Puerto Guadal,1,3.8534,0.056,0.4898
+271,FOA,terrestre (exigible),Puerto Guadal,Mallín Grande,1,3.8534,0.056,0.4898
+272,FOA,terrestre (exigible),Mallín Grande,Chile Chico,1,3.8534,0.056,0.4898
+273,FOA,terrestre (exigible),Puerto Bertrand,Puerto Río Tranquilo,1,54.9047,0.792,0.4893
+274,FOA,terrestre (exigible),Puerto Río Tranquilo,Bahía Murta,1,54.9047,0.792,0.4893
+275,FOA,terrestre (exigible),Bahía Murta,Cerro Castillo,1,54.9047,0.792,0.4893
+276,FOA,terrestre (exigible),Cerro Castillo,El Blanco,1,52.9205,0.764,0.4893
+277,FOA,terrestre (exigible),El Blanco,Coyhaique,1,52.9205,0.764,0.4893
+278,FOA,terrestre (adicional),Caleta Tortel,Villa O'Higgins,1,0.4715,0.007,0.4898
+279,FOA,terrestre (adicional),Cerro Castillo,Puerto Ingeniero Ibáñez,1,1.9843,0.029,0.4898
+280,FOA,terrestre (exigible),Punta Arenas,Porvenir,1,6.0236,0.087,0.4898
+281,FOA,terrestre (adicional),Porvenir,Onaisín,1,0.4285,0.006,0.4898
+282,FOA,terrestre (exigible),Onaisín,Cerro Sombrero,1,0.3141,0.005,0.4898
+283,FOA,terrestre (adicional),Onaisín,Cameron,1,0.1144,0.002,0.4898
+284,FOA,terrestre (exigible),Cameron,Pampa Guanaco,1,0.0,0.0,0.4898
+285,FOA,terrestre (adicional),Punta Arenas,Puerto Natales,1,21.1087,0.305,0.4897
+1,FON,TRIOT-AYP15-09 (exigible),Arica,Poconchile,1,2.1249,0.031,0.4898
+8,FON,TRIOT-AYP15-03 (exigible),Chapiquiña,Codpa,1,0.6274,0.009,0.4898
+11,FON,TRIOT-AYP15-10 (adicional),Cuya,Caleta Camarones,1,0.0,0.0,0.4898
+12,FON,TRIOT-NTE02-05 (exigible),Antofagasta,Baquedano,1,167.7174,2.42,0.4882
+18,FON,TRIOT-NTE02-02 (exigible),Calama,San Pedro de Atacama,1,8.4253,0.122,0.4898
+27,FON,TRIOT-NTE02-16 (exigible),Taltal,Paposo,1,0.0,0.0,0.4898
+28,FON,TRIOT-NTE03-05 (exigible),Copiapó,Caldera,1,104.3708,1.506,0.4891
+29,FON,TRIOT-NTE03-06 (exigible),Caldera,Chañaral,1,20.3998,0.294,0.4897
+32,FON,TRIOT-NTE03-10 (adicional),Tierra Amarilla,Nantoco,1,0.0,0.0,0.4898
+40,FON,TRIOT-CTN04-13 (exigible),La Serena,Vicuña,1,281.6002,4.063,0.4876
+42,FON,TRIOT-CTN04-17 (adicional),Paiguano,Guanta,1,0.0,0.0,0.4898
+51,FON,TRIOT-CTN04-02 (exigible),Canela Alta,Canela,1,32.7532,0.473,0.4896
+56,FON,TRIOT-CTN05-12 (exigible),Valparaíso,Puchuncaví,1,196.1786,2.83,0.4884
+61,FON,TRIOT-CTN05-20 (adicional),La Ligua,Catapilco,1,0.0,0.0,0.4898
+66,FON,TRIOT-CTN05-03 (exigible),Santa María,San Esteban,1,42.021,0.606,0.4895
+77,FON,TRIOT-CTN13-08 (exigible),San Bernardo,Calera de Tango,1,505.7144,7.296,0.4754
+78,FON,TRIOT-CTN13-10 (exigible),San Bernardo,Pirque,1,40.767,0.588,0.4895
+85,FON,TRIOT-CTN13-13 (adicional),Lampa,Batuco,1,0.0,0.0,0.4898
+92,FON,TRIOT-CTO06-24 (exigible),Rancagua,Olivar Alto,1,368.664,5.319,0.4873
+109,FON,TRIOT-CTO06-10 (exigible),Chépica,Nancagua,1,24.3313,0.351,0.4896
+115,FON,TRIOT-CTO06-26 (adicional),Peralillo,Población,1,0.0,0.0,0.4898
+131,FON,TRIOT-CTO07-24 (adicional),Molina,El Yacal,1,0.0,0.0,0.4898
+132,FON,TRIOT-CTO07-10 (exigible),Talca,San Javier,1,196.9964,2.842,0.4882
+134,FON,TRIOT-CTO07-08 (exigible),Villa Alegre,Yerbas Buenas,1,37.1117,0.535,0.4895
+144,FON,TRIOT-CTS16-15 (exigible),San Nicolás,Portezuelo,1,4.1221,0.059,0.4898
+149,FON,TRIOT-CTS16-11 (exigible),Chillán,Pinto,1,128.0127,1.847,0.489
+157,FON,TRIOT-CTS16-03 (exigible),Ránquil,Coelemu,1,18.7354,0.27,0.4897
+160,FON,TRIOT-CTS08-22 (exigible),Concepción,Lota,1,332.7748,4.801,0.4874
+168,FON,TRIOT-CTS08-14 (exigible),Santa Bárbara,Quilaco,1,29.0646,0.419,0.4896
+173,FON,TRIOT-CTS08-10 (exigible),Quilleco,Antuco,1,3.3411,0.048,0.4898
+191,FON,referencial,Temuco,Lautaro,1,154.3187,2.227,0.4887
+192,FON,referencial,Lautaro,Perquenco,1,6.2493,0.09,0.4898
+198,FON,referencial,Melipeuco,Cunco,1,79.8781,1.152,0.4892
+210,FON,referencial,Valdivia,Río Bueno,1,103.6671,1.496,0.489
+213,FON,referencial,Futrono,Panguipulli,1,51.4032,0.742,0.4894
+216,FON,"referencial (conexión flexible, submarina/subacuática)",Niebla,Corral,1,4.4281,0.064,0.4898
+217,FON,referencial,Puerto Montt,Puerto Octay,1,7.5226,0.109,0.4898
+220,FON,referencial,Pargua,Maullín,1,66.344,0.957,0.4894
+229,FON,"referencial (conexión flexible, submarina/subacuática)",Puqueldón,Chaitén,0,0.0,0.0,0.4898
