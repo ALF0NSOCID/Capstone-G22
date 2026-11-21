@@ -1,0 +1,11 @@
+instancia,archivo,arcos,escala,z_ref_highs
+base,instancias_enteras/base.txt,570,1000000,0.489805
+uniforme_mas25,instancias_enteras/uniforme_mas25.txt,570,1000000,0.612256
+uniforme_mas50,instancias_enteras/uniforme_mas50.txt,570,1000000,0.734707
+uniforme_mas100,instancias_enteras/uniforme_mas100.txt,570,1000000,0.97961
+hotspot_antofagasta_mas200,instancias_enteras/hotspot_antofagasta_mas200.txt,570,1000000,0.489805
+hotspot_aysen_mas200,instancias_enteras/hotspot_aysen_mas200.txt,570,1000000,1.438259
+base_mas_4_candidatos,instancias_enteras/base_mas_4_candidatos.txt,578,1000000,0.395828
+base_mas_20_candidatos,instancias_enteras/base_mas_20_candidatos.txt,610,1000000,0.395828
+hotspot_aysen_mas200_mas_20_candidatos,instancias_enteras/hotspot_aysen_mas200_mas_20_candidatos.txt,610,1000000,0.734485
+uniforme_mas100_mas_20_candidatos,instancias_enteras/uniforme_mas100_mas_20_candidatos.txt,610,1000000,0.791657

@@ -1,3 +1,4 @@
+import sys
 from pathlib import Path
 
 from setuptools import setup
@@ -13,6 +14,13 @@ except ImportError as error:
 
 RAIZ = Path(__file__).resolve().parent
 
+# MSVC (Windows) no reconoce las opciones de GCC/Clang; en macOS/Linux se
+# mantienen exactamente las de antes.
+if sys.platform == "win32":
+    OPCIONES = ["/O2", "/DNDEBUG", "/EHsc"]
+else:
+    OPCIONES = ["-O3", "-DNDEBUG"]
+
 
 setup(
     name="pricing_cpp",
@@ -23,7 +31,7 @@ setup(
             "pricing_cpp",
             [str(RAIZ / "pricing_cpp.cpp")],
             cxx_std=17,
-            extra_compile_args=["-O3", "-DNDEBUG"],
+            extra_compile_args=OPCIONES,
         )
     ],
     cmdclass={"build_ext": build_ext},

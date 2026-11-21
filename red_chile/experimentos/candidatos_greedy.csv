@@ -1,0 +1,10 @@
+paso,candidato_agregado,id_enlace,km_acum,z,mejora_acum_pct,puentes_pct
+0,(base),,0.0,0.4898,0.0,94.4
+1,Santo Domingo – San Pedro,292.0,42.6,0.4794,2.12,89.9
+2,Coyhaique – Villa Santa Lucía,305.0,360.7,0.4282,12.57,86.1
+3,Catemu – Tiltil,291.0,405.9,0.3987,18.6,83.7
+4,Alhué – Las Cabras,293.0,451.8,0.3958,19.19,80.3
+5,Río Bueno – San Pablo,304.0,464.9,0.3958,19.19,76.9
+6,Renaico – Negrete,300.0,479.0,0.3958,19.19,71.5
+7,Yungay – Tucapel,299.0,498.9,0.3958,19.19,68.5
+8,Chimbarongo – Teno,296.0,526.2,0.3958,19.19,63.5

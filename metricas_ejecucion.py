@@ -6,9 +6,24 @@ import subprocess
 
 def extraer_ultimo(texto, patrones, conversion=float):
     for patron in patrones:
-        coincidencias = re.findall(patron, texto, flags=re.IGNORECASE)
+        coincidencias = re.findall(
+            patron, texto, flags=re.IGNORECASE | re.MULTILINE
+        )
         if coincidencias:
             return conversion(coincidencias[-1])
+    return None
+
+
+def _certificacion(texto):
+    """Estado de certificación impreso por el solver (None si no lo imprime)."""
+    if re.search(r"SIN CERTIFICAR", texto):
+        return "sin certificar"
+    if re.search(r"No se alcanz[oó] la certificaci[oó]n", texto):
+        return "sin certificar (límite)"
+    if re.search(r"Soluci[oó]n [oó]ptima certificada", texto):
+        return "óptimo"
+    if re.search(r"error relativo certificado", texto):
+        return "brecha <= objetivo"
     return None
 
 
@@ -24,7 +39,13 @@ def resumir_salida(texto):
         "cota_inferior": extraer_ultimo(
             texto, [r"Cota inferior[^:]*:\s*([0-9.eE+\-]+)"]
         ),
-        "gap": extraer_ultimo(texto, [r"Gap[^:]*:\s*([0-9.eE+\-]+)%"]),
+        # Solo la brecha lograda ("Gap certificado"), nunca "Gap objetivo";
+        # acepta "inf" cuando la cota inferior es cero.
+        "gap": extraer_ultimo(
+            texto,
+            [r"^Gap certificado(?: actual)?:\s*([0-9.eE+\-]+|inf)%"],
+        ),
+        "certificacion": _certificacion(texto),
         "rondas": extraer_ultimo(texto, [r"Rondas realizadas:\s*(\d+)"], int),
         "fases": extraer_ultimo(texto, [r"Fases realizadas:\s*(\d+)"], int),
         "aumentos": extraer_ultimo(texto, [r"Aumentos de camino:\s*(\d+)"], int),
@@ -93,6 +114,7 @@ def construir_resumen_kpi(
         ("Cota superior", "cota_superior", ""),
         ("Cota inferior", "cota_inferior", ""),
         ("Gap certificado", "gap", "%"),
+        ("Certificacion", "certificacion", ""),
         ("Rondas", "rondas", ""),
         ("Fases", "fases", ""),
         ("Aumentos de camino", "aumentos", ""),

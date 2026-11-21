@@ -5,9 +5,12 @@ No importa ni modifica `lector.py` ni los solvers. Solo biblioteca estándar.
 Convenciones de la adaptación:
 * Cada enlace XML permite tráfico en ambos sentidos, con capacidad propia en
   cada sentido (NO hay capacidad compartida).
-* Arcos con el mismo (origen, destino) se fusionan sumando capacidades.
-  Si el XML incluye A->B y B->A como enlaces distintos, esta regla también
-  suma ambas capacidades en cada sentido; se registra en los metadatos.
+* Si el XML ya lista un par en ambos sentidos (A-B y B-A como enlaces
+  distintos), cada uno de esos enlaces se toma como dirigido y NO se crea su
+  inverso; así no se duplica la capacidad (brain, giul39, janos-us,
+  janos-us-ca, sun). Los pares listados en un solo sentido generan ambos arcos.
+* Enlaces paralelos reales (mismo par y sentido repetido, p. ej. ta1, zib54) se
+  fusionan sumando capacidades; se registran en los metadatos.
 * Capacidad por enlace: preinstalada positiva; si no existe, un módulo mínimo
   positivo (configurable a módulo máximo). NO se suman todos los módulos.
 * Costo fijo del `out` = 0; los costos SNDlib no equivalen a ese campo.
@@ -243,15 +246,26 @@ def generar_out(
         raise ErrorSNDlib('factor_capacidad debe ser positivo')
     id_nodos = {nombre: indice for indice, nombre in enumerate(red.nodos, 1)}
 
-    # Cada enlace genera dos arcos; al sumar el diccionario evitamos duplicados.
+    # Pares que el XML ya lista en ambos sentidos: sus enlaces son dirigidos.
+    pares_xml = {
+        (id_nodos[link.origen], id_nodos[link.destino]) for link in red.enlaces
+    }
+    pares_reciprocos = {(a, b) for a, b in pares_xml if (b, a) in pares_xml}
+
     arcos: dict[tuple[int, int], Decimal] = defaultdict(lambda: Decimal(0))
     repetidos = 0
+    enlaces_dirigidos = 0
     for link in red.enlaces:
         a, b = id_nodos[link.origen], id_nodos[link.destino]
         cap = link.capacidad * factor_capacidad
-        for arco in ((a, b), (b, a)):
+        if (a, b) in pares_reciprocos:
+            sentidos = ((a, b),)
+            enlaces_dirigidos += 1
+        else:
+            sentidos = ((a, b), (b, a))
+        for arco in sentidos:
             if arco in arcos:
-                repetidos += 1
+                repetidos += 1  # enlace paralelo real: se suma la capacidad
             arcos[arco] += cap
 
     lista_demandas = list(red.demandas_base if demandas is None else demandas)
@@ -322,6 +336,7 @@ def generar_out(
         'enlaces_xml': len(red.enlaces),
         'arcos_dirigidos': len(filas_arcos),
         'colisiones_arcos_fusionados': repetidos,
+        'enlaces_xml_tomados_como_dirigidos': enlaces_dirigidos,
         'commodities': len(filas_productos),
         'demandas_originales': len(lista_demandas),
         'demandas_cero_omitidas': omitidas_cero,
