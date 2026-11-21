@@ -1,0 +1,5 @@
+enlaces_extra,enlaces_totales,arcos_dirigidos,puentes_pct,km_extra,z_ref_highs,instancia
+0,305,610,32.8,0.0,0.395828,instancias_enteras/extendida_0.txt
+50,355,710,20.0,904.0,0.393404,instancias_enteras/extendida_50.txt
+100,405,810,13.3,2315.0,0.3397,instancias_enteras/extendida_100.txt
+200,505,1010,6.7,6282.0,0.3397,instancias_enteras/extendida_200.txt

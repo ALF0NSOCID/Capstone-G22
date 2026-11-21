@@ -1,0 +1,51 @@
+id,origen,destino,origen_nombre,destino_nombre,capa,km,capacidad_gbps_por_sentido
+10000,73,75,La Calera,Hijuelas,EXTRA,7.4,800
+10001,83,85,Algarrobo,Totoral,EXTRA,9.1,800
+10002,161,163,Treguaco,Coelemu,EXTRA,9.4,800
+10003,115,118,Marchihue,Población,EXTRA,11.3,800
+10004,90,91,Padre Hurtado,San Bernardo,EXTRA,12.5,800
+10005,132,135,Rauco,Curicó,EXTRA,12.9,800
+10006,114,116,Peumo,San Vicente,EXTRA,12.9,800
+10007,151,153,Chanco,Pelluhue,EXTRA,13.0,800
+10008,132,137,Rauco,Sagrada Familia,EXTRA,13.4,800
+10009,123,127,Placilla,Chimbarongo,EXTRA,13.9,800
+10010,70,76,Santa María,Rinconada,EXTRA,13.9,800
+10011,133,135,Romeral,Curicó,EXTRA,14.2,800
+10012,130,133,Teno,Romeral,EXTRA,14.3,800
+10013,74,76,San Esteban,Rinconada,EXTRA,14.5,800
+10014,152,155,Yerbas Buenas,Linares,EXTRA,14.6,800
+10015,112,114,Pichidegua,Peumo,EXTRA,14.8,800
+10016,108,109,Coinco,Coltauco,EXTRA,16.1,800
+10017,70,77,Santa María,Calle Larga,EXTRA,16.2,800
+10018,165,167,Portezuelo,Ránquil,EXTRA,16.9,800
+10019,135,137,Curicó,Sagrada Familia,EXTRA,17.2,800
+10020,120,123,San Fernando,Placilla,EXTRA,17.4,800
+10021,109,111,Coltauco,Quinta de Tilcoco,EXTRA,17.5,800
+10022,106,107,Olivar Alto,Doñihue,EXTRA,18.1,800
+10023,201,202,Contulmo,Purén,EXTRA,18.2,800
+10024,111,116,Quinta de Tilcoco,San Vicente,EXTRA,18.5,800
+10025,86,89,Guallelemu,Cartagena,EXTRA,18.8,800
+10026,107,111,Doñihue,Quinta de Tilcoco,EXTRA,18.8,800
+10027,120,127,San Fernando,Chimbarongo,EXTRA,19.4,800
+10028,254,256,Hornopirén,El Manzano,EXTRA,19.6,800
+10029,160,165,Ninhue,Portezuelo,EXTRA,20.0,800
+10030,115,119,Marchihue,Peralillo,EXTRA,20.3,800
+10031,126,127,Nancagua,Chimbarongo,EXTRA,20.4,800
+10032,124,126,Santa Cruz,Nancagua,EXTRA,20.7,800
+10033,140,141,El Yacal,Río Claro,EXTRA,21.4,800
+10034,4,5,Socoroma,Chapiquiña,EXTRA,21.4,800
+10035,117,120,Malloa,San Fernando,EXTRA,21.5,800
+10036,121,126,Palmilla,Nancagua,EXTRA,21.8,800
+10037,121,129,Palmilla,Chépica,EXTRA,22.2,800
+10038,119,121,Peralillo,Palmilla,EXTRA,22.3,800
+10039,109,116,Coltauco,San Vicente,EXTRA,22.4,800
+10040,66,67,Zapallar,Catapilco,EXTRA,22.5,800
+10041,65,67,Papudo,Catapilco,EXTRA,22.5,800
+10042,92,93,Calera de Tango,Pirque,EXTRA,22.8,800
+10043,110,114,Las Cabras,Peumo,EXTRA,22.9,800
+10044,123,129,Placilla,Chépica,EXTRA,23.0,800
+10045,231,233,Valdivia,Corral,EXTRA,23.5,800
+10046,212,217,Cholchol,Nueva Imperial,EXTRA,24.1,800
+10047,129,130,Chépica,Teno,EXTRA,24.4,800
+10048,257,259,Curaco de Vélez,Puqueldón,EXTRA,24.7,800
+10049,171,173,Quillón,Florida,EXTRA,24.8,800

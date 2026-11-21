@@ -1,0 +1,201 @@
+id,origen,destino,origen_nombre,destino_nombre,capa,km,capacidad_gbps_por_sentido
+10000,73,75,La Calera,Hijuelas,EXTRA,7.4,800
+10001,83,85,Algarrobo,Totoral,EXTRA,9.1,800
+10002,161,163,Treguaco,Coelemu,EXTRA,9.4,800
+10003,115,118,Marchihue,Población,EXTRA,11.3,800
+10004,90,91,Padre Hurtado,San Bernardo,EXTRA,12.5,800
+10005,132,135,Rauco,Curicó,EXTRA,12.9,800
+10006,114,116,Peumo,San Vicente,EXTRA,12.9,800
+10007,151,153,Chanco,Pelluhue,EXTRA,13.0,800
+10008,132,137,Rauco,Sagrada Familia,EXTRA,13.4,800
+10009,123,127,Placilla,Chimbarongo,EXTRA,13.9,800
+10010,70,76,Santa María,Rinconada,EXTRA,13.9,800
+10011,133,135,Romeral,Curicó,EXTRA,14.2,800
+10012,130,133,Teno,Romeral,EXTRA,14.3,800
+10013,74,76,San Esteban,Rinconada,EXTRA,14.5,800
+10014,152,155,Yerbas Buenas,Linares,EXTRA,14.6,800
+10015,112,114,Pichidegua,Peumo,EXTRA,14.8,800
+10016,108,109,Coinco,Coltauco,EXTRA,16.1,800
+10017,70,77,Santa María,Calle Larga,EXTRA,16.2,800
+10018,165,167,Portezuelo,Ránquil,EXTRA,16.9,800
+10019,135,137,Curicó,Sagrada Familia,EXTRA,17.2,800
+10020,120,123,San Fernando,Placilla,EXTRA,17.4,800
+10021,109,111,Coltauco,Quinta de Tilcoco,EXTRA,17.5,800
+10022,106,107,Olivar Alto,Doñihue,EXTRA,18.1,800
+10023,201,202,Contulmo,Purén,EXTRA,18.2,800
+10024,111,116,Quinta de Tilcoco,San Vicente,EXTRA,18.5,800
+10025,86,89,Guallelemu,Cartagena,EXTRA,18.8,800
+10026,107,111,Doñihue,Quinta de Tilcoco,EXTRA,18.8,800
+10027,120,127,San Fernando,Chimbarongo,EXTRA,19.4,800
+10028,254,256,Hornopirén,El Manzano,EXTRA,19.6,800
+10029,160,165,Ninhue,Portezuelo,EXTRA,20.0,800
+10030,115,119,Marchihue,Peralillo,EXTRA,20.3,800
+10031,126,127,Nancagua,Chimbarongo,EXTRA,20.4,800
+10032,124,126,Santa Cruz,Nancagua,EXTRA,20.7,800
+10033,140,141,El Yacal,Río Claro,EXTRA,21.4,800
+10034,4,5,Socoroma,Chapiquiña,EXTRA,21.4,800
+10035,117,120,Malloa,San Fernando,EXTRA,21.5,800
+10036,121,126,Palmilla,Nancagua,EXTRA,21.8,800
+10037,121,129,Palmilla,Chépica,EXTRA,22.2,800
+10038,119,121,Peralillo,Palmilla,EXTRA,22.3,800
+10039,109,116,Coltauco,San Vicente,EXTRA,22.4,800
+10040,66,67,Zapallar,Catapilco,EXTRA,22.5,800
+10041,65,67,Papudo,Catapilco,EXTRA,22.5,800
+10042,92,93,Calera de Tango,Pirque,EXTRA,22.8,800
+10043,110,114,Las Cabras,Peumo,EXTRA,22.9,800
+10044,123,129,Placilla,Chépica,EXTRA,23.0,800
+10045,231,233,Valdivia,Corral,EXTRA,23.5,800
+10046,212,217,Cholchol,Nueva Imperial,EXTRA,24.1,800
+10047,129,130,Chépica,Teno,EXTRA,24.4,800
+10048,257,259,Curaco de Vélez,Puqueldón,EXTRA,24.7,800
+10049,171,173,Quillón,Florida,EXTRA,24.8,800
+10050,146,150,San Clemente,Colbún,EXTRA,25.1,800
+10051,108,117,Coinco,Malloa,EXTRA,25.3,800
+10052,192,198,Tres Pinos,Cañete,EXTRA,25.4,800
+10053,80,81,Tiltil,Batuco,EXTRA,25.9,800
+10054,187,191,Curanilahue,Los Álamos,EXTRA,26.0,800
+10055,118,122,Población,Pumanque,EXTRA,26.1,800
+10056,270,271,Puerto Río Tranquilo,Mallín Grande,EXTRA,26.1,800
+10057,158,161,Quirihue,Treguaco,EXTRA,26.3,800
+10058,212,218,Cholchol,Labranza,EXTRA,26.4,800
+10059,87,90,Santiago,Padre Hurtado,EXTRA,26.5,800
+10060,35,37,Copiapó,Nantoco,EXTRA,26.6,800
+10061,185,189,Los Ángeles,Negrete,EXTRA,26.7,800
+10062,131,134,Vichuquén,Hualañé,EXTRA,26.8,800
+10063,143,145,Pelarco,Talca,EXTRA,26.9,800
+10064,193,196,Santa Bárbara,Mulchén,EXTRA,26.9,800
+10065,162,167,Hernán Brañas,Ránquil,EXTRA,27.0,800
+10066,90,96,Padre Hurtado,El Monte,EXTRA,27.0,800
+10067,188,194,Nacimiento,Renaico,EXTRA,27.0,800
+10068,172,176,San Ignacio,Pemuco,EXTRA,27.2,800
+10069,83,89,Algarrobo,Cartagena,EXTRA,27.2,800
+10070,237,238,San Pablo,Osorno,EXTRA,27.4,800
+10071,119,124,Peralillo,Santa Cruz,EXTRA,27.4,800
+10072,92,96,Calera de Tango,El Monte,EXTRA,27.6,800
+10073,69,73,Puchuncaví,La Calera,EXTRA,27.7,800
+10074,132,139,Rauco,Molina,EXTRA,28.1,800
+10075,200,203,Los Sauces,Lumaco,EXTRA,28.2,800
+10076,226,227,Pucón,Villarrica,EXTRA,28.4,800
+10077,104,107,Rancagua,Doñihue,EXTRA,28.4,800
+10078,190,192,Lebu,Tres Pinos,EXTRA,28.6,800
+10079,180,183,Santa Juana,San Rosendo,EXTRA,28.7,800
+10080,67,69,Catapilco,Puchuncaví,EXTRA,28.9,800
+10081,96,97,El Monte,Melipilla,EXTRA,28.9,800
+10082,105,115,La Estrella,Marchihue,EXTRA,28.9,800
+10083,148,152,San Javier,Yerbas Buenas,EXTRA,29.0,800
+10084,2,5,Putre,Chapiquiña,EXTRA,29.4,800
+10085,104,108,Rancagua,Coinco,EXTRA,29.5,800
+10086,168,172,Chillán,San Ignacio,EXTRA,29.6,800
+10087,71,73,Catemu,La Calera,EXTRA,29.7,800
+10088,144,148,Pencahue,San Javier,EXTRA,29.8,800
+10089,161,167,Treguaco,Ránquil,EXTRA,29.9,800
+10090,122,125,Pumanque,Paredones,EXTRA,30.4,800
+10091,87,93,Santiago,Pirque,EXTRA,30.5,800
+10092,149,155,Villa Alegre,Linares,EXTRA,30.5,800
+10093,68,74,Putaendo,San Esteban,EXTRA,30.5,800
+10094,59,61,Salamanca,Caimanes,EXTRA,30.7,800
+10095,146,148,San Clemente,San Javier,EXTRA,30.8,800
+10096,131,138,Vichuquén,Curepto,EXTRA,30.9,800
+10097,134,138,Hualañé,Curepto,EXTRA,31.1,800
+10098,87,92,Santiago,Calera de Tango,EXTRA,31.3,800
+10099,133,137,Romeral,Sagrada Familia,EXTRA,31.3,800
+10100,211,214,Lautaro,Vilcún,EXTRA,31.4,800
+10101,186,195,Quilleco,Quilaco,EXTRA,31.4,800
+10102,68,76,Putaendo,Rinconada,EXTRA,31.5,800
+10103,150,155,Colbún,Linares,EXTRA,31.6,800
+10104,162,165,Hernán Brañas,Portezuelo,EXTRA,31.9,800
+10105,102,106,Codegua,Olivar Alto,EXTRA,31.9,800
+10106,64,66,La Ligua,Zapallar,EXTRA,31.9,800
+10107,86,95,Guallelemu,Santo Domingo,EXTRA,31.9,800
+10108,168,169,Chillán,Coihueco,EXTRA,32.1,800
+10109,65,69,Papudo,Puchuncaví,EXTRA,32.3,800
+10110,85,95,Totoral,Santo Domingo,EXTRA,32.4,800
+10111,170,175,Pinto,El Carmen,EXTRA,32.5,800
+10112,158,162,Quirihue,Hernán Brañas,EXTRA,32.5,800
+10113,270,272,Puerto Río Tranquilo,Puerto Guadal,EXTRA,32.5,800
+10114,175,179,El Carmen,Yungay,EXTRA,32.5,800
+10115,253,255,Contao,Pichicolo,EXTRA,32.6,800
+10116,146,152,San Clemente,Yerbas Buenas,EXTRA,32.7,800
+10117,181,184,Tucapel,Antuco,EXTRA,33.4,800
+10118,58,59,Illapel,Salamanca,EXTRA,33.4,800
+10119,182,187,Arauco,Curanilahue,EXTRA,33.8,800
+10120,238,240,Osorno,Río Negro,EXTRA,33.8,800
+10121,91,98,San Bernardo,Isla de Maipo,EXTRA,34.0,800
+10122,78,80,Olmué,Tiltil,EXTRA,34.2,800
+10123,169,172,Coihueco,San Ignacio,EXTRA,34.3,800
+10124,112,118,Pichidegua,Población,EXTRA,34.8,800
+10125,166,169,San Fabián,Coihueco,EXTRA,34.9,800
+10126,66,72,Zapallar,Quintero,EXTRA,35.0,800
+10127,122,124,Pumanque,Santa Cruz,EXTRA,35.2,800
+10128,68,77,Putaendo,Calle Larga,EXTRA,35.4,800
+10129,183,188,San Rosendo,Nacimiento,EXTRA,35.5,800
+10130,158,163,Quirihue,Coelemu,EXTRA,35.6,800
+10131,253,254,Contao,Hornopirén,EXTRA,36.2,800
+10132,147,151,Empedrado,Chanco,EXTRA,37.0,800
+10133,106,117,Olivar Alto,Malloa,EXTRA,37.4,800
+10134,189,197,Negrete,Angol,EXTRA,37.6,800
+10135,238,239,Osorno,San Juan de la Costa,EXTRA,37.6,800
+10136,145,149,Talca,Villa Alegre,EXTRA,37.7,800
+10137,185,188,Los Ángeles,Nacimiento,EXTRA,37.7,800
+10138,70,71,Santa María,Catemu,EXTRA,38.1,800
+10139,160,163,Ninhue,Coelemu,EXTRA,38.5,800
+10140,189,196,Negrete,Mulchén,EXTRA,38.5,800
+10141,185,196,Los Ángeles,Mulchén,EXTRA,38.6,800
+10142,203,207,Lumaco,Galvarino,EXTRA,38.8,800
+10143,130,139,Teno,Molina,EXTRA,39.0,800
+10144,97,98,Melipilla,Isla de Maipo,EXTRA,39.2,800
+10145,212,215,Cholchol,Carahue,EXTRA,39.7,800
+10146,72,79,Quintero,Valparaíso,EXTRA,40.0,800
+10147,83,95,Algarrobo,Santo Domingo,EXTRA,40.1,800
+10148,244,250,Ralún,Puelo Alto,EXTRA,40.4,800
+10149,149,150,Villa Alegre,Colbún,EXTRA,40.4,800
+10150,208,214,Perquenco,Vilcún,EXTRA,40.6,800
+10151,190,198,Lebu,Cañete,EXTRA,40.8,800
+10152,187,190,Curanilahue,Lebu,EXTRA,41.1,800
+10153,128,134,Lolol,Hualañé,EXTRA,41.2,800
+10154,216,217,Temuco,Nueva Imperial,EXTRA,41.4,800
+10155,205,208,Traiguén,Perquenco,EXTRA,41.6,800
+10156,65,72,Papudo,Quintero,EXTRA,41.8,800
+10157,47,50,Paiguano,Río Hurtado,EXTRA,41.9,800
+10158,51,53,Samo Alto,Monte Patria,EXTRA,41.9,800
+10159,71,78,Catemu,Olmué,EXTRA,42.1,800
+10160,154,156,Curanipe,Cauquenes,EXTRA,42.1,800
+10161,143,144,Pelarco,Pencahue,EXTRA,42.2,800
+10162,267,269,Puerto Ingeniero Ibáñez,Chile Chico,EXTRA,42.2,800
+10163,100,105,Navidad,La Estrella,EXTRA,42.7,800
+10164,215,223,Carahue,Teodoro Schmidt,EXTRA,42.7,800
+10165,176,181,Pemuco,Tucapel,EXTRA,42.8,800
+10166,84,97,Curacaví,Melipilla,EXTRA,42.8,800
+10167,151,156,Chanco,Cauquenes,EXTRA,42.9,800
+10168,53,54,Monte Patria,Punitaqui,EXTRA,42.9,800
+10169,214,216,Vilcún,Temuco,EXTRA,43.0,800
+10170,201,203,Contulmo,Lumaco,EXTRA,43.2,800
+10171,200,205,Los Sauces,Traiguén,EXTRA,43.5,800
+10172,91,94,San Bernardo,San José de Maipo,EXTRA,43.5,800
+10173,207,211,Galvarino,Lautaro,EXTRA,43.7,800
+10174,105,110,La Estrella,Las Cabras,EXTRA,43.7,800
+10175,168,175,Chillán,El Carmen,EXTRA,43.7,800
+10176,88,98,María Pinto,Isla de Maipo,EXTRA,43.7,800
+10177,139,143,Molina,Pelarco,EXTRA,44.3,800
+10178,268,271,Bahía Murta,Mallín Grande,EXTRA,44.6,800
+10179,251,253,Calbuco,Contao,EXTRA,44.9,800
+10180,240,241,Río Negro,Puerto Octay,EXTRA,45.0,800
+10181,180,182,Santa Juana,Arauco,EXTRA,45.1,800
+10182,82,88,Lampa,María Pinto,EXTRA,45.3,800
+10183,201,204,Contulmo,Quidico,EXTRA,45.4,800
+10184,173,174,Florida,Concepción,EXTRA,45.6,800
+10185,166,170,San Fabián,Pinto,EXTRA,45.7,800
+10186,178,180,Yumbel,Santa Juana,EXTRA,45.8,800
+10187,154,157,Curanipe,Cobquecura,EXTRA,45.9,800
+10188,219,223,Saavedra,Teodoro Schmidt,EXTRA,46.2,800
+10189,221,224,Melipeuco,Reigolil,EXTRA,46.2,800
+10190,99,100,San Pedro,Navidad,EXTRA,46.4,800
+10191,207,208,Galvarino,Perquenco,EXTRA,46.4,800
+10192,99,103,San Pedro,Litueche,EXTRA,46.4,800
+10193,81,84,Batuco,Curacaví,EXTRA,46.7,800
+10194,170,176,Pinto,Pemuco,EXTRA,46.8,800
+10195,164,171,San Nicolás,Quillón,EXTRA,47.1,800
+10196,62,64,Petorca,La Ligua,EXTRA,47.2,800
+10197,3,4,Parinacota,Socoroma,EXTRA,47.4,800
+10198,215,218,Carahue,Labranza,EXTRA,47.8,800
+10199,128,131,Lolol,Vichuquén,EXTRA,47.8,800
