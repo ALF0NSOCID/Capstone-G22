@@ -25,13 +25,16 @@ from lector import arcos, demandas, n
 
 
 # Parámetros del algoritmo.
-TOLERANCIA = 1e-7
+# Los valores por defecto son los de la Entrega 2; los experimentos de sensibilidad
+# pueden cambiarlos con variables de entorno sin editar el archivo.
+import os as _os
+TOLERANCIA = float(_os.environ.get("E2_TOLERANCIA", 1e-7))
 MAX_ITERACIONES = 1000
-LIMITE_TIEMPO = 120
+LIMITE_TIEMPO = float(_os.environ.get("E2_LIMITE_TIEMPO", 120))
 INTERVALO_PROGRESO = 1
 
 # Parámetros de las mejoras de la Entrega 2.
-ETA = 25
+ETA = float(_os.environ.get("E2_ETA", 25))
 GAP_OBJETIVO = 0.01  # 0.01 certifica 1%; 0.0 exige el óptimo exacto.
 TOLERANCIA_GAP_OPTIMO = 1e-6  # brecha máxima para declarar el óptimo exacto.
 
@@ -106,6 +109,7 @@ print(
 )
 print(f"ETA: {ETA:g} | Objetivo de brecha: {100 * GAP_OBJETIVO:g}%", flush=True)
 print(f"Escala de capacidad (máxima): {ESCALA_CAPACIDAD:g}", flush=True)
+print(f"Límite de tiempo: {LIMITE_TIEMPO:g} s | Tolerancia: {TOLERANCIA:g}", flush=True)
 print("Construyendo el problema maestro restringido...", flush=True)
 
 modelo = gp.Model("generacion_columnas_e2")

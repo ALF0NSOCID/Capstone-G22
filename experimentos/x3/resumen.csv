@@ -1,0 +1,9 @@
+grado,productos_por_nodo,certificadas,corridas,mediana_tiempo_s,iteraciones_mediana
+4,10,3,3,0.18,2
+4,25,3,3,1.05,9
+8,10,3,3,0.36,6
+8,25,3,3,1.1,7
+12,10,3,3,0.99,17
+12,25,3,3,12.49,91
+16,10,2,3,362.33,306
+16,25,3,3,22.92,161
