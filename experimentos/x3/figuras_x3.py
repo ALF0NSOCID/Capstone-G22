@@ -21,7 +21,7 @@ for i in d.index[~ok]:
 # 1. Mapa de regímenes
 azules = LinearSegmentedColormap.from_list('az', ['#cde2fb', '#86b6ef', '#3987e5', '#256abf', '#104281'])
 grados, ppns = sorted(d.grado.unique()), sorted(d.productos_por_nodo.unique())
-fig, (ax, ax2) = plt.subplots(2, 1, figsize=(9, 5.6), gridspec_kw=dict(height_ratios=[len(ppns), 1.1], hspace=0.08), sharex=True)
+fig, (ax, ax2) = plt.subplots(2, 1, figsize=(9, 6.6), gridspec_kw=dict(height_ratios=[len(ppns), 1.1], hspace=0.08), sharex=True)
 norm = LogNorm(0.1, 1000)
 for g in grados:
     for j, p in enumerate(ppns):
@@ -36,8 +36,8 @@ for g in grados:
         ax.text(g, j - 0.2, f'certifican {cert.sum()}/{len(c)}', ha='center', va='center', fontsize=8.5, color=tinta)
 ax.set_yticks(range(len(ppns))); ax.set_yticklabels([f'{p} prod./nodo\n(K = {p * 400:,})'.replace(',', '.') for p in ppns])
 ax.set_ylim(-0.55, len(ppns) - 0.45); ax.tick_params(length=0)
-ax.set_title('El método certifica en todo el rango; en redes densas se vuelve lento', loc='left', fontsize=13, fontweight='bold', color=TXT, pad=24)
-ax.text(0, 1.02, 'Mediana del tiempo interno de E2 v2 (400 nodos, 3 semillas por celda, límite 900 s). Abajo: grado de las redes reales.',
+ax.set_title('Rápido en redes dispersas; lento o sin certificar en grado 16', loc='left', fontsize=13, fontweight='bold', color=TXT, pad=24)
+ax.text(0, 1.02, 'Mediana del tiempo interno de E2 v2 (400 nodos, 5 semillas por celda, límite 900 s). Abajo: grado de las redes reales.',
         transform=ax.transAxes, fontsize=9, color=TXT2)
 s = pd.read_csv(os.path.join(RAIZ, 'experimentos', 'sndlib_validacion_v2.csv')); s['grado'] = s.arcos / s.nodos
 sn = s[s.red != 'fon-raw']
@@ -54,15 +54,14 @@ fig.savefig(os.path.join(FIG, 'mapa_regimenes.png'), dpi=200); plt.close(fig)
 
 # 2. Tiempo contra carga (z)
 colores = {4: '#2a78d6', 8: '#1baf7a', 12: '#eda100', 16: '#e34948'}
-marc = {10: 'o', 25: 's'}
+marc = {10: 'o', 25: 's', 50: '^'}
 fig, ax = plt.subplots(figsize=(9, 5.4))
 for _, r in d.iterrows():
     cert = r.certificacion in ('óptimo', 'brecha <= 1%')
     ax.scatter(r.z, r.tiempo_interno_s, s=70, marker=marc[r.productos_por_nodo], zorder=3,
                color=colores[r.grado] if cert else SURF, edgecolor=colores[r.grado], lw=1.8)
 cens = d[~ok]
-for _, r in cens.iterrows():
-    ax.annotate('no certificó en 900 s', (r.z, r.tiempo_interno_s), xytext=(10, -16), textcoords='offset points', fontsize=8.5, color=TXT2)
+ax.text(0.16, 250, f'Marcadores huecos: {len(cens)} corridas sin certificar en 900 s\n(se ubican en la cota superior de z al cortar)', fontsize=8.5, color=TXT2, va='center')
 ax.set_xscale('log'); ax.set_yscale('log'); ax.set_ylim(0.08, 2000)
 ax.axhline(900, color=TXT2, lw=0.8, ls='--'); ax.text(0.95, 900 * 1.12, 'límite 900 s', fontsize=8.5, color=TXT2, ha='right')
 from matplotlib.ticker import FuncFormatter
@@ -71,7 +70,7 @@ ax.xaxis.set_major_formatter(fmt); ax.yaxis.set_major_formatter(fmt)
 ax.set_xlabel('Congestión óptima z (carga de la red, escala log)'); ax.set_ylabel('Tiempo interno E2 v2 (s, escala log)')
 ax.grid(color=GRID, lw=0.8); ax.set_axisbelow(True)
 h = [Line2D([], [], marker='o', ls='', color=colores[g], ms=8, label=f'grado {g}') for g in sorted(colores)]
-h += [Line2D([], [], marker=marc[p], ls='', color=TXT2, mfc='none', ms=8, label=f'{p} prod./nodo') for p in marc]
+h += [Line2D([], [], marker=marc[p], ls='', color=TXT2, ms=8, label=f'{p} prod./nodo') for p in marc]
 ax.legend(handles=h, frameon=False, fontsize=8.5, loc='lower left', ncol=2)
 rho = d[ok][['z', 'tiempo_interno_s']].corr(method='spearman').iloc[0, 1]
 ax.set_title('Lo lento son las redes densas y poco cargadas', loc='left', fontsize=13, fontweight='bold', color=TXT, pad=34)

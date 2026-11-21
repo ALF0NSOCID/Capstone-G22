@@ -1,0 +1,43 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 3200
+Productos: 4000
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 4000 | Arcos: 3200
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 4861
+Límite de tiempo: 900 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 4000 columnas en 0.07s.
+Iteración 1: resolviendo maestro con 4000 columnas...
+Iteración 1: z=0.28073022 | cota inferior=0.00000000 | gap=infinito | columnas=4014 | nuevas=14 | costo reducido=-1.972e+00 | maestro=0.01s | pricing=0.03s
+Iteración 2: resolviendo maestro con 4014 columnas...
+Iteración 2: z=0.24539474 | cota inferior=0.00000000 | gap=infinito | columnas=4022 | nuevas=8 | costo reducido=-3.198e+00 | maestro=0.00s | pricing=0.03s
+Iteración 3: resolviendo maestro con 4022 columnas...
+Iteración 3: z=0.23456442 | cota inferior=0.23456442 | gap=0.0000% | columnas=4022 | nuevas=0 | costo reducido=-2.220e-16 | maestro=0.00s | pricing=0.03s
+
+Solución óptima certificada
+Congestión máxima: 0.23456442 (23.46%)
+Cota superior: 0.23456442
+Cota inferior: 0.23456442
+Gap certificado: 0.000000%
+Iteraciones: 3 | Columnas: 4022
+Tiempo total: 0.25 segundos
+
+Diez arcos más congestionados:
+Arco 994: 126 -> 241 | flujo=578.20 | capacidad=2465 | congestión=0.2346
+Arco 2526: 323 -> 74 | flujo=356.54 | capacidad=1520 | congestión=0.2346
+Arco 2912: 368 -> 241 | flujo=253.80 | capacidad=1082 | congestión=0.2346
+Arco 2142: 271 -> 274 | flujo=354.00 | capacidad=1549 | congestión=0.2285
+Arco 1315: 164 -> 232 | flujo=344.00 | capacidad=1647 | congestión=0.2089
+Arco 1359: 170 -> 74 | flujo=332.00 | capacidad=1598 | congestión=0.2078
+Arco 3008: 378 -> 271 | flujo=846.00 | capacidad=4150 | congestión=0.2039
+Arco 2474: 316 -> 41 | flujo=684.00 | capacidad=3741 | congestión=0.1828
+Arco 3079: 386 -> 306 | flujo=533.00 | capacidad=3001 | congestión=0.1776
+Arco 1412: 177 -> 342 | flujo=272.00 | capacidad=1539 | congestión=0.1767
