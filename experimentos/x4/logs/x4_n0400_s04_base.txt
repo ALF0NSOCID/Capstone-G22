@@ -1,0 +1,39 @@
+Filtro de conectividad: 252 productos sin camino eliminados.
+Filtro de conectividad: 10000 -> 9748 productos.
+Filtro de conectividad: productos eliminados (muestra): [38, 42, 49, 54, 61, 63, 114, 133, 165, 178, 187, 212, 314, 361, 375, 399, 422, 444, 497, 565] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10000
+
+Solver: generación de columnas
+Productos: 9748 | Arcos: 1600
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 9748 columnas en 5.84s.
+Iteración 1: resolviendo maestro con 9748 columnas...
+Iteración 1: z=2.06810234 | columnas=10251 | nuevas=503 | costo reducido=-9.203e-05 | maestro=0.01s | pricing=0.97s
+Iteración 2: resolviendo maestro con 10251 columnas...
+Iteración 2: z=1.39849441 | columnas=10266 | nuevas=15 | costo reducido=-2.428e-04 | maestro=0.06s | pricing=0.90s
+Iteración 3: resolviendo maestro con 10266 columnas...
+Iteración 3: z=1.22875182 | columnas=10266 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.02s | pricing=0.89s
+
+Solución óptima certificada
+Congestión máxima: 1.22875182 (122.88%)
+Iteraciones: 3 | Columnas: 10266
+Tiempo total: 15.54 segundos
+
+Diez arcos más congestionados:
+Arco 731: 181 -> 196 | flujo=5060.00 | capacidad=4118 | congestión=1.2288
+Arco 766: 190 -> 8 | flujo=13286.00 | capacidad=10866 | congestión=1.2227
+Arco 950: 243 -> 249 | flujo=2296.00 | capacidad=2486 | congestión=0.9236
+Arco 247: 56 -> 100 | flujo=5021.00 | capacidad=5555 | congestión=0.9039
+Arco 801: 200 -> 323 | flujo=5212.00 | capacidad=6700 | congestión=0.7779
+Arco 999: 257 -> 56 | flujo=7845.00 | capacidad=10501 | congestión=0.7471
+Arco 881: 225 -> 251 | flujo=3049.00 | capacidad=4118 | congestión=0.7404
+Arco 88: 23 -> 11 | flujo=5309.00 | capacidad=7261 | congestión=0.7312
+Arco 1130: 290 -> 220 | flujo=6213.00 | capacidad=8552 | congestión=0.7265
+Arco 603: 150 -> 152 | flujo=6813.00 | capacidad=9843 | congestión=0.6922

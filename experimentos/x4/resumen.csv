@@ -1,0 +1,11 @@
+metodo,nodos,certificadas,corridas,mediana_tiempo_s,iteraciones_mediana
+e2_v2,200,5,5,0.23,4
+e2_v2,400,5,5,0.97,9
+e2_v2,800,5,5,0.91,2
+e2_v2,1600,5,5,2.78,3
+e2_v2,3200,5,5,9.71,4
+e2_v2,beta,25,,0.672 ± 0.138,R2=0.81
+base,200,5,5,4.99,9
+base,400,5,5,38.48,23
+base,800,5,5,126.13,12
+base,beta,15,,1.218 ± 0.168,R2=0.94
