@@ -1,0 +1,25 @@
+id_enlace,capa,origen,destino,servida_sin_cand_pct,z_sin_cand,servida_con_cand_pct,z_con_cand,mejora_servida_pp
+231,TRONCAL,Pozo Almonte,Iquique,97.26,0.4879,100.0,0.3958,2.74
+235,TRONCAL,La Serena,La Calera,74.85,0.4727,100.0,1.8864,25.15
+239,TRONCAL,San Bernardo,Rancagua,43.1,0.4517,100.0,2.0794,56.9
+243,TRONCAL,Talca,Linares,60.48,0.4642,100.0,2.9011,39.52
+247,TRONCAL,Los Ángeles,Temuco,75.89,0.4746,100.0,0.9843,24.11
+251,FOA,Puerto Montt,Caleta Tortel,96.89,0.4879,100.0,1.6985,3.11
+255,FOA,Alerce,Ensenada,100.0,0.4898,100.0,0.3958,0.0
+259,FOA,Puelo Alto,Contao,100.0,0.4898,100.0,0.3958,0.0
+263,FOA,Hornopirén,Chaitén,100.0,0.4898,100.0,0.3958,0.0
+267,FOA,Caleta Tortel,Los Ñadis,99.12,0.4893,100.0,0.5101,0.88
+271,FOA,Puerto Guadal,Mallín Grande,99.94,0.4898,99.94,0.3955,0.0
+275,FOA,Bahía Murta,Cerro Castillo,99.21,0.4893,100.0,0.4571,0.79
+279,FOA,Cerro Castillo,Puerto Ingeniero Ibáñez,99.97,0.4898,99.97,0.3957,0.0
+283,FOA,Onaisín,Cameron,100.0,0.4898,100.0,0.3958,0.0
+8,FON,Chapiquiña,Codpa,99.99,0.4898,100.0,0.3958,0.01
+27,FON,Taltal,Paposo,100.0,0.4898,100.0,0.3958,0.0
+40,FON,La Serena,Vicuña,95.94,0.4876,100.0,0.4668,4.06
+61,FON,La Ligua,Catapilco,100.0,0.4898,100.0,0.3958,0.0
+85,FON,Lampa,Batuco,100.0,0.4898,100.0,0.3958,0.0
+131,FON,Molina,El Yacal,100.0,0.4898,100.0,0.3958,0.0
+149,FON,Chillán,Pinto,98.15,0.489,100.0,0.3958,1.85
+173,FON,Quilleco,Antuco,99.95,0.4898,99.95,0.3955,0.0
+210,FON,Valdivia,Río Bueno,98.5,0.489,100.0,0.3958,1.5
+220,FON,Pargua,Maullín,99.04,0.4894,100.0,0.3958,0.96

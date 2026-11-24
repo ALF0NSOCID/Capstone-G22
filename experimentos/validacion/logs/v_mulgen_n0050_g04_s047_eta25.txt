@@ -1,0 +1,51 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 50
+Arcos: 200
+Productos: 500
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 500 | Arcos: 200
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 603
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 500 columnas en 0.01s.
+Iteración 1: resolviendo maestro con 500 columnas...
+Iteración 1: z=3.80000000 | cota inferior=1.20851064 | gap=214.4366% | columnas=511 | nuevas=11 | costo reducido=-2.566e+00 | maestro=0.00s | pricing=0.01s
+Iteración 2: resolviendo maestro con 511 columnas...
+Iteración 2: z=3.20127796 | cota inferior=1.20851064 | gap=164.8945% | columnas=535 | nuevas=24 | costo reducido=-1.927e+00 | maestro=0.00s | pricing=0.00s
+Iteración 3: resolviendo maestro con 535 columnas...
+Iteración 3: z=2.78035714 | cota inferior=2.44821429 | gap=13.5667% | columnas=541 | nuevas=6 | costo reducido=-1.077e+00 | maestro=0.00s | pricing=0.00s
+Iteración 4: resolviendo maestro con 541 columnas...
+Iteración 4: z=2.76923077 | cota inferior=2.44821429 | gap=13.1123% | columnas=552 | nuevas=11 | costo reducido=-4.217e+00 | maestro=0.00s | pricing=0.00s
+Iteración 5: resolviendo maestro con 552 columnas...
+Iteración 5: z=2.68761905 | cota inferior=2.44821429 | gap=9.7788% | columnas=583 | nuevas=31 | costo reducido=-5.743e-01 | maestro=0.00s | pricing=0.01s
+Iteración 6: resolviendo maestro con 583 columnas...
+Iteración 6: z=2.53457447 | cota inferior=2.44821429 | gap=3.5275% | columnas=604 | nuevas=21 | costo reducido=-1.604e+00 | maestro=0.00s | pricing=0.00s
+Iteración 7: resolviendo maestro con 604 columnas...
+Iteración 7: z=2.49861496 | cota inferior=2.49861496 | gap=0.0000% | columnas=604 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.00s
+
+Solución óptima certificada
+Congestión máxima: 2.49861496 (249.86%)
+Cota superior: 2.49861496
+Cota inferior: 2.49861496
+Gap certificado: 0.000000%
+Iteraciones: 7 | Columnas: 604
+Tiempo total: 0.08 segundos
+
+Diez arcos más congestionados:
+Arco 2: 1 -> 27 | flujo=1224.32 | capacidad=490 | congestión=2.4986
+Arco 126: 35 -> 22 | flujo=782.07 | capacidad=313 | congestión=2.4986
+Arco 26: 6 -> 18 | flujo=367.30 | capacidad=147 | congestión=2.4986
+Arco 39: 11 -> 42 | flujo=587.17 | capacidad=235 | congestión=2.4986
+Arco 108: 30 -> 33 | flujo=344.81 | capacidad=138 | congestión=2.4986
+Arco 146: 39 -> 18 | flujo=939.48 | capacidad=376 | congestión=2.4986
+Arco 198: 50 -> 31 | flujo=357.30 | capacidad=143 | congestión=2.4986
+Arco 75: 21 -> 47 | flujo=497.22 | capacidad=199 | congestión=2.4986
+Arco 124: 34 -> 42 | flujo=314.83 | capacidad=126 | congestión=2.4986
+Arco 127: 35 -> 6 | flujo=1331.76 | capacidad=533 | congestión=2.4986

@@ -1,0 +1,24 @@
+id_enlace,capa,origen,destino,servida_sin_cand_pct,z_sin_cand,servida_con_cand_pct,z_con_cand,mejora_servida_pp
+233,TRONCAL,Antofagasta,Copiapó,85.45,0.4798,100.0,0.9935,14.55
+237,TRONCAL,Santiago,Valparaíso,91.77,0.4849,100.0,0.4856,8.23
+241,TRONCAL,San Fernando,Curicó,51.16,0.4574,100.0,3.5416,48.84
+245,TRONCAL,Chillán,Concepción,92.11,0.4853,100.0,0.3958,7.89
+249,TRONCAL,Valdivia,Osorno,89.02,0.4829,100.0,0.7391,10.98
+253,FOA,Punta Arenas,Puerto Williams,99.98,0.4898,99.98,0.3957,0.0
+257,FOA,Ralún,Cochamó,100.0,0.4898,100.0,0.3958,0.0
+261,FOA,El Manzano,Pichicolo,100.0,0.4898,100.0,0.3958,0.0
+265,FOA,Villa Santa Lucía,Futaleufú,99.97,0.4898,99.97,0.3956,0.0
+269,FOA,Cochrane,Puerto Bertrand,99.15,0.4893,100.0,0.4887,0.85
+273,FOA,Puerto Bertrand,Puerto Río Tranquilo,99.21,0.4893,100.0,0.4571,0.79
+277,FOA,El Blanco,Coyhaique,99.24,0.4893,100.0,0.4403,0.76
+281,FOA,Porvenir,Onaisín,99.99,0.4898,99.99,0.3958,0.0
+285,FOA,Punta Arenas,Puerto Natales,99.7,0.4897,99.7,0.3942,0.0
+12,FON,Antofagasta,Baquedano,97.58,0.4882,97.58,0.3944,0.0
+29,FON,Caldera,Chañaral,99.71,0.4897,100.0,0.3958,0.29
+51,FON,Canela Alta,Canela,99.53,0.4896,99.53,0.3956,0.0
+77,FON,San Bernardo,Calera de Tango,92.7,0.4754,100.0,0.3958,7.3
+109,FON,Chépica,Nancagua,99.65,0.4896,99.65,0.394,0.0
+134,FON,Villa Alegre,Yerbas Buenas,99.46,0.4895,99.46,0.393,0.0
+160,FON,Concepción,Lota,95.2,0.4874,100.0,0.3958,4.8
+192,FON,Lautaro,Perquenco,99.91,0.4898,99.91,0.3953,0.0
+216,FON,Niebla,Corral,99.94,0.4898,99.94,0.3955,0.0

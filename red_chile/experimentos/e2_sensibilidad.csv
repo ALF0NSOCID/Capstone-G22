@@ -1,0 +1,14 @@
+caso,demanda_total_gbps,z_ref_highs,arco_critico,capa_critica,arcos_en_el_maximo,z_e2,cota_inf_e2,gap_pct_e2,iter_e2,columnas_e2,tiempo_e2_s,pared_s,certificacion_e2,dif_rel,parametro,valor,delta_z_pct,cambia_arco_critico
+base,6930.97,0.4898049662499998,"San Bernardo → Calera de Tango (FON, 800 Gbps)",FON,1,0.48980497,0.48980497,0.0,1,10000,0.69,1.98,óptimo,7.656108977343572e-09,,,0.0,False
+cap_TRONCAL_x0.5,6930.97,0.9312531132500007,"Santiago → San Bernardo (TRONCAL, 4000 Gbps)",TRONCAL,1,0.93125311,0.93125311,0.0,1,10000,0.63,1.9,óptimo,3.4899219844250147e-09,capacidad TRONCAL,0.5,90.12733177855993,True
+cap_TRONCAL_x2,6930.97,0.4898049662499998,"San Bernardo → Calera de Tango (FON, 800 Gbps)",FON,1,0.48980497,0.48980497,0.0,1,10000,0.62,1.74,óptimo,7.656108977343572e-09,capacidad TRONCAL,2.0,0.0,False
+cap_FON_x0.5,6930.97,0.9796099324999996,"San Bernardo → Calera de Tango (FON, 400 Gbps)",FON,1,0.97960993,0.97960993,0.0,1,10000,0.6,1.76,óptimo,2.552035834670772e-09,capacidad FON,0.5,100.0,True
+cap_FON_x2,6930.97,0.4794196000000001,"Caleta Tortel → Los Ñadis (FOA, 100 Gbps)",FOA,2,0.4794196,0.4794196,0.0,1,10000,0.64,1.74,óptimo,2.3157647802158196e-16,capacidad FON,2.0,-2.1203064414620387,True
+cap_FOA_x0.5,6930.97,0.9588392000000002,"Caleta Tortel → Los Ñadis (FOA, 50 Gbps)",FOA,2,0.9588392,0.9588392,0.0,1,10000,0.68,1.8,óptimo,2.3157647802158196e-16,capacidad FOA,0.5,95.75938711707592,True
+cap_FOA_x2,6930.97,0.4898049662499998,"San Bernardo → Calera de Tango (FON, 800 Gbps)",FON,1,0.48980497,0.48980497,0.0,1,10000,0.67,1.85,óptimo,7.656108977343572e-09,capacidad FOA,2.0,0.0,False
+cap_todas_x0.5,6930.97,0.9796099324999996,"San Bernardo → Calera de Tango (FON, 400 Gbps)",FON,1,0.97960993,0.97960993,0.0,1,10000,0.61,1.71,óptimo,2.552035834670772e-09,capacidad uniforme,0.5,100.0,True
+cap_todas_x2,6930.97,0.2449024831249999,"San Bernardo → Calera de Tango (FON, 1600 Gbps)",FON,1,0.24490248,0.24490248,0.0,1,10000,0.68,1.88,óptimo,1.2760180533351943e-08,capacidad uniforme,2.0,-50.0,True
+fraccion_santiago_60,6267.24,0.44614864124999976,"San Bernardo → Calera de Tango (FON, 800 Gbps)",FON,1,0.44614864,0.44614864,0.0,1,10000,0.71,1.89,óptimo,2.801756308965464e-09,fraccion a Santiago,0.6,-8.913001706421564,False
+fraccion_santiago_90,7594.7,0.5371785689999997,"Santiago → San Bernardo (TRONCAL, 8000 Gbps)",TRONCAL,1,0.53717857,0.53717857,0.0,1,10000,0.66,1.86,óptimo,1.861578928300426e-09,fraccion a Santiago,0.9,9.671931894177677,True
+punta_1.3,5631.41,0.3979665512499998,"San Bernardo → Calera de Tango (FON, 800 Gbps)",FON,1,0.39796655,0.39796655,0.0,1,10000,0.7,1.84,óptimo,3.1409670534960777e-09,factor punta,1.3,-18.749996698303185,False
+punta_1.9,8230.53,0.5816434025,"San Bernardo → Calera de Tango (FON, 800 Gbps)",FON,1,0.5816434,0.5816434,0.0,1,10000,0.62,1.74,óptimo,4.298166151392601e-09,factor punta,1.9,18.750001036764765,False

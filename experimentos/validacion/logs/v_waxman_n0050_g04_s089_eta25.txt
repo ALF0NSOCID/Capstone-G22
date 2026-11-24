@@ -1,0 +1,41 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 50
+Arcos: 200
+Productos: 500
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 500 | Arcos: 200
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 150
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 500 columnas en 0.01s.
+Iteración 1: resolviendo maestro con 500 columnas...
+Iteración 1: z=7.12903226 | cota inferior=0.00000000 | gap=infinito | columnas=513 | nuevas=13 | costo reducido=-2.419e+00 | maestro=0.00s | pricing=0.00s
+Iteración 2: resolviendo maestro con 513 columnas...
+Iteración 2: z=5.83333333 | cota inferior=5.83333333 | gap=0.0000% | columnas=513 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.00s
+
+Solución óptima certificada
+Congestión máxima: 5.83333333 (583.33%)
+Cota superior: 5.83333333
+Cota inferior: 5.83333333
+Gap certificado: 0.000000%
+Iteraciones: 2 | Columnas: 513
+Tiempo total: 0.04 segundos
+
+Diez arcos más congestionados:
+Arco 16: 3 -> 13 | flujo=361.67 | capacidad=62 | congestión=5.8333
+Arco 72: 11 -> 31 | flujo=420.00 | capacidad=72 | congestión=5.8333
+Arco 39: 29 -> 5 | flujo=519.00 | capacidad=94 | congestión=5.5213
+Arco 73: 31 -> 11 | flujo=394.00 | capacidad=72 | congestión=5.4722
+Arco 8: 1 -> 30 | flujo=304.00 | capacidad=56 | congestión=5.4286
+Arco 19: 41 -> 4 | flujo=271.00 | capacidad=53 | congestión=5.1132
+Arco 59: 30 -> 9 | flujo=259.00 | capacidad=51 | congestión=5.0784
+Arco 118: 21 -> 32 | flujo=392.00 | capacidad=80 | congestión=4.9000
+Arco 63: 34 -> 10 | flujo=501.00 | capacidad=106 | congestión=4.7264
+Arco 37: 10 -> 5 | flujo=327.00 | capacidad=72 | congestión=4.5417

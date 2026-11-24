@@ -1,0 +1,41 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 200
+Arcos: 800
+Productos: 2000
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 2000 | Arcos: 800
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 150
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 2000 columnas en 0.06s.
+Iteración 1: resolviendo maestro con 2000 columnas...
+Iteración 1: z=8.36000000 | cota inferior=0.00000000 | gap=infinito | columnas=2014 | nuevas=14 | costo reducido=-3.000e+00 | maestro=0.01s | pricing=0.02s
+Iteración 2: resolviendo maestro con 2014 columnas...
+Iteración 2: z=7.74545455 | cota inferior=7.74545455 | gap=0.0000% | columnas=2014 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.02s
+
+Solución óptima certificada
+Congestión máxima: 7.74545455 (774.55%)
+Cota superior: 7.74545455
+Cota inferior: 7.74545455
+Gap certificado: 0.000000%
+Iteraciones: 2 | Columnas: 2014
+Tiempo total: 0.18 segundos
+
+Diez arcos más congestionados:
+Arco 217: 187 -> 33 | flujo=426.00 | capacidad=55 | congestión=7.7455
+Arco 281: 133 -> 42 | flujo=387.27 | capacidad=50 | congestión=7.7455
+Arco 402: 61 -> 114 | flujo=553.00 | capacidad=77 | congestión=7.1818
+Arco 673: 183 -> 119 | flujo=445.00 | capacidad=62 | congestión=7.1774
+Arco 121: 140 -> 18 | flujo=849.00 | capacidad=121 | congestión=7.0165
+Arco 120: 18 -> 140 | flujo=831.00 | capacidad=121 | congestión=6.8678
+Arco 795: 200 -> 181 | flujo=365.00 | capacidad=54 | congestión=6.7593
+Arco 689: 150 -> 125 | flujo=812.00 | capacidad=122 | congestión=6.6557
+Arco 383: 158 -> 59 | flujo=833.00 | capacidad=126 | congestión=6.6111
+Arco 672: 119 -> 183 | flujo=409.00 | capacidad=62 | congestión=6.5968

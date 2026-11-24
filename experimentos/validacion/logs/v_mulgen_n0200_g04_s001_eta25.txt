@@ -1,0 +1,41 @@
+Filtro de conectividad: 61 productos sin camino eliminados.
+Filtro de conectividad: 2000 -> 1939 productos.
+Filtro de conectividad: productos eliminados (muestra): [17, 148, 309, 317, 351, 394, 511, 543, 563, 586, 609, 611, 676, 679, 717, 721, 727, 754, 775, 786] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 200
+Arcos: 800
+Productos: 2000
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 1939 | Arcos: 800
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 2426
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 1939 columnas en 0.05s.
+Iteración 1: resolviendo maestro con 1939 columnas...
+Iteración 1: z=1.36879433 | cota inferior=1.36879433 | gap=0.0000% | columnas=1939 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.02s | pricing=0.02s
+
+Solución óptima certificada
+Congestión máxima: 1.36879433 (136.88%)
+Cota superior: 1.36879433
+Cota inferior: 1.36879433
+Gap certificado: 0.000000%
+Iteraciones: 1 | Columnas: 1939
+Tiempo total: 0.18 segundos
+
+Diez arcos más congestionados:
+Arco 736: 183 -> 171 | flujo=772.00 | capacidad=564 | congestión=1.3688
+Arco 220: 61 -> 183 | flujo=1235.00 | capacidad=958 | congestión=1.2891
+Arco 785: 195 -> 185 | flujo=1219.00 | capacidad=1342 | congestión=0.9083
+Arco 150: 44 -> 115 | flujo=518.00 | capacidad=574 | congestión=0.9024
+Arco 267: 71 -> 39 | flujo=814.00 | capacidad=919 | congestión=0.8857
+Arco 759: 189 -> 49 | flujo=1393.00 | capacidad=1614 | congestión=0.8631
+Arco 646: 162 -> 85 | flujo=604.00 | capacidad=710 | congestión=0.8507
+Arco 436: 110 -> 123 | flujo=1337.00 | capacidad=1648 | congestión=0.8113
+Arco 638: 160 -> 72 | flujo=1311.00 | capacidad=1624 | congestión=0.8073
+Arco 685: 171 -> 13 | flujo=436.00 | capacidad=545 | congestión=0.8000

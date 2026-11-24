@@ -1,0 +1,41 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 50
+Arcos: 300
+Productos: 500
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 500 | Arcos: 300
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 150
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 500 columnas en 0.01s.
+Iteración 1: resolviendo maestro con 500 columnas...
+Iteración 1: z=5.82539683 | cota inferior=0.00000000 | gap=infinito | columnas=511 | nuevas=11 | costo reducido=-2.381e+00 | maestro=0.00s | pricing=0.01s
+Iteración 2: resolviendo maestro con 511 columnas...
+Iteración 2: z=4.12686567 | cota inferior=4.12686567 | gap=0.0000% | columnas=511 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.00s
+
+Solución óptima certificada
+Congestión máxima: 4.12686567 (412.69%)
+Cota superior: 4.12686567
+Cota inferior: 4.12686567
+Gap certificado: 0.000000%
+Iteraciones: 2 | Columnas: 511
+Tiempo total: 0.05 segundos
+
+Diez arcos más congestionados:
+Arco 34: 4 -> 49 | flujo=259.99 | capacidad=63 | congestión=4.1269
+Arco 128: 13 -> 31 | flujo=553.00 | capacidad=134 | congestión=4.1269
+Arco 142: 14 -> 34 | flujo=209.00 | capacidad=54 | congestión=3.8704
+Arco 153: 42 -> 15 | flujo=426.00 | capacidad=112 | congestión=3.8036
+Arco 260: 33 -> 44 | flujo=260.00 | capacidad=73 | congestión=3.5616
+Arco 83: 16 -> 9 | flujo=208.00 | capacidad=64 | congestión=3.2500
+Arco 230: 27 -> 36 | flujo=333.00 | capacidad=114 | congestión=2.9211
+Arco 26: 2 -> 24 | flujo=168.00 | capacidad=63 | congestión=2.6667
+Arco 145: 20 -> 15 | flujo=277.00 | capacidad=105 | congestión=2.6381
+Arco 127: 17 -> 13 | flujo=170.00 | capacidad=65 | congestión=2.6154

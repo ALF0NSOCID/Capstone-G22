@@ -1,0 +1,41 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 50
+Arcos: 200
+Productos: 500
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 500 | Arcos: 200
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 608
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 500 columnas en 0.01s.
+Iteración 1: resolviendo maestro con 500 columnas...
+Iteración 1: z=5.39430894 | cota inferior=4.71951220 | gap=14.2980% | columnas=504 | nuevas=4 | costo reducido=-2.472e+00 | maestro=0.00s | pricing=0.00s
+Iteración 2: resolviendo maestro con 504 columnas...
+Iteración 2: z=4.71951220 | cota inferior=4.71951220 | gap=0.0000% | columnas=504 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.00s
+
+Solución óptima certificada
+Congestión máxima: 4.71951220 (471.95%)
+Cota superior: 4.71951220
+Cota inferior: 4.71951220
+Gap certificado: 0.000000%
+Iteraciones: 2 | Columnas: 504
+Tiempo total: 0.05 segundos
+
+Diez arcos más congestionados:
+Arco 110: 29 -> 24 | flujo=1161.00 | capacidad=246 | congestión=4.7195
+Arco 190: 47 -> 37 | flujo=1016.00 | capacidad=327 | congestión=3.1070
+Arco 14: 5 -> 43 | flujo=1090.00 | capacidad=365 | congestión=2.9863
+Arco 15: 5 -> 41 | flujo=1334.00 | capacidad=448 | congestión=2.9777
+Arco 66: 19 -> 18 | flujo=1141.00 | capacidad=408 | congestión=2.7966
+Arco 36: 12 -> 35 | flujo=646.00 | capacidad=242 | congestión=2.6694
+Arco 104: 27 -> 4 | flujo=771.00 | capacidad=299 | congestión=2.5786
+Arco 175: 43 -> 27 | flujo=1125.00 | capacidad=448 | congestión=2.5112
+Arco 18: 7 -> 13 | flujo=804.00 | capacidad=329 | congestión=2.4438
+Arco 141: 36 -> 14 | flujo=686.00 | capacidad=285 | congestión=2.4070

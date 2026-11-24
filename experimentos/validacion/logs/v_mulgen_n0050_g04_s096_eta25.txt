@@ -1,0 +1,41 @@
+Filtro de conectividad: 16 productos sin camino eliminados.
+Filtro de conectividad: 500 -> 484 productos.
+Filtro de conectividad: productos eliminados (muestra): [2, 7, 50, 61, 64, 66, 126, 184, 248, 289, 292, 325, 419, 473, 481, 498]
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 50
+Arcos: 200
+Productos: 500
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 484 | Arcos: 200
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 624
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 484 columnas en 0.01s.
+Iteración 1: resolviendo maestro con 484 columnas...
+Iteración 1: z=4.38345865 | cota inferior=4.38345865 | gap=0.0000% | columnas=484 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.00s
+
+Solución óptima certificada
+Congestión máxima: 4.38345865 (438.35%)
+Cota superior: 4.38345865
+Cota inferior: 4.38345865
+Gap certificado: 0.000000%
+Iteraciones: 1 | Columnas: 484
+Tiempo total: 0.04 segundos
+
+Diez arcos más congestionados:
+Arco 54: 17 -> 7 | flujo=583.00 | capacidad=133 | congestión=4.3835
+Arco 28: 9 -> 45 | flujo=837.00 | capacidad=253 | congestión=3.3083
+Arco 195: 49 -> 45 | flujo=1869.00 | capacidad=599 | congestión=3.1202
+Arco 69: 20 -> 39 | flujo=1203.00 | capacidad=406 | congestión=2.9631
+Arco 134: 37 -> 6 | flujo=625.00 | capacidad=218 | congestión=2.8670
+Arco 27: 8 -> 27 | flujo=1663.00 | capacidad=595 | congestión=2.7950
+Arco 72: 21 -> 46 | flujo=567.00 | capacidad=209 | congestión=2.7129
+Arco 136: 38 -> 18 | flujo=1234.00 | capacidad=468 | congestión=2.6368
+Arco 14: 5 -> 42 | flujo=649.00 | capacidad=268 | congestión=2.4216
+Arco 165: 44 -> 48 | flujo=713.00 | capacidad=298 | congestión=2.3926

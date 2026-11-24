@@ -1,0 +1,41 @@
+Filtro de conectividad: 32 productos sin camino eliminados.
+Filtro de conectividad: 500 -> 468 productos.
+Filtro de conectividad: productos eliminados (muestra): [12, 22, 59, 71, 86, 91, 113, 115, 119, 164, 165, 170, 178, 181, 183, 189, 207, 218, 223, 227] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 50
+Arcos: 200
+Productos: 500
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 468 | Arcos: 200
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 634
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 468 columnas en 0.01s.
+Iteración 1: resolviendo maestro con 468 columnas...
+Iteración 1: z=5.00699301 | cota inferior=5.00699301 | gap=0.0000% | columnas=468 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.00s
+
+Solución óptima certificada
+Congestión máxima: 5.00699301 (500.70%)
+Cota superior: 5.00699301
+Cota inferior: 5.00699301
+Gap certificado: 0.000000%
+Iteraciones: 1 | Columnas: 468
+Tiempo total: 0.04 segundos
+
+Diez arcos más congestionados:
+Arco 5: 3 -> 45 | flujo=716.00 | capacidad=143 | congestión=5.0070
+Arco 175: 43 -> 26 | flujo=648.00 | capacidad=162 | congestión=4.0000
+Arco 165: 40 -> 10 | flujo=516.00 | capacidad=137 | congestión=3.7664
+Arco 188: 48 -> 2 | flujo=801.00 | capacidad=234 | congestión=3.4231
+Arco 122: 30 -> 37 | flujo=972.00 | capacidad=314 | congestión=3.0955
+Arco 1: 1 -> 34 | flujo=651.00 | capacidad=234 | congestión=2.7821
+Arco 127: 32 -> 19 | flujo=572.00 | capacidad=207 | congestión=2.7633
+Arco 185: 47 -> 49 | flujo=954.00 | capacidad=357 | congestión=2.6723
+Arco 139: 34 -> 32 | flujo=856.00 | capacidad=333 | congestión=2.5706
+Arco 90: 23 -> 21 | flujo=1515.00 | capacidad=613 | congestión=2.4715

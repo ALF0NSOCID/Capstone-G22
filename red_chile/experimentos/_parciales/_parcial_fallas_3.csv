@@ -1,0 +1,25 @@
+id_enlace,capa,origen,destino,servida_sin_cand_pct,z_sin_cand,servida_con_cand_pct,z_con_cand,mejora_servida_pp
+232,TRONCAL,Pozo Almonte,Antofagasta,93.75,0.4855,100.0,0.4525,6.25
+236,TRONCAL,La Calera,Santiago,74.26,0.4723,100.0,1.9279,25.74
+240,TRONCAL,Rancagua,San Fernando,50.35,0.4567,100.0,3.5999,49.65
+244,TRONCAL,Linares,Chillán,61.58,0.4651,100.0,2.824,38.42
+248,TRONCAL,Temuco,Valdivia,85.31,0.4805,100.0,0.943,14.69
+252,FOA,Caleta Tortel,Punta Arenas,97.78,0.4884,97.78,0.3847,0.0
+256,FOA,Ensenada,Ralún,100.0,0.4898,100.0,0.3958,0.0
+260,FOA,Contao,El Manzano,100.0,0.4898,100.0,0.3958,0.0
+264,FOA,Chaitén,Villa Santa Lucía,99.95,0.4898,100.0,0.5101,0.05
+268,FOA,Los Ñadis,Cochrane,99.12,0.4893,100.0,0.5101,0.88
+272,FOA,Mallín Grande,Chile Chico,99.94,0.4898,99.94,0.3955,0.0
+276,FOA,Cerro Castillo,El Blanco,99.24,0.4893,100.0,0.4403,0.76
+280,FOA,Punta Arenas,Porvenir,99.91,0.4898,99.91,0.3953,0.0
+284,FOA,Cameron,Pampa Guanaco,100.0,0.4898,100.0,0.3958,0.0
+11,FON,Cuya,Caleta Camarones,100.0,0.4898,100.0,0.3958,0.0
+28,FON,Copiapó,Caldera,98.49,0.4891,100.0,0.3958,1.51
+42,FON,Paiguano,Guanta,100.0,0.4898,100.0,0.3958,0.0
+66,FON,Santa María,San Esteban,99.39,0.4895,99.39,0.3956,0.0
+92,FON,Rancagua,Olivar Alto,94.68,0.4873,100.0,0.3958,5.32
+132,FON,Talca,San Javier,97.16,0.4882,100.0,0.3958,2.84
+157,FON,Ránquil,Coelemu,99.73,0.4897,100.0,0.3958,0.27
+191,FON,Temuco,Lautaro,97.77,0.4887,100.0,0.3958,2.23
+213,FON,Futrono,Panguipulli,99.26,0.4894,100.0,0.3958,0.74
+229,FON,Puqueldón,Chaitén,100.0,0.4898,100.0,0.3958,0.0

@@ -1,0 +1,45 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 50
+Arcos: 300
+Productos: 500
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 500 | Arcos: 300
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 652
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 500 columnas en 0.01s.
+Iteración 1: resolviendo maestro con 500 columnas...
+Iteración 1: z=2.22727273 | cota inferior=0.00000000 | gap=infinito | columnas=513 | nuevas=13 | costo reducido=-2.470e+00 | maestro=0.00s | pricing=0.01s
+Iteración 2: resolviendo maestro con 513 columnas...
+Iteración 2: z=1.86259542 | cota inferior=0.00000000 | gap=infinito | columnas=518 | nuevas=5 | costo reducido=-4.977e+00 | maestro=0.00s | pricing=0.01s
+Iteración 3: resolviendo maestro con 518 columnas...
+Iteración 3: z=1.75438596 | cota inferior=0.00000000 | gap=infinito | columnas=525 | nuevas=7 | costo reducido=-2.860e+00 | maestro=0.00s | pricing=0.01s
+Iteración 4: resolviendo maestro con 525 columnas...
+Iteración 4: z=1.51119403 | cota inferior=1.51119403 | gap=0.0000% | columnas=525 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.01s
+
+Solución óptima certificada
+Congestión máxima: 1.51119403 (151.12%)
+Cota superior: 1.51119403
+Cota inferior: 1.51119403
+Gap certificado: 0.000000%
+Iteraciones: 4 | Columnas: 525
+Tiempo total: 0.08 segundos
+
+Diez arcos más congestionados:
+Arco 124: 21 -> 20 | flujo=197.97 | capacidad=131 | congestión=1.5112
+Arco 254: 42 -> 33 | flujo=405.00 | capacidad=268 | congestión=1.5112
+Arco 54: 10 -> 15 | flujo=344.55 | capacidad=228 | congestión=1.5112
+Arco 70: 14 -> 48 | flujo=398.96 | capacidad=264 | congestión=1.5112
+Arco 263: 45 -> 26 | flujo=771.00 | capacidad=606 | congestión=1.2723
+Arco 241: 40 -> 21 | flujo=407.00 | capacidad=350 | congestión=1.1629
+Arco 274: 47 -> 35 | flujo=180.00 | capacidad=155 | congestión=1.1613
+Arco 267: 46 -> 20 | flujo=555.00 | capacidad=489 | congestión=1.1350
+Arco 64: 12 -> 35 | flujo=242.00 | capacidad=215 | congestión=1.1256
+Arco 66: 13 -> 20 | flujo=186.00 | capacidad=168 | congestión=1.1071

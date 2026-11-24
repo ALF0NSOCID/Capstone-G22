@@ -1,0 +1,41 @@
+Filtro de conectividad: 72 productos sin camino eliminados.
+Filtro de conectividad: 500 -> 428 productos.
+Filtro de conectividad: productos eliminados (muestra): [12, 18, 31, 32, 40, 48, 58, 63, 83, 84, 98, 104, 112, 122, 131, 138, 147, 150, 154, 163] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 50
+Arcos: 200
+Productos: 500
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 428 | Arcos: 200
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 612
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 428 columnas en 0.01s.
+Iteración 1: resolviendo maestro con 428 columnas...
+Iteración 1: z=3.75000000 | cota inferior=3.75000000 | gap=0.0000% | columnas=428 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.01s
+
+Solución óptima certificada
+Congestión máxima: 3.75000000 (375.00%)
+Cota superior: 3.75000000
+Cota inferior: 3.75000000
+Gap certificado: 0.000000%
+Iteraciones: 1 | Columnas: 428
+Tiempo total: 0.03 segundos
+
+Diez arcos más congestionados:
+Arco 13: 4 -> 47 | flujo=645.00 | capacidad=172 | congestión=3.7500
+Arco 125: 33 -> 2 | flujo=841.00 | capacidad=225 | congestión=3.7378
+Arco 123: 33 -> 43 | flujo=660.00 | capacidad=182 | congestión=3.6264
+Arco 127: 34 -> 35 | flujo=782.00 | capacidad=264 | congestión=2.9621
+Arco 167: 43 -> 49 | flujo=1192.00 | capacidad=477 | congestión=2.4990
+Arco 165: 42 -> 35 | flujo=317.00 | capacidad=127 | congestión=2.4961
+Arco 155: 40 -> 15 | flujo=691.00 | capacidad=290 | congestión=2.3828
+Arco 132: 35 -> 46 | flujo=542.00 | capacidad=233 | congestión=2.3262
+Arco 4: 2 -> 17 | flujo=814.00 | capacidad=360 | congestión=2.2611
+Arco 80: 21 -> 22 | flujo=426.00 | capacidad=189 | congestión=2.2540

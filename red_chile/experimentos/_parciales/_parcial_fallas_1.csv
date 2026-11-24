@@ -1,0 +1,25 @@
+id_enlace,capa,origen,destino,servida_sin_cand_pct,z_sin_cand,servida_con_cand_pct,z_con_cand,mejora_servida_pp
+230,TRONCAL,Arica,Pozo Almonte,96.65,0.4875,100.0,0.3958,3.35
+234,TRONCAL,Copiapó,La Serena,81.74,0.4774,100.0,1.2317,18.26
+238,TRONCAL,Santiago,San Bernardo,34.21,0.2525,100.0,2.375,65.79
+242,TRONCAL,Curicó,Talca,52.87,0.4589,100.0,3.4182,47.13
+246,TRONCAL,Chillán,Los Ángeles,73.2,0.4725,100.0,1.0754,26.8
+250,TRONCAL,Osorno,Puerto Montt,91.21,0.4845,100.0,0.5916,8.79
+254,FOA,Puerto Montt,Alerce,100.0,0.4898,100.0,0.3958,0.0
+258,FOA,Cochamó,Puelo Alto,100.0,0.4898,100.0,0.3958,0.0
+262,FOA,Pichicolo,Hornopirén,100.0,0.4898,100.0,0.3958,0.0
+266,FOA,Villa Santa Lucía,Palena,99.98,0.4898,99.98,0.3957,0.0
+270,FOA,Puerto Bertrand,Puerto Guadal,99.94,0.4898,99.94,0.3955,0.0
+274,FOA,Puerto Río Tranquilo,Bahía Murta,99.21,0.4893,100.0,0.4571,0.79
+278,FOA,Caleta Tortel,Villa O'Higgins,99.99,0.4898,99.99,0.3958,0.0
+282,FOA,Onaisín,Cerro Sombrero,100.0,0.4898,100.0,0.3958,0.0
+1,FON,Arica,Poconchile,99.97,0.4898,100.0,0.3958,0.03
+18,FON,Calama,San Pedro de Atacama,99.88,0.4898,99.88,0.3958,0.0
+32,FON,Tierra Amarilla,Nantoco,100.0,0.4898,100.0,0.3958,0.0
+56,FON,Valparaíso,Puchuncaví,97.17,0.4884,100.0,0.4668,2.83
+78,FON,San Bernardo,Pirque,99.41,0.4895,99.41,0.3927,0.0
+115,FON,Peralillo,Población,100.0,0.4898,100.0,0.3958,0.0
+144,FON,San Nicolás,Portezuelo,99.94,0.4898,99.94,0.3955,0.0
+168,FON,Santa Bárbara,Quilaco,99.58,0.4896,99.58,0.3936,0.0
+198,FON,Melipeuco,Cunco,98.85,0.4892,100.0,0.3958,1.15
+217,FON,Puerto Montt,Puerto Octay,99.89,0.4898,99.89,0.3952,0.0

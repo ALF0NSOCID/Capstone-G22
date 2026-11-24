@@ -1,0 +1,41 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 50
+Arcos: 200
+Productos: 500
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 500 | Arcos: 200
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 149
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 500 columnas en 0.01s.
+Iteración 1: resolviendo maestro con 500 columnas...
+Iteración 1: z=8.07142857 | cota inferior=0.00000000 | gap=infinito | columnas=512 | nuevas=12 | costo reducido=-2.661e+00 | maestro=0.00s | pricing=0.00s
+Iteración 2: resolviendo maestro con 512 columnas...
+Iteración 2: z=6.44827586 | cota inferior=6.44827586 | gap=0.0000% | columnas=512 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.00s
+
+Solución óptima certificada
+Congestión máxima: 6.44827586 (644.83%)
+Cota superior: 6.44827586
+Cota inferior: 6.44827586
+Gap certificado: 0.000000%
+Iteraciones: 2 | Columnas: 512
+Tiempo total: 0.04 segundos
+
+Diez arcos más congestionados:
+Arco 47: 35 -> 6 | flujo=361.10 | capacidad=56 | congestión=6.4483
+Arco 23: 30 -> 3 | flujo=374.00 | capacidad=58 | congestión=6.4483
+Arco 150: 23 -> 41 | flujo=291.00 | capacidad=50 | congestión=5.8200
+Arco 181: 37 -> 33 | flujo=419.00 | capacidad=74 | congestión=5.6622
+Arco 170: 29 -> 48 | flujo=291.00 | capacidad=55 | congestión=5.2909
+Arco 33: 26 -> 3 | flujo=305.00 | capacidad=63 | congestión=4.8413
+Arco 81: 40 -> 10 | flujo=377.00 | capacidad=83 | congestión=4.5422
+Arco 161: 42 -> 25 | flujo=339.00 | capacidad=75 | congestión=4.5200
+Arco 56: 6 -> 49 | flujo=629.00 | capacidad=148 | congestión=4.2500
+Arco 25: 40 -> 3 | flujo=499.00 | capacidad=119 | congestión=4.1933

@@ -1,0 +1,41 @@
+Filtro de conectividad: 33 productos sin camino eliminados.
+Filtro de conectividad: 500 -> 467 productos.
+Filtro de conectividad: productos eliminados (muestra): [2, 7, 19, 24, 26, 40, 41, 44, 98, 102, 113, 175, 177, 209, 214, 218, 232, 236, 244, 247] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 50
+Arcos: 200
+Productos: 500
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 467 | Arcos: 200
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 622
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 467 columnas en 0.01s.
+Iteración 1: resolviendo maestro con 467 columnas...
+Iteración 1: z=8.48044693 | cota inferior=8.48044693 | gap=0.0000% | columnas=467 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.00s
+
+Solución óptima certificada
+Congestión máxima: 8.48044693 (848.04%)
+Cota superior: 8.48044693
+Cota inferior: 8.48044693
+Gap certificado: 0.000000%
+Iteraciones: 1 | Columnas: 467
+Tiempo total: 0.03 segundos
+
+Diez arcos más congestionados:
+Arco 89: 25 -> 45 | flujo=1518.00 | capacidad=179 | congestión=8.4804
+Arco 181: 47 -> 40 | flujo=755.00 | capacidad=192 | congestión=3.9323
+Arco 43: 13 -> 39 | flujo=466.00 | capacidad=130 | congestión=3.5846
+Arco 122: 33 -> 34 | flujo=656.00 | capacidad=190 | congestión=3.4526
+Arco 3: 3 -> 25 | flujo=933.00 | capacidad=296 | congestión=3.1520
+Arco 143: 37 -> 41 | flujo=719.00 | capacidad=250 | congestión=2.8760
+Arco 130: 35 -> 49 | flujo=530.00 | capacidad=185 | congestión=2.8649
+Arco 171: 44 -> 31 | flujo=363.00 | capacidad=128 | congestión=2.8359
+Arco 128: 35 -> 5 | flujo=745.00 | capacidad=275 | congestión=2.7091
+Arco 7: 5 -> 11 | flujo=933.00 | capacidad=355 | congestión=2.6282

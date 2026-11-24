@@ -1,0 +1,11 @@
+familia,eta,certificadas,corridas,mediana_tiempo_s,iteraciones_mediana,columnas_mediana
+waxman_g4_n200,25,3,3,0.14,1,2000
+waxman_g4_n400,0,3,3,1.18,11,4561
+waxman_g4_n400,25,3,3,0.31,1,4000
+waxman_g4_n400,50,3,3,0.33,1,4000
+waxman_g4_n800,25,3,3,1.02,1,8000
+waxman_g8_n200,25,3,3,1.1,27,2312
+waxman_g8_n400,0,3,3,4.97,47,5108
+waxman_g8_n400,25,3,3,3.26,32,4367
+waxman_g8_n400,50,3,3,4.49,44,4546
+waxman_g8_n800,25,3,3,3.46,11,8114
