@@ -1,0 +1,59 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 3200
+Productos: 10000
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 10000 | Arcos: 3200
+ETA: 0 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 12350
+Límite de tiempo: 300 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 10000 columnas en 0.29s.
+Iteración 1: resolviendo maestro con 10000 columnas...
+Iteración 1: z=0.33683206 | cota inferior=0.00000000 | gap=infinito | columnas=10023 | nuevas=23 | costo reducido=-3.928e+00 | maestro=0.02s | pricing=0.12s
+Iteración 2: resolviendo maestro con 10023 columnas...
+Iteración 2: z=0.32603062 | cota inferior=0.00000000 | gap=infinito | columnas=10079 | nuevas=56 | costo reducido=-1.455e+00 | maestro=0.01s | pricing=0.15s
+Iteración 3: resolviendo maestro con 10079 columnas...
+Iteración 3: z=0.27547739 | cota inferior=0.00000000 | gap=infinito | columnas=10137 | nuevas=58 | costo reducido=-1.241e+00 | maestro=0.02s | pricing=0.12s
+Iteración 4: resolviendo maestro con 10137 columnas...
+Iteración 4: z=0.26482097 | cota inferior=0.00000000 | gap=infinito | columnas=10200 | nuevas=63 | costo reducido=-1.208e+00 | maestro=0.02s | pricing=0.12s
+Iteración 5: resolviendo maestro con 10200 columnas...
+Iteración 5: z=0.25883585 | cota inferior=0.00000000 | gap=infinito | columnas=10263 | nuevas=63 | costo reducido=-1.078e+00 | maestro=0.02s | pricing=0.12s
+Iteración 6: resolviendo maestro con 10263 columnas...
+Iteración 6: z=0.25292929 | cota inferior=0.00000000 | gap=infinito | columnas=10305 | nuevas=42 | costo reducido=-1.663e+00 | maestro=0.02s | pricing=0.17s
+Iteración 7: resolviendo maestro con 10305 columnas...
+Iteración 7: z=0.25088241 | cota inferior=0.00000000 | gap=infinito | columnas=10364 | nuevas=59 | costo reducido=-1.147e+00 | maestro=0.02s | pricing=0.13s
+Iteración 8: resolviendo maestro con 10364 columnas...
+Iteración 8: z=0.24353196 | cota inferior=0.23685528 | gap=2.8189% | columnas=10365 | nuevas=1 | costo reducido=-2.061e+00 | maestro=0.02s | pricing=0.13s
+Iteración 9: resolviendo maestro con 10365 columnas...
+Iteración 9: z=0.24342713 | cota inferior=0.23685528 | gap=2.7746% | columnas=10426 | nuevas=61 | costo reducido=-1.037e+00 | maestro=0.02s | pricing=0.15s
+Iteración 10: resolviendo maestro con 10426 columnas...
+Iteración 10: z=0.24002908 | cota inferior=0.23685528 | gap=1.3400% | columnas=10470 | nuevas=44 | costo reducido=-1.283e+00 | maestro=0.02s | pricing=0.12s
+Iteración 11: resolviendo maestro con 10470 columnas...
+Iteración 11: z=0.23685528 | cota inferior=0.23685528 | gap=0.0000% | columnas=10470 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.02s | pricing=0.13s
+
+Solución óptima certificada
+Congestión máxima: 0.23685528 (23.69%)
+Cota superior: 0.23685528
+Cota inferior: 0.23685528
+Gap certificado: 0.000000%
+Iteraciones: 11 | Columnas: 10470
+Tiempo total: 2.35 segundos
+
+Diez arcos más congestionados:
+Arco 3105: 388 -> 243 | flujo=2421.13 | capacidad=10222 | congestión=0.2369
+Arco 136: 19 -> 314 | flujo=2714.12 | capacidad=11459 | congestión=0.2369
+Arco 349: 46 -> 151 | flujo=2280.44 | capacidad=9628 | congestión=0.2369
+Arco 1795: 224 -> 256 | flujo=2356.71 | capacidad=9950 | congestión=0.2369
+Arco 1928: 242 -> 273 | flujo=744.67 | capacidad=3144 | congestión=0.2369
+Arco 2104: 263 -> 269 | flujo=2010.90 | capacidad=8490 | congestión=0.2369
+Arco 2400: 298 -> 100 | flujo=2819.76 | capacidad=11905 | congestión=0.2369
+Arco 2539: 315 -> 16 | flujo=2549.98 | capacidad=10766 | congestión=0.2369
+Arco 2601: 324 -> 388 | flujo=2772.86 | capacidad=11707 | congestión=0.2369
+Arco 1929: 242 -> 201 | flujo=674.33 | capacidad=2847 | congestión=0.2369
