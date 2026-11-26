@@ -1,0 +1,38 @@
+Filtro de conectividad: 640 productos sin camino eliminados.
+Filtro de conectividad: 20000 -> 19360 productos.
+Filtro de conectividad: productos eliminados (muestra): [21, 51, 65, 138, 155, 170, 185, 206, 223, 233, 237, 257, 265, 310, 475, 529, 600, 602, 631, 657] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 800
+Arcos: 3200
+Productos: 20000
+
+Solver: generación de columnas
+Productos: 19360 | Arcos: 3200
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 19360 columnas en 29.40s.
+Iteración 1: resolviendo maestro con 19360 columnas...
+Iteración 1: z=0.89378956 | columnas=19364 | nuevas=4 | costo reducido=-1.978e-04 | maestro=0.02s | pricing=2.51s
+Iteración 2: resolviendo maestro con 19364 columnas...
+Iteración 2: z=0.84928797 | columnas=19364 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.03s | pricing=2.26s
+
+Solución óptima certificada
+Congestión máxima: 0.84928797 (84.93%)
+Iteraciones: 2 | Columnas: 19364
+Tiempo total: 49.78 segundos
+
+Diez arcos más congestionados:
+Arco 505: 120 -> 302 | flujo=4294.00 | capacidad=5056 | congestión=0.8493
+Arco 2025: 501 -> 613 | flujo=15006.00 | capacidad=24828 | congestión=0.6044
+Arco 63: 17 -> 480 | flujo=5242.00 | capacidad=9511 | congestión=0.5512
+Arco 757: 181 -> 758 | flujo=11202.00 | capacidad=20874 | congestión=0.5366
+Arco 1180: 283 -> 273 | flujo=6375.00 | capacidad=11914 | congestión=0.5351
+Arco 2022: 501 -> 702 | flujo=7768.00 | capacidad=15768 | congestión=0.4926
+Arco 2871: 720 -> 613 | flujo=8256.00 | capacidad=17119 | congestión=0.4823
+Arco 1061: 255 -> 144 | flujo=10163.00 | capacidad=21524 | congestión=0.4722
+Arco 507: 121 -> 164 | flujo=7938.00 | capacidad=16919 | congestión=0.4692
+Arco 3181: 795 -> 765 | flujo=9631.00 | capacidad=20623 | congestión=0.4670

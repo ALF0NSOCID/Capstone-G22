@@ -1,0 +1,50 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10000
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 10000 | Arcos: 1600
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 1490
+Límite de tiempo: 120 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 10000 columnas en 0.10s.
+Iteración 1: resolviendo maestro con 10000 columnas...
+Iteración 1: z=27.26966292 | cota inferior=0.00000000 | gap=infinito | columnas=10075 | nuevas=75 | costo reducido=-1.674e+01 | maestro=0.01s | pricing=0.03s
+Iteración 2: resolviendo maestro con 10075 columnas...
+Iteración 2: z=26.92288136 | cota inferior=0.00000000 | gap=infinito | columnas=11126 | nuevas=1051 | costo reducido=-1.263e+00 | maestro=0.01s | pricing=0.04s
+Iteración 3: resolviendo maestro con 11126 columnas...
+Iteración 3: z=26.63584906 | cota inferior=0.00000000 | gap=infinito | columnas=11591 | nuevas=465 | costo reducido=-2.811e+00 | maestro=0.01s | pricing=0.04s
+Iteración 4: resolviendo maestro con 11591 columnas...
+Iteración 4: z=25.72372881 | cota inferior=0.00000000 | gap=infinito | columnas=12616 | nuevas=1025 | costo reducido=-1.263e+00 | maestro=0.01s | pricing=0.04s
+Iteración 5: resolviendo maestro con 12616 columnas...
+Iteración 5: z=25.34528302 | cota inferior=0.00000000 | gap=infinito | columnas=13064 | nuevas=448 | costo reducido=-2.811e+00 | maestro=0.02s | pricing=0.04s
+Iteración 6: resolviendo maestro con 13064 columnas...
+Iteración 6: z=24.98639456 | cota inferior=24.98639456 | gap=0.0000% | columnas=13064 | nuevas=0 | costo reducido=-1.776e-15 | maestro=0.01s | pricing=0.03s
+
+Solución óptima certificada
+Congestión máxima: 24.98639456 (2498.64%)
+Cota superior: 24.98639456
+Cota inferior: 24.98639456
+Gap certificado: 0.000000%
+Iteraciones: 6 | Columnas: 13064
+Tiempo total: 0.45 segundos
+
+Diez arcos más congestionados:
+Arco 702: 97 -> 163 | flujo=2223.79 | capacidad=89 | congestión=24.9864
+Arco 1061: 328 -> 174 | flujo=1449.21 | capacidad=58 | congestión=24.9864
+Arco 1418: 272 -> 389 | flujo=36230.27 | capacidad=1450 | congestión=24.9864
+Arco 1419: 389 -> 272 | flujo=36230.27 | capacidad=1450 | congestión=24.9864
+Arco 180: 21 -> 270 | flujo=13992.38 | capacidad=560 | congestión=24.9864
+Arco 680: 97 -> 195 | flujo=13242.79 | capacidad=530 | congestión=24.9864
+Arco 681: 195 -> 97 | flujo=13242.79 | capacidad=530 | congestión=24.9864
+Arco 1349: 263 -> 248 | flujo=1599.13 | capacidad=64 | congestión=24.9864
+Arco 1422: 272 -> 394 | flujo=29467.27 | capacidad=1180 | congestión=24.9723
+Arco 1423: 394 -> 272 | flujo=29246.48 | capacidad=1180 | congestión=24.7852

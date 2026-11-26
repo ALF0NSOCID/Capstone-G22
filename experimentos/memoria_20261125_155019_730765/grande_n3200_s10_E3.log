@@ -1,0 +1,22 @@
+Filtro de conectividad: 2482 productos sin camino eliminados.
+Filtro de conectividad: 80000 -> 77518 productos.
+Filtro de conectividad: productos eliminados (muestra): [20, 93, 194, 197, 227, 268, 320, 361, 369, 398, 441, 472, 561, 580, 588, 692, 701, 777, 788, 870] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 3200
+Arcos: 12800
+Productos: 80000
+BENCH_INSTANCIA={"nodos": 3200, "arcos": 12800, "productos_efectivos": 77518, "variables_lp_equivalentes": 992230400}
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 77518 | Arcos: 12800
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 98992
+Límite de tiempo: 180 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 77518 columnas en 2.01s.
+Iteración 1: resolviendo maestro con 77518 columnas...

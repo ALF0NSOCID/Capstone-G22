@@ -30,3 +30,9 @@ gurobi.log
 
 # macOS
 .DS_Store
+
+# Artefactos de compilación local (no código fuente)
+build/
+*.so
+*.pyd
+*.dylib

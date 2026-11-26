@@ -1,0 +1,48 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10000
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 10000 | Arcos: 1600
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 150
+Límite de tiempo: 120 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 10000 columnas en 0.09s.
+Iteración 1: resolviendo maestro con 10000 columnas...
+Iteración 1: z=20.01960784 | cota inferior=0.00000000 | gap=infinito | columnas=10034 | nuevas=34 | costo reducido=-2.941e+00 | maestro=0.01s | pricing=0.03s
+Iteración 2: resolviendo maestro con 10034 columnas...
+Iteración 2: z=19.67968750 | cota inferior=0.00000000 | gap=infinito | columnas=10116 | nuevas=82 | costo reducido=-1.172e+00 | maestro=0.00s | pricing=0.03s
+Iteración 3: resolviendo maestro con 10116 columnas...
+Iteración 3: z=17.64130435 | cota inferior=0.00000000 | gap=infinito | columnas=10169 | nuevas=53 | costo reducido=-1.630e+00 | maestro=0.01s | pricing=0.04s
+Iteración 4: resolviendo maestro con 10169 columnas...
+Iteración 4: z=17.60156250 | cota inferior=0.00000000 | gap=infinito | columnas=10247 | nuevas=78 | costo reducido=-1.172e+00 | maestro=0.00s | pricing=0.03s
+Iteración 5: resolviendo maestro con 10247 columnas...
+Iteración 5: z=17.53424658 | cota inferior=17.53424658 | gap=0.0000% | columnas=10247 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.03s
+
+Solución óptima certificada
+Congestión máxima: 17.53424658 (1753.42%)
+Cota superior: 17.53424658
+Cota inferior: 17.53424658
+Gap certificado: 0.000000%
+Iteraciones: 5 | Columnas: 10247
+Tiempo total: 0.32 segundos
+
+Diez arcos más congestionados:
+Arco 78: 13 -> 131 | flujo=894.25 | capacidad=51 | congestión=17.5342
+Arco 305: 123 -> 49 | flujo=1280.00 | capacidad=73 | congestión=17.5342
+Arco 1139: 189 -> 188 | flujo=1613.15 | capacidad=92 | congestión=17.5342
+Arco 1506: 314 -> 359 | flujo=2244.38 | capacidad=128 | congestión=17.5342
+Arco 1507: 359 -> 314 | flujo=2244.38 | capacidad=128 | congestión=17.5342
+Arco 886: 140 -> 388 | flujo=1191.00 | capacidad=70 | congestión=17.0143
+Arco 1531: 359 -> 329 | flujo=1683.00 | capacidad=100 | congestión=16.8300
+Arco 1218: 209 -> 359 | flujo=1177.00 | capacidad=70 | congestión=16.8143
+Arco 59: 346 -> 9 | flujo=856.00 | capacidad=51 | congestión=16.7843
+Arco 58: 9 -> 346 | flujo=840.37 | capacidad=51 | congestión=16.4778

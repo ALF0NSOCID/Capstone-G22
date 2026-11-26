@@ -1,0 +1,38 @@
+Filtro de conectividad: 1148 productos sin camino eliminados.
+Filtro de conectividad: 20000 -> 18852 productos.
+Filtro de conectividad: productos eliminados (muestra): [3, 4, 6, 13, 22, 29, 30, 38, 60, 62, 67, 102, 125, 138, 163, 169, 200, 242, 249, 263] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 800
+Arcos: 3200
+Productos: 20000
+
+Solver: generación de columnas
+Productos: 18852 | Arcos: 3200
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 18852 columnas en 28.15s.
+Iteración 1: resolviendo maestro con 18852 columnas...
+Iteración 1: z=0.74718883 | columnas=18859 | nuevas=7 | costo reducido=-1.292e-04 | maestro=0.02s | pricing=2.28s
+Iteración 2: resolviendo maestro con 18859 columnas...
+Iteración 2: z=0.71125759 | columnas=18859 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.03s | pricing=2.27s
+
+Solución óptima certificada
+Congestión máxima: 0.71125759 (71.13%)
+Iteraciones: 2 | Columnas: 18859
+Tiempo total: 48.01 segundos
+
+Diez arcos más congestionados:
+Arco 1640: 408 -> 388 | flujo=5503.00 | capacidad=7737 | congestión=0.7113
+Arco 1369: 341 -> 715 | flujo=10504.00 | capacidad=17030 | congestión=0.6168
+Arco 2692: 670 -> 415 | flujo=7415.00 | capacidad=13527 | congestión=0.5482
+Arco 14: 5 -> 18 | flujo=9702.00 | capacidad=18879 | congestión=0.5139
+Arco 607: 157 -> 463 | flujo=10915.00 | capacidad=21750 | congestión=0.5018
+Arco 2591: 643 -> 544 | flujo=9259.00 | capacidad=19171 | congestión=0.4830
+Arco 3042: 757 -> 158 | flujo=8506.00 | capacidad=17614 | congestión=0.4829
+Arco 474: 122 -> 384 | flujo=4341.00 | capacidad=9294 | congestión=0.4671
+Arco 32: 10 -> 451 | flujo=6435.00 | capacidad=13916 | congestión=0.4624
+Arco 30: 8 -> 715 | flujo=7153.00 | capacidad=15863 | congestión=0.4509

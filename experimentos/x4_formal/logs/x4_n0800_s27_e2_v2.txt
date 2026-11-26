@@ -1,0 +1,60 @@
+Filtro de conectividad: 722 productos sin camino eliminados.
+Filtro de conectividad: 20000 -> 19278 productos.
+Filtro de conectividad: productos eliminados (muestra): [3, 38, 41, 56, 57, 73, 129, 200, 214, 223, 231, 266, 323, 423, 443, 475, 490, 533, 581, 608] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 800
+Arcos: 3200
+Productos: 20000
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 19278 | Arcos: 3200
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 24834
+Límite de tiempo: 900 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 19278 columnas en 0.20s.
+Iteración 1: resolviendo maestro con 19278 columnas...
+Iteración 1: z=0.39607768 | cota inferior=0.25302826 | gap=56.5350% | columnas=19311 | nuevas=33 | costo reducido=-2.387e+00 | maestro=0.01s | pricing=0.09s
+Iteración 2: resolviendo maestro con 19311 columnas...
+Iteración 2: z=0.36344128 | cota inferior=0.25302826 | gap=43.6366% | columnas=19359 | nuevas=48 | costo reducido=-1.615e+00 | maestro=0.01s | pricing=0.10s
+Iteración 3: resolviendo maestro con 19359 columnas...
+Iteración 3: z=0.33478727 | cota inferior=0.25302826 | gap=32.3122% | columnas=19459 | nuevas=100 | costo reducido=-1.776e+00 | maestro=0.01s | pricing=0.10s
+Iteración 4: resolviendo maestro con 19459 columnas...
+Iteración 4: z=0.33375992 | cota inferior=0.29140005 | gap=14.5367% | columnas=19468 | nuevas=9 | costo reducido=-3.178e+00 | maestro=0.01s | pricing=0.08s
+Iteración 5: resolviendo maestro con 19468 columnas...
+Iteración 5: z=0.31656687 | cota inferior=0.29140005 | gap=8.6365% | columnas=19549 | nuevas=81 | costo reducido=-1.652e+00 | maestro=0.01s | pricing=0.10s
+Iteración 6: resolviendo maestro con 19549 columnas...
+Iteración 6: z=0.30661365 | cota inferior=0.29140005 | gap=5.2209% | columnas=19710 | nuevas=161 | costo reducido=-1.062e+00 | maestro=0.01s | pricing=0.10s
+Iteración 7: resolviendo maestro con 19710 columnas...
+Iteración 7: z=0.30453856 | cota inferior=0.29140005 | gap=4.5088% | columnas=19790 | nuevas=80 | costo reducido=-1.345e+00 | maestro=0.01s | pricing=0.08s
+Iteración 8: resolviendo maestro con 19790 columnas...
+Iteración 8: z=0.29895732 | cota inferior=0.29140005 | gap=2.5934% | columnas=19881 | nuevas=91 | costo reducido=-1.349e+00 | maestro=0.01s | pricing=0.10s
+Iteración 9: resolviendo maestro con 19881 columnas...
+Iteración 9: z=0.29753444 | cota inferior=0.29140005 | gap=2.1051% | columnas=19958 | nuevas=77 | costo reducido=-2.179e+00 | maestro=0.01s | pricing=0.10s
+Iteración 10: resolviendo maestro con 19958 columnas...
+Iteración 10: z=0.29140005 | cota inferior=0.29140005 | gap=0.0000% | columnas=19958 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.01s | pricing=0.08s
+
+Solución óptima certificada
+Congestión máxima: 0.29140005 (29.14%)
+Cota superior: 0.29140005
+Cota inferior: 0.29140005
+Gap certificado: 0.000000%
+Iteraciones: 10 | Columnas: 19958
+Tiempo total: 1.37 segundos
+
+Diez arcos más congestionados:
+Arco 556: 137 -> 67 | flujo=3364.50 | capacidad=11546 | congestión=0.2914
+Arco 697: 169 -> 695 | flujo=2277.00 | capacidad=7814 | congestión=0.2914
+Arco 768: 187 -> 419 | flujo=5365.84 | capacidad=18414 | congestión=0.2914
+Arco 1359: 329 -> 196 | flujo=3451.63 | capacidad=11845 | congestión=0.2914
+Arco 1592: 386 -> 323 | flujo=3031.14 | capacidad=10402 | congestión=0.2914
+Arco 1708: 418 -> 295 | flujo=3321.09 | capacidad=11397 | congestión=0.2914
+Arco 2191: 551 -> 135 | flujo=6816.14 | capacidad=23391 | congestión=0.2914
+Arco 3173: 793 -> 453 | flujo=5380.41 | capacidad=18464 | congestión=0.2914
+Arco 880: 215 -> 163 | flujo=5322.42 | capacidad=18265 | congestión=0.2914
+Arco 934: 228 -> 388 | flujo=4481.15 | capacidad=15378 | congestión=0.2914

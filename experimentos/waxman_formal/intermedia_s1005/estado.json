@@ -1,0 +1,12 @@
+{
+  "estado": "optimo",
+  "codigo": 0,
+  "pared_s": 0.45065029200000595,
+  "interno_s": "0.17",
+  "z": "18.23214286",
+  "gap_pct": "0.000000",
+  "iteraciones": "1",
+  "columnas": "10000",
+  "cota_puentes": 18.232142857142858,
+  "cota_puentes_sobre_z": 0.9999999998432909
+}

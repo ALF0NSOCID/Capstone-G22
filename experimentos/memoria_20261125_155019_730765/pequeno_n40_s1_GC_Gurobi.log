@@ -1,0 +1,39 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 40
+Arcos: 160
+Productos: 1000
+BENCH_INSTANCIA={"nodos": 40, "arcos": 160, "productos_efectivos": 1000, "variables_lp_equivalentes": 160000}
+
+Solver: generación de columnas
+Productos: 1000 | Arcos: 160
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 1000 columnas en 0.02s.
+Iteración 1: resolviendo maestro con 1000 columnas...
+Iteración 1: z=5.15443038 | columnas=1139 | nuevas=139 | costo reducido=-8.439e-04 | maestro=0.00s | pricing=0.01s
+Iteración 2: resolviendo maestro con 1139 columnas...
+Iteración 2: z=5.13461538 | columnas=1144 | nuevas=5 | costo reducido=-1.923e-03 | maestro=0.00s | pricing=0.01s
+Iteración 3: resolviendo maestro con 1144 columnas...
+Iteración 3: z=4.67500000 | columnas=1144 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.01s
+
+Solución óptima certificada
+Congestión máxima: 4.67500000 (467.50%)
+Iteraciones: 3 | Columnas: 1144
+Tiempo total: 0.10 segundos
+
+Diez arcos más congestionados:
+Arco 17: 4 -> 16 | flujo=2431.00 | capacidad=520 | congestión=4.6750
+Arco 22: 6 -> 10 | flujo=1289.00 | capacidad=302 | congestión=4.2682
+Arco 75: 19 -> 1 | flujo=3155.00 | capacidad=788 | congestión=4.0038
+Arco 30: 8 -> 2 | flujo=1786.00 | capacidad=502 | congestión=3.5578
+Arco 91: 22 -> 21 | flujo=1412.00 | capacidad=407 | congestión=3.4693
+Arco 71: 17 -> 34 | flujo=3060.00 | capacidad=965 | congestión=3.1710
+Arco 67: 16 -> 3 | flujo=2388.00 | capacidad=763 | congestión=3.1298
+Arco 109: 27 -> 39 | flujo=2057.00 | capacidad=668 | congestión=3.0793
+Arco 150: 38 -> 22 | flujo=1196.00 | capacidad=392 | congestión=3.0510
+Arco 140: 34 -> 14 | flujo=2061.00 | capacidad=712 | congestión=2.8947

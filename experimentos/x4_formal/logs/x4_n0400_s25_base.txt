@@ -1,0 +1,62 @@
+Filtro de conectividad: 288 productos sin camino eliminados.
+Filtro de conectividad: 10000 -> 9712 productos.
+Filtro de conectividad: productos eliminados (muestra): [15, 19, 74, 229, 252, 294, 309, 323, 326, 365, 401, 424, 475, 532, 571, 572, 627, 638, 650, 657] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10000
+
+Solver: generación de columnas
+Productos: 9712 | Arcos: 1600
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 9712 columnas en 4.40s.
+Iteración 1: resolviendo maestro con 9712 columnas...
+Iteración 1: z=0.86320177 | columnas=9756 | nuevas=44 | costo reducido=-2.452e-04 | maestro=0.01s | pricing=0.63s
+Iteración 2: resolviendo maestro con 9756 columnas...
+Iteración 2: z=0.84024961 | columnas=9813 | nuevas=57 | costo reducido=-3.120e-04 | maestro=0.01s | pricing=0.62s
+Iteración 3: resolviendo maestro con 9813 columnas...
+Iteración 3: z=0.79012346 | columnas=9981 | nuevas=168 | costo reducido=-1.122e-04 | maestro=0.02s | pricing=0.61s
+Iteración 4: resolviendo maestro con 9981 columnas...
+Iteración 4: z=0.77106518 | columnas=10102 | nuevas=121 | costo reducido=-1.445e-04 | maestro=0.02s | pricing=0.61s
+Iteración 5: resolviendo maestro con 10102 columnas...
+Iteración 5: z=0.73480610 | columnas=10261 | nuevas=159 | costo reducido=-9.647e-05 | maestro=0.01s | pricing=0.62s
+Iteración 6: resolviendo maestro con 10261 columnas...
+Iteración 6: z=0.64950333 | columnas=10420 | nuevas=159 | costo reducido=-9.113e-05 | maestro=0.02s | pricing=0.63s
+Iteración 7: resolviendo maestro con 10420 columnas...
+Iteración 7: z=0.63448596 | columnas=10537 | nuevas=117 | costo reducido=-1.160e-04 | maestro=0.02s | pricing=0.59s
+Iteración 8: resolviendo maestro con 10537 columnas...
+Iteración 8: z=0.62167689 | columnas=10677 | nuevas=140 | costo reducido=-9.738e-05 | maestro=0.01s | pricing=0.62s
+Iteración 9: resolviendo maestro con 10677 columnas...
+Iteración 9: z=0.60832432 | columnas=10796 | nuevas=119 | costo reducido=-1.081e-04 | maestro=0.01s | pricing=0.61s
+Iteración 10: resolviendo maestro con 10796 columnas...
+Iteración 10: z=0.60618371 | columnas=10804 | nuevas=8 | costo reducido=-1.128e-04 | maestro=0.01s | pricing=0.58s
+Iteración 11: resolviendo maestro con 10804 columnas...
+Iteración 11: z=0.60505613 | columnas=10961 | nuevas=157 | costo reducido=-8.839e-05 | maestro=0.01s | pricing=0.62s
+Iteración 12: resolviendo maestro con 10961 columnas...
+Iteración 12: z=0.58328286 | columnas=11074 | nuevas=113 | costo reducido=-8.653e-05 | maestro=0.01s | pricing=0.62s
+Iteración 13: resolviendo maestro con 11074 columnas...
+Iteración 13: z=0.58098144 | columnas=11080 | nuevas=6 | costo reducido=-2.543e-04 | maestro=0.01s | pricing=0.58s
+Iteración 14: resolviendo maestro con 11080 columnas...
+Iteración 14: z=0.57357256 | columnas=11080 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.01s | pricing=0.58s
+
+Solución óptima certificada
+Congestión máxima: 0.57357256 (57.36%)
+Iteraciones: 14 | Columnas: 11080
+Tiempo total: 17.07 segundos
+
+Diez arcos más congestionados:
+Arco 1197: 299 -> 108 | flujo=2339.60 | capacidad=4079 | congestión=0.5736
+Arco 511: 119 -> 378 | flujo=2952.18 | capacidad=5147 | congestión=0.5736
+Arco 600: 144 -> 282 | flujo=6293.81 | capacidad=10973 | congestión=0.5736
+Arco 1242: 311 -> 104 | flujo=6419.42 | capacidad=11192 | congestión=0.5736
+Arco 1244: 311 -> 101 | flujo=4372.34 | capacidad=7623 | congestión=0.5736
+Arco 1287: 321 -> 195 | flujo=5026.79 | capacidad=8764 | congestión=0.5736
+Arco 1440: 362 -> 299 | flujo=3871.04 | capacidad=6749 | congestión=0.5736
+Arco 1515: 380 -> 264 | flujo=2743.40 | capacidad=4783 | congestión=0.5736
+Arco 192: 46 -> 370 | flujo=4118.00 | capacidad=7186 | congestión=0.5731
+Arco 1565: 394 -> 111 | flujo=3492.00 | capacidad=6094 | congestión=0.5730

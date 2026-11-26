@@ -1,0 +1,14 @@
+{
+  "generacion": {
+    "semilla": 1003,
+    "alpha": 0.04,
+    "beta": 1.0,
+    "porcentaje_hubs": 0.05,
+    "conexiones_por_hub": 2,
+    "prob_acceso_backbone": 0.6,
+    "prob_segundo_hub": 0.15,
+    "secuencias_independientes": true,
+    "intentos": 2,
+    "multiplicador_capacidad_hubs": 10
+  }
+}

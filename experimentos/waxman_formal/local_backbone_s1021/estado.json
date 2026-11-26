@@ -1,0 +1,12 @@
+{
+  "estado": "brecha_1pct",
+  "codigo": 0,
+  "pared_s": 9.208510750000073,
+  "interno_s": "8.81",
+  "z": "27.51239297",
+  "gap_pct": "0.139424",
+  "iteraciones": "31",
+  "columnas": "47592",
+  "cota_puentes": 20.7027027027027,
+  "cota_puentes_sobre_z": 0.7524864422108718
+}

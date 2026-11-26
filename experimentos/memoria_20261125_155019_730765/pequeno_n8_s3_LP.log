@@ -1,0 +1,51 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 8
+Arcos: 32
+Productos: 200
+BENCH_INSTANCIA={"nodos": 8, "arcos": 32, "productos_efectivos": 200, "variables_lp_equivalentes": 6400}
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter TimeLimit to value 900
+Set parameter Crossover to value 0
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 25.6.0 25G83)
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  900
+Crossover  0
+
+Optimize a model with 1632 rows, 6401 columns and 19232 nonzeros
+Model fingerprint: 0xa8beca7e
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+01, 7e+01]
+Presolve removed 200 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 1432 rows, 6401 columns, 17134 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   7.983188e+03   0.000000e+00      0s
+    1729    4.4994111e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 1729 iterations and 0.05 seconds (0.11 work units)
+Optimal objective  4.499411072e+00
+
+Congestión máxima: 4.4994 (449.94%)
+
+Diez arcos más congestionados:
+Arco 1: 1 -> 4 | flujo=742.40 | capacidad=165 | congestión=4.4994
+Arco 7: 2 -> 1 | flujo=854.89 | capacidad=190 | congestión=4.4994
+Arco 3: 1 -> 8 | flujo=445.44 | capacidad=99 | congestión=4.4994
+Arco 4: 1 -> 6 | flujo=769.40 | capacidad=171 | congestión=4.4994
+Arco 8: 3 -> 1 | flujo=755.90 | capacidad=168 | congestión=4.4994
+Arco 9: 3 -> 4 | flujo=364.45 | capacidad=81 | congestión=4.4994
+Arco 11: 4 -> 1 | flujo=886.38 | capacidad=197 | congestión=4.4994
+Arco 16: 5 -> 4 | flujo=215.97 | capacidad=48 | congestión=4.4994
+Arco 19: 6 -> 8 | flujo=863.89 | capacidad=192 | congestión=4.4994
+Arco 20: 6 -> 1 | flujo=391.45 | capacidad=87 | congestión=4.4994

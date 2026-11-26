@@ -1,0 +1,13 @@
+running build_ext
+building 'pricing_cpp' extension
+creating build
+creating build/temp.macosx-10.9-universal2-3.9
+creating build/temp.macosx-10.9-universal2-3.9/Users
+creating build/temp.macosx-10.9-universal2-3.9/Users/alfonsocid
+creating build/temp.macosx-10.9-universal2-3.9/Users/alfonsocid/Desktop
+creating build/temp.macosx-10.9-universal2-3.9/Users/alfonsocid/Desktop/Repo Capstone
+creating build/temp.macosx-10.9-universal2-3.9/Users/alfonsocid/Desktop/Repo Capstone/benchmark_local_20261123_141415_417217
+clang -Wno-unused-result -Wsign-compare -Wunreachable-code -fno-common -dynamic -DNDEBUG -g -fwrapv -O3 -Wall -iwithsysroot/System/Library/Frameworks/System.framework/PrivateHeaders -iwithsysroot/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/Headers -arch arm64 -arch x86_64 -Werror=implicit-function-declaration -Wno-error=unreachable-code -Wno-error=unused-but-set-variable -Wno-error=cast-function-type-mismatch -Wno-unknown-warning-option -I/Users/alfonsocid/Library/Python/3.9/lib/python/site-packages/pybind11/include -I/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/include/python3.9 -c /Users/alfonsocid/Desktop/Repo Capstone/benchmark_local_20261123_141415_417217/pricing_cpp.cpp -o build/temp.macosx-10.9-universal2-3.9/Users/alfonsocid/Desktop/Repo Capstone/benchmark_local_20261123_141415_417217/pricing_cpp.o -fvisibility=hidden -g0 -std=c++17 -mmacosx-version-min=10.14 -O3 -DNDEBUG
+creating build/lib.macosx-10.9-universal2-3.9
+clang++ -bundle -undefined dynamic_lookup -arch arm64 -arch x86_64 -Wl,-headerpad,0x1000 build/temp.macosx-10.9-universal2-3.9/Users/alfonsocid/Desktop/Repo Capstone/benchmark_local_20261123_141415_417217/pricing_cpp.o -o build/lib.macosx-10.9-universal2-3.9/pricing_cpp.cpython-39-darwin.so -mmacosx-version-min=10.14
+copying build/lib.macosx-10.9-universal2-3.9/pricing_cpp.cpython-39-darwin.so -> 

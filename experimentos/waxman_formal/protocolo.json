@@ -1,0 +1,48 @@
+{
+  "solver": "E3",
+  "nodos": 400,
+  "arcos": 1600,
+  "productos": 10000,
+  "limite_s": 120,
+  "preparacion_s": 60,
+  "eta": 25,
+  "tolerancia": 1e-07,
+  "casos": {
+    "local_extrema": {
+      "alpha": 0.04,
+      "beta": 1.0
+    },
+    "intermedia": {
+      "alpha": 0.2,
+      "beta": 0.4
+    },
+    "larga": {
+      "alpha": 0.7,
+      "beta": 0.4
+    },
+    "local_backbone": {
+      "alpha": 0.04,
+      "beta": 1.0,
+      "porcentaje_hubs": 0.05,
+      "conexiones_por_hub": 2,
+      "prob_acceso_backbone": 0.6,
+      "prob_segundo_hub": 0.15
+    },
+    "local_backbone_x10": {
+      "alpha": 0.04,
+      "beta": 1.0,
+      "porcentaje_hubs": 0.05,
+      "conexiones_por_hub": 2,
+      "prob_acceso_backbone": 0.6,
+      "prob_segundo_hub": 0.15,
+      "multiplicador_capacidad_hubs": 10
+    }
+  },
+  "secuencias_independientes": true,
+  "sha256": {
+    "generador_waxman.py": "d0e8b25d617b68e7e879f1fe8bf050501b29c7a26d26c7ec64abd96d30981e1c",
+    "solver_columnas_e2_v2.py": "18abbe78fd79faf55661523e87a13f189850d7f3f986dde160649bd16bc8b11e",
+    "explorar_waxman.py": "abf7d3ded09d65a7cec0fdd5b7f4924dce1d31f6f1f303a8318654b93c619857",
+    "analisis_red.py": "ac6f4c4cb0a2a15fd54e3b1f3f2c487bd3919ba1e536f34a2fd43e6e84b0ac1a"
+  }
+}

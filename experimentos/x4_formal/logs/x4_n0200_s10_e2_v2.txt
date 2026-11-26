@@ -1,0 +1,42 @@
+Filtro de conectividad: 161 productos sin camino eliminados.
+Filtro de conectividad: 5000 -> 4839 productos.
+Filtro de conectividad: productos eliminados (muestra): [1, 22, 33, 46, 90, 234, 273, 277, 291, 380, 386, 407, 492, 511, 555, 608, 672, 742, 745, 751] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 200
+Arcos: 800
+Productos: 5000
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 4839 | Arcos: 800
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 6237
+Límite de tiempo: 900 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 4839 columnas en 0.04s.
+Iteración 1: resolviendo maestro con 4839 columnas...
+Iteración 1: z=1.29524980 | cota inferior=1.29524980 | gap=0.0000% | columnas=4839 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.01s
+
+Solución óptima certificada
+Congestión máxima: 1.29524980 (129.52%)
+Cota superior: 1.29524980
+Cota inferior: 1.29524980
+Gap certificado: 0.000000%
+Iteraciones: 1 | Columnas: 4839
+Tiempo total: 0.07 segundos
+
+Diez arcos más congestionados:
+Arco 458: 119 -> 22 | flujo=3163.00 | capacidad=2442 | congestión=1.2952
+Arco 680: 171 -> 165 | flujo=5080.00 | capacidad=4271 | congestión=1.1894
+Arco 533: 137 -> 75 | flujo=1731.00 | capacidad=1541 | congestión=1.1233
+Arco 334: 90 -> 108 | flujo=5069.00 | capacidad=5560 | congestión=0.9117
+Arco 251: 74 -> 78 | flujo=3059.00 | capacidad=3419 | congestión=0.8947
+Arco 73: 21 -> 142 | flujo=3819.00 | capacidad=4696 | congestión=0.8132
+Arco 580: 148 -> 114 | flujo=4194.00 | capacidad=5222 | congestión=0.8031
+Arco 161: 48 -> 138 | flujo=1027.00 | capacidad=1290 | congestión=0.7961
+Arco 10: 3 -> 130 | flujo=4803.00 | capacidad=6036 | congestión=0.7957
+Arco 521: 134 -> 184 | flujo=4782.00 | capacidad=6011 | congestión=0.7955

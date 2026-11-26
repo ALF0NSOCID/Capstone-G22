@@ -1,4 +1,5 @@
 import argparse
+import json
 import os
 import subprocess
 import sys
@@ -220,6 +221,9 @@ def main():
         help="Numero de hubs geograficamente cercanos buscados por cada hub.",
     )
     parser.add_argument("--semilla", type=int, default=42)
+    parser.add_argument("--prob-acceso-backbone", type=float, default=0.0)
+    parser.add_argument("--prob-segundo-hub", type=float, default=0.0)
+    parser.add_argument("--secuencias-independientes", action="store_true")
     parser.add_argument(
         "--nombre",
         help="Nombre opcional usado para identificar el archivo de resultados.",
@@ -264,6 +268,9 @@ def main():
         porcentaje_hubs=argumentos.porcentaje_hubs,
         multiplicador_capacidad_hubs=argumentos.multiplicador_hubs,
         conexiones_por_hub=argumentos.vecinos_hub,
+        prob_acceso_backbone=argumentos.prob_acceso_backbone,
+        prob_segundo_hub=argumentos.prob_segundo_hub,
+        secuencias_independientes=argumentos.secuencias_independientes,
     )
     escribir_instancia(SALIDA_ACTIVA, grafo, arcos, commodities)
 
@@ -279,6 +286,9 @@ def main():
         f"_k{argumentos.productos}"
         f"_h{100 * argumentos.porcentaje_hubs:g}"
         f"_v{argumentos.vecinos_hub}"
+        f"_a{argumentos.alpha:g}_b{argumentos.beta:g}"
+        f"_p{argumentos.prob_acceso_backbone:g}_q{argumentos.prob_segundo_hub:g}"
+        f"_x{argumentos.multiplicador_hubs:g}_ind{int(argumentos.secuencias_independientes)}"
         f"{sufijo_realismo}"
         f"_s{argumentos.semilla}"
     )
@@ -291,8 +301,16 @@ def main():
     )
     print(f"Instancia guardada en {SALIDA_ACTIVA}")
 
+    CARPETA_RESULTADOS.mkdir(exist_ok=True)
+    import shutil
+    shutil.copy2(SALIDA_ACTIVA, CARPETA_RESULTADOS / f"{nombre_instancia}.instancia.txt")
+    parametros = dict(vars(argumentos), generacion=grafo.graph.get("generacion", {}))
+    (CARPETA_RESULTADOS / f"{nombre_instancia}.parametros.json").write_text(
+        json.dumps(parametros, indent=2), encoding="utf-8")
     if argumentos.analizar_red:
-        analizar_red_generada(SALIDA_ACTIVA)
+        diagnostico = analizar_red_generada(SALIDA_ACTIVA, grafo=grafo)
+        (CARPETA_RESULTADOS / f"{nombre_instancia}.diagnostico.json").write_text(
+            json.dumps(diagnostico, indent=2), encoding="utf-8")
 
     ejecutar_solver(nombre_instancia, archivo_solver)
 

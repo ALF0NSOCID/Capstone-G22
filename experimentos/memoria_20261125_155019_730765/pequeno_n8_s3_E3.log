@@ -1,0 +1,61 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 8
+Arcos: 32
+Productos: 200
+BENCH_INSTANCIA={"nodos": 8, "arcos": 32, "productos_efectivos": 200, "variables_lp_equivalentes": 6400}
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 200 | Arcos: 32
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 218
+Límite de tiempo: 60 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 200 columnas en 0.00s.
+Iteración 1: resolviendo maestro con 200 columnas...
+Iteración 1: z=13.66666667 | cota inferior=0.00000000 | gap=infinito | columnas=214 | nuevas=14 | costo reducido=-4.542e+00 | maestro=0.00s | pricing=0.00s
+Iteración 2: resolviendo maestro con 214 columnas...
+Iteración 2: z=8.93478261 | cota inferior=0.00000000 | gap=infinito | columnas=224 | nuevas=10 | costo reducido=-4.739e+00 | maestro=0.00s | pricing=0.00s
+Iteración 3: resolviendo maestro con 224 columnas...
+Iteración 3: z=6.90123457 | cota inferior=0.00000000 | gap=infinito | columnas=239 | nuevas=15 | costo reducido=-2.691e+00 | maestro=0.00s | pricing=0.00s
+Iteración 4: resolviendo maestro con 239 columnas...
+Iteración 4: z=6.18518519 | cota inferior=0.00000000 | gap=infinito | columnas=250 | nuevas=11 | costo reducido=-2.691e+00 | maestro=0.00s | pricing=0.00s
+Iteración 5: resolviendo maestro con 250 columnas...
+Iteración 5: z=5.93698630 | cota inferior=0.00000000 | gap=infinito | columnas=305 | nuevas=55 | costo reducido=-5.973e-01 | maestro=0.00s | pricing=0.00s
+Iteración 6: resolviendo maestro con 305 columnas...
+Iteración 6: z=5.91799544 | cota inferior=3.76309795 | gap=57.2639% | columnas=329 | nuevas=24 | costo reducido=-4.966e-01 | maestro=0.00s | pricing=0.00s
+Iteración 7: resolviendo maestro con 329 columnas...
+Iteración 7: z=5.01190476 | cota inferior=3.76309795 | gap=33.1856% | columnas=345 | nuevas=16 | costo reducido=-1.298e+00 | maestro=0.00s | pricing=0.00s
+Iteración 8: resolviendo maestro con 345 columnas...
+Iteración 8: z=4.91778976 | cota inferior=4.38005391 | gap=12.2769% | columnas=354 | nuevas=9 | costo reducido=-2.938e-01 | maestro=0.00s | pricing=0.00s
+Iteración 9: resolviendo maestro con 354 columnas...
+Iteración 9: z=4.81451613 | cota inferior=4.38005391 | gap=9.9191% | columnas=368 | nuevas=14 | costo reducido=-1.758e+00 | maestro=0.00s | pricing=0.00s
+Iteración 10: resolviendo maestro con 368 columnas...
+Iteración 10: z=4.51731844 | cota inferior=4.38005391 | gap=3.1339% | columnas=373 | nuevas=5 | costo reducido=-2.436e-01 | maestro=0.00s | pricing=0.00s
+Iteración 11: resolviendo maestro con 373 columnas...
+Iteración 11: z=4.49941107 | cota inferior=4.49941107 | gap=0.0000% | columnas=373 | nuevas=0 | costo reducido=-5.551e-17 | maestro=0.00s | pricing=0.00s
+
+Solución óptima certificada
+Congestión máxima: 4.49941107 (449.94%)
+Cota superior: 4.49941107
+Cota inferior: 4.49941107
+Gap certificado: 0.000000%
+Iteraciones: 11 | Columnas: 373
+Tiempo total: 0.01 segundos
+
+Diez arcos más congestionados:
+Arco 9: 3 -> 4 | flujo=364.45 | capacidad=81 | congestión=4.4994
+Arco 7: 2 -> 1 | flujo=854.89 | capacidad=190 | congestión=4.4994
+Arco 21: 6 -> 4 | flujo=364.45 | capacidad=81 | congestión=4.4994
+Arco 27: 7 -> 8 | flujo=206.97 | capacidad=46 | congestión=4.4994
+Arco 8: 3 -> 1 | flujo=755.90 | capacidad=168 | congestión=4.4994
+Arco 16: 5 -> 4 | flujo=215.97 | capacidad=48 | congestión=4.4994
+Arco 20: 6 -> 1 | flujo=391.45 | capacidad=87 | congestión=4.4994
+Arco 29: 8 -> 4 | flujo=391.45 | capacidad=87 | congestión=4.4994
+Arco 31: 8 -> 7 | flujo=481.44 | capacidad=107 | congestión=4.4994
+Arco 24: 7 -> 6 | flujo=778.03 | capacidad=183 | congestión=4.2515

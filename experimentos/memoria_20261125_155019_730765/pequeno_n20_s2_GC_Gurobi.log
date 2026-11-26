@@ -1,0 +1,41 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 20
+Arcos: 80
+Productos: 500
+BENCH_INSTANCIA={"nodos": 20, "arcos": 80, "productos_efectivos": 500, "variables_lp_equivalentes": 40000}
+
+Solver: generación de columnas
+Productos: 500 | Arcos: 80
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 500 columnas en 0.01s.
+Iteración 1: resolviendo maestro con 500 columnas...
+Iteración 1: z=6.15021459 | columnas=563 | nuevas=63 | costo reducido=-2.146e-03 | maestro=0.00s | pricing=0.00s
+Iteración 2: resolviendo maestro con 563 columnas...
+Iteración 2: z=5.97333333 | columnas=575 | nuevas=12 | costo reducido=-3.333e-03 | maestro=0.00s | pricing=0.00s
+Iteración 3: resolviendo maestro con 575 columnas...
+Iteración 3: z=5.35593220 | columnas=619 | nuevas=44 | costo reducido=-2.421e-03 | maestro=0.00s | pricing=0.00s
+Iteración 4: resolviendo maestro con 619 columnas...
+Iteración 4: z=4.92542373 | columnas=619 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.00s
+
+Solución óptima certificada
+Congestión máxima: 4.92542373 (492.54%)
+Iteraciones: 4 | Columnas: 619
+Tiempo total: 0.04 segundos
+
+Diez arcos más congestionados:
+Arco 23: 6 -> 13 | flujo=1453.00 | capacidad=295 | congestión=4.9254
+Arco 20: 5 -> 2 | flujo=850.00 | capacidad=182 | congestión=4.6703
+Arco 3: 1 -> 6 | flujo=901.00 | capacidad=197 | congestión=4.5736
+Arco 59: 16 -> 1 | flujo=1658.00 | capacidad=394 | congestión=4.2081
+Arco 65: 17 -> 4 | flujo=559.00 | capacidad=133 | congestión=4.2030
+Arco 22: 5 -> 9 | flujo=1033.00 | capacidad=253 | congestión=4.0830
+Arco 8: 2 -> 15 | flujo=1188.00 | capacidad=300 | congestión=3.9600
+Arco 19: 5 -> 18 | flujo=944.00 | capacidad=242 | congestión=3.9008
+Arco 7: 1 -> 2 | flujo=1537.00 | capacidad=413 | congestión=3.7215
+Arco 1: 1 -> 12 | flujo=801.00 | capacidad=222 | congestión=3.6081

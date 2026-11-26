@@ -1,0 +1,18 @@
+{
+  "nodos": 400,
+  "productos": 10000,
+  "arcos_objetivo": 1600,
+  "demanda_min": 10,
+  "demanda_max": 50,
+  "capacidad_min": 50,
+  "capacidad_max": 150,
+  "multiplicador_capacidad_hubs": 1,
+  "semilla": 1030,
+  "secuencias_independientes": true,
+  "alpha": 0.04,
+  "beta": 1.0,
+  "porcentaje_hubs": 0.05,
+  "conexiones_por_hub": 2,
+  "prob_acceso_backbone": 0.6,
+  "prob_segundo_hub": 0.15
+}

@@ -1,0 +1,56 @@
+Filtro de conectividad: 693 productos sin camino eliminados.
+Filtro de conectividad: 20000 -> 19307 productos.
+Filtro de conectividad: productos eliminados (muestra): [3, 36, 43, 45, 50, 89, 92, 109, 112, 132, 149, 184, 191, 234, 264, 315, 338, 412, 439, 445] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 800
+Arcos: 3200
+Productos: 20000
+
+Solver: generación de columnas
+Productos: 19307 | Arcos: 3200
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 19307 columnas en 29.20s.
+Iteración 1: resolviendo maestro con 19307 columnas...
+Iteración 1: z=0.60772936 | columnas=19428 | nuevas=121 | costo reducido=-1.095e-04 | maestro=0.02s | pricing=2.75s
+Iteración 2: resolviendo maestro con 19428 columnas...
+Iteración 2: z=0.56152949 | columnas=19702 | nuevas=274 | costo reducido=-4.663e-05 | maestro=0.03s | pricing=2.45s
+Iteración 3: resolviendo maestro con 19702 columnas...
+Iteración 3: z=0.49921576 | columnas=19924 | nuevas=222 | costo reducido=-4.901e-05 | maestro=0.03s | pricing=2.41s
+Iteración 4: resolviendo maestro con 19924 columnas...
+Iteración 4: z=0.49184652 | columnas=20015 | nuevas=91 | costo reducido=-1.199e-04 | maestro=0.03s | pricing=2.35s
+Iteración 5: resolviendo maestro con 20015 columnas...
+Iteración 5: z=0.47503185 | columnas=20190 | nuevas=175 | costo reducido=-6.068e-05 | maestro=0.03s | pricing=2.38s
+Iteración 6: resolviendo maestro con 20190 columnas...
+Iteración 6: z=0.45404291 | columnas=20407 | nuevas=217 | costo reducido=-4.685e-05 | maestro=0.03s | pricing=2.47s
+Iteración 7: resolviendo maestro con 20407 columnas...
+Iteración 7: z=0.44089092 | columnas=20594 | nuevas=187 | costo reducido=-5.192e-05 | maestro=0.03s | pricing=2.40s
+Iteración 8: resolviendo maestro con 20594 columnas...
+Iteración 8: z=0.43261231 | columnas=20755 | nuevas=161 | costo reducido=-5.942e-05 | maestro=0.03s | pricing=2.33s
+Iteración 9: resolviendo maestro con 20755 columnas...
+Iteración 9: z=0.41405359 | columnas=20942 | nuevas=187 | costo reducido=-4.751e-05 | maestro=0.03s | pricing=2.33s
+Iteración 10: resolviendo maestro con 20942 columnas...
+Iteración 10: z=0.40172110 | columnas=21006 | nuevas=64 | costo reducido=-9.779e-05 | maestro=0.03s | pricing=2.30s
+Iteración 11: resolviendo maestro con 21006 columnas...
+Iteración 11: z=0.40164652 | columnas=21006 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.03s | pricing=2.26s
+
+Solución óptima certificada
+Congestión máxima: 0.40164652 (40.16%)
+Iteraciones: 11 | Columnas: 21006
+Tiempo total: 71.38 segundos
+
+Diez arcos más congestionados:
+Arco 969: 250 -> 233 | flujo=2293.00 | capacidad=5709 | congestión=0.4016
+Arco 2423: 609 -> 367 | flujo=3887.94 | capacidad=9680 | congestión=0.4016
+Arco 2216: 548 -> 480 | flujo=3469.00 | capacidad=8737 | congestión=0.3970
+Arco 1742: 434 -> 460 | flujo=3752.00 | capacidad=9482 | congestión=0.3957
+Arco 945: 244 -> 25 | flujo=7871.00 | capacidad=19956 | congestión=0.3944
+Arco 1735: 433 -> 752 | flujo=8134.00 | capacidad=20700 | congestión=0.3929
+Arco 45: 10 -> 752 | flujo=7983.00 | capacidad=20502 | congestión=0.3894
+Arco 2873: 721 -> 119 | flujo=4546.00 | capacidad=11715 | congestión=0.3880
+Arco 2297: 572 -> 710 | flujo=3967.94 | capacidad=10226 | congestión=0.3880
+Arco 1351: 340 -> 346 | flujo=8080.00 | capacidad=21048 | congestión=0.3839

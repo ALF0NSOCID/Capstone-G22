@@ -1,0 +1,6 @@
+caso,corridas,certificadas,mediana_certificadas_s,max_certificadas_s
+local_extrema,30,30,4.14,55.06
+intermedia,30,30,0.21,0.54
+larga,30,30,0.21,1.51
+local_backbone,30,30,14.165,112.65
+local_backbone_x10,30,30,4.01,57.79

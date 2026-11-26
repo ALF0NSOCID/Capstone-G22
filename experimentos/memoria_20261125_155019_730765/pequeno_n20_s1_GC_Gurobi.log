@@ -1,0 +1,39 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 20
+Arcos: 80
+Productos: 500
+BENCH_INSTANCIA={"nodos": 20, "arcos": 80, "productos_efectivos": 500, "variables_lp_equivalentes": 40000}
+
+Solver: generación de columnas
+Productos: 500 | Arcos: 80
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 500 columnas en 0.01s.
+Iteración 1: resolviendo maestro con 500 columnas...
+Iteración 1: z=8.79699248 | columnas=523 | nuevas=23 | costo reducido=-3.759e-03 | maestro=0.00s | pricing=0.00s
+Iteración 2: resolviendo maestro con 523 columnas...
+Iteración 2: z=7.55589124 | columnas=578 | nuevas=55 | costo reducido=-3.021e-03 | maestro=0.00s | pricing=0.00s
+Iteración 3: resolviendo maestro con 578 columnas...
+Iteración 3: z=6.28117359 | columnas=578 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.00s
+
+Solución óptima certificada
+Congestión máxima: 6.28117359 (628.12%)
+Iteraciones: 3 | Columnas: 578
+Tiempo total: 0.03 segundos
+
+Diez arcos más congestionados:
+Arco 0: 1 -> 13 | flujo=1670.79 | capacidad=266 | congestión=6.2812
+Arco 38: 11 -> 13 | flujo=898.21 | capacidad=143 | congestión=6.2812
+Arco 9: 3 -> 12 | flujo=2820.00 | capacidad=519 | congestión=5.4335
+Arco 1: 2 -> 3 | flujo=2524.00 | capacidad=474 | congestión=5.3249
+Arco 37: 11 -> 20 | flujo=3324.00 | capacidad=647 | congestión=5.1376
+Arco 8: 3 -> 7 | flujo=3088.00 | capacidad=604 | congestión=5.1126
+Arco 78: 20 -> 7 | flujo=836.00 | capacidad=178 | congestión=4.6966
+Arco 51: 14 -> 7 | flujo=1095.00 | capacidad=243 | congestión=4.5062
+Arco 26: 7 -> 8 | flujo=952.00 | capacidad=233 | congestión=4.0858
+Arco 77: 20 -> 19 | flujo=1313.00 | capacidad=331 | congestión=3.9668

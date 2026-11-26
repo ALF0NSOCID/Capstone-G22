@@ -1,0 +1,92 @@
+Filtro de conectividad: 52 productos sin camino eliminados.
+Filtro de conectividad: 1000 -> 948 productos.
+Filtro de conectividad: productos eliminados (muestra): [8, 9, 60, 80, 86, 112, 130, 134, 159, 192, 217, 220, 249, 260, 272, 280, 306, 347, 351, 379] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 40
+Arcos: 160
+Productos: 1000
+BENCH_INSTANCIA={"nodos": 40, "arcos": 160, "productos_efectivos": 948, "variables_lp_equivalentes": 151680}
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter TimeLimit to value 900
+Set parameter Crossover to value 0
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 25.6.0 25G83)
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  900
+Crossover  0
+
+Optimize a model with 38080 rows, 151681 columns and 455200 nonzeros
+Model fingerprint: 0xc4cfc73b
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+01, 7e+01]
+Presolve removed 8267 rows and 15517 columns
+Presolve time: 0.16s
+Presolved: 29813 rows, 136164 columns, 425641 nonzeros
+
+Concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Warning: Concurrent optimizer requires crossover - forcing it on
+Ordering time: 0.04s
+
+Barrier statistics:
+ Dense cols : 1
+ AA' NZ     : 4.043e+05
+ Factor NZ  : 3.392e+06 (roughly 100 MB of memory)
+ Factor Ops : 4.740e+08 (less than 1 second per iteration)
+ Threads    : 6
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   3.38726620e+00 -4.78522972e+01  2.40e+05 0.00e+00  2.10e+01     0s
+   1   8.80975368e+00 -5.01249922e+01  2.29e+05 9.60e-02  2.01e+01     0s
+   2   6.04003642e+01 -4.91911602e+01  2.10e+05 9.26e-02  2.01e+01     0s
+   3   2.43790091e+02 -5.77840109e+01  1.05e+05 7.43e-02  1.49e+01     1s
+   4   4.04221753e+02 -6.64634615e+01  4.59e+04 5.05e-02  1.01e+01     1s
+   5   5.61132319e+02 -6.06487838e+01  6.91e+03 1.44e-02  2.97e+00     1s
+   6   5.80191623e+02 -2.27763099e+01  1.06e+02 1.35e-04  4.53e-02     1s
+   7   4.43957526e+02 -9.32562896e+00  5.89e+01 5.36e-05  2.22e-02     1s
+   8   2.25602407e+02 -2.87118112e-01  2.26e+01 1.99e-06  6.80e-03     1s
+   9   1.05159368e+02  9.60490392e-02  1.02e+01 8.70e-07  3.12e-03     1s
+  10   4.51909547e+01  6.44065500e-01  4.03e+00 2.37e-07  1.31e-03     1s
+  11   1.61856258e+01  1.19452860e+00  1.21e+00 1.03e-18  4.40e-04     1s
+  12   7.12553608e+00  1.67369055e+00  3.99e-01 5.18e-19  1.60e-04     1s
+  13   4.36543282e+00  2.01625796e+00  1.62e-01 8.49e-09  6.88e-05     1s
+  14   3.57785665e+00  2.34124537e+00  8.78e-02 4.86e-19  3.62e-05     1s
+  15   3.39400813e+00  2.93037010e+00  4.57e-03 3.56e-19  1.36e-05     1s
+  16   3.28765205e+00  3.27557950e+00  5.15e-06 1.91e-19  3.53e-07     1s
+  17   3.28282831e+00  3.28282796e+00  3.68e-10 2.43e-21  1.04e-11     1s
+  18   3.28282828e+00  3.28282828e+00  5.74e-12 1.39e-17  1.04e-14     1s
+
+Barrier solved model in 18 iterations and 1.39 seconds (1.41 work units)
+Optimal objective 3.28282828e+00
+
+
+Solved with primal simplex
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   33641    3.2828283e+00   0.000000e+00   0.000000e+00      3s
+
+Solved in 33641 iterations and 2.72 seconds (4.07 work units)
+Optimal objective  3.282828283e+00
+
+Congestión máxima: 3.2828 (328.28%)
+
+Diez arcos más congestionados:
+Arco 6: 3 -> 9 | flujo=1070.20 | capacidad=326 | congestión=3.2828
+Arco 59: 18 -> 30 | flujo=2166.67 | capacidad=660 | congestión=3.2828
+Arco 61: 18 -> 28 | flujo=3194.19 | capacidad=973 | congestión=3.2828
+Arco 118: 31 -> 21 | flujo=1605.30 | capacidad=489 | congestión=3.2828
+Arco 120: 31 -> 34 | flujo=823.99 | capacidad=251 | congestión=3.2828
+Arco 132: 34 -> 22 | flujo=3364.90 | capacidad=1025 | congestión=3.2828
+Arco 1: 1 -> 36 | flujo=2255.30 | capacidad=687 | congestión=3.2828
+Arco 7: 3 -> 37 | flujo=873.23 | capacidad=266 | congestión=3.2828
+Arco 10: 3 -> 32 | flujo=2708.33 | capacidad=825 | congestión=3.2828
+Arco 39: 10 -> 23 | flujo=1234.34 | capacidad=376 | congestión=3.2828

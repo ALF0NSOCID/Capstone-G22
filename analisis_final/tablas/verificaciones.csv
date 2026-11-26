@@ -1,0 +1,56 @@
+bateria,chequeo,esperado,observado,resultado,detalle
+x3,filas de datos en corridas.csv,1 por corrida,40,INFO,41 líneas con cabecera
+x3,filas truncadas o con columnas de más,0,0,OK,
+x3,semillas presentes,1–10 (diseño predeterminado),1–10,OK,no se amplió la muestra
+x3,corridas esperadas presentes,40,40,OK,
+x3,corridas fuera del diseño,0,0,OK,
+x3,duplicados (combinación repetida),0,0,OK,
+x3,logs huérfanos (sin fila en CSV),0,0,OK,
+x3,consistencia CSV ↔ log por corrida,0,0,OK,
+x3,códigos de salida,todos 0,['0'],OK,
+x3,licencia Gurobi (huella de entorno),una sola,['2855691'],OK,
+x3,estados,,"{('E3', 'brecha_1pct'): 3, ('E3', 'limite_interno'): 4, ('E3', 'optimo'): 33}",INFO,
+x3,límite E3 leído en log,300 s,[np.float64(300.0)],OK,
+x4,filas de datos en corridas.csv,1 por corrida,240,INFO,241 líneas con cabecera
+x4,filas truncadas o con columnas de más,0,0,OK,
+x4,GC base solo hasta 800 nodos,máx. 800,800,OK,
+x4,corridas esperadas presentes,240,240,OK,
+x4,corridas fuera del diseño,0,0,OK,
+x4,duplicados (combinación repetida),0,0,OK,
+x4,logs huérfanos (sin fila en CSV),0,0,OK,
+x4,consistencia CSV ↔ log por corrida,0,0,OK,
+x4,códigos de salida,todos 0,['0'],OK,
+x4,licencia Gurobi (huella de entorno),una sola,['2855691'],OK,
+x4,estados,,"{('E3', 'brecha_1pct'): 33, ('E3', 'optimo'): 117, ('GC base', 'optimo'): 90}",INFO,
+x4,k_por_arcos del CSV = K efectivo × arcos generados,0,0,OK,el CSV usa arcos solicitados; coincide si Mulgen genera exactamente 4N
+x4,límite E3 leído en log,900 s,[np.float64(900.0)],OK,
+x4,"límite GC base (constante en código, ignora E2_LIMITE_TIEMPO)",900 s,900 s,OK,src/solvers/solver_columnas_pricing_gurobi.py:30; coincide con el protocolo
+x4,"z de GC base dentro de [cota inferior E3, z E3]",90,90,OK,máx. exceso de E3 sobre el óptimo: 0.9001 %; en corridas E3 'óptimo': 0.00e+00 %
+x4,mismas instancias para E3 y GC base,90,90,OK,
+waxman,sha256 actual de src/generadores/generador_waxman.py = protocolo.json,d0e8b25d617b,d0e8b25d617b,OK,
+waxman,sha256 actual de src/solvers/solver_columnas_e2_v2.py = protocolo.json,18abbe78fd79,18abbe78fd79,OK,
+waxman,sha256 actual de experimentos/scripts/explorar_waxman.py = protocolo.json,abf7d3ded09d,abf7d3ded09d,OK,
+waxman,sha256 actual de src/diagnosticos/analisis_red.py = protocolo.json,ac6f4c4cb0a2,ac6f4c4cb0a2,OK,
+waxman,protocolo: límites y tamaños,"120 s solver, 60 s preparación, 400/1600/10000","120 s, 60 s, 400/1600/10000",OK,
+waxman,entorno registrado,,macOS-26.6.2-arm64-arm-64bit; Python 3.9.6,INFO,
+waxman,carpetas de corrida esperadas,150,150,OK,faltan: []
+waxman,carpetas ajenas al diseño (p. ej. piloto s42/s43),0,0,OK,
+waxman,estado.json por corrida,150,150,OK,
+waxman,consistencia CSV ↔ estado.json ↔ log ↔ parámetros ↔ instancia,0,0,OK,
+waxman,filas en corridas.csv = estado.json consolidados,150,150,OK,el CSV se regenera desde estado.json tras cada corrida
+waxman,estados,,"{('intermedia', 'optimo'): 30, ('larga', 'optimo'): 30, ('local_backbone', 'brecha_1pct'): 4, ('local_backbone', 'optimo'): 26, ('local_backbone_x10', 'brecha_1pct'): 2, ('local_backbone_x10', 'optimo'): 28, ('local_extrema', 'brecha_1pct'): 4, ('local_extrema', 'optimo'): 26}",INFO,
+waxman,pared máx. vs protección externa,≤ 180 s,113.17 s,OK,
+waxman,tiempo interno máx. vs límite interno,≤ 120 s,112.65 s,OK,
+waxman,posiciones idénticas entre variantes de una semilla,longitud media reproducida con la misma secuencia de posiciones,150/150,OK,posiciones reconstruidas con random.Random(f'{semilla}:posiciones') igual que el generador
+waxman,generación dentro de 60 s,sin timeout_preparacion,máx. generacion_s = 0.22 s (solo generación; diagnóstico y dibujo no se cronometran),OK,
+waxman,demandas idénticas entre las 5 variantes de cada semilla,30,30,OK,
+waxman,W4/W5: misma topología; solo enlaces hub–hub ×10,30,30,OK,enlaces ×10 por semilla: 24–29; hubs identificados: [np.int64(20)]
+waxman,capacidad depende de la identidad del enlace (W1 vs W4 en enlaces comunes),30,30,OK,enlaces comunes W1–W4: 290–380 de 800
+waxman,orden de ejecución = orden aleatorizado por semilla,30,30,OK,
+todas,corridas secuenciales sin solapamiento (marcas de tiempo de archivos),0,0,OK,"primera 2026-11-24 21:14:35 UTC, última 2026-11-24 23:54:18 UTC; "
+todas,E3 sin modificar durante las baterías,modificado antes de 2026-11-24 21:14:35,2026-11-23 16:54:30,OK,src/solvers/solver_columnas_e2_v2.py
+todas,GC base sin modificar durante las baterías,modificado antes de 2026-11-24 21:14:35,2026-10-02 14:25:33,OK,src/solvers/solver_columnas_pricing_gurobi.py
+todas,script X3 sin modificar durante las baterías,modificado antes de 2026-11-24 21:14:35,2026-11-24 16:01:43,OK,experimentos/scripts/experimento_x3.py
+todas,script X4 sin modificar durante las baterías,modificado antes de 2026-11-24 21:14:35,2026-11-24 16:01:43,OK,experimentos/scripts/experimento_x4.py
+todas,script Waxman sin modificar durante las baterías,modificado antes de 2026-11-24 21:14:35,2026-11-24 16:07:56,OK,experimentos/scripts/experimento_waxman.py
+todas,memoria (RAM) registrada,medición por corrida,no registrada en ninguna batería formal,ALERTA,los scripts formales no usan vigilar_memoria; columnas/iteraciones no son RAM

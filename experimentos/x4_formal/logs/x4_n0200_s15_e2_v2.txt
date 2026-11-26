@@ -1,0 +1,60 @@
+Filtro de conectividad: 87 productos sin camino eliminados.
+Filtro de conectividad: 5000 -> 4913 productos.
+Filtro de conectividad: productos eliminados (muestra): [4, 57, 68, 117, 145, 272, 429, 467, 714, 808, 884, 925, 941, 963, 1046, 1049, 1090, 1119, 1200, 1231] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 200
+Arcos: 800
+Productos: 5000
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 4913 | Arcos: 800
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 6032
+Límite de tiempo: 900 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 4913 columnas en 0.04s.
+Iteración 1: resolviendo maestro con 4913 columnas...
+Iteración 1: z=1.19445133 | cota inferior=0.42333416 | gap=182.1533% | columnas=4977 | nuevas=64 | costo reducido=-1.494e+00 | maestro=0.00s | pricing=0.01s
+Iteración 2: resolviendo maestro con 4977 columnas...
+Iteración 2: z=1.16681655 | cota inferior=0.65422662 | gap=78.3505% | columnas=5002 | nuevas=25 | costo reducido=-2.712e+00 | maestro=0.00s | pricing=0.01s
+Iteración 3: resolviendo maestro con 5002 columnas...
+Iteración 3: z=0.94162613 | cota inferior=0.76511466 | gap=23.0699% | columnas=5007 | nuevas=5 | costo reducido=-4.192e+00 | maestro=0.00s | pricing=0.01s
+Iteración 4: resolviendo maestro con 5007 columnas...
+Iteración 4: z=0.93631040 | cota inferior=0.76511466 | gap=22.3752% | columnas=5014 | nuevas=7 | costo reducido=-4.416e+00 | maestro=0.00s | pricing=0.01s
+Iteración 5: resolviendo maestro con 5014 columnas...
+Iteración 5: z=0.87076984 | cota inferior=0.76511466 | gap=13.8091% | columnas=5077 | nuevas=63 | costo reducido=-1.194e+00 | maestro=0.00s | pricing=0.01s
+Iteración 6: resolviendo maestro con 5077 columnas...
+Iteración 6: z=0.85254237 | cota inferior=0.76511466 | gap=11.4267% | columnas=5135 | nuevas=58 | costo reducido=-2.045e+00 | maestro=0.00s | pricing=0.02s
+Iteración 7: resolviendo maestro con 5135 columnas...
+Iteración 7: z=0.82008714 | cota inferior=0.76511466 | gap=7.1849% | columnas=5327 | nuevas=192 | costo reducido=-6.654e-01 | maestro=0.00s | pricing=0.01s
+Iteración 8: resolviendo maestro con 5327 columnas...
+Iteración 8: z=0.79220339 | cota inferior=0.76511466 | gap=3.5405% | columnas=5382 | nuevas=55 | costo reducido=-2.045e+00 | maestro=0.00s | pricing=0.01s
+Iteración 9: resolviendo maestro con 5382 columnas...
+Iteración 9: z=0.77646698 | cota inferior=0.76511466 | gap=1.4837% | columnas=5463 | nuevas=81 | costo reducido=-9.242e-01 | maestro=0.00s | pricing=0.01s
+Iteración 10: resolviendo maestro con 5463 columnas...
+Iteración 10: z=0.77151073 | cota inferior=0.76511466 | gap=0.8360% | columnas=5463 | nuevas=0 | costo reducido=-1.334e+00 | maestro=0.00s | pricing=0.01s
+
+Solución con error relativo certificado de a lo sumo 1%
+Congestión máxima: 0.77151073 (77.15%)
+Cota superior: 0.77151073
+Cota inferior: 0.76511466
+Gap certificado: 0.835962%
+Iteraciones: 10 | Columnas: 5463
+Tiempo total: 0.22 segundos
+
+Diez arcos más congestionados:
+Arco 97: 25 -> 20 | flujo=2368.54 | capacidad=3070 | congestión=0.7715
+Arco 105: 28 -> 15 | flujo=1958.87 | capacidad=2539 | congestión=0.7715
+Arco 546: 138 -> 50 | flujo=2275.96 | capacidad=2950 | congestión=0.7715
+Arco 59: 14 -> 69 | flujo=1436.55 | capacidad=1862 | congestión=0.7715
+Arco 67: 17 -> 177 | flujo=4504.08 | capacidad=5838 | congestión=0.7715
+Arco 458: 115 -> 46 | flujo=3898.44 | capacidad=5053 | congestión=0.7715
+Arco 505: 128 -> 1 | flujo=3488.00 | capacidad=4521 | congestión=0.7715
+Arco 523: 133 -> 13 | flujo=1902.55 | capacidad=2466 | congestión=0.7715
+Arco 766: 190 -> 73 | flujo=1715.84 | capacidad=2224 | congestión=0.7715
+Arco 40: 10 -> 55 | flujo=1370.97 | capacidad=1777 | congestión=0.7715

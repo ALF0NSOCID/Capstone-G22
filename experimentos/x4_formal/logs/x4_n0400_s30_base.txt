@@ -1,0 +1,48 @@
+Filtro de conectividad: 408 productos sin camino eliminados.
+Filtro de conectividad: 10000 -> 9592 productos.
+Filtro de conectividad: productos eliminados (muestra): [18, 43, 177, 220, 229, 301, 319, 330, 366, 417, 485, 511, 524, 559, 582, 592, 596, 711, 733, 773] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10000
+
+Solver: generación de columnas
+Productos: 9592 | Arcos: 1600
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 1
+Calculando caminos iniciales...
+Caminos iniciales listos: 9592 columnas en 4.39s.
+Iteración 1: resolviendo maestro con 9592 columnas...
+Iteración 1: z=1.17518567 | columnas=9636 | nuevas=44 | costo reducido=-2.184e-04 | maestro=0.01s | pricing=0.58s
+Iteración 2: resolviendo maestro con 9636 columnas...
+Iteración 2: z=1.03748031 | columnas=9709 | nuevas=73 | costo reducido=-3.150e-04 | maestro=0.01s | pricing=0.63s
+Iteración 3: resolviendo maestro con 9709 columnas...
+Iteración 3: z=0.92131617 | columnas=9781 | nuevas=72 | costo reducido=-2.861e-04 | maestro=0.01s | pricing=0.60s
+Iteración 4: resolviendo maestro con 9781 columnas...
+Iteración 4: z=0.85100816 | columnas=9905 | nuevas=124 | costo reducido=-1.539e-04 | maestro=0.01s | pricing=0.59s
+Iteración 5: resolviendo maestro con 9905 columnas...
+Iteración 5: z=0.84149856 | columnas=9908 | nuevas=3 | costo reducido=-2.882e-04 | maestro=0.01s | pricing=0.57s
+Iteración 6: resolviendo maestro con 9908 columnas...
+Iteración 6: z=0.83392435 | columnas=10038 | nuevas=130 | costo reducido=-1.478e-04 | maestro=0.01s | pricing=0.61s
+Iteración 7: resolviendo maestro con 10038 columnas...
+Iteración 7: z=0.80749280 | columnas=10038 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.01s | pricing=0.56s
+
+Solución óptima certificada
+Congestión máxima: 0.80749280 (80.75%)
+Iteraciones: 7 | Columnas: 10038
+Tiempo total: 12.55 segundos
+
+Diez arcos más congestionados:
+Arco 988: 252 -> 160 | flujo=2802.00 | capacidad=3470 | congestión=0.8075
+Arco 1417: 356 -> 60 | flujo=5102.00 | capacidad=6350 | congestión=0.8035
+Arco 652: 160 -> 308 | flujo=3674.00 | capacidad=4578 | congestión=0.8025
+Arco 1027: 264 -> 113 | flujo=8509.00 | capacidad=10632 | congestión=0.8003
+Arco 735: 184 -> 325 | flujo=2606.00 | capacidad=3298 | congestión=0.7902
+Arco 261: 62 -> 84 | flujo=8664.00 | capacidad=11198 | congestión=0.7737
+Arco 1313: 334 -> 318 | flujo=4925.00 | capacidad=6374 | congestión=0.7727
+Arco 961: 242 -> 141 | flujo=8144.00 | capacidad=10952 | congestión=0.7436
+Arco 16: 5 -> 232 | flujo=7016.00 | capacidad=9647 | congestión=0.7273
+Arco 513: 126 -> 328 | flujo=7400.00 | capacidad=10410 | congestión=0.7109

@@ -1,0 +1,9 @@
+{
+  "tipo": "extrapolacion_exploratoria_no_medida",
+  "variables_objetivo": 992230400,
+  "intercepto_mib": 14.977577207233338,
+  "pendiente_mib_por_variable": 0.0034413326458382605,
+  "r2": 0.9997378981351993,
+  "variables_maximas_medidas": 155680,
+  "lp_estimado_gib": 3334.57992704137
+}

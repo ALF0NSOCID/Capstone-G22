@@ -1,0 +1,70 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10000
+Fuente del análisis: lector.py (400 nodos, 1600 arcos, 10000 commodities efectivos).
+
+======================================================================
+ANALISIS ESTRUCTURAL DE LA RED
+======================================================================
+Nodos: 400
+Arcos: 1600
+Commodities efectivos analizados: 10000
+Densidad dirigida: 0.010025
+Grado medio de salida/entrada: 4.000
+Nodos sin salida: 0
+Nodos sin entrada: 0
+Nodos aislados: 0
+Lazos: 0
+Arcos duplicados adicionales: 0
+Reciprocidad de arcos: 100.00%
+
+CONECTIVIDAD
+Componentes débiles: 1
+Mayor componente débil: 400/400 nodos (100.00%)
+Componentes fuertemente conexas (SCC): 1
+Mayor SCC: 400/400 nodos (100.00%)
+Cinco SCC más grandes: [400]
+
+COMMODITIES
+Con camino dirigido: 10000/10000 (100.00%)
+Sin camino dirigido: 0/10000 (0.00%)
+Productos con origen=destino: 0
+Longitud OD en saltos: media=4.54, mediana=5.00, p75=5.00, max=9
+
+DISTRIBUCION DE GRADOS
+Salida: min=1, mediana=4.0, media=4.00, max=10, CV=0.43
+Entrada: min=1, mediana=4.0, media=4.00, max=10, CV=0.43
+
+CAPACIDADES
+min=50.00, p25=74.00, mediana=100.00, p75=125.00, max=150.00, media=100.27, CV=0.29
+Capacidades no positivas: 0
+
+DEMANDAS
+min=10.00, p25=20.00, mediana=30.00, p75=40.00, max=50.00, media=29.97, CV=0.39
+Demandas no positivas: 0
+
+DIAGNOSTICO ORIENTATIVO
+No aparecen anomalías estructurales obvias con estos indicadores. Esto no demuestra que la red sea realista, pero sí descarta varias formas comunes de degeneración topológica.
+======================================================================
+
+BACKBONE, ACCESO Y CUELLOS DE BOTELLA
+hubs: 0
+enlaces_hub_normal: 0
+normales_con_hub: 0
+normales_con_dos_hubs: 0
+normales_acceso_obligatorio: 0
+normales_doble_acceso_obligatorio: 0
+cobertura_backbone_pct: 0.0
+grado_medio_hubs: None
+grado_medio_normales: 4
+grado_max: 10
+grado_cv: 0.42756578441217674
+longitud_media: 0.4509134946418674
+clustering: 0.008349206349206353
+puentes: 18
+cota_puentes: 17.096153846153847
+puente_critico: [132, 356]
+Visualizacion guardada en: /Users/alfonsocid/Desktop/Repo Capstone/experimentos/waxman_formal/larga_s1003/red.png
+Resumen: 400 nodos, 800 enlaces no dirigidos, grado medio 4.00, grado maximo 10.

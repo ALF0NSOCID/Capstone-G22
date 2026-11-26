@@ -1,0 +1,11 @@
+caso,puente_explica_optimo,count,median,min,max
+intermedia,coincide,25,0.2,0.17,0.45
+intermedia,no coincide,5,0.25,0.21,0.54
+larga,coincide,25,0.17,0.17,1.51
+larga,no coincide,5,0.37,0.25,0.51
+local_backbone,coincide,3,0.92,0.51,3.81
+local_backbone,no coincide,27,16.32,0.72,112.65
+local_backbone_x10,coincide,19,1.78,0.17,23.17
+local_backbone_x10,no coincide,11,21.5,0.45,57.79
+local_extrema,coincide,8,0.54,0.18,2.14
+local_extrema,no coincide,22,8.02,0.65,55.06

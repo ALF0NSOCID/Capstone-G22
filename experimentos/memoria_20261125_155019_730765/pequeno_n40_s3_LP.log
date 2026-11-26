@@ -1,0 +1,104 @@
+Filtro de conectividad: 27 productos sin camino eliminados.
+Filtro de conectividad: 1000 -> 973 productos.
+Filtro de conectividad: productos eliminados (muestra): [50, 148, 176, 178, 216, 239, 243, 253, 267, 270, 272, 330, 369, 421, 432, 458, 480, 516, 519, 586] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 40
+Arcos: 160
+Productos: 1000
+BENCH_INSTANCIA={"nodos": 40, "arcos": 160, "productos_efectivos": 973, "variables_lp_equivalentes": 155680}
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter TimeLimit to value 900
+Set parameter Crossover to value 0
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 25.6.0 25G83)
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  900
+Crossover  0
+
+Optimize a model with 39080 rows, 155681 columns and 467200 nonzeros
+Model fingerprint: 0xe42a24a5
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+01, 7e+01]
+Presolve removed 9480 rows and 14194 columns
+Presolve time: 0.16s
+Presolved: 29600 rows, 141487 columns, 442982 nonzeros
+
+Concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Warning: Concurrent optimizer requires crossover - forcing it on
+Ordering time: 0.02s
+
+Barrier statistics:
+ Dense cols : 1
+ AA' NZ     : 4.197e+05
+ Factor NZ  : 3.269e+06 (roughly 100 MB of memory)
+ Factor Ops : 4.538e+08 (less than 1 second per iteration)
+ Threads    : 6
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   5.63198538e+00 -1.68324832e+01  2.93e+05 0.00e+00  3.52e+01     0s
+   1   1.44323928e+01 -2.23006087e+01  2.81e+05 9.61e-02  3.38e+01     0s
+   2   9.23861819e+01 -2.12348421e+01  2.62e+05 9.27e-02  3.40e+01     0s
+   3   2.77598849e+02 -2.10909729e+01  1.84e+05 8.65e-02  3.05e+01     1s
+   4   7.62087294e+02 -3.11208225e+01  4.67e+04 5.83e-02  2.02e+01     1s
+   5   9.74524170e+02 -2.75056765e+01  9.48e+03 1.13e-02  4.10e+00     1s
+   6   1.00437408e+03 -1.30820482e+01  3.55e+01 7.57e-05  5.61e-02     1s
+   7   5.80051455e+02 -3.75299594e-01  1.10e+01 2.44e-06  1.71e-02     1s
+   8   1.16550448e+02  1.29216418e-01  2.03e+00 2.26e-07  3.32e-03     1s
+   9   4.71544742e+01  4.78099984e-01  7.37e-01 2.71e-18  1.32e-03     1s
+  10   1.88062349e+01  1.00090555e+00  2.59e-01 8.13e-19  5.03e-04     1s
+  11   9.01074079e+00  1.40147778e+00  1.02e-01 5.61e-19  2.15e-04     1s
+  12   5.79234377e+00  1.64332370e+00  5.42e-02 4.63e-19  1.17e-04     1s
+  13   4.58559197e+00  1.77832871e+00  3.69e-02 3.78e-19  7.92e-05     1s
+  14   3.84258858e+00  1.83943250e+00  2.58e-02 6.91e-19  5.65e-05     1s
+  15   3.15801591e+00  1.92105670e+00  1.54e-02 1.04e-18  3.49e-05     1s
+  16   2.97042124e+00  1.98615038e+00  1.23e-02 8.86e-19  2.78e-05     1s
+  17   2.81563761e+00  2.12575143e+00  8.78e-03 1.14e-18  1.95e-05     1s
+  18   2.63379209e+00  2.44654391e+00  2.16e-10 1.41e-18  5.28e-06     1s
+  19   2.58297345e+00  2.57066198e+00  3.60e-10 2.25e-19  3.47e-07     1s
+  20   2.58148939e+00  2.58148775e+00  1.85e-09 3.82e-20  4.62e-11     1s
+  21   2.58148893e+00  2.58148893e+00  1.79e-11 8.36e-18  6.29e-17     2s
+
+Barrier solved model in 21 iterations and 1.53 seconds (1.61 work units)
+Optimal objective 2.58148893e+00
+
+Crossover log...
+
+   26418 DPushes remaining with DInf 0.0000000e+00                 3s
+
+      46 PPushes remaining with PInf 0.0000000e+00                 3s
+       0 PPushes remaining with PInf 0.0000000e+00                 3s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 5.2583805e-18      3s
+
+
+Solved with barrier
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+      49    2.5814889e+00   0.000000e+00   0.000000e+00      4s
+
+Solved in 49 iterations and 3.51 seconds (3.84 work units)
+Optimal objective  2.581488934e+00
+
+Congestión máxima: 2.5815 (258.15%)
+
+Diez arcos más congestionados:
+Arco 11: 4 -> 37 | flujo=1241.70 | capacidad=481 | congestión=2.5815
+Arco 44: 13 -> 2 | flujo=3296.56 | capacidad=1277 | congestión=2.5815
+Arco 72: 20 -> 23 | flujo=1241.70 | capacidad=481 | congestión=2.5815
+Arco 73: 20 -> 18 | flujo=1879.32 | capacidad=728 | congestión=2.5815
+Arco 74: 20 -> 14 | flujo=1130.69 | capacidad=438 | congestión=2.5815
+Arco 109: 28 -> 4 | flujo=1468.87 | capacidad=569 | congestión=2.5815
+Arco 2: 2 -> 24 | flujo=1117.78 | capacidad=433 | congestión=2.5815
+Arco 8: 3 -> 28 | flujo=1283.00 | capacidad=497 | congestión=2.5815
+Arco 12: 4 -> 31 | flujo=893.20 | capacidad=346 | congestión=2.5815
+Arco 13: 4 -> 10 | flujo=1166.83 | capacidad=452 | congestión=2.5815

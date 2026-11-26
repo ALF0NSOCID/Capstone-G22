@@ -1,0 +1,42 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10000
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 10000 | Arcos: 1600
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 150
+Límite de tiempo: 120 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 10000 columnas en 0.09s.
+Iteración 1: resolviendo maestro con 10000 columnas...
+Iteración 1: z=20.17460317 | cota inferior=0.00000000 | gap=infinito | columnas=10039 | nuevas=39 | costo reducido=-2.381e+00 | maestro=0.01s | pricing=0.03s
+Iteración 2: resolviendo maestro con 10039 columnas...
+Iteración 2: z=18.42622951 | cota inferior=18.42622951 | gap=0.0000% | columnas=10039 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.00s | pricing=0.03s
+
+Solución óptima certificada
+Congestión máxima: 18.42622951 (1842.62%)
+Cota superior: 18.42622951
+Cota inferior: 18.42622951
+Gap certificado: 0.000000%
+Iteraciones: 2 | Columnas: 10039
+Tiempo total: 0.21 segundos
+
+Diez arcos más congestionados:
+Arco 495: 318 -> 61 | flujo=1124.00 | capacidad=61 | congestión=18.4262
+Arco 1425: 271 -> 270 | flujo=1160.85 | capacidad=63 | congestión=18.4262
+Arco 493: 127 -> 61 | flujo=1753.15 | capacidad=101 | congestión=17.3579
+Arco 698: 95 -> 272 | flujo=1805.00 | capacidad=105 | congestión=17.1905
+Arco 492: 61 -> 127 | flujo=1725.00 | capacidad=101 | congestión=17.0792
+Arco 133: 289 -> 18 | flujo=1084.00 | capacidad=65 | congestión=16.6769
+Arco 167: 203 -> 22 | flujo=822.00 | capacidad=50 | congestión=16.4400
+Arco 386: 48 -> 271 | flujo=1680.00 | capacidad=103 | congestión=16.3107
+Arco 1585: 378 -> 371 | flujo=1002.00 | capacidad=62 | congestión=16.1613
+Arco 1482: 292 -> 361 | flujo=2031.00 | capacidad=131 | congestión=15.5038

@@ -1,0 +1,119 @@
+[
+  {
+    "bloque": "pequeno",
+    "metodo": "LP",
+    "nodos": 8,
+    "variables_mediana": 6400,
+    "ram_mediana_mib": 34.109,
+    "completas": 3,
+    "corridas": 3
+  },
+  {
+    "bloque": "pequeno",
+    "metodo": "GC_Gurobi",
+    "nodos": 8,
+    "variables_mediana": 6400,
+    "ram_mediana_mib": 26.344,
+    "completas": 3,
+    "corridas": 3
+  },
+  {
+    "bloque": "pequeno",
+    "metodo": "E3",
+    "nodos": 8,
+    "variables_mediana": 6400,
+    "ram_mediana_mib": 25.297,
+    "completas": 3,
+    "corridas": 3
+  },
+  {
+    "bloque": "pequeno",
+    "metodo": "LP",
+    "nodos": 12,
+    "variables_mediana": 14400,
+    "ram_mediana_mib": 62.938,
+    "completas": 3,
+    "corridas": 3
+  },
+  {
+    "bloque": "pequeno",
+    "metodo": "GC_Gurobi",
+    "nodos": 12,
+    "variables_mediana": 14400,
+    "ram_mediana_mib": 27.375,
+    "completas": 3,
+    "corridas": 3
+  },
+  {
+    "bloque": "pequeno",
+    "metodo": "E3",
+    "nodos": 12,
+    "variables_mediana": 14400,
+    "ram_mediana_mib": 25.797,
+    "completas": 3,
+    "corridas": 3
+  },
+  {
+    "bloque": "pequeno",
+    "metodo": "LP",
+    "nodos": 20,
+    "variables_mediana": 40000,
+    "ram_mediana_mib": 158.312,
+    "completas": 3,
+    "corridas": 3
+  },
+  {
+    "bloque": "pequeno",
+    "metodo": "GC_Gurobi",
+    "nodos": 20,
+    "variables_mediana": 40000,
+    "ram_mediana_mib": 30.719,
+    "completas": 3,
+    "corridas": 3
+  },
+  {
+    "bloque": "pequeno",
+    "metodo": "E3",
+    "nodos": 20,
+    "variables_mediana": 40000,
+    "ram_mediana_mib": 26.75,
+    "completas": 3,
+    "corridas": 3
+  },
+  {
+    "bloque": "pequeno",
+    "metodo": "LP",
+    "nodos": 40,
+    "variables_mediana": 155680,
+    "ram_mediana_mib": 549.531,
+    "completas": 3,
+    "corridas": 3
+  },
+  {
+    "bloque": "pequeno",
+    "metodo": "GC_Gurobi",
+    "nodos": 40,
+    "variables_mediana": 155680,
+    "ram_mediana_mib": 41.797,
+    "completas": 3,
+    "corridas": 3
+  },
+  {
+    "bloque": "pequeno",
+    "metodo": "E3",
+    "nodos": 40,
+    "variables_mediana": 155680,
+    "ram_mediana_mib": 29.359,
+    "completas": 3,
+    "corridas": 3
+  },
+  {
+    "bloque": "grande",
+    "metodo": "E3",
+    "nodos": 3200,
+    "variables_mediana": 992230400,
+    "ram_mediana_mib": 1030.547,
+    "completas": 0,
+    "corridas": 1
+  }
+]

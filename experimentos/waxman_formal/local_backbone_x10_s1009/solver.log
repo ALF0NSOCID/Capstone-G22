@@ -1,0 +1,40 @@
+Filtro de conectividad: todos los productos poseen camino; no se elimina ninguno.
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 400
+Arcos: 1600
+Productos: 10000
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 10000 | Arcos: 1600
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 1500
+Límite de tiempo: 120 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 10000 columnas en 0.09s.
+Iteración 1: resolviendo maestro con 10000 columnas...
+Iteración 1: z=42.69811321 | cota inferior=42.69811321 | gap=0.0000% | columnas=10000 | nuevas=0 | costo reducido=0.000e+00 | maestro=0.01s | pricing=0.03s
+
+Solución óptima certificada
+Congestión máxima: 42.69811321 (4269.81%)
+Cota superior: 42.69811321
+Cota inferior: 42.69811321
+Gap certificado: 0.000000%
+Iteraciones: 1 | Columnas: 10000
+Tiempo total: 0.17 segundos
+
+Diez arcos más congestionados:
+Arco 467: 374 -> 58 | flujo=2263.00 | capacidad=53 | congestión=42.6981
+Arco 466: 58 -> 374 | flujo=2094.00 | capacidad=53 | congestión=39.5094
+Arco 1230: 215 -> 272 | flujo=1844.00 | capacidad=51 | congestión=36.1569
+Arco 1231: 272 -> 215 | flujo=1386.00 | capacidad=51 | congestión=27.1765
+Arco 341: 394 -> 41 | flujo=1159.00 | capacidad=51 | congestión=22.7255
+Arco 1412: 276 -> 350 | flujo=11925.00 | capacidad=530 | congestión=22.5000
+Arco 1240: 215 -> 336 | flujo=30096.00 | capacidad=1340 | congestión=22.4597
+Arco 460: 58 -> 311 | flujo=17067.00 | capacidad=760 | congestión=22.4566
+Arco 307: 105 -> 41 | flujo=12028.00 | capacidad=540 | congestión=22.2741
+Arco 567: 270 -> 76 | flujo=1616.00 | capacidad=73 | congestión=22.1370

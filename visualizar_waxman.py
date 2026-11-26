@@ -38,6 +38,8 @@ def visualizar_red(
     mostrar=False,
     etiquetas=False,
     top_demanda=5,
+    prob_acceso_backbone=0.0,
+    prob_segundo_hub=0.0,
 ):
     """Dibuja topologia, demanda nodal, capacidades, hubs y backbone."""
     posiciones = nx.get_node_attributes(grafo, "pos")
@@ -65,7 +67,10 @@ def visualizar_red(
         (origen, destino)
         for origen, destino in grafo.edges
         if frozenset((origen, destino)) not in claves_backbone
+        and not grafo.edges[origen, destino].get("es_acceso", False)
     ]
+    enlaces_acceso = [(u, v) for u, v in grafo.edges
+                      if grafo.edges[u, v].get("es_acceso", False)]
 
     demanda_nodo = defaultdict(float)
     for commodity in commodities:
@@ -121,6 +126,10 @@ def visualizar_red(
             alpha=0.75,
             edge_color="#e76f51",
         )
+    if enlaces_acceso:
+        nx.draw_networkx_edges(grafo, posiciones, ax=eje, edgelist=enlaces_acceso,
+            width=[ancho_por_capacidad(*e) for e in enlaces_acceso],
+            alpha=0.55, edge_color="#2a9d8f")
     nodos_dibujados = nx.draw_networkx_nodes(
         grafo,
         posiciones,
@@ -192,7 +201,7 @@ def visualizar_red(
     clustering = nx.average_clustering(grafo)
 
     eje.set_title(
-        "Red espacial Waxman\n"
+        "Red espacial inspirada en Waxman\n"
         f"n={grafo.number_of_nodes()} | "
         f"enlaces={grafo.number_of_edges()} | "
         f"arcos={len(arcos)} | productos={len(commodities)}\n"
@@ -201,9 +210,10 @@ def visualizar_red(
         f"hubs={len(hubs)} ({100 * porcentaje_hubs:g}%) | "
         f"vecinos por hub={vecinos_hub} | "
         f"capacidad backbone=x{multiplicador_hubs:g}\n"
+        f"acceso obligatorio p={prob_acceso_backbone:g} | segundo hub p={prob_segundo_hub:g}\n"
         f"demanda={'gravedad' if demanda_gravedad else 'uniforme'} | "
         f"capacidad={'escalones' if capacidad_escalones else 'uniforme'} | "
-        "tamano nodo=demanda OD | ancho enlace=capacidad",
+        "\ntamano nodo=demanda OD | ancho enlace=capacidad",
         fontsize=13,
         pad=14,
     )
@@ -216,6 +226,8 @@ def visualizar_red(
     barra.set_label("Grado del nodo")
 
     leyenda = [
+        Line2D([0], [0], color="#2a9d8f", linewidth=1.5,
+               label="Acceso hub-normal (obligatorio o espacial)"),
         Line2D(
             [0], [0], marker="*", linestyle="none", markersize=12,
             markerfacecolor="#d62828", markeredgecolor="white", label="Hub",
@@ -233,7 +245,8 @@ def visualizar_red(
             label=f"Capacidad alta ({capacidad_maxima:g})",
         ),
     ]
-    eje.legend(handles=leyenda, loc="upper right", frameon=True, fontsize=8)
+    eje.legend(handles=leyenda, loc="upper center", bbox_to_anchor=(0.5, -0.08),
+               ncol=2, frameon=True, fontsize=8)
 
     salida = Path(salida)
     salida.parent.mkdir(parents=True, exist_ok=True)
@@ -320,6 +333,9 @@ def main():
         help="Numero de hubs geograficamente cercanos buscados por cada hub.",
     )
     parser.add_argument("--semilla", type=int, default=42)
+    parser.add_argument("--prob-acceso-backbone", type=float, default=0.0)
+    parser.add_argument("--prob-segundo-hub", type=float, default=0.0)
+    parser.add_argument("--secuencias-independientes", action="store_true")
     parser.add_argument("--dpi", type=int, default=220)
     parser.add_argument(
         "--salida",
@@ -375,6 +391,9 @@ def main():
         porcentaje_hubs=argumentos.porcentaje_hubs,
         multiplicador_capacidad_hubs=argumentos.multiplicador_hubs,
         conexiones_por_hub=argumentos.vecinos_hub,
+        prob_acceso_backbone=argumentos.prob_acceso_backbone,
+        prob_segundo_hub=argumentos.prob_segundo_hub,
+        secuencias_independientes=argumentos.secuencias_independientes,
     )
 
     salida = argumentos.salida or (
@@ -386,6 +405,8 @@ def main():
             f"_b{argumentos.beta:g}"
             f"_h{100 * argumentos.porcentaje_hubs:g}"
             f"_v{argumentos.vecinos_hub}"
+            f"_p{argumentos.prob_acceso_backbone:g}_q{argumentos.prob_segundo_hub:g}"
+            f"_x{argumentos.multiplicador_hubs:g}_aind{int(argumentos.secuencias_independientes)}"
             f"{'_dg' if argumentos.demanda_gravedad else ''}"
             f"{'_ce' if argumentos.capacidad_escalones else ''}"
             f"_s{argumentos.semilla}.png"
@@ -408,6 +429,8 @@ def main():
         mostrar=argumentos.mostrar,
         etiquetas=argumentos.etiquetas,
         top_demanda=argumentos.top_demanda,
+        prob_acceso_backbone=argumentos.prob_acceso_backbone,
+        prob_segundo_hub=argumentos.prob_segundo_hub,
     )
 
 
