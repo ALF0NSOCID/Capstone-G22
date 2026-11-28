@@ -1,4 +1,6 @@
 """Comprueba diseño y reanudación sin generar redes ni resolver LP."""
+import _rutas
+
 import csv
 import subprocess
 import sys
@@ -11,7 +13,7 @@ RAIZ = Path(__file__).resolve().parents[1]
 
 class PlanesTest(unittest.TestCase):
     def ejecutar(self, script, carpeta, *args):
-        return subprocess.run([sys.executable, str(RAIZ/script), 'plan',
+        return subprocess.run([sys.executable, str(RAIZ/"compat"/script), 'plan',
                                '--salida', str(carpeta), *args],
                               cwd=RAIZ, capture_output=True, text=True)
 

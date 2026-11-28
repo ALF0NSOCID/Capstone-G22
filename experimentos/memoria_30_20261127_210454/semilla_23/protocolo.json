@@ -1,0 +1,51 @@
+{
+  "repo": "/Users/alfonsocid/Desktop/Repo Capstone",
+  "salida": "/Users/alfonsocid/Desktop/Repo Capstone/experimentos/memoria_30_20261127_210454/semilla_23",
+  "nodos": [
+    8,
+    12,
+    20,
+    40
+  ],
+  "semillas": [
+    1,
+    2,
+    3
+  ],
+  "metodos": [
+    "LP",
+    "GC_Gurobi",
+    "E3"
+  ],
+  "max_vars_lp": 200000,
+  "ram_mb": 4096,
+  "limite": 60,
+  "limite_grande": 180.0,
+  "sin_grande": false,
+  "solo_grande": true,
+  "solver_grande": "E3",
+  "semilla_grande": 23,
+  "python": "/Library/Developer/CommandLineTools/usr/bin/python3",
+  "plataforma": "macOS-26.6.2-arm64-arm-64bit",
+  "fecha": "2026-11-27T21:17:52.503887-03:00",
+  "ram_unidades": "MiB=2^20 bytes; GiB=2^30 bytes",
+  "medida": "ru_maxrss del SO por proceso; RSS muestreada para corte",
+  "grande": "N=3200,A=12800,K_solicitados=80000; E3 por defecto; nunca LP",
+  "sha256_fuentes": {
+    "src/solvers/solver.py": "7eeecc64d13305400bff430260ff24c7407e1964757ee820de3bec8e92325fcf",
+    "src/solvers/solver_columnas_pricing_gurobi.py": "38ed04dae019a4191ec699f73403769f5967d1dc466ba2b62f36455f4d677a57",
+    "historico/solvers/solver_columnas_e2.py": "a6f1418f77eb33ea30de5f9fc3d8e370159451566760cdfe352db288bab58a4a",
+    "src/solvers/solver_columnas_e2_v2.py": "18abbe78fd79faf55661523e87a13f189850d7f3f986dde160649bd16bc8b11e",
+    "Canad/Mulgen/main.f": "d47c44a82997ba061dd7a6d90e241a85bddc34693ecd45891286596e4b50427e",
+    "Canad/Mulgen/mulgen.f": "9e03cd8d12f860205fc0f7977e0b4062dfc9fc0ec271d2865b0493eaba8c2dac",
+    "Canad/Mulgen/ran2.f": "05f08dde00b2f6df0f18fe9fc20486c58b88c7ccc0d3ccfe16c16a20a47396ab",
+    "Canad/Mulgen/outdat.f": "e954839f739244aa187efa87b100ae865a571186aebb665e41489ca0d7f48480",
+    "Canad/Mulgen/mps.f": "ec466fc8217385a3b244d4a92ad10c410db1366882920c2ec1feb3b402a37ef0",
+    "Canad/Mulgen/lp.f": "81ccbb4d65730486fdbc573f18a1b4fda954ed0b3f95181364e37ad3c61010be",
+    "Canad/Mulgen/append.f": "ac8c5fbc2d046da6a59f1b4cc1ef381f5e4b7aae0b5ca1e7cd5d796ef2c8a283",
+    "Canad/Mulgen/traitenom.f": "a7bef27b0e676cc41969385049e1ac348a138f969a0c87e4d2cb64541dfc44f0",
+    "Canad/Mulgen/int2char.f": "1541ecffa10b64e0032e47e00882d8e012fc7fa609bdd7e54a1047700624b160",
+    "Canad/Mulgen/mulgen.cmn": "41b795334458f301a9f779393ed26a7a0d698526aa4cdc7e9fa51d57449c43e7",
+    "Canad/Mulgen/ran2.cmn": "a8351864726953e1baedf3879fa4eb1c6e2fe66d5c1290f2ab5912a3e70f16df"
+  }
+}

@@ -30,7 +30,7 @@ import sys
 import time
 
 RAIZ = Path(__file__).resolve().parent
-EJECUTOR = RAIZ / 'ejecutar_sndlib.py'
+EJECUTOR = RAIZ / "compat" / 'ejecutar_sndlib.py'
 BASE_RED = RAIZ / 'sndlib'
 RAPIDAS = ('newyork', 'dfn-bwin', 'dfn-gwin', 'janos-us',
            'giul39', 'janos-us-ca', 'ta2', 'zib54')
@@ -217,7 +217,7 @@ def main():
         parser.error('--timeout y --reps deben ser positivos')
     if not EJECUTOR.is_file():
         parser.error(f'No encuentro {EJECUTOR.name}')
-    if not (RAIZ / args.solver).is_file():
+    if not (RAIZ / "compat" / args.solver).is_file():
         parser.error(f'No encuentro solver {args.solver} en la raíz del proyecto')
 
     carpeta_redes = ruta_redes()

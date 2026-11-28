@@ -36,3 +36,9 @@ build/
 *.so
 *.pyd
 *.dylib
+
+# Ejecuciones individuales nuevas: instancia, logs y metadatos locales
+/ejecuciones/
+
+# Trabajo temporal y compilación fuera de la raíz
+/trabajo/

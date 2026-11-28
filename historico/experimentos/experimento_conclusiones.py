@@ -30,13 +30,13 @@ from compatibilidad import archivo_fuente
 RAIZ = Path(__file__).resolve().parent
 DATOS = RAIZ / "Canad" / "Data"
 DIMENSIONES = RAIZ / "Canad" / "Mulgen" / "dim.par"
-SALIDA_ACTIVA = RAIZ / "out"
+SALIDA_ACTIVA = RAIZ / "trabajo" / "out"
 RESULTADOS_TEMPORALES = RAIZ / "resultados"
 DESTINO = RAIZ / "resultados E2" / "Conclusiones"
 INSTANCIAS = DESTINO / "instancias"
 MANIFIESTO = DESTINO / "manifiesto.csv"
 RESUMEN = DESTINO / "resumen.csv"
-SOLVER = RAIZ / "solver_columnas_e2.py"
+SOLVER = RAIZ / "compat" / "solver_columnas_e2.py"
 
 COMPARACION_METODOS = DESTINO / "Comparacion_Metodos"
 MANIFIESTO_METODOS = COMPARACION_METODOS / "manifiesto_metodos.csv"
@@ -500,7 +500,7 @@ def ejecutar_fila(fila, parametros):
             [
                 sys.executable,
                 "-u",
-                str(RAIZ / "ejecutar.py"),
+                str(RAIZ / "compat" / "ejecutar.py"),
                 fila["instancia"],
                 "solver_columnas_e2",
             ],

@@ -23,7 +23,7 @@ DATA = RAIZ / "Canad" / "Data"
 SALIDA = RAIZ / "experimentos" / "x3_formal"
 CSV = SALIDA / "corridas.csv"
 LOGS = SALIDA / "logs"
-SOLVER = RAIZ / "solver_columnas_e2_v2.py"
+SOLVER = RAIZ / "compat" / "solver_columnas_e2_v2.py"
 N = 400
 GRADOS = (4, 8, 12, 16)
 PROD_POR_NODO = (10, 25, 50)
@@ -56,7 +56,7 @@ def correr_una(grado, ppn, semilla, limite):
     nombre = f"x3_g{grado:02d}_p{ppn:02d}_s{semilla:02d}"
     (DATA / f"{nombre}.par").write_text(contenido_par(semilla, arcos, productos), encoding="utf-8")
     gen.generar_instancia(nombre)
-    env = dict(os.environ, ARCHIVO_INSTANCIA=str(RAIZ / "out"), E2_LIMITE_TIEMPO=str(limite))
+    env = dict(os.environ, ARCHIVO_INSTANCIA=str(RAIZ / "trabajo" / "out"), E2_LIMITE_TIEMPO=str(limite))
     t0 = time.perf_counter()
     try:
         p = subprocess.run([sys.executable, str(SOLVER)], cwd=RAIZ, env=env, capture_output=True, text=True,

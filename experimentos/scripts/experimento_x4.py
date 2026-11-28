@@ -22,7 +22,7 @@ DATA = RAIZ / "Canad" / "Data"
 SALIDA = RAIZ / "experimentos" / "x4_formal"
 CSV = SALIDA / "corridas.csv"
 LOGS = SALIDA / "logs"
-SOLVERS = {"e2_v2": RAIZ / "solver_columnas_e2_v2.py", "base": RAIZ / "solver_columnas_pricing_gurobi.py"}
+SOLVERS = {"e2_v2": RAIZ / "compat" / "solver_columnas_e2_v2.py", "base": RAIZ / "compat" / "solver_columnas_pricing_gurobi.py"}
 # nodos de Mulgen = scalex * scaley (mismas grillas que benchmark_escalabilidad.csv)
 GRILLA = {200: (25, 8), 400: (40, 10), 800: (40, 20), 1600: (80, 20), 3200: (80, 40)}
 GRADO, PROD_POR_NODO, SEMILLAS = 4, 25, tuple(range(1, 31))
@@ -55,7 +55,7 @@ def generar(nodos, semilla):
     nombre = f"x4_n{nodos:04d}_s{semilla:02d}"
     (DATA / f"{nombre}.par").write_text(contenido_par(semilla, nodos, arcos, productos), encoding="utf-8")
     gen.generar_instancia(nombre)
-    with open(RAIZ / "out", encoding="utf-8") as fh:
+    with open(RAIZ / "trabajo" / "out", encoding="utf-8") as fh:
         n_real = int(fh.readline().split()[0])
     if n_real != nodos:
         raise RuntimeError(f"Mulgen generó {n_real} nodos, se esperaban {nodos}")
@@ -63,7 +63,7 @@ def generar(nodos, semilla):
 
 
 def resolver(nombre, metodo, nodos, arcos, productos, semilla, limite):
-    env = dict(os.environ, ARCHIVO_INSTANCIA=str(RAIZ / "out"), E2_LIMITE_TIEMPO=str(limite))
+    env = dict(os.environ, ARCHIVO_INSTANCIA=str(RAIZ / "trabajo" / "out"), E2_LIMITE_TIEMPO=str(limite))
     t0 = time.perf_counter()
     try:
         p = subprocess.run([sys.executable, str(SOLVERS[metodo])], cwd=RAIZ, env=env, capture_output=True,

@@ -8,7 +8,7 @@ from corrector_conectividad import corregir_conectividad
 RUTA_INSTANCIA = Path(
     os.environ.get(
         "ARCHIVO_INSTANCIA",
-        Path(__file__).resolve().parent / "out",
+        Path(__file__).resolve().parent / "trabajo" / "out",
     )
 )
 

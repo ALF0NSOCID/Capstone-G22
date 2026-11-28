@@ -1,4 +1,6 @@
 """Contratos de compatibilidad de la reorganización, sin ejecutar baterías."""
+import _rutas
+
 import hashlib
 import importlib
 import json
@@ -16,12 +18,12 @@ class OrganizacionTest(unittest.TestCase):
         for entrada, relativa in mapa.items():
             with self.subTest(entrada=entrada):
                 self.assertTrue((RAIZ/relativa).is_file())
-                self.assertIn('ejecutar_entrada', (RAIZ/entrada).read_text())
-                self.assertEqual(compatibilidad.archivo_fuente(RAIZ/entrada), RAIZ/relativa)
+                self.assertIn('ejecutar_entrada', (RAIZ/"compat"/entrada).read_text())
+                self.assertEqual(compatibilidad.archivo_fuente(RAIZ/"compat"/entrada), RAIZ/relativa)
 
     def test_solucionadores_y_bibliotecas_no_cambiaron(self):
         mapa = json.loads((RAIZ/'docs/entradas_compatibles.json').read_text())
-        hashes = json.loads((RAIZ/'docs/huellas_antes_reorganizacion.json').read_text())
+        hashes = json.loads((RAIZ/'docs/huellas_codigo_actual.json').read_text())
         adaptados = {'experimento_conclusiones.py', 'explorar_waxman.py', 'experimento_waxman.py'}
         for nombre, relativa in mapa.items():
             if nombre not in adaptados:

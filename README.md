@@ -1,76 +1,65 @@
 # Capstone G22 — Congestión en redes multiproducto
 
-Solver de congestión mínima con generación de columnas. La versión final se llama
-**E3** en el informe y mantiene el nombre `solver_columnas_e2_v2.py` en el código.
+Proyecto ICS2122: minimizar la máxima utilización de los enlaces de una red.
+El solver final **E3** utiliza generación de columnas, caminos mínimos en C++ y
+certificación de optimalidad o brecha relativa de hasta **1 %**.
 
-## Por dónde empezar
+## Instalar y ejecutar
 
-| Quiero… | Consultar |
+Requiere Python 3, licencia Gurobi y compilador C++17.
+Para generar redes Mulgen también se necesita `gfortran`. Desde la raíz:
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 capstone.py compilar
+python3 capstone.py instancia red_chile/instancias_enteras/base.txt E3
+```
+
+`capstone.py` es la entrada principal. Alias: **E3** = `solver_columnas_e2_v2.py`,
+**base** = generación de columnas con pricing Gurobi y **LP** = formulación completa
+por arcos. Consultar opciones con `python3 capstone.py --help`.
+
+## Comandos habituales
+
+```bash
+python3 capstone.py mulgen a1 E3
+python3 capstone.py sndlib abilene E3
+python3 capstone.py waxman E3 --nodos 400 --arcos 1600 --productos 10000 --semilla 42
+```
+
+Cada corrida individual conserva instancia, log y metadatos en `ejecuciones/`.
+Para otras opciones, salidas y herramientas de memoria:
+[guía de ejecución](docs/EJECUCIONES.md).
+
+## Experimentos y resultados
+
+| Contenido | Ubicación |
 | --- | --- |
-| Instalar, compilar y ejecutar | [Guía de ejecución](docs/GUIA_EJECUCION.md) |
-| Entender carpetas, código y accesos compatibles | [Mapa del repositorio](docs/MAPA_REPOSITORIO.md) |
-| Ejecutar las baterías de cierre | [Experimentos](experimentos/README.md) |
-| Localizar entradas y conocer sus supuestos | [Catálogo de datos](datos/README.md) |
-| Encontrar resultados y distinguir series | [Guía de resultados](docs/RESULTADOS.md) |
-| Revisar el caso aplicado chileno | [Red Chile](red_chile/README.md) |
-| Revisar variantes anteriores | [Histórico y alternativas](historico/README.md) |
+| X3: densidad, 40 corridas | [`experimentos/x3_formal/`](experimentos/x3_formal/) |
+| X4: tamaño, 150 E3 + 90 base | [`experimentos/x4_formal/`](experimentos/x4_formal/) |
+| Waxman: cinco familias, 150 corridas | [`experimentos/waxman_formal/`](experimentos/waxman_formal/) |
+| Validación HiGHS y SNDlib/Chile | [400 casos pequeños](experimentos/validacion/), [27 casos adaptados](experimentos/sndlib_validacion_v2.csv) |
+| Calibración de eta, 84 corridas | [`experimentos/s6/`](experimentos/s6/) |
+| Memoria medida | [Serie pequeña](experimentos/memoria_20261125_155019_730765/), [E3 grande](experimentos/memoria_20261125_161531_860231/) |
+| Aplicación chilena y fuentes | [`red_chile/`](red_chile/README.md) |
+| Tablas y gráficos consolidados | [`analisis_final/`](analisis_final/README.md) |
 
-## Ejecutar las baterías oficiales
+Para consultar o repetir baterías, seguir [experimentos](experimentos/README.md).
+Usar una salida nueva al repetir con el código actual y ejecutar secuencialmente
+las baterías que comparten Mulgen o `trabajo/out`.
+Regenerar tablas y figuras: `bash analisis_final/codigo/ejecutar_todo.sh`.
 
-Desde la raíz del repositorio, con las dependencias y licencia instaladas:
+## Organización
 
-```bash
-# Ver planes sin generar instancias ni resolver.
-python3 experimento_x3.py plan
-python3 experimento_x4.py plan
-python3 experimento_waxman.py plan
+- `src/`: implementación; `experimentos/scripts/`: programas experimentales.
+- `compat/`: accesos anteriores; `historico/`: variantes, archivos y copias antiguas.
+- `trabajo/`: temporales y compilación; `ejecuciones/`: corridas individuales locales.
+- [Mapa completo](docs/MAPA_REPOSITORIO.md) y [datos de entrada](datos/README.md).
 
-# Ejecutar secuencialmente. Cada script reanuda su carpeta de salida.
-python3 experimento_x3.py correr
-python3 experimento_x4.py correr
-python3 experimento_waxman.py correr
-```
+Los comandos antiguos ahora se ejecutan desde `compat/`, por ejemplo:
+`python3 compat/ejecutar.py a1 E3`.
+Los resultados históricos conservan sus protocolos; completar un proceso no implica
+certificar la solución. Chile es una representación con datos públicos y supuestos.
+Las cifras de memoria medidas se distinguen de las extrapolaciones.
 
-| Batería | Diseño predeterminado | Salida nueva |
-| --- | --- | --- |
-| X3: densidad | 400 nodos, 10.000 productos solicitados; grados 4/8/12/16; 10 semillas; 300 s; **40 corridas** | `experimentos/x3_formal/` |
-| X4: tamaño | 200–3.200 nodos; 30 semillas; **150 E3 + 90 GC base** hasta 800 nodos | `experimentos/x4_formal/` |
-| Waxman: topología | Cinco familias; 30 semillas nuevas; backbone **60 % / 15 %**; **150 corridas** | `experimentos/waxman_formal/` |
-
-Se conserva la comparación existente con generación de columnas base; estas
-baterías no agregan un LP completo ni HiGHS. En Mulgen se registran los productos
-efectivos después del filtro de conectividad.
-
-## Estructura
-
-```text
-src/                     Implementaciones de solvers, generador, lectores y diagnóstico
-experimentos/scripts/    Implementaciones de las baterías oficiales y del explorador
-historico/               Métodos anteriores, alternativas y experimentos históricos
-datos/README.md          Catálogo de entradas; las carpetas físicas conservan sus rutas
-docs/                    Ejecución, organización y ubicación de resultados
-tests/                   Pruebas de generación, planes y compatibilidad
-Canad/                   Fuentes y parámetros Mulgen (ruta original)
-sndlib/                  XML de referencia (ruta original)
-red_chile/               Caso aplicado, fuentes, escenarios, scripts y resultados
-```
-
-Los `.py` pequeños de la raíz son **entradas compatibles** a las implementaciones
-agrupadas. Se conservan sus nombres, importaciones y comandos. Para editar un
-algoritmo, abrir su implementación en `src/`, `experimentos/scripts/` o
-`historico/`; consultar el mapa, no duplicar cambios en la entrada compatible.
-Los ejecutores `ejecutar*.py` y la compilación C++ permanecen en la raíz.
-
-Los archivos `out`, binarios, compilaciones, entornos y resultados no son código
-fuente. Sus rutas se mantienen para preservar los ejecutores y las series previas.
-No ejecutar X3 y X4 simultáneamente en la misma copia: comparten `out` y Mulgen.
-Para comenzar de cero en otro computador, usar carpetas de salida nuevas.
-
-## Verificar la instalación
-
-```bash
-python3 -m unittest discover -s tests -v
-```
-
-Las pruebas no sustituyen una licencia Gurobi ni la compilación de `pricing_cpp`.
-Las instrucciones completas y los comandos históricos están en la guía de ejecución.
+Pruebas: `python3 -m unittest discover -s tests -v`.

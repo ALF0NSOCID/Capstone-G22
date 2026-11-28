@@ -7,9 +7,9 @@ la raíz del repositorio. E3 corresponde a `solver_columnas_e2_v2.py`.
 
 | Comando | Diseño y número de corridas | Salida |
 | --- | --- | --- |
-| `python3 experimento_x3.py correr` | Cuatro grados, 10 semillas, 10.000 productos solicitados, 300 s: 40 | `x3_formal/` |
-| `python3 experimento_x4.py correr` | Cinco tamaños, 30 semillas, 900 s: 150 E3 y 90 GC base | `x4_formal/` |
-| `python3 experimento_waxman.py correr` | Cinco familias, semillas 1001–1030, acceso 60 % / 15 %, 120 s: 150 | `waxman_formal/` |
+| `python3 compat/experimento_x3.py correr` | Cuatro grados, 10 semillas, 10.000 productos solicitados, 300 s: 40 | `x3_formal/` |
+| `python3 compat/experimento_x4.py correr` | Cinco tamaños, 30 semillas, 900 s: 150 E3 y 90 GC base | `x4_formal/` |
+| `python3 compat/experimento_waxman.py correr` | Cinco familias, semillas 1001–1030, acceso 60 % / 15 %, 120 s: 150 | `waxman_formal/` |
 
 Cada uno acepta `plan`, `correr`, `resumen`, `--semillas` y `--salida`.
 `plan` no genera ni resuelve. Las entradas ya registradas se saltan; revisar los

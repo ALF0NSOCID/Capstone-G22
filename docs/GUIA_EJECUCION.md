@@ -1,4 +1,11 @@
-# Capstone G22 — Flujo multicommodity
+# Guía de ejecución
+
+La entrada recomendada es python3 capstone.py. Consultar [ejecuciones actuales](EJECUCIONES.md)
+para comandos, alias E3/base/LP y salidas aisladas. La siguiente referencia conserva
+los comandos y variantes históricas. El caso base del informe es
+solver_columnas_pricing_gurobi.py; solver_columnas.py es la variante Dijkstra Python.
+
+## Referencia de comandos compatibles
 
 Este repositorio compara distintos métodos para minimizar la congestión máxima
 en redes multicommodity. Los resultados de cada ejecución se guardan en
@@ -9,11 +16,11 @@ en redes multicommodity. Los resultados de cada ejecución se guardan en
 Ejecución básica con una instancia de `Canad/Data/`:
 
 ```bash
-python3 ejecutar.py a10 solver_columnas
+python3 compat/ejecutar.py a10 solver_columnas
 ```
 Caso Windows:
 ```bash
-python ejecutar_windows.py a10 solver_columnas
+python compat/ejecutar_windows.py a10 solver_columnas
 ```
 
 El primer argumento selecciona el archivo de parámetros, por ejemplo `a10`
@@ -22,39 +29,39 @@ usa `Canad/Data/a10.par`. El segundo argumento selecciona el solver.
 Para imprimir primero un diagnóstico estructural de la red:
 
 ```bash
-python3 ejecutar.py a10 solver_columnas --analizar-red
+python3 compat/ejecutar.py a10 solver_columnas --analizar-red
 ```
 
 ### Solvers principales
 
 ```bash
 # Formulación completa por arcos en Gurobi.
-python3 ejecutar.py a10 solver
+python3 compat/ejecutar.py a10 solver
 
 # Generación de columnas base con pricing Dijkstra en Python.
-python3 ejecutar.py a10 solver_columnas
+python3 compat/ejecutar.py a10 solver_columnas
 
 # Generación de columnas con detención certificada al 1%.
-python3 ejecutar.py a10 solver_columnas_gap_1pct
+python3 compat/ejecutar.py a10 solver_columnas_gap_1pct
 
 # Partida congestion-aware para mejorar las columnas iniciales.
-python3 ejecutar.py a10 solver_columnas_partida_ca
+python3 compat/ejecutar.py a10 solver_columnas_partida_ca
 
 # Pricing y caminos mínimos implementados en C++.
-python3 ejecutar.py a10 solver_columnas_cpp
+python3 compat/ejecutar.py a10 solver_columnas_cpp
 
 # Solver final E2: partida congestion-aware, pricing C++ y gap certificado al 1%.
-python3 ejecutar.py a10 solver_columnas_e2
+python3 compat/ejecutar.py a10 solver_columnas_e2
 
 # Generación de columnas con estabilización dual.
-python3 ejecutar.py a10 solver_columnas_estabilizado
+python3 compat/ejecutar.py a10 solver_columnas_estabilizado
 ```
 
 Antes de usar el solver C++ o E2, compilar su módulo una vez:
 
 ```bash
 python3 -m pip install pybind11
-python3 setup_pricing_cpp.py build_ext --inplace
+python3 capstone.py compilar
 ```
 Las instancias principales se encuentran en `Canad/Data`, por ejemplo
 `a10.par`, y contienen los parámetros necesarios para reproducirlas.
@@ -75,7 +82,7 @@ python3 -m pip install networkx matplotlib
 ### Waxman normal
 
 ```bash
-python3 ejecutar_waxman.py solver_columnas \
+python3 compat/ejecutar_waxman.py solver_columnas \
   --nodos 400 \
   --arcos 1600 \
   --productos 10000 \
@@ -94,7 +101,7 @@ python3 ejecutar_waxman.py solver_columnas \
 ### Waxman con hubs
 
 ```bash
-python3 ejecutar_waxman.py solver_columnas \
+python3 compat/ejecutar_waxman.py solver_columnas \
   --nodos 400 \
   --arcos 1600 \
   --productos 10000 \
@@ -130,7 +137,7 @@ Escenario reproducible usado para las pruebas de 400 nodos, 1600 arcos y
 10000 productos:
 
 ```bash
-python3 ejecutar_waxman.py solver_columnas_cpp \
+python3 compat/ejecutar_waxman.py solver_columnas_cpp \
   --nodos 400 \
   --arcos 1600 \
   --productos 10000 \
@@ -167,7 +174,7 @@ se puede reemplazar `solver_columnas_cpp` por `solver_columnas_e2`.
 ### Visualizar una red Waxman
 
 ```bash
-python3 visualizar_waxman.py \
+python3 compat/visualizar_waxman.py \
   --nodos 400 \
   --arcos 1600 \
   --productos 10000 \
@@ -236,7 +243,7 @@ No se necesita Fortran para SNDlib ni Waxman.
 
   ```bash
   python3 -m pip install setuptools pybind11
-  python3 setup_pricing_cpp.py build_ext --inplace
+  python3 capstone.py compilar
   python3 -c "from pricing_cpp import MotorCaminos; print('pricing_cpp disponible')"
   ```
 
@@ -277,26 +284,26 @@ en sistemas que sí las distinguen son carpetas distintas.
 
 ## Redes SNDlib
 
-`ejecutar_sndlib.py` convierte el XML a `out` y reutiliza los solvers y KPI de
+`ejecutar_sndlib.py` convierte el XML a `trabajo/out` y reutiliza los solvers y KPI de
 `ejecutar.py`, sin compilar ni ejecutar MULGEN. El nombre de red es el nombre
 del archivo sin extensión (también acepta `.xml`); el solver acepta nombre
 con o sin `.py`.
 
 ```bash
 # Consultar las redes estáticas disponibles sin generar ni resolver.
-python3 ejecutar_sndlib.py all --listar
+python3 compat/ejecutar_sndlib.py all --listar
 
 # Resolver una red y mostrar su diagnóstico estructural.
-python3 ejecutar_sndlib.py germany50 solver_columnas --analizar-red
+python3 compat/ejecutar_sndlib.py germany50 solver_columnas --analizar-red
 
 # Usar E2 después de compilar pricing_cpp para el entorno activo.
-python3 ejecutar_sndlib.py germany50 solver_columnas_e2
+python3 compat/ejecutar_sndlib.py germany50 solver_columnas_e2
 
 # Convertir únicamente: sobrescribe out, sin usar Gurobi.
-python3 ejecutar_sndlib.py germany50 --solo-generar
+python3 compat/ejecutar_sndlib.py germany50 --solo-generar
 
 # Procesar todos los XML de la carpeta y omitir los ya completados.
-python3 ejecutar_sndlib.py all solver_columnas --reanudar
+python3 compat/ejecutar_sndlib.py all solver_columnas --reanudar
 ```
 
 Por defecto busca primero `sndlib/` junto al script. Para otra ubicación,
@@ -312,10 +319,10 @@ Los XML estáticos no contienen una serie temporal. Solo usar estos comandos
 cuando existan matrices separadas en `sndlib/temporales/germany50/5min/`:
 
 ```bash
-python3 ejecutar_sndlib.py germany50 --serie 5min --listar
-python3 ejecutar_sndlib.py germany50 solver_columnas --serie 5min --t 3
-python3 ejecutar_sndlib.py germany50 solver_columnas --serie 5min --desde 1 --hasta 50 --cada 10 --reanudar
-python3 ejecutar_sndlib.py germany50 solver_columnas --serie 5min --todas --reanudar
+python3 compat/ejecutar_sndlib.py germany50 --serie 5min --listar
+python3 compat/ejecutar_sndlib.py germany50 solver_columnas --serie 5min --t 3
+python3 compat/ejecutar_sndlib.py germany50 solver_columnas --serie 5min --desde 1 --hasta 50 --cada 10 --reanudar
+python3 compat/ejecutar_sndlib.py germany50 solver_columnas --serie 5min --todas --reanudar
 ```
 
 Los índices empiezan en 1 y siguen el orden natural de los nombres de archivo;
@@ -347,7 +354,7 @@ espacio. El lector necesita una sección XML `<demands>` reconocible, con
   No implementa las restricciones de diseño/enrutamiento del problema SNDlib
   original: se resuelve la adaptación de congestión del proyecto.
 - `lector.py` filtra productos sin camino dirigido conservando los arcos.
-  Revisar el mensaje de conectividad: el número de productos del KPI de `out`
+  Revisar el mensaje de conectividad: el número de productos del KPI de `trabajo/out`
   y del JSON de conversión puede superar el efectivamente resuelto.
 
 ## Red chilena de fibra óptica
@@ -356,10 +363,10 @@ El archivo real es **`sndlib/fon-raw.xml`**. Se ejecuta mediante el mismo lector
 SNDlib; no requiere un ejecutor distinto ni parámetros MULGEN:
 
 ```bash
-python3 ejecutar_sndlib.py fon-raw --listar
-python3 ejecutar_sndlib.py fon-raw --solo-generar --analizar-red
-python3 ejecutar_sndlib.py fon-raw solver_columnas --analizar-red
-python3 ejecutar_sndlib.py fon-raw solver_columnas_e2 --analizar-red
+python3 compat/ejecutar_sndlib.py fon-raw --listar
+python3 compat/ejecutar_sndlib.py fon-raw --solo-generar --analizar-red
+python3 compat/ejecutar_sndlib.py fon-raw solver_columnas --analizar-red
+python3 compat/ejecutar_sndlib.py fon-raw solver_columnas_e2 --analizar-red
 ```
 
 La conversión del XML presente produce 285 nodos, 570 arcos dirigidos y
@@ -389,7 +396,7 @@ en el README de `red_chile/`.
 Para una prueba Waxman pequeña, con parámetros de conectividad adecuados:
 
 ```bash
-python3 ejecutar_waxman.py solver_columnas --nodos 20 --arcos 60 --productos 30 --alpha 0.8 --beta 0.8 --semilla 42 --nombre waxman_prueba --analizar-red
+python3 compat/ejecutar_waxman.py solver_columnas --nodos 20 --arcos 60 --productos 30 --alpha 0.8 --beta 0.8 --semilla 42 --nombre waxman_prueba --analizar-red
 ```
 
 En Waxman, `--arcos` debe ser par y estar entre `2*(nodos-1)` y
@@ -409,10 +416,10 @@ Los resultados de los ejemplos se escriben, respectivamente, en:
 SNDlib guarda además un JSON con el mismo nombre base: rutas, escala,
 convenciones y estado. Las series usan, por ejemplo, `5min_t000003` en lugar
 de `base`; cambiar capacidad, factor o escala modifica el identificador.
-`--solo-generar` solo deja `out`: no guarda ese log ni JSON.
+`--solo-generar` solo deja `trabajo/out`: no guarda ese log ni JSON.
 
 **No ejecutar familias en paralelo en la misma copia:** todas sobrescriben el
-`out` de la raíz. Repetir el mismo identificador y solver sobrescribe su log
+`trabajo/out` de la raíz. Repetir el mismo identificador y solver sobrescribe su log
 (y su JSON si corresponde). `--analizar-red` imprime el diagnóstico antes
 del solver; el archivo de resultados captura la salida del solver y su KPI,
 no toda la consola del ejecutor.
@@ -442,18 +449,18 @@ Desde la raíz, usando el Python que tiene las dependencias y `pricing_cpp`:
 
 ```bash
 # Piloto: dibujar, diagnosticar y resolver 5 configuraciones x 2 semillas.
-python3 explorar_waxman.py --semillas 42 43 --resolver --limite 120 --generacion-seg 60
+python3 compat/explorar_waxman.py --semillas 42 43 --resolver --limite 120 --generacion-seg 60
 
 # Solo generar y observar, sin Gurobi.
-python3 explorar_waxman.py --semillas 42 --generacion-seg 60
+python3 compat/explorar_waxman.py --semillas 42 --generacion-seg 60
 
 # Resolver las entradas guardadas, sin regenerarlas (reemplazar la ruta).
-python3 explorar_waxman.py --resolver-carpeta "ruta/waxman_exploracion_FECHA" --limite 120
+python3 compat/explorar_waxman.py --resolver-carpeta "ruta/waxman_exploracion_FECHA" --limite 120
 ```
 
 La salida es una carpeta nueva `waxman_exploracion_*` por ejecución; cada caso
 conserva `instancia.txt`, `parametros.json`, `generacion_metadata.json`,
-`diagnostico.json`, `red.png` y logs. No modifica el `out` activo ni los
+`diagnostico.json`, `red.png` y logs. No modifica el `trabajo/out` activo ni los
 resultados anteriores. El límite de preparación incluye generación, análisis
 y dibujo; un timeout no demuestra que la topología sea imposible. El solver
 tiene además un límite externo de `limite + 60` segundos. Las pruebas de
@@ -527,17 +534,17 @@ El orden de las cinco familias se aleatoriza de forma reproducible por semilla.
 Desde la raíz, inspeccionar primero sin generar ni resolver:
 
 ```bash
-python3 experimento_x3.py plan
-python3 experimento_x4.py plan
-python3 experimento_waxman.py plan
+python3 compat/experimento_x3.py plan
+python3 compat/experimento_x4.py plan
+python3 compat/experimento_waxman.py plan
 ```
 
 Después ejecutar **secuencialmente**, usando el entorno del computador nuevo:
 
 ```bash
-python3 experimento_x3.py correr
-python3 experimento_x4.py correr
-python3 experimento_waxman.py correr
+python3 compat/experimento_x3.py correr
+python3 compat/experimento_x4.py correr
+python3 compat/experimento_waxman.py correr
 ```
 
 Todos aceptan `--semillas` y `--salida`. X4 permite `--sin-base` y
@@ -552,12 +559,12 @@ Los errores guardados requieren revisión; no se reintentan silenciosamente.
 Waxman guarda además protocolo, entorno, imágenes, instancias y tablas CSV.
 Cambiar sus parámetros o fuentes requiere una carpeta nueva para no mezclar
 configuraciones. X3/X4 conservan su lógica de registro; no ejecutar ambos en
-paralelo en la misma copia porque comparten `out` y Mulgen.
+paralelo en la misma copia porque comparten `trabajo/out` y Mulgen.
 
 Para regenerar los resúmenes:
 
 ```bash
-python3 experimento_x3.py resumen
-python3 experimento_x4.py resumen
-python3 experimento_waxman.py resumen
+python3 compat/experimento_x3.py resumen
+python3 compat/experimento_x4.py resumen
+python3 compat/experimento_waxman.py resumen
 ```

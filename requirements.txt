@@ -1,0 +1,8 @@
+gurobipy
+pybind11
+setuptools
+numpy
+scipy
+networkx
+pandas
+matplotlib

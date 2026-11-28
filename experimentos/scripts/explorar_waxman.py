@@ -85,7 +85,7 @@ def resolver(repo, carpeta, limite):
     inicio = time.perf_counter()
     with (carpeta / 'solver.log').open('w') as log:
         try:
-            p = subprocess.run([sys.executable, str(repo / 'solver_columnas_e2_v2.py')],
+            p = subprocess.run([sys.executable, str(repo / "compat" / 'solver_columnas_e2_v2.py')],
                                cwd=carpeta, env=entorno, stdout=log,
                                stderr=subprocess.STDOUT, timeout=limite+60)
             codigo = p.returncode
@@ -134,7 +134,7 @@ def main():
     ap.add_argument('--salida', type=Path, default=Path.cwd())
     a = ap.parse_args()
     repo = a.repo.expanduser().resolve()
-    if not (repo/'generador_waxman.py').exists():
+    if not (repo / "compat" / 'generador_waxman.py').exists():
         ap.error('No se encuentra generador_waxman.py en --repo.')
     if a.resolver_carpeta:
         for instancia in sorted(a.resolver_carpeta.expanduser().resolve().glob('*/instancia.txt')):
@@ -157,7 +157,7 @@ def main():
             print(f'Generando {carpeta.name} (tope {a.generacion_seg:g} s)...', flush=True)
             with (carpeta/'generacion.log').open('w') as log:
                 try:
-                    p = subprocess.run([sys.executable, str(Path(__file__).resolve()),
+                    p = subprocess.run([sys.executable, str(Path(__entry_file__).resolve()),
                         '_worker', str(repo), str(carpeta), caso, str(semilla)],
                         stdout=log, stderr=subprocess.STDOUT, timeout=a.generacion_seg)
                     estado = 'generada' if p.returncode == 0 else 'error_generacion'

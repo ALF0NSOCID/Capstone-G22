@@ -86,7 +86,9 @@ def main():
     meta = protocolo(a.limite, a.generacion_seg)
     ficha = salida/'protocolo.json'
     if ficha.exists() and json.loads(ficha.read_text()) != meta:
-        ap.error('El protocolo de esa carpeta es distinto. Use una --salida nueva para no mezclar resultados.')
+        if a.modo != 'plan':
+            ap.error('El protocolo de esa carpeta es distinto. Use una --salida nueva para no mezclar resultados.')
+        print('Protocolo histórico: consulta de solo lectura; para repetir use --salida nueva.')
     plan = []
     for s in a.semillas:
         orden = list(a.casos)
@@ -107,7 +109,7 @@ def main():
         print(f"[{i}/{len(pendientes)}] {c}, semilla {s}", flush=True)
         with (carpeta/'generacion.log').open('w') as log:
             try:
-                p = subprocess.run([sys.executable, str(Path(__file__).resolve()), '_worker',
+                p = subprocess.run([sys.executable, str(Path(__entry_file__).resolve()), '_worker',
                                     str(RAIZ), str(carpeta), c, str(s)],
                                    stdout=log, stderr=subprocess.STDOUT, timeout=a.generacion_seg)
                 estado = 'generada' if p.returncode == 0 else 'error_generacion'

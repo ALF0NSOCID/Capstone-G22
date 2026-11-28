@@ -188,7 +188,7 @@ def modo_troncal(args):
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('modo', choices=['prueba', 'candidatos', 'fallas', 'troncal'])
-    ap.add_argument('--solver', default='solver_columnas_e2_v2.py')
+    ap.add_argument('--solver', default=os.path.join(REPO, 'compat', 'solver_columnas_e2_v2.py'))
     ap.add_argument('--sin-referencia', action='store_true')
     args = ap.parse_args()
     ruta = {'prueba': modo_prueba, 'candidatos': modo_candidatos, 'fallas': modo_fallas, 'troncal': modo_troncal}[args.modo](args)

@@ -118,7 +118,7 @@ def main():
             [
                 sys.executable,
                 "-u",
-                str(RAIZ / "ejecutar.py"),
+                str(RAIZ / "compat" / "ejecutar.py"),
                 instancia,
                 argumentos.solver,
             ],

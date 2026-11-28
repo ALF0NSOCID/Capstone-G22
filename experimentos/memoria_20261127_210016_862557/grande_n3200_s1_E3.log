@@ -1,0 +1,63 @@
+Filtro de conectividad: 3231 productos sin camino eliminados.
+Filtro de conectividad: 80000 -> 76769 productos.
+Filtro de conectividad: productos eliminados (muestra): [2, 8, 39, 64, 70, 86, 96, 102, 114, 137, 202, 216, 257, 276, 295, 309, 314, 343, 388, 414] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 3200
+Arcos: 12800
+Productos: 80000
+BENCH_INSTANCIA={"nodos": 3200, "arcos": 12800, "productos_efectivos": 76769, "variables_lp_equivalentes": 982643200}
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 76769 | Arcos: 12800
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 99251
+Límite de tiempo: 60 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 76769 columnas en 1.72s.
+Iteración 1: resolviendo maestro con 76769 columnas...
+Iteración 1: z=0.13447928 | cota inferior=0.00000000 | gap=infinito | columnas=77035 | nuevas=266 | costo reducido=-1.124e+00 | maestro=0.06s | pricing=1.01s
+Iteración 2: resolviendo maestro con 77035 columnas...
+Iteración 2: z=0.12721769 | cota inferior=0.01846539 | gap=588.9522% | columnas=77226 | nuevas=191 | costo reducido=-1.306e+00 | maestro=0.05s | pricing=1.02s
+Iteración 3: resolviendo maestro con 77226 columnas...
+Iteración 3: z=0.12209754 | cota inferior=0.01846539 | gap=561.2239% | columnas=77338 | nuevas=112 | costo reducido=-2.411e+00 | maestro=0.06s | pricing=1.09s
+Iteración 4: resolviendo maestro con 77338 columnas...
+Iteración 4: z=0.12200171 | cota inferior=0.01846539 | gap=560.7049% | columnas=77510 | nuevas=172 | costo reducido=-1.545e+00 | maestro=0.04s | pricing=1.03s
+Iteración 5: resolviendo maestro con 77510 columnas...
+Iteración 5: z=0.11603953 | cota inferior=0.01846539 | gap=528.4165% | columnas=77686 | nuevas=176 | costo reducido=-1.430e+00 | maestro=0.06s | pricing=1.04s
+Iteración 6: resolviendo maestro con 77686 columnas...
+Iteración 6: z=0.11602446 | cota inferior=0.02110065 | gap=449.8620% | columnas=77795 | nuevas=109 | costo reducido=-1.927e+00 | maestro=0.05s | pricing=1.03s
+Iteración 7: resolviendo maestro con 77795 columnas...
+Iteración 7: z=0.11584953 | cota inferior=0.02110065 | gap=449.0330% | columnas=77910 | nuevas=115 | costo reducido=-1.769e+00 | maestro=0.05s | pricing=1.05s
+Iteración 8: resolviendo maestro con 77910 columnas...
+Iteración 8: z=0.11573027 | cota inferior=0.11258798 | gap=2.7910% | columnas=77912 | nuevas=2 | costo reducido=-3.119e+00 | maestro=0.04s | pricing=0.99s
+Iteración 9: resolviendo maestro con 77912 columnas...
+Iteración 9: z=0.11508532 | cota inferior=0.11258798 | gap=2.2181% | columnas=78134 | nuevas=222 | costo reducido=-1.163e+00 | maestro=0.05s | pricing=1.09s
+Iteración 10: resolviendo maestro con 78134 columnas...
+Iteración 10: z=0.11498659 | cota inferior=0.11258798 | gap=2.1304% | columnas=78381 | nuevas=247 | costo reducido=-1.040e+00 | maestro=0.05s | pricing=1.03s
+Iteración 11: resolviendo maestro con 78381 columnas...
+Iteración 11: z=0.11381831 | cota inferior=0.11308350 | gap=0.6498% | columnas=78381 | nuevas=0 | costo reducido=-3.838e+00 | maestro=0.06s | pricing=1.03s
+
+Solución con error relativo certificado de a lo sumo 1%
+Congestión máxima: 0.11381831 (11.38%)
+Cota superior: 0.11381831
+Cota inferior: 0.11308350
+Gap certificado: 0.649795%
+Iteraciones: 11 | Columnas: 78381
+Tiempo total: 14.25 segundos
+
+Diez arcos más congestionados:
+Arco 3775: 950 -> 1918 | flujo=6067.08 | capacidad=53305 | congestión=0.1138
+Arco 545: 138 -> 908 | flujo=10300.44 | capacidad=90499 | congestión=0.1138
+Arco 3153: 770 -> 2022 | flujo=4686.13 | capacidad=41172 | congestión=0.1138
+Arco 3544: 883 -> 849 | flujo=8647.92 | capacidad=75980 | congestión=0.1138
+Arco 5471: 1380 -> 814 | flujo=7312.26 | capacidad=64245 | congestión=0.1138
+Arco 6289: 1575 -> 217 | flujo=7900.81 | capacidad=69416 | congestión=0.1138
+Arco 9768: 2456 -> 191 | flujo=5863.35 | capacidad=51515 | congestión=0.1138
+Arco 11875: 2993 -> 2558 | flujo=10866.46 | capacidad=95472 | congestión=0.1138
+Arco 4361: 1104 -> 2141 | flujo=2943.00 | capacidad=25857 | congestión=0.1138
+Arco 6597: 1655 -> 216 | flujo=6384.07 | capacidad=56090 | congestión=0.1138

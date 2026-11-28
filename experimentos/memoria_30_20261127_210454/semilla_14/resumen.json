@@ -1,0 +1,11 @@
+[
+  {
+    "bloque": "grande",
+    "metodo": "E3",
+    "nodos": 3200,
+    "variables_mediana": 986419200,
+    "ram_mediana_mib": 1183.75,
+    "completas": 1,
+    "corridas": 1
+  }
+]

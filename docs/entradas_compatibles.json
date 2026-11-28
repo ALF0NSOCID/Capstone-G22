@@ -28,5 +28,17 @@
   "bateria_sndlib.py": "historico/experimentos/bateria_sndlib.py",
   "experimento_conclusiones.py": "historico/experimentos/experimento_conclusiones.py",
   "ejecutar_benchmark_escalabilidad.py": "historico/experimentos/ejecutar_benchmark_escalabilidad.py",
-  "generar_benchmark_escalabilidad.py": "historico/experimentos/generar_benchmark_escalabilidad.py"
+  "generar_benchmark_escalabilidad.py": "historico/experimentos/generar_benchmark_escalabilidad.py",
+  "ejecutar.py": "src/ejecucion/ejecutar_mulgen.py",
+  "ejecutar_windows.py": "src/ejecucion/ejecutar_windows.py",
+  "ejecutar_instancia.py": "src/ejecucion/ejecutar_instancia.py",
+  "ejecutar_waxman.py": "src/ejecucion/ejecutar_waxman.py",
+  "ejecutar_sndlib.py": "src/ejecucion/ejecutar_sndlib.py",
+  "experimento_s6.py": "experimentos/scripts/experimento_s6.py",
+  "experimento_validacion.py": "experimentos/scripts/experimento_validacion.py",
+  "experimento_waxman_w1.py": "historico/experimentos/experimento_waxman_w1.py",
+  "visualizar_waxman.py": "src/diagnosticos/visualizar_waxman.py",
+  "setup_pricing_cpp.py": "tools/setup_pricing_cpp.py",
+  "benchmark_memoria.py": "experimentos/scripts/benchmark_memoria.py",
+  "comparar_waxman.py": "src/diagnosticos/comparar_waxman.py"
 }

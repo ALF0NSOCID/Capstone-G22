@@ -1,0 +1,2 @@
+bloque,metodo,script,semilla,nodos_solicitados,nodos,arcos,productos_efectivos,variables_lp_equivalentes,ram_pico_mib,ram_pico_bytes,ram_muestreada_bytes,tiempo_proceso_s,tiempo_interno_s,z,gap_pct,estado,codigo,error_monitor,instancia_sha256,log
+grande,E3,solver_columnas_e2_v2.py,5,3200,3200,12800,76600,980480000,1167.719,1224441856,1224409088,10.9813,4.33,0.17885688,0.000000,completado,0,,271d5e8b84d09632009cccbb149ab8d7e34a851efa1b2529dcb3d31a39f869da,/Users/alfonsocid/Desktop/Repo Capstone/experimentos/memoria_30_20261127_210454/semilla_5/grande_n3200_s5_E3.log

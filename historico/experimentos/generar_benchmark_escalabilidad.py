@@ -11,7 +11,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent
 CARPETA_DATOS = RAIZ / "Canad" / "Data"
-MANIFIESTO = RAIZ / "benchmark_escalabilidad.csv"
+MANIFIESTO = RAIZ / "historico" / "archivos" / "benchmark_escalabilidad.csv"
 SEMILLAS = (42, 2068, 363524)
 
 # Factores elegidos para conservar una geometria rectangular parecida a la

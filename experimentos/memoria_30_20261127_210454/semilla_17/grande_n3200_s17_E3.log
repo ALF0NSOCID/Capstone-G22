@@ -1,0 +1,59 @@
+Filtro de conectividad: 2867 productos sin camino eliminados.
+Filtro de conectividad: 80000 -> 77133 productos.
+Filtro de conectividad: productos eliminados (muestra): [85, 163, 181, 211, 313, 316, 327, 346, 382, 396, 411, 494, 521, 536, 544, 627, 632, 696, 700, 733] ...
+Filtro de conectividad: red original preservada y verificacion final superada.
+Nodos: 3200
+Arcos: 12800
+Productos: 80000
+BENCH_INSTANCIA={"nodos": 3200, "arcos": 12800, "productos_efectivos": 77133, "variables_lp_equivalentes": 987302400}
+
+Solver E2 v2: partida congestion-aware + pricing C++ + gap certificado + capacidades normalizadas
+Productos: 77133 | Arcos: 12800
+ETA: 25 | Objetivo de brecha: 1%
+Escala de capacidad (máxima): 98962
+Límite de tiempo: 180 s | Tolerancia: 1e-07
+Construyendo el problema maestro restringido...
+Set parameter Username
+Set parameter LicenseID to value 2855691
+Academic license - for non-commercial use only - expires 2027-08-24
+Set parameter Method to value 0
+Calculando caminos iniciales congestion-aware...
+Caminos iniciales listos: 77133 columnas en 1.71s.
+Iteración 1: resolviendo maestro con 77133 columnas...
+Iteración 1: z=0.15059871 | cota inferior=0.00000000 | gap=infinito | columnas=77422 | nuevas=289 | costo reducido=-1.126e+00 | maestro=0.06s | pricing=1.00s
+Iteración 2: resolviendo maestro con 77422 columnas...
+Iteración 2: z=0.13123845 | cota inferior=0.00000000 | gap=infinito | columnas=77656 | nuevas=234 | costo reducido=-1.244e+00 | maestro=0.05s | pricing=1.00s
+Iteración 3: resolviendo maestro con 77656 columnas...
+Iteración 3: z=0.12607455 | cota inferior=0.00000000 | gap=infinito | columnas=77815 | nuevas=159 | costo reducido=-1.733e+00 | maestro=0.06s | pricing=1.07s
+Iteración 4: resolviendo maestro con 77815 columnas...
+Iteración 4: z=0.12440507 | cota inferior=0.11658263 | gap=6.7098% | columnas=77818 | nuevas=3 | costo reducido=-4.663e+00 | maestro=0.05s | pricing=1.02s
+Iteración 5: resolviendo maestro con 77818 columnas...
+Iteración 5: z=0.12279583 | cota inferior=0.11658263 | gap=5.3294% | columnas=77990 | nuevas=172 | costo reducido=-1.468e+00 | maestro=0.05s | pricing=1.03s
+Iteración 6: resolviendo maestro con 77990 columnas...
+Iteración 6: z=0.12230560 | cota inferior=0.11658263 | gap=4.9089% | columnas=78213 | nuevas=223 | costo reducido=-1.182e+00 | maestro=0.05s | pricing=1.03s
+Iteración 7: resolviendo maestro con 78213 columnas...
+Iteración 7: z=0.12032132 | cota inferior=0.11658263 | gap=3.2069% | columnas=78475 | nuevas=262 | costo reducido=-1.010e+00 | maestro=0.06s | pricing=1.04s
+Iteración 8: resolviendo maestro con 78475 columnas...
+Iteración 8: z=0.11975040 | cota inferior=0.11658263 | gap=2.7172% | columnas=78738 | nuevas=263 | costo reducido=-8.289e-01 | maestro=0.05s | pricing=1.03s
+Iteración 9: resolviendo maestro con 78738 columnas...
+Iteración 9: z=0.11658764 | cota inferior=0.11658263 | gap=0.0043% | columnas=78738 | nuevas=0 | costo reducido=-1.352e+00 | maestro=0.06s | pricing=1.03s
+
+Solución con error relativo certificado de a lo sumo 1%
+Congestión máxima: 0.11658764 (11.66%)
+Cota superior: 0.11658764
+Cota inferior: 0.11658263
+Gap certificado: 0.004296%
+Iteraciones: 9 | Columnas: 78738
+Tiempo total: 11.97 segundos
+
+Diez arcos más congestionados:
+Arco 5087: 1267 -> 656 | flujo=11422.21 | capacidad=97971 | congestión=0.1166
+Arco 1066: 270 -> 2734 | flujo=10242.92 | capacidad=87856 | congestión=0.1166
+Arco 5787: 1436 -> 3165 | flujo=9757.45 | capacidad=83692 | congestión=0.1166
+Arco 8950: 2223 -> 207 | flujo=9271.87 | capacidad=79527 | congestión=0.1166
+Arco 11324: 2828 -> 1278 | flujo=6659.14 | capacidad=57117 | congestión=0.1166
+Arco 2603: 655 -> 2148 | flujo=2474.11 | capacidad=21221 | congestión=0.1166
+Arco 6323: 1571 -> 2099 | flujo=8532.00 | capacidad=73181 | congestión=0.1166
+Arco 9460: 2352 -> 683 | flujo=11445.29 | capacidad=98169 | congestión=0.1166
+Arco 12484: 3119 -> 1263 | flujo=7861.39 | capacidad=67429 | congestión=0.1166
+Arco 11049: 2757 -> 463 | flujo=6869.00 | capacidad=59298 | congestión=0.1158

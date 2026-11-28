@@ -1,4 +1,6 @@
 import unittest
+import _rutas
+
 import networkx as nx
 
 from generador_waxman import generar_instancia
